@@ -20,6 +20,75 @@ $(function () {
         $("#next").toggle((index !== $divs.length - 1));
         $("#prev").toggle(index !== 0);
     }
+
+    /* JS Code for video slider */
+    if ($('.owl-most-popular').length) {
+        $('.owl-most-popular').owlCarousel({
+            autoplay: true,
+            autoplayTimeout: 6500,
+            smartSpeed: 1000,
+            loop: true,
+            nav: true,
+            dots: false,
+            margin: 15,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 2
+                },
+                992: {
+                    items: 3
+                }
+            }
+        });
+    }
+    if ($('.owl-most-popular').length) {
+        $('.owl-most-popular').owlCarousel({
+            autoplay: true,
+            autoplayTimeout: 6500,
+            smartSpeed: 1000,
+            loop: true,
+            nav: true,
+            dots: false,
+            margin: 15,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 2
+                },
+                992: {
+                    items: 3
+                }
+            }
+        });
+    }
+
+    if ($('.owl-most-articles').length) {
+        $('.owl-most-articles').owlCarousel({
+            autoplay: true,
+            autoplayTimeout: 6500,
+            smartSpeed: 1000,
+            loop: true,
+            nav: true,
+            dots: false,
+            margin: 15,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 2
+                },
+                992: {
+                    items: 3
+                }
+            }
+        });
+    }
 });
 
 /**/

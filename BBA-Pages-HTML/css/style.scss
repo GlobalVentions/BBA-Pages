@@ -101,6 +101,7 @@ $eccentricyellow: #fad136;
 $brightsidepurple: #6b17b3;
 $color_black: #1e1e20;
 $techgrey: #f2f2f2;
+$techgrey-dark: #E3E4E5;
 $smartgreen: #44bca3;
 $powerblue: #2661d2;
 $positivepink: #d10b4f;
@@ -140,6 +141,7 @@ html, body {
   font-family: $OpenSans-regular;
   letter-spacing: 0.5px;
   position: inherit;
+  overflow-x: hidden;
 }
 
 /* GENERAL css */
@@ -165,6 +167,10 @@ html, body {
 
 .bg-tech-grey {
   background-color: $techgrey !important;
+}
+
+.bg-tech-grey-dark {
+  background-color: #E3E4E5 !important;
 }
 
 .bg-pure-orange {
@@ -345,6 +351,177 @@ html, body {
   padding: 15px 20px;
 }
 
+.body-link-3 {
+  padding: 0 !important;
+  .top-right {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+  }
+  .btn-primary-link-btn {
+    padding: 15px 20px 20px;
+    background: #FCFCFC;
+    border-radius: 100%;
+    border: 2px solid #D9D9D9;
+  }
+  .btn-primary-link-btn-submit {
+    padding: 15px 20px 20px;
+    background: #FCFCFC;
+    border-radius: 50px;
+    width: 100%;
+    border: 2px solid #D9D9D9;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+  }
+
+}
+
+.link-bank-modal-body {
+  width: 73%;
+  margin: 0 auto 40px auto;
+  -webkit-box-shadow: 5px 5px 50px 0 rgba(211, 211, 211, 1);
+  -moz-box-shadow: 5px 5px 50px 0 rgba(211, 211, 211, 1);
+  box-shadow: 5px 5px 50px 0 rgba(211, 211, 211, 1);
+  .bank-listing-div {
+    max-height: 310px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .modal-header-link-2 {
+    padding: 5px 15px 30px 15px !important;
+  }
+  .modal-header-link-3 {
+    padding: 0 !important;
+  }
+  .bank-login-form-3 {
+    .send-security-code {
+      background-color: #5D5D5D;
+      display: inline-flex;
+      width: 100%;
+    }
+    .account-successfully {
+      background-color: #7F7F7F;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
+    .heading4-regular-18-24 {
+      font-size: 18px;
+      position: relative;
+      top: 6px;
+      left: 15px;
+      color: #F9F9F9;
+    }
+    .heading4-regular-18-24.account-was {
+      font-size: 21px;
+      position: relative;
+      color: #F9F9F9;
+      padding-top: 15px;
+      top: auto;
+      left: auto;
+      line-height: 30px;
+    }
+    .heading4-regular-18-24.like-to-send {
+      font-size: 18px;
+      position: relative;
+      top: 6px;
+      left: 0;
+      color: #8B8B8B;
+    }
+    .custom-bank-form-group {
+      border-radius: 20px;
+      padding: .475rem 1rem;
+      border: 2px solid #C1C1C1;
+      font-size: 17px;
+      font-weight: 600;
+    }
+    .custom-bank-form-group-lg {
+      border-radius: 10px;
+      padding: 0.75rem 1rem;
+      border: 2px solid #C1C1C1;
+      font-size: 20px;
+      font-weight: 600;
+    }
+    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color: #9A9A9A;
+    }
+    ::-moz-placeholder { /* Firefox 19+ */
+      color: #9A9A9A;
+    }
+    :-ms-input-placeholder { /* IE 10+ */
+      color: #9A9A9A;
+    }
+    :-moz-placeholder { /* Firefox 18- */
+      color: #9A9A9A;
+    }
+  }
+  .bank-login-form {
+    .custom-bank-form-group {
+      border: none;
+      box-shadow: none !important;
+      padding: 0 !important;
+      font-size: 1.4rem;
+      max-height: 25px;
+      position: relative;
+      bottom: 4px;
+    }
+    .form-group {
+      background-color: $color_white;
+      padding: 2px 10px 5px 10px;
+      border: 2px solid #C1C1C1;
+      border-radius: 10px;
+      font-size: 0.8rem;
+    }
+    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color: #9A9A9A;
+    }
+    ::-moz-placeholder { /* Firefox 19+ */
+      color: #9A9A9A;
+    }
+    :-ms-input-placeholder { /* IE 10+ */
+      color: #9A9A9A;
+    }
+    :-moz-placeholder { /* Firefox 18- */
+      color: #9A9A9A;
+    }
+    .btn-primary-link-btn {
+      padding: 15px 20px 20px;
+      background: #FCFCFC;
+      border-radius: 100%;
+      border: 2px solid #D9D9D9;
+    }
+    .btn-primary-link-btn-submit {
+      padding: 15px 20px 20px;
+      background: #FCFCFC;
+      border-radius: 50px;
+      width: 100%;
+      border: 2px solid #D9D9D9;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      font-size: 20px;
+    }
+  }
+  .btn-primary-link-btn-goto-account {
+    padding: 15px 20px 20px;
+    background: inherit;
+    border-radius: 15px;
+    width: 100%;
+    border: 1px solid #8B8B8B;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 50px;
+    font-size: 20px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    font-weight: bold;
+    &:hover {
+      background-color: $color_white;
+      box-shadow: 0px 15px 20px rgba(100, 100, 100, 0.4);
+      color: #000000;
+      transform: translateY(-7px);
+    }
+  }
+}
+
 .header-menu-text-pro {
   font-family: $FibraOne-Bold;
   font-size: 17px;
@@ -411,6 +588,8 @@ html, body {
   padding: 0.774rem 1.8rem !important;
   cursor: pointer;
   width: 100%;
+  font-weight: $font-weight600 !important;
+  font-weight: $font-weight600 !important;
   &:hover {
     color: $color_white;
     text-decoration: none;
@@ -845,22 +1024,13 @@ html, body {
     }
   }
   .latest-career {
-    background-image: url(../images/latest-career.png);
+    background-image: url(../images/career-opportunities.png);
     /* Centered text */
     .z-index-two {
       z-index: 2;
     }
     .border-cayn {
       border-bottom: 2px solid $smartgreen;
-    }
-    &:after {
-      content: "";
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      background: rgba(38, 97, 210, 0.6);
     }
     .LikeToggler {
       cursor: pointer;
@@ -909,6 +1079,7 @@ html, body {
 }
 
 .behind-the-score {
+  background-image: url(../images/behind-score.png);
   .border-yellow {
     border-bottom: 2px solid $textyellow;
   }
@@ -918,13 +1089,13 @@ html, body {
   .border-cayn {
     border-bottom: 2px solid $smartgreen;
   }
-  .label-div{
+  .label-div {
     position: relative;
     top: 35px;
   }
 }
 
-.financial-toolbox{
+.financial-toolbox {
   background-image: url(../images/01@1x.png);
   .z-index-two {
     z-index: 2;
@@ -937,14 +1108,111 @@ html, body {
   }
 }
 
+.meet-the-bank {
+  background-image: url(../images/01@1x.png);
+  .z-index-two {
+    z-index: 2;
+  }
+}
+
+.advertisement {
+
+}
+
+.most-popular-videos {
+  .owl-most-popular.owl-carousel .owl-dots.disabled, .owl-most-popular.owl-carousel .owl-nav.disabled {
+    display: block !important;
+  }
+  .owl-nav > div {
+    text-indent: -999px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 100px;
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all;
+  }
+
+  .owl-nav > div:hover {
+    opacity: 0.7;
+  }
+
+  .owl-prev {
+    height: 45px;
+    width: 45px;
+    background: url(../images/icon/left@1x.png) no-repeat center;
+    left: -110px;
+    top: 60px;
+  }
+
+  .owl-next {
+    height: 45px;
+    width: 45px;
+    background: url(../images/icon/right@1x.png) no-repeat center;
+    right: -110px;
+    top: 60px;
+  }
+  .owl-most-popular.owl-carousel .owl-item img.heart-img-link {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+  }
+}
+
+.max-width-850 {
+  max-width: 850px !important;
+}
+
+.most-read-articles {
+  .owl-most-articles.owl-carousel .owl-dots.disabled, .owl-most-articles.owl-carousel .owl-nav.disabled {
+    display: block !important;
+  }
+  .owl-nav > div {
+    text-indent: -999px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 100px;
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all;
+  }
+
+  .owl-nav > div:hover {
+    opacity: 0.7;
+  }
+
+  .owl-prev {
+    height: 45px;
+    width: 45px;
+    background: url(../images/icon/left@1x.png) no-repeat center;
+    left: -110px;
+    top: 60px;
+  }
+
+  .owl-next {
+    height: 45px;
+    width: 45px;
+    background: url(../images/icon/right@1x.png) no-repeat center;
+    right: -110px;
+    top: 60px;
+  }
+  .owl-most-popular.owl-carousel .owl-item img.heart-img-link {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+  }
+  h5.paragraph-bold-14-34.text-primary-brightsidepurple.text-left.m-0.mt-3.mb-3 {
+    min-height: 32px;
+  }
+}
+
 .custom-h4-font-size {
   letter-spacing: 1px;
   font-size: 1.8rem;
 }
 
-.line-height-25{
- line-height: 25px;
+.line-height-25 {
+  line-height: 25px;
 }
+
 .w-85 {
   width: 85% !important;
 }
@@ -963,8 +1231,24 @@ html, body {
     text-decoration: none;
   }
 }
+
+.letsgo-btn {
+  background: url(../images/icon/arrow-left.purple@1x.png) no-repeat right 6px;
+  padding-right: 55px;
+  background-size: 42px 11px;
+  line-height: normal;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 .border-radius-15 {
   border-radius: 15px !important;
+}
+
+.border-radius-top-bottom-15 {
+  border-top-left-radius: 15px !important;
+  border-top-right-radius: 15px !important;
 }
 
 #prev {
@@ -989,6 +1273,10 @@ html, body {
   color: $techgrey !important;
 }
 
+.text-primary-techgrey-dark {
+  color: $techgrey-dark !important;
+}
+
 .text-secondary-smartgreen {
   color: $smartgreen !important;
 }
@@ -1011,6 +1299,10 @@ html, body {
 
 .text-secondary-grey {
   color: $secondarygrey !important;
+}
+
+.text-semi-black {
+  color: #7B7B7B !important;
 }
 
 .wsmenu .wsmenu-list > li {
@@ -1444,19 +1736,21 @@ body.overview-and-grid {
     flex-direction: column;
     justify-content: center;
     overflow: auto;
+    max-width: 480px;
     @media(max-width: 768px) {
       min-height: calc(100vh - 20px);
     }
   }
   .modal-header {
     border-bottom: none;
-    padding: 10px 15px 15px 15px;
+    padding: 10px 15px 20px 15px;
     .modal-title {
       font-size: 1.8rem;
     }
     .close {
       font-size: 2rem;
       cursor: pointer;
+      padding: 2px !important;
       &:focus {
         outline: none !important;
       }
@@ -1690,6 +1984,41 @@ body.overview-and-grid {
       .social-footer-li {
         display: inline;
       }
+    }
+  }
+  .top-left-circle {
+    position: absolute;
+    top: -47px;
+    left: -99px;
+  }
+  .top-right-triangle {
+    position: absolute;
+    top: 0;
+    right: -32px;
+    img {
+      max-width: 180px;
+    }
+  }
+  .top-right-arc {
+    position: absolute;
+    top: 0;
+    right: -32px;
+    img {
+      max-width: 90px;
+      transform: rotate(170deg);
+    }
+  }
+  .top-left-dotted {
+    position: absolute;
+    top: 65px;
+    left: 110px;
+  }
+  .top-left-curve {
+    position: absolute;
+    top: 100px;
+    left: -21px;
+    img {
+      transform: rotate(160deg);
     }
   }
   .footer-details {

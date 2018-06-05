@@ -127,7 +127,8 @@ html, body {
   transition: 0.5s right ease;
   font-family: "OpenSans-regular", Sans Serif;
   letter-spacing: 0.5px;
-  position: inherit; }
+  position: inherit;
+  overflow-x: hidden; }
 
 /* GENERAL css */
 .btn-brightsidepurple {
@@ -147,6 +148,9 @@ html, body {
 
 .bg-tech-grey {
   background-color: #f2f2f2 !important; }
+
+.bg-tech-grey-dark {
+  background-color: #E3E4E5 !important; }
 
 .bg-pure-orange {
   background-color: #ea520f !important; }
@@ -289,6 +293,151 @@ html, body {
   font-size: 17px;
   padding: 15px 20px; }
 
+.body-link-3 {
+  padding: 0 !important; }
+  .body-link-3 .top-right {
+    position: absolute;
+    top: 10px;
+    right: 25px; }
+  .body-link-3 .btn-primary-link-btn {
+    padding: 15px 20px 20px;
+    background: #FCFCFC;
+    border-radius: 100%;
+    border: 2px solid #D9D9D9; }
+  .body-link-3 .btn-primary-link-btn-submit {
+    padding: 15px 20px 20px;
+    background: #FCFCFC;
+    border-radius: 50px;
+    width: 100%;
+    border: 2px solid #D9D9D9;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px; }
+
+.link-bank-modal-body {
+  width: 73%;
+  margin: 0 auto 40px auto;
+  -webkit-box-shadow: 5px 5px 50px 0 lightgray;
+  -moz-box-shadow: 5px 5px 50px 0 lightgray;
+  box-shadow: 5px 5px 50px 0 lightgray; }
+  .link-bank-modal-body .bank-listing-div {
+    max-height: 310px;
+    overflow-y: scroll;
+    overflow-x: hidden; }
+  .link-bank-modal-body .modal-header-link-2 {
+    padding: 5px 15px 30px 15px !important; }
+  .link-bank-modal-body .modal-header-link-3 {
+    padding: 0 !important; }
+  .link-bank-modal-body .bank-login-form-3 .send-security-code {
+    background-color: #5D5D5D;
+    display: inline-flex;
+    width: 100%; }
+  .link-bank-modal-body .bank-login-form-3 .account-successfully {
+    background-color: #7F7F7F;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px; }
+  .link-bank-modal-body .bank-login-form-3 .heading4-regular-18-24 {
+    font-size: 18px;
+    position: relative;
+    top: 6px;
+    left: 15px;
+    color: #F9F9F9; }
+  .link-bank-modal-body .bank-login-form-3 .heading4-regular-18-24.account-was {
+    font-size: 21px;
+    position: relative;
+    color: #F9F9F9;
+    padding-top: 15px;
+    top: auto;
+    left: auto;
+    line-height: 30px; }
+  .link-bank-modal-body .bank-login-form-3 .heading4-regular-18-24.like-to-send {
+    font-size: 18px;
+    position: relative;
+    top: 6px;
+    left: 0;
+    color: #8B8B8B; }
+  .link-bank-modal-body .bank-login-form-3 .custom-bank-form-group {
+    border-radius: 20px;
+    padding: .475rem 1rem;
+    border: 2px solid #C1C1C1;
+    font-size: 17px;
+    font-weight: 600; }
+  .link-bank-modal-body .bank-login-form-3 .custom-bank-form-group-lg {
+    border-radius: 10px;
+    padding: 0.75rem 1rem;
+    border: 2px solid #C1C1C1;
+    font-size: 20px;
+    font-weight: 600; }
+  .link-bank-modal-body .bank-login-form-3 ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #9A9A9A; }
+  .link-bank-modal-body .bank-login-form-3 ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #9A9A9A; }
+  .link-bank-modal-body .bank-login-form-3 :-ms-input-placeholder {
+    /* IE 10+ */
+    color: #9A9A9A; }
+  .link-bank-modal-body .bank-login-form-3 :-moz-placeholder {
+    /* Firefox 18- */
+    color: #9A9A9A; }
+  .link-bank-modal-body .bank-login-form .custom-bank-form-group {
+    border: none;
+    box-shadow: none !important;
+    padding: 0 !important;
+    font-size: 1.4rem;
+    max-height: 25px;
+    position: relative;
+    bottom: 4px; }
+  .link-bank-modal-body .bank-login-form .form-group {
+    background-color: #ffffff;
+    padding: 2px 10px 5px 10px;
+    border: 2px solid #C1C1C1;
+    border-radius: 10px;
+    font-size: 0.8rem; }
+  .link-bank-modal-body .bank-login-form ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #9A9A9A; }
+  .link-bank-modal-body .bank-login-form ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #9A9A9A; }
+  .link-bank-modal-body .bank-login-form :-ms-input-placeholder {
+    /* IE 10+ */
+    color: #9A9A9A; }
+  .link-bank-modal-body .bank-login-form :-moz-placeholder {
+    /* Firefox 18- */
+    color: #9A9A9A; }
+  .link-bank-modal-body .bank-login-form .btn-primary-link-btn {
+    padding: 15px 20px 20px;
+    background: #FCFCFC;
+    border-radius: 100%;
+    border: 2px solid #D9D9D9; }
+  .link-bank-modal-body .bank-login-form .btn-primary-link-btn-submit {
+    padding: 15px 20px 20px;
+    background: #FCFCFC;
+    border-radius: 50px;
+    width: 100%;
+    border: 2px solid #D9D9D9;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    font-size: 20px; }
+  .link-bank-modal-body .btn-primary-link-btn-goto-account {
+    padding: 15px 20px 20px;
+    background: inherit;
+    border-radius: 15px;
+    width: 100%;
+    border: 1px solid #8B8B8B;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 50px;
+    font-size: 20px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    font-weight: bold; }
+    .link-bank-modal-body .btn-primary-link-btn-goto-account:hover {
+      background-color: #ffffff;
+      box-shadow: 0px 15px 20px rgba(100, 100, 100, 0.4);
+      color: #000000;
+      transform: translateY(-7px); }
+
 .header-menu-text-pro {
   font-family: "FibraOne-Bold", Sans Serif;
   font-size: 17px;
@@ -344,7 +493,9 @@ html, body {
   border-radius: 30px !important;
   padding: 0.774rem 1.8rem !important;
   cursor: pointer;
-  width: 100%; }
+  width: 100%;
+  font-weight: 600 !important;
+  font-weight: 600 !important; }
   .btn-primary-large-text:hover {
     color: #ffffff;
     text-decoration: none;
@@ -684,20 +835,12 @@ html, body {
         max-width: 352px;
         line-height: 23px; }
   .hero-container .latest-career {
-    background-image: url(../images/latest-career.png);
+    background-image: url(../images/career-opportunities.png);
     /* Centered text */ }
     .hero-container .latest-career .z-index-two {
       z-index: 2; }
     .hero-container .latest-career .border-cayn {
       border-bottom: 2px solid #44bca3; }
-    .hero-container .latest-career:after {
-      content: "";
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      background: rgba(38, 97, 210, 0.6); }
     .hero-container .latest-career .LikeToggler {
       cursor: pointer; }
 
@@ -732,15 +875,17 @@ html, body {
   .best-help-you .card .p-text-general {
     color: #1e1e20; }
 
-.behind-the-score .border-yellow {
-  border-bottom: 2px solid #fabb36; }
-.behind-the-score .border-ornage {
-  border-bottom: 2px solid #ea520f; }
-.behind-the-score .border-cayn {
-  border-bottom: 2px solid #44bca3; }
-.behind-the-score .label-div {
-  position: relative;
-  top: 35px; }
+.behind-the-score {
+  background-image: url(../images/behind-score.png); }
+  .behind-the-score .border-yellow {
+    border-bottom: 2px solid #fabb36; }
+  .behind-the-score .border-ornage {
+    border-bottom: 2px solid #ea520f; }
+  .behind-the-score .border-cayn {
+    border-bottom: 2px solid #44bca3; }
+  .behind-the-score .label-div {
+    position: relative;
+    top: 35px; }
 
 .financial-toolbox {
   background-image: url(../images/01@1x.png); }
@@ -750,6 +895,72 @@ html, body {
     border-bottom: 2px solid #44bca3; }
   .financial-toolbox .LikeToggler {
     cursor: pointer; }
+
+.meet-the-bank {
+  background-image: url(../images/01@1x.png); }
+  .meet-the-bank .z-index-two {
+    z-index: 2; }
+
+.most-popular-videos .owl-most-popular.owl-carousel .owl-dots.disabled, .most-popular-videos .owl-most-popular.owl-carousel .owl-nav.disabled {
+  display: block !important; }
+.most-popular-videos .owl-nav > div {
+  text-indent: -999px;
+  overflow: hidden;
+  position: absolute;
+  bottom: 100px;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all; }
+.most-popular-videos .owl-nav > div:hover {
+  opacity: 0.7; }
+.most-popular-videos .owl-prev {
+  height: 45px;
+  width: 45px;
+  background: url(../images/icon/left@1x.png) no-repeat center;
+  left: -110px;
+  top: 60px; }
+.most-popular-videos .owl-next {
+  height: 45px;
+  width: 45px;
+  background: url(../images/icon/right@1x.png) no-repeat center;
+  right: -110px;
+  top: 60px; }
+.most-popular-videos .owl-most-popular.owl-carousel .owl-item img.heart-img-link {
+  height: 30px;
+  width: 30px;
+  cursor: pointer; }
+
+.max-width-850 {
+  max-width: 850px !important; }
+
+.most-read-articles .owl-most-articles.owl-carousel .owl-dots.disabled, .most-read-articles .owl-most-articles.owl-carousel .owl-nav.disabled {
+  display: block !important; }
+.most-read-articles .owl-nav > div {
+  text-indent: -999px;
+  overflow: hidden;
+  position: absolute;
+  bottom: 100px;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all; }
+.most-read-articles .owl-nav > div:hover {
+  opacity: 0.7; }
+.most-read-articles .owl-prev {
+  height: 45px;
+  width: 45px;
+  background: url(../images/icon/left@1x.png) no-repeat center;
+  left: -110px;
+  top: 60px; }
+.most-read-articles .owl-next {
+  height: 45px;
+  width: 45px;
+  background: url(../images/icon/right@1x.png) no-repeat center;
+  right: -110px;
+  top: 60px; }
+.most-read-articles .owl-most-popular.owl-carousel .owl-item img.heart-img-link {
+  height: 30px;
+  width: 30px;
+  cursor: pointer; }
+.most-read-articles h5.paragraph-bold-14-34.text-primary-brightsidepurple.text-left.m-0.mt-3.mb-3 {
+  min-height: 32px; }
 
 .custom-h4-font-size {
   letter-spacing: 1px;
@@ -773,8 +984,20 @@ html, body {
   .apply-btn:hover {
     text-decoration: none; }
 
+.letsgo-btn {
+  background: url(../images/icon/arrow-left.purple@1x.png) no-repeat right 6px;
+  padding-right: 55px;
+  background-size: 42px 11px;
+  line-height: normal; }
+  .letsgo-btn:hover {
+    text-decoration: underline; }
+
 .border-radius-15 {
   border-radius: 15px !important; }
+
+.border-radius-top-bottom-15 {
+  border-top-left-radius: 15px !important;
+  border-top-right-radius: 15px !important; }
 
 #prev {
   position: relative;
@@ -793,6 +1016,9 @@ html, body {
 .text-primary-techgrey {
   color: #f2f2f2 !important; }
 
+.text-primary-techgrey-dark {
+  color: #E3E4E5 !important; }
+
 .text-secondary-smartgreen {
   color: #44bca3 !important; }
 
@@ -810,6 +1036,9 @@ html, body {
 
 .text-secondary-grey {
   color: #AEB6B9 !important; }
+
+.text-semi-black {
+  color: #7B7B7B !important; }
 
 .wsmenu .wsmenu-list > li {
   font-family: "OpenSans-bold", Sans Serif !important; }
@@ -1143,18 +1372,20 @@ body.overview-and-grid .Pattern-img-div img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  overflow: auto; }
+  overflow: auto;
+  max-width: 480px; }
   @media (max-width: 768px) {
     .custom-modal .modal-dialog {
       min-height: calc(100vh - 20px); } }
 .custom-modal .modal-header {
   border-bottom: none;
-  padding: 10px 15px 15px 15px; }
+  padding: 10px 15px 20px 15px; }
   .custom-modal .modal-header .modal-title {
     font-size: 1.8rem; }
   .custom-modal .modal-header .close {
     font-size: 2rem;
-    cursor: pointer; }
+    cursor: pointer;
+    padding: 2px !important; }
     .custom-modal .modal-header .close:focus {
       outline: none !important; }
 .custom-modal .modal-content {
@@ -1338,6 +1569,33 @@ body.overview-and-grid .Pattern-img-div img {
     display: inline; }
     .pre-signup-footer .pre-signup-footer-bg .social-footer-ul .social-footer-li {
       display: inline; }
+.pre-signup-footer .top-left-circle {
+  position: absolute;
+  top: -47px;
+  left: -99px; }
+.pre-signup-footer .top-right-triangle {
+  position: absolute;
+  top: 0;
+  right: -32px; }
+  .pre-signup-footer .top-right-triangle img {
+    max-width: 180px; }
+.pre-signup-footer .top-right-arc {
+  position: absolute;
+  top: 0;
+  right: -32px; }
+  .pre-signup-footer .top-right-arc img {
+    max-width: 90px;
+    transform: rotate(170deg); }
+.pre-signup-footer .top-left-dotted {
+  position: absolute;
+  top: 65px;
+  left: 110px; }
+.pre-signup-footer .top-left-curve {
+  position: absolute;
+  top: 100px;
+  left: -21px; }
+  .pre-signup-footer .top-left-curve img {
+    transform: rotate(160deg); }
 .pre-signup-footer .footer-details {
   width: 85%;
   font-size: 0.6rem;

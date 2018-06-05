@@ -21,11 +21,62 @@
         position: relative !important;
         text-align: center;
     }
+
+    .most-read-articles .owl-nav > div{
+        display: none;
+    }
+    .most-popular-videos .owl-nav > div{
+        display: none;
+    }
+    .centered-text .credit-without-score-text{
+        font-size: 1.5rem!important;
+    }
+    .hero-container .hero-banner .centered-text .opportunitytxt{
+        font-size: 0.9rem!important;
+    }
+    .latest-career p.paragraph-bold-14-34.mb-1.mt-3.p-text-general.text-white {
+        min-height: 45px;
+    }
+    .financial-toolbox {
+        background-image: none;
+    }
+    .meet-the-bank {
+        background-image: none;
+    }
+    .financial-toolbox p.paragraph-regular-14-19.mb-1.mt-2.text-primary-black {
+        min-height: 85px;
+    }
 }
 
 @media (max-width: 480px) {
     .margin-top-primary-secondary {
         margin: 20px 0 0 0 !important;
+    }
+
+    .most-read-articles .owl-nav > div{
+        display: none;
+    }
+    .most-popular-videos .owl-nav > div{
+        display: none;
+    }
+    .centered-text .credit-without-score-text {
+        font-size: 1.0rem!important;
+        line-height: 25px!important;
+    }
+    .hero-container .hero-banner .centered-text {
+        top: 5px!important;
+        left: 16px!important;
+        display: none;
+    }
+    .hero-container .hero-banner .centered-text .opportunitytxt {
+        font-size: 0.9rem!important;
+        line-height: 17px!important;
+    }
+    .heading2-bold-30-38{
+        font-size: 1.4rem!important;
+    }
+    .financial-toolbox p.paragraph-regular-14-19.mb-1.mt-2.text-primary-black {
+        min-height: 60px;
     }
 }
 
