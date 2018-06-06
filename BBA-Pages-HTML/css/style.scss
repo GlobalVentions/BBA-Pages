@@ -165,6 +165,11 @@ html, body {
   }
 }
 
+.dropdownarrow-show {
+  background: url(../images/icon/chevron-inactive.mediumGray@1x.png) no-repeat right 6px;
+  background-position: bottom;
+}
+
 .bg-tech-grey {
   background-color: $techgrey !important;
 }
@@ -246,6 +251,11 @@ html, body {
 .heading6-bold-10-13 {
   font-family: $OpenSans-bold !important;
   font-size: 10px !important;
+}
+
+.heading6-regular {
+  font-family: $FibraOneAlt-Heavy !important;
+  font-size: 18px;
 }
 
 .heading6-regular-10-13 {
@@ -348,7 +358,7 @@ html, body {
 .header-menu-text {
   font-family: $FibraOne-Bold;
   font-size: 17px;
-  padding: 15px 20px;
+  padding: 15px 0;
 }
 
 .body-link-3 {
@@ -374,6 +384,21 @@ html, body {
     -moz-border-radius: 50px;
   }
 
+}
+
+ul.what-you-get {
+  list-style: none;
+}
+
+ul.what-you-get li{
+  line-height: 35px;
+}
+.health-guru-heading{
+  font-size: 2.4rem;
+}
+
+ul.what-you-get li:before {
+  content: "\2714\0020";
 }
 
 .link-bank-modal-body {
@@ -753,6 +778,8 @@ html, body {
   padding: 1.6rem 1.8rem !important;
   cursor: pointer;
   width: 100%;
+  box-shadow: 0 0 25px 0 rgba(250, 209, 54, 0.8);
+  -webkit-box-shadow: 0 0 25px 0 rgba(250, 209, 54, 0.8);
   .btn-arrow {
     position: absolute;
     bottom: 33px;
@@ -1235,6 +1262,15 @@ html, body {
 .letsgo-btn {
   background: url(../images/icon/arrow-left.purple@1x.png) no-repeat right 6px;
   padding-right: 55px;
+  background-size: 42px 11px;
+  line-height: normal;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.letsgo-btn-reverse {
+  background: url(../images/icon/arrow-right.purple@1x.png) no-repeat left 6px;
+  padding-left: 55px;
   background-size: 42px 11px;
   line-height: normal;
   &:hover {
@@ -2109,6 +2145,33 @@ body.overview-and-grid {
       }
     }
   }
+}
+
+.financial-health-guru-block{
+  position: relative;
+  .financial-health-guru-img{
+    position:absolute;
+    top:20%;
+  }
+}
+.lock-img{
+  width: 25px;
+  position: relative;
+  bottom: 2px;
+}
+
+.health-guru-left{
+  position: absolute;
+  top: 90px;
+  left: -77px;
+  img{
+    transform: rotate(180deg);
+  }
+}
+.health-dot-left{
+  position: absolute;
+  top: 75px;
+  left: 170px;
 }
 
 /* Media CSS start */

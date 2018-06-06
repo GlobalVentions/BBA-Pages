@@ -543,10 +543,22 @@ $(document).ready(function(){
     });
 });
 
+$(document).ready(function(){
+    $.get("pro-header.html", function(data) {
+        $("#pro-header").html(data);
+    });
+});
+
 /* Js code for include footer file */
 $(document).ready(function(){
     $.get("footer.html", function(data) {
         $("#footer").html(data);
+    });
+});
+
+$(document).ready(function(){
+    $.get("pro-footer.html", function(data) {
+        $("#pro-footer").html(data);
     });
 });
 

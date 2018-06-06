@@ -21,7 +21,12 @@
         position: relative !important;
         text-align: center;
     }
-
+    .financial-health-guru-block .financial-health-guru-img {
+        position: inherit;
+        top: auto;
+        display: block;
+        margin: 0 auto;
+    }
     .most-read-articles .owl-nav > div{
         display: none;
     }
@@ -49,6 +54,26 @@
 }
 
 @media (max-width: 480px) {
+    .health-guru-heading {
+        font-size: 1.4rem;
+    }
+    .financial-health-guru-block .financial-health-guru-img {
+        position: inherit;
+        top: auto;
+    }
+    .great-financial-guru .heading2-regular-30-38 {
+        font-size: 1.4rem;
+    }
+
+    .btn-primary-xlarge-text-icon .link1-bold-18-24{
+        font-size: 15px!important;
+    }
+    .btn-primary-xlarge-text-icon{
+        padding: 1.2rem 1.8rem !important;
+    }
+    .btn-primary-xlarge-text-icon .btn-arrow {
+        bottom: 25px;
+    }
     .margin-top-primary-secondary {
         margin: 20px 0 0 0 !important;
     }

@@ -146,6 +146,10 @@ html, body {
   .btn-brightsidepurple:focus {
     outline: none !important; }
 
+.dropdownarrow-show {
+  background: url(../images/icon/chevron-inactive.mediumGray@1x.png) no-repeat right 6px;
+  background-position: bottom; }
+
 .bg-tech-grey {
   background-color: #f2f2f2 !important; }
 
@@ -209,6 +213,10 @@ html, body {
 .heading6-bold-10-13 {
   font-family: "OpenSans-bold", Sans Serif !important;
   font-size: 10px !important; }
+
+.heading6-regular {
+  font-family: "FibraOneAlt-Heavy", Sans Serif !important;
+  font-size: 18px; }
 
 .heading6-regular-10-13 {
   font-family: "OpenSans-regular", Sans Serif !important;
@@ -291,7 +299,7 @@ html, body {
 .header-menu-text {
   font-family: "FibraOne-Bold", Sans Serif;
   font-size: 17px;
-  padding: 15px 20px; }
+  padding: 15px 0; }
 
 .body-link-3 {
   padding: 0 !important; }
@@ -312,6 +320,18 @@ html, body {
     border: 2px solid #D9D9D9;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px; }
+
+ul.what-you-get {
+  list-style: none; }
+
+ul.what-you-get li {
+  line-height: 35px; }
+
+.health-guru-heading {
+  font-size: 2.4rem; }
+
+ul.what-you-get li:before {
+  content: "\2714\0020"; }
 
 .link-bank-modal-body {
   width: 73%;
@@ -629,7 +649,9 @@ html, body {
   border-radius: 50px !important;
   padding: 1.6rem 1.8rem !important;
   cursor: pointer;
-  width: 100%; }
+  width: 100%;
+  box-shadow: 0 0 25px 0 rgba(250, 209, 54, 0.8);
+  -webkit-box-shadow: 0 0 25px 0 rgba(250, 209, 54, 0.8); }
   .btn-primary-xlarge-text-icon .btn-arrow {
     position: absolute;
     bottom: 33px;
@@ -990,6 +1012,14 @@ html, body {
   background-size: 42px 11px;
   line-height: normal; }
   .letsgo-btn:hover {
+    text-decoration: underline; }
+
+.letsgo-btn-reverse {
+  background: url(../images/icon/arrow-right.purple@1x.png) no-repeat left 6px;
+  padding-left: 55px;
+  background-size: 42px 11px;
+  line-height: normal; }
+  .letsgo-btn-reverse:hover {
     text-decoration: underline; }
 
 .border-radius-15 {
@@ -1659,6 +1689,29 @@ body.overview-and-grid .Pattern-img-div img {
           text-decoration-color: #cccccc !important; }
   .pro-signup-footer .footer-details .footer-bootom-second .footer-copyright-text {
     font-size: 0.9rem; }
+
+.financial-health-guru-block {
+  position: relative; }
+  .financial-health-guru-block .financial-health-guru-img {
+    position: absolute;
+    top: 20%; }
+
+.lock-img {
+  width: 25px;
+  position: relative;
+  bottom: 2px; }
+
+.health-guru-left {
+  position: absolute;
+  top: 90px;
+  left: -77px; }
+  .health-guru-left img {
+    transform: rotate(180deg); }
+
+.health-dot-left {
+  position: absolute;
+  top: 75px;
+  left: 170px; }
 
 /* Media CSS start */
 @media (max-width: 768px) {
