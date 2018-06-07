@@ -681,7 +681,7 @@ ul.what-you-get li:before {
 .custom-radio-bba [type="radio"]:checked + label,
 .custom-radio-bba [type="radio"]:not(:checked) + label {
   position: relative;
-  padding-left: 28px;
+  padding-left: 35px;
   cursor: pointer;
   line-height: 20px;
   display: inline-block;
@@ -692,16 +692,16 @@ ul.what-you-get li:before {
   position: absolute;
   left: 0;
   top: 0;
-  width: 22px;
-  height: 22px;
+  width: 23px;
+  height: 23px;
   border: 1px solid #cccccc;
   border-radius: 100%;
   background: #ffffff; }
 .custom-radio-bba [type="radio"]:checked + label:after,
 .custom-radio-bba [type="radio"]:not(:checked) + label:after {
   content: '';
-  width: 14px;
-  height: 14px;
+  width: 15px;
+  height: 15px;
   background: #6b17b3;
   position: absolute;
   top: 4px;
@@ -1492,6 +1492,11 @@ body.overview-and-grid .Pattern-img-div img {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     border: 2px solid #AAB2B5; }
+  .form-inputs .wrapper-dropdown-3.idleEmpty.active {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    border: 2px solid #6b17b3; }
   .form-inputs .wrapper-dropdown-3.idlefilled {
     box-shadow: none;
     -webkit-box-shadow: none;
@@ -1710,8 +1715,38 @@ body.overview-and-grid .Pattern-img-div img {
 
 .health-dot-left {
   position: absolute;
-  top: 75px;
+  top: 121px;
   left: 170px; }
+
+.max-width-450 {
+  max-width: 450px; }
+
+.tellus-more-about-you label.more-about-label {
+  font-size: 13px; }
+.tellus-more-about-you .more-about-input {
+  padding: 0.675rem .75rem;
+  border: 2px solid #AAB2B5; }
+  .tellus-more-about-you .more-about-input:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #6b17b3;
+    outline: 0;
+    box-shadow: none; }
+.tellus-more-about-you .social-security-input {
+  padding-left: 35px;
+  padding-right: 100px; }
+.tellus-more-about-you .input-learn-more {
+  right: 12px;
+  position: absolute;
+  top: 38px;
+  z-index: 5; }
+.tellus-more-about-you .social-security-lock {
+  left: 10px;
+  position: absolute;
+  top: 42px;
+  z-index: 5; }
+.tellus-more-about-you .occupation-input {
+  padding-right: 100px; }
 
 /* Media CSS start */
 @media (max-width: 768px) {

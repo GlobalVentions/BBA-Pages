@@ -390,10 +390,11 @@ ul.what-you-get {
   list-style: none;
 }
 
-ul.what-you-get li{
+ul.what-you-get li {
   line-height: 35px;
 }
-.health-guru-heading{
+
+.health-guru-heading {
   font-size: 2.4rem;
 }
 
@@ -819,7 +820,7 @@ ul.what-you-get li:before {
   [type="radio"]:checked + label,
   [type="radio"]:not(:checked) + label {
     position: relative;
-    padding-left: 28px;
+    padding-left: 35px;
     cursor: pointer;
     line-height: 20px;
     display: inline-block;
@@ -831,8 +832,8 @@ ul.what-you-get li:before {
     position: absolute;
     left: 0;
     top: 0;
-    width: 22px;
-    height: 22px;
+    width: 23px;
+    height: 23px;
     border: 1px solid $color_Silver;
     border-radius: 100%;
     background: $color_white;
@@ -840,8 +841,8 @@ ul.what-you-get li:before {
   [type="radio"]:checked + label:after,
   [type="radio"]:not(:checked) + label:after {
     content: '';
-    width: 14px;
-    height: 14px;
+    width: 15px;
+    height: 15px;
     background: $brightsidepurple;
     position: absolute;
     top: 4px;
@@ -1268,6 +1269,7 @@ ul.what-you-get li:before {
     text-decoration: underline;
   }
 }
+
 .letsgo-btn-reverse {
   background: url(../images/icon/arrow-right.purple@1x.png) no-repeat left 6px;
   padding-left: 55px;
@@ -1851,6 +1853,12 @@ body.overview-and-grid {
     -moz-box-shadow: none;
     border: 2px solid #AAB2B5;
   }
+  .wrapper-dropdown-3.idleEmpty.active {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    border: 2px solid #6b17b3;
+  }
 
   .wrapper-dropdown-3.idlefilled {
     box-shadow: none;
@@ -2147,31 +2155,73 @@ body.overview-and-grid {
   }
 }
 
-.financial-health-guru-block{
+.financial-health-guru-block {
   position: relative;
-  .financial-health-guru-img{
-    position:absolute;
-    top:20%;
+  .financial-health-guru-img {
+    position: absolute;
+    top: 20%;
   }
 }
-.lock-img{
+
+.lock-img {
   width: 25px;
   position: relative;
   bottom: 2px;
 }
 
-.health-guru-left{
+.health-guru-left {
   position: absolute;
   top: 90px;
   left: -77px;
-  img{
+  img {
     transform: rotate(180deg);
   }
 }
-.health-dot-left{
+
+.health-dot-left {
   position: absolute;
-  top: 75px;
+  top: 121px;
   left: 170px;
+}
+
+.max-width-450 {
+  max-width: 450px;
+}
+
+.tellus-more-about-you {
+  label.more-about-label {
+    font-size: 13px;
+  }
+  .more-about-input {
+    padding: 0.675rem .75rem;
+    border: 2px solid #AAB2B5;
+    &:focus {
+      color: #495057;
+      background-color: #fff;
+      border-color: $brightsidepurple;
+      outline: 0;
+      box-shadow: none;
+    }
+  }
+  .social-security-input {
+    padding-left: 35px;
+    padding-right: 100px;
+  }
+  .input-learn-more {
+    right: 12px;
+    position: absolute;
+    top: 38px;
+    z-index: 5;
+  }
+  .social-security-lock {
+    left: 10px;
+    position: absolute;
+    top: 42px;
+    z-index: 5;
+  }
+  .occupation-input{
+    padding-right: 100px;
+  }
 }
 
 /* Media CSS start */
