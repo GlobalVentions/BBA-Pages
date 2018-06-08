@@ -856,6 +856,12 @@ ul.what-you-get li:before {
         font-size: 1.2rem !important;
         max-width: 352px;
         line-height: 23px; }
+    .hero-container .hero-banner .bottom-left {
+      position: absolute;
+      bottom: -50px;
+      left: 50%;
+      width: 200px;
+      transform: translate(-50%, -50%); }
   .hero-container .latest-career {
     background-image: url(../images/career-opportunities.png);
     /* Centered text */ }
@@ -947,6 +953,34 @@ ul.what-you-get li:before {
   right: -110px;
   top: 60px; }
 .most-popular-videos .owl-most-popular.owl-carousel .owl-item img.heart-img-link {
+  height: 30px;
+  width: 30px;
+  cursor: pointer; }
+
+.owl-career-opportunities .owl-most-popular.owl-carousel .owl-dots.disabled, .owl-career-opportunities .owl-most-popular.owl-carousel .owl-nav.disabled {
+  display: block !important; }
+.owl-career-opportunities .owl-nav > div {
+  text-indent: -999px;
+  overflow: hidden;
+  position: absolute;
+  bottom: 100px;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all; }
+.owl-career-opportunities .owl-nav > div:hover {
+  opacity: 0.7; }
+.owl-career-opportunities .owl-prev {
+  height: 45px;
+  width: 45px;
+  background: url(../images/icon/left@1x.png) no-repeat center;
+  left: -5px;
+  top: 100px; }
+.owl-career-opportunities .owl-next {
+  height: 45px;
+  width: 45px;
+  background: url(../images/icon/right@1x.png) no-repeat center;
+  right: -6px;
+  top: 100px; }
+.owl-career-opportunities .owl-most-popular.owl-carousel .owl-item img.heart-img-link {
   height: 30px;
   width: 30px;
   cursor: pointer; }

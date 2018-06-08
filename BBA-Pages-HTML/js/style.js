@@ -44,8 +44,8 @@ $(function () {
             }
         });
     }
-    if ($('.owl-most-popular').length) {
-        $('.owl-most-popular').owlCarousel({
+    if ($('.owl-career-opportunities').length) {
+        $('.owl-career-opportunities').owlCarousel({
             autoplay: true,
             autoplayTimeout: 6500,
             smartSpeed: 1000,

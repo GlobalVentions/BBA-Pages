@@ -39,8 +39,11 @@
     .hero-container .hero-banner .centered-text .opportunitytxt{
         font-size: 0.9rem!important;
     }
-    .latest-career p.paragraph-bold-14-34.mb-1.mt-3.p-text-general.text-white {
+/*    .latest-career p.paragraph-bold-14-34.mb-1.mt-3.p-text-general.text-white {
         min-height: 45px;
+    }*/
+    .owl-career-opportunities .owl-item img {
+        width: auto !important;
     }
     .financial-toolbox {
         background-image: none;
@@ -85,23 +88,58 @@
         display: none;
     }
     .centered-text .credit-without-score-text {
-        font-size: 1.0rem!important;
+        font-size: 1.5rem!important;
         line-height: 25px!important;
     }
     .hero-container .hero-banner .centered-text {
-        top: 5px!important;
-        left: 16px!important;
-        display: none;
+        top: 30px!important;
+        left: 30px!important;
     }
     .hero-container .hero-banner .centered-text .opportunitytxt {
-        font-size: 0.9rem!important;
+        font-size: 0.8rem!important;
         line-height: 17px!important;
+        max-width: 168px;
     }
     .heading2-bold-30-38{
-        font-size: 1.4rem!important;
+        font-size: 1.1rem!important;
+    }
+    .p-text-general {
+        font-size: 0.8rem !important;
     }
     .financial-toolbox p.paragraph-regular-14-19.mb-1.mt-2.text-primary-black {
         min-height: 60px;
+    }
+    .hero-container .hero-banner .centered-text {
+        max-width: 200px;
+    }
+    .best-help-you .card{
+        min-height: auto;
+    }
+    .min-height-mobile{
+        min-height: 145px;
+    }
+    .hero-container .latest-career {
+        background-image: url(../images/career-opportunities-mobile-bg.png);
+    }
+    .behind-the-score {
+        background-image: url(../images/behind-score-mobile.png);
+    }
+    .behind-the-score .top-right {
+        position: absolute;
+        top: 8%;
+        right: 90px;
+    }
+    .general-size {
+        font-size: 1.3rem!important;
+        line-height: 30px;
+    }
+    .max-width-250{
+        max-width: 250px;
+        margin: 0 auto;
+    }
+    .custom-h4-font-size {
+        letter-spacing: 1px;
+        font-size: 1.5rem;
     }
 }
 
