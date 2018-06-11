@@ -20,6 +20,75 @@ $(function () {
         $("#next").toggle((index !== $divs.length - 1));
         $("#prev").toggle(index !== 0);
     }
+
+    /* JS Code for video slider */
+    if ($('.owl-most-popular').length) {
+        $('.owl-most-popular').owlCarousel({
+            autoplay: true,
+            autoplayTimeout: 6500,
+            smartSpeed: 1000,
+            loop: true,
+            nav: true,
+            dots: false,
+            margin: 15,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 2
+                },
+                992: {
+                    items: 3
+                }
+            }
+        });
+    }
+    if ($('.owl-career-opportunities').length) {
+        $('.owl-career-opportunities').owlCarousel({
+            autoplay: true,
+            autoplayTimeout: 6500,
+            smartSpeed: 1000,
+            loop: true,
+            nav: true,
+            dots: false,
+            margin: 15,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 2
+                },
+                992: {
+                    items: 3
+                }
+            }
+        });
+    }
+
+    if ($('.owl-most-articles').length) {
+        $('.owl-most-articles').owlCarousel({
+            autoplay: true,
+            autoplayTimeout: 6500,
+            smartSpeed: 1000,
+            loop: true,
+            nav: true,
+            dots: false,
+            margin: 15,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 2
+                },
+                992: {
+                    items: 3
+                }
+            }
+        });
+    }
 });
 
 /**/
@@ -465,4 +534,82 @@ DropDown.prototype = {
 
 $(function() {
     var dd1 = new DropDown( $('#dd11') );
+});
+
+/* Js code for include header file */
+$(document).ready(function(){
+    $.get("header.html", function(data) {
+        $("#header").html(data);
+    });
+});
+
+$(document).ready(function(){
+    $.get("pro-header.html", function(data) {
+        $("#pro-header").html(data);
+    });
+});
+
+/* Js code for include footer file */
+$(document).ready(function(){
+    $.get("footer.html", function(data) {
+        $("#footer").html(data);
+    });
+});
+
+$(document).ready(function(){
+    $.get("pro-footer.html", function(data) {
+        $("#pro-footer").html(data);
+    });
+});
+
+/* Toggle Image Change Code */
+$(".LikeToggler").click(function() {
+    $(this).find('img').toggle();
+});
+
+/* JS code for hide show link your bank form */
+$(document).ready(function(){
+    $(".stepsDivs .DivStepDiv").each(function(e) {
+        if (e != 0)
+            $(this).hide();
+    });
+
+    $("#next-form").click(function(){
+        if ($(".stepsDivs .DivStepDiv:visible").next().length != 0)
+            $(".stepsDivs .DivStepDiv:visible").next().show().prev().hide();
+        else {
+            $(".stepsDivs .DivStepDiv:visible").hide();
+            $(".stepsDivs .DivStepDiv:first").show();
+        }
+        return false;
+    });
+
+    $("#prev-form").click(function(){
+        if ($(".stepsDivs .DivStepDiv:visible").prev().length != 0)
+            $(".stepsDivs .DivStepDiv:visible").prev().show().next().hide();
+        else {
+            $(".stepsDivs .DivStepDiv:visible").hide();
+            $(".stepsDivs .DivStepDiv:last").show();
+        }
+        return false;
+    });
+    $("#next-form-1").click(function(){
+        if ($(".stepsDivs .DivStepDiv:visible").next().length != 0)
+            $(".stepsDivs .DivStepDiv:visible").next().show().prev().hide();
+        else {
+            $(".stepsDivs .DivStepDiv:visible").hide();
+            $(".stepsDivs .DivStepDiv:first").show();
+        }
+        return false;
+    });
+
+    $("#prev-form-1").click(function(){
+        if ($(".stepsDivs .DivStepDiv:visible").prev().length != 0)
+            $(".stepsDivs .DivStepDiv:visible").prev().show().next().hide();
+        else {
+            $(".stepsDivs .DivStepDiv:visible").hide();
+            $(".stepsDivs .DivStepDiv:last").show();
+        }
+        return false;
+    });
 });
