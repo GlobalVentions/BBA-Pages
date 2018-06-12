@@ -65,47 +65,71 @@
     .financial-toolbox p.paragraph-regular-14-19.mb-1.mt-2.text-primary-black {
         min-height: 85px;
     }
+
     .bg-white-steps.stes-width {
         width: 38px;
-        padding: 5px 7px!important;
+        padding: 5px 7px !important;
         height: 38px;
         position: relative;
         top: 7px;
     }
+
     .mobile-count {
-        position: absolute!important;
+        position: absolute !important;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
+
+    .member-benifits {
+        width: auto;
+        top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .global-signup-bg {
+        background-image: none!important;
+    }
 }
 
 @media (max-width: 480px) {
+    .owl-featured-today.owl-carousel .owl-nav {
+        display: none !important;
+    }
     .form-steps .bg-white-steps .step-completion {
-        padding-left: 22px!important;
+        padding-left: 22px !important;
+    }
+    .just-for-you .step{
+        top: auto;
+        bottom: 10px;
     }
     .great-financial-body footer {
         margin-bottom: 235px;
     }
+
     .bg-white-steps .heading5-bold-caps-12-17 {
         font-size: 11px !important;
         position: relative;
         bottom: 2px;
     }
+
     .bg-white-steps.stes-width {
         width: 38px;
-        padding: 5px 7px!important;
+        padding: 5px 7px !important;
         height: 38px;
         top: auto;
     }
+
     .bg-white-steps .paragraph-regular-14-19 {
         font-size: 11px !important;
         position: relative;
         bottom: 2px;
     }
+
     .form-steps .bg-white-steps {
         padding: 5px 10px;
     }
+
     .po-fixed-small {
         position: fixed;
         bottom: 70px;
@@ -123,6 +147,7 @@
         left: 0;
         background-color: #ffffff;
     }
+
     .health-guru-heading {
         font-size: 1.4rem;
     }
@@ -130,7 +155,7 @@
     .financial-health-guru-block .financial-health-guru-img {
         position: inherit;
         top: auto;
-        width:75%;
+        width: 75%;
     }
 
     .great-financial-guru .heading2-regular-30-38 {
@@ -229,8 +254,15 @@
         letter-spacing: 1px;
         font-size: 1.5rem;
     }
+
     .link-bank-modal-body {
         width: 97%;
+    }
+
+    .member-benifits {
+        width: auto;
+        top: 20px;
+        margin-bottom: 30px;
     }
 }
 

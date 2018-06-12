@@ -44,6 +44,31 @@ $(function () {
             }
         });
     }
+    /* JS Code for video slider */
+    if ($('.owl-featured-today').length) {
+        $('.owl-featured-today').owlCarousel({
+            autoplay: true,
+            autoplayTimeout: 6500,
+            smartSpeed: 1000,
+            loop: true,
+            center: true,
+            nav: true,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 2,
+                    margin: 30
+                },
+                992: {
+                    items: 2,
+                    margin: 80
+                }
+            }
+        });
+    }
     if ($('.owl-career-opportunities').length) {
         $('.owl-career-opportunities').owlCarousel({
             autoplay: true,
@@ -611,5 +636,16 @@ $(document).ready(function(){
             $(".stepsDivs .DivStepDiv:last").show();
         }
         return false;
+    });
+});
+
+/* JS code for hide show div based on checkbox in Global Sign Up Page*/
+$(function () {
+    $("#chkPassport").click(function () {
+        if ($(this).is(":checked")) {
+            $("#dvPassport").show();
+        } else {
+            $("#dvPassport").hide();
+        }
     });
 });
