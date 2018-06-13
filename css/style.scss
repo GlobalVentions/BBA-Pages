@@ -1362,6 +1362,9 @@ ul.member-benifits-ul li:before {
   .owl-most-popular.owl-carousel .owl-dots.disabled, .owl-most-popular.owl-carousel .owl-nav.disabled {
     display: block !important;
   }
+  .item-video{
+    height: 150px!important;
+  }
   .owl-nav > div {
     text-indent: -999px;
     overflow: hidden;
@@ -1541,6 +1544,17 @@ ul.member-benifits-ul li:before {
   padding-right: 21px;
   background-size: auto;
   line-height: normal;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.hide-details-btn {
+  background: url(../images/icon/chevron-active.purple@1x.png) no-repeat right 6px;
+  padding-right: 21px;
+  background-size: auto;
+  line-height: normal;
+  cursor: pointer;
   &:hover {
     text-decoration: underline;
   }
@@ -2643,6 +2657,25 @@ body.overview-and-grid {
   .btn-primary-large-text {
     padding: 0.574rem 1.8rem !important;
   }
+  .btn-ghost-large-plus-icon {
+    padding: 0.574rem 1.8rem !important;
+    background-color: transparent;
+    &:hover {
+      color: $techgrey;
+      text-decoration: none;
+      background-color: $brightsidepurple;
+      .plus-btn-icon {
+        color: $techgrey;
+      }
+    }
+    &:focus {
+      outline: none !important;
+    }
+    .plus-btn-icon {
+      font-size: 18px;
+      color: $brightsidepurple;
+    }
+  }
   .border-whole {
     border-bottom: 1px solid #AAB2B5;
     border-left: 1px solid #AAB2B5;
@@ -2666,6 +2699,29 @@ body.overview-and-grid {
     }
     .border-right-div {
       border-right: 2px solid #F2F2F2;;
+    }
+  }
+  ul.preview-requirement-ul {
+    font-size: 13px;
+  }
+  ul.preview-requirement-ul li {
+    line-height: 17px;
+    margin-bottom: 12px;
+  }
+  .transp {
+    position:absolute;
+    left:0;
+    top:0;
+    background: rgba(255, 255, 255, 0.97);
+    width:100%;
+    height:100%;
+    .unlock-requirements{
+      color: $brightsidepurple;
+      border-radius: 15px;
+      border: 2px solid $brightsidepurple !important
+    }
+    .link3-bold-14-19 {
+      font-size: 13px !important;
     }
   }
 }

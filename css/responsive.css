@@ -93,6 +93,13 @@
 }
 
 @media (max-width: 480px) {
+    .pre-banking-tabs .border-whole {
+        border-bottom: 1px solid #AAB2B5;
+        border-left: 1px solid #AAB2B5;
+        border-right: 1px solid #AAB2B5;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
     .owl-featured-today.owl-carousel .owl-nav {
         display: none !important;
     }

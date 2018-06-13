@@ -1224,8 +1224,18 @@ ul.member-benifits-ul li:before {
   background: url(../images/icon/chevron-inactive.purple@1x.png) no-repeat right 6px;
   padding-right: 21px;
   background-size: auto;
-  line-height: normal; }
+  line-height: normal;
+  cursor: pointer; }
   .show-details-btn:hover {
+    text-decoration: underline; }
+
+.hide-details-btn {
+  background: url(../images/icon/chevron-active.purple@1x.png) no-repeat right 6px;
+  padding-right: 21px;
+  background-size: auto;
+  line-height: normal;
+  cursor: pointer; }
+  .hide-details-btn:hover {
     text-decoration: underline; }
 
 .letsgo-btn-reverse {
@@ -2076,6 +2086,20 @@ body.overview-and-grid .Pattern-img-div img {
     top: 3px; }
 .pre-banking-tabs .btn-primary-large-text {
   padding: 0.574rem 1.8rem !important; }
+.pre-banking-tabs .btn-ghost-large-plus-icon {
+  padding: 0.574rem 1.8rem !important;
+  background-color: transparent; }
+  .pre-banking-tabs .btn-ghost-large-plus-icon:hover {
+    color: #f2f2f2;
+    text-decoration: none;
+    background-color: #6b17b3; }
+    .pre-banking-tabs .btn-ghost-large-plus-icon:hover .plus-btn-icon {
+      color: #f2f2f2; }
+  .pre-banking-tabs .btn-ghost-large-plus-icon:focus {
+    outline: none !important; }
+  .pre-banking-tabs .btn-ghost-large-plus-icon .plus-btn-icon {
+    font-size: 18px;
+    color: #6b17b3; }
 .pre-banking-tabs .border-whole {
   border-bottom: 1px solid #AAB2B5;
   border-left: 1px solid #AAB2B5;
@@ -2095,6 +2119,24 @@ body.overview-and-grid .Pattern-img-div img {
     border-bottom: 2px solid #F2F2F2; }
   .pre-banking-tabs .financial-advisior-profile .border-right-div {
     border-right: 2px solid #F2F2F2; }
+.pre-banking-tabs ul.preview-requirement-ul {
+  font-size: 13px; }
+.pre-banking-tabs ul.preview-requirement-ul li {
+  line-height: 17px;
+  margin-bottom: 12px; }
+.pre-banking-tabs .transp {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(255, 255, 255, 0.97);
+  width: 100%;
+  height: 100%; }
+  .pre-banking-tabs .transp .unlock-requirements {
+    color: #6b17b3;
+    border-radius: 15px;
+    border: 2px solid #6b17b3 !important; }
+  .pre-banking-tabs .transp .link3-bold-14-19 {
+    font-size: 13px !important; }
 
 /* Media CSS start */
 @media (max-width: 768px) {

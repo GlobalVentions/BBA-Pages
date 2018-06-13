@@ -31,6 +31,9 @@ $(function () {
             nav: true,
             dots: false,
             margin: 15,
+            /*video: true,
+            videoWidth: true,
+            videoHeight: true,*/
             responsive: {
                 0: {
                     items: 1
@@ -649,3 +652,4 @@ $(function () {
         }
     });
 });
+
