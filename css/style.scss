@@ -1318,7 +1318,9 @@ ul.member-benifits-ul li:before {
 .advertisement {
 
 }
-
+.img.heart-img-link {
+  cursor: pointer;
+}
 .most-featured-today {
   .owl-featured-today.owl-carousel .owl-dots.disabled, .owl-featured-today.owl-carousel .owl-nav.disabled {
     display: block !important;
@@ -1362,8 +1364,9 @@ ul.member-benifits-ul li:before {
   .owl-most-popular.owl-carousel .owl-dots.disabled, .owl-most-popular.owl-carousel .owl-nav.disabled {
     display: block !important;
   }
-  .item-video{
-    height: 150px!important;
+  video{
+    width: 100%;
+    height: auto;
   }
   .owl-nav > div {
     text-indent: -999px;
@@ -2707,6 +2710,10 @@ body.overview-and-grid {
   ul.preview-requirement-ul li {
     line-height: 17px;
     margin-bottom: 12px;
+    font-size: 12px;
+    span{
+      font-size: 13px;
+    }
   }
   .transp {
     position:absolute;

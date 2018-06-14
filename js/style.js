@@ -24,16 +24,17 @@ $(function () {
     /* JS Code for video slider */
     if ($('.owl-most-popular').length) {
         $('.owl-most-popular').owlCarousel({
-            autoplay: true,
+/*            autoplay: true,
             autoplayTimeout: 6500,
-            smartSpeed: 1000,
+            smartSpeed: 1000,*/
             loop: true,
             nav: true,
             dots: false,
             margin: 15,
-            /*video: true,
+            center: true,
+            video: true,
             videoWidth: true,
-            videoHeight: true,*/
+            videoHeight: true,
             responsive: {
                 0: {
                     items: 1
@@ -129,32 +130,32 @@ function DropDown(el) {
     this.initEvents();
 }
 DropDown.prototype = {
-    initEvents : function() {
+    initEvents: function () {
         var obj = this;
 
-        obj.dd.on('click', function(event){
+        obj.dd.on('click', function (event) {
             $(this).toggleClass('active');
             return false;
         });
 
-        obj.opts.on('click',function(){
+        obj.opts.on('click', function () {
             var opt = $(this);
             obj.val = opt.text();
             obj.index = opt.index();
             obj.placeholder.text(obj.val);
         });
     },
-    getValue : function() {
+    getValue: function () {
         return this.val;
     },
-    getIndex : function() {
+    getIndex: function () {
         return this.index;
     }
 };
 
-$(function() {
+$(function () {
 
-    var dd = new DropDown( $('#dd') );
+    var dd = new DropDown($('#dd'));
 });
 
 /**/
@@ -167,31 +168,31 @@ function DropDown(el) {
     this.initEvents();
 }
 DropDown.prototype = {
-    initEvents : function() {
+    initEvents: function () {
         var obj = this;
 
-        obj.dd1.on('click', function(event){
+        obj.dd1.on('click', function (event) {
             $(this).toggleClass('active');
             return false;
         });
 
-        obj.opts.on('click',function(){
+        obj.opts.on('click', function () {
             var opt = $(this);
             obj.val = opt.text();
             obj.index = opt.index();
             obj.placeholder.text(obj.val);
         });
     },
-    getValue : function() {
+    getValue: function () {
         return this.val;
     },
-    getIndex : function() {
+    getIndex: function () {
         return this.index;
     }
 };
 
-$(function() {
-    var dd1 = new DropDown( $('#dd1') );
+$(function () {
+    var dd1 = new DropDown($('#dd1'));
 });
 
 /**/
@@ -204,31 +205,31 @@ function DropDown(el) {
     this.initEvents();
 }
 DropDown.prototype = {
-    initEvents : function() {
+    initEvents: function () {
         var obj = this;
 
-        obj.dd2.on('click', function(event){
+        obj.dd2.on('click', function (event) {
             $(this).toggleClass('active');
             return false;
         });
 
-        obj.opts.on('click',function(){
+        obj.opts.on('click', function () {
             var opt = $(this);
             obj.val = opt.text();
             obj.index = opt.index();
             obj.placeholder.text(obj.val);
         });
     },
-    getValue : function() {
+    getValue: function () {
         return this.val;
     },
-    getIndex : function() {
+    getIndex: function () {
         return this.index;
     }
 };
 
-$(function() {
-    var dd1 = new DropDown( $('#dd2') );
+$(function () {
+    var dd1 = new DropDown($('#dd2'));
 });
 
 /**/
@@ -241,31 +242,31 @@ function DropDown(el) {
     this.initEvents();
 }
 DropDown.prototype = {
-    initEvents : function() {
+    initEvents: function () {
         var obj = this;
 
-        obj.dd3.on('click', function(event){
+        obj.dd3.on('click', function (event) {
             $(this).toggleClass('active');
             return false;
         });
 
-        obj.opts.on('click',function(){
+        obj.opts.on('click', function () {
             var opt = $(this);
             obj.val = opt.text();
             obj.index = opt.index();
             obj.placeholder.text(obj.val);
         });
     },
-    getValue : function() {
+    getValue: function () {
         return this.val;
     },
-    getIndex : function() {
+    getIndex: function () {
         return this.index;
     }
 };
 
-$(function() {
-    var dd1 = new DropDown( $('#dd3') );
+$(function () {
+    var dd1 = new DropDown($('#dd3'));
 });
 
 /**/
@@ -278,31 +279,31 @@ function DropDown(el) {
     this.initEvents();
 }
 DropDown.prototype = {
-    initEvents : function() {
+    initEvents: function () {
         var obj = this;
 
-        obj.dd4.on('click', function(event){
+        obj.dd4.on('click', function (event) {
             $(this).toggleClass('active');
             return false;
         });
 
-        obj.opts.on('click',function(){
+        obj.opts.on('click', function () {
             var opt = $(this);
             obj.val = opt.text();
             obj.index = opt.index();
             obj.placeholder.text(obj.val);
         });
     },
-    getValue : function() {
+    getValue: function () {
         return this.val;
     },
-    getIndex : function() {
+    getIndex: function () {
         return this.index;
     }
 };
 
-$(function() {
-    var dd1 = new DropDown( $('#dd4') );
+$(function () {
+    var dd1 = new DropDown($('#dd4'));
 });
 
 /**/
@@ -315,31 +316,31 @@ function DropDown(el) {
     this.initEvents();
 }
 DropDown.prototype = {
-    initEvents : function() {
+    initEvents: function () {
         var obj = this;
 
-        obj.dd5.on('click', function(event){
+        obj.dd5.on('click', function (event) {
             $(this).toggleClass('active');
             return false;
         });
 
-        obj.opts.on('click',function(){
+        obj.opts.on('click', function () {
             var opt = $(this);
             obj.val = opt.text();
             obj.index = opt.index();
             obj.placeholder.text(obj.val);
         });
     },
-    getValue : function() {
+    getValue: function () {
         return this.val;
     },
-    getIndex : function() {
+    getIndex: function () {
         return this.index;
     }
 };
 
-$(function() {
-    var dd1 = new DropDown( $('#dd5') );
+$(function () {
+    var dd1 = new DropDown($('#dd5'));
 });
 
 /**/
@@ -352,31 +353,31 @@ function DropDown(el) {
     this.initEvents();
 }
 DropDown.prototype = {
-    initEvents : function() {
+    initEvents: function () {
         var obj = this;
 
-        obj.dd6.on('click', function(event){
+        obj.dd6.on('click', function (event) {
             $(this).toggleClass('active');
             return false;
         });
 
-        obj.opts.on('click',function(){
+        obj.opts.on('click', function () {
             var opt = $(this);
             obj.val = opt.text();
             obj.index = opt.index();
             obj.placeholder.text(obj.val);
         });
     },
-    getValue : function() {
+    getValue: function () {
         return this.val;
     },
-    getIndex : function() {
+    getIndex: function () {
         return this.index;
     }
 };
 
-$(function() {
-    var dd1 = new DropDown( $('#dd6') );
+$(function () {
+    var dd1 = new DropDown($('#dd6'));
 });
 
 /**/
@@ -389,31 +390,31 @@ function DropDown(el) {
     this.initEvents();
 }
 DropDown.prototype = {
-    initEvents : function() {
+    initEvents: function () {
         var obj = this;
 
-        obj.dd7.on('click', function(event){
+        obj.dd7.on('click', function (event) {
             $(this).toggleClass('active');
             return false;
         });
 
-        obj.opts.on('click',function(){
+        obj.opts.on('click', function () {
             var opt = $(this);
             obj.val = opt.text();
             obj.index = opt.index();
             obj.placeholder.text(obj.val);
         });
     },
-    getValue : function() {
+    getValue: function () {
         return this.val;
     },
-    getIndex : function() {
+    getIndex: function () {
         return this.index;
     }
 };
 
-$(function() {
-    var dd1 = new DropDown( $('#dd7') );
+$(function () {
+    var dd1 = new DropDown($('#dd7'));
 });
 
 /**/
@@ -426,31 +427,31 @@ function DropDown(el) {
     this.initEvents();
 }
 DropDown.prototype = {
-    initEvents : function() {
+    initEvents: function () {
         var obj = this;
 
-        obj.dd8.on('click', function(event){
+        obj.dd8.on('click', function (event) {
             $(this).toggleClass('active');
             return false;
         });
 
-        obj.opts.on('click',function(){
+        obj.opts.on('click', function () {
             var opt = $(this);
             obj.val = opt.text();
             obj.index = opt.index();
             obj.placeholder.text(obj.val);
         });
     },
-    getValue : function() {
+    getValue: function () {
         return this.val;
     },
-    getIndex : function() {
+    getIndex: function () {
         return this.index;
     }
 };
 
-$(function() {
-    var dd1 = new DropDown( $('#dd8') );
+$(function () {
+    var dd1 = new DropDown($('#dd8'));
 });
 
 /**/
@@ -463,31 +464,31 @@ function DropDown(el) {
     this.initEvents();
 }
 DropDown.prototype = {
-    initEvents : function() {
+    initEvents: function () {
         var obj = this;
 
-        obj.dd9.on('click', function(event){
+        obj.dd9.on('click', function (event) {
             $(this).toggleClass('active');
             return false;
         });
 
-        obj.opts.on('click',function(){
+        obj.opts.on('click', function () {
             var opt = $(this);
             obj.val = opt.text();
             obj.index = opt.index();
             obj.placeholder.text(obj.val);
         });
     },
-    getValue : function() {
+    getValue: function () {
         return this.val;
     },
-    getIndex : function() {
+    getIndex: function () {
         return this.index;
     }
 };
 
-$(function() {
-    var dd1 = new DropDown( $('#dd9') );
+$(function () {
+    var dd1 = new DropDown($('#dd9'));
 });
 
 /**/
@@ -500,31 +501,31 @@ function DropDown(el) {
     this.initEvents();
 }
 DropDown.prototype = {
-    initEvents : function() {
+    initEvents: function () {
         var obj = this;
 
-        obj.dd10.on('click', function(event){
+        obj.dd10.on('click', function (event) {
             $(this).toggleClass('active');
             return false;
         });
 
-        obj.opts.on('click',function(){
+        obj.opts.on('click', function () {
             var opt = $(this);
             obj.val = opt.text();
             obj.index = opt.index();
             obj.placeholder.text(obj.val);
         });
     },
-    getValue : function() {
+    getValue: function () {
         return this.val;
     },
-    getIndex : function() {
+    getIndex: function () {
         return this.index;
     }
 };
 
-$(function() {
-    var dd1 = new DropDown( $('#dd10') );
+$(function () {
+    var dd1 = new DropDown($('#dd10'));
 });
 
 /**/
@@ -537,72 +538,72 @@ function DropDown(el) {
     this.initEvents();
 }
 DropDown.prototype = {
-    initEvents : function() {
+    initEvents: function () {
         var obj = this;
 
-        obj.dd11.on('click', function(event){
+        obj.dd11.on('click', function (event) {
             $(this).toggleClass('active');
             return false;
         });
 
-        obj.opts.on('click',function(){
+        obj.opts.on('click', function () {
             var opt = $(this);
             obj.val = opt.text();
             obj.index = opt.index();
             obj.placeholder.text(obj.val);
         });
     },
-    getValue : function() {
+    getValue: function () {
         return this.val;
     },
-    getIndex : function() {
+    getIndex: function () {
         return this.index;
     }
 };
 
-$(function() {
-    var dd1 = new DropDown( $('#dd11') );
+$(function () {
+    var dd1 = new DropDown($('#dd11'));
 });
 
 /* Js code for include header file */
-$(document).ready(function(){
-    $.get("header.html", function(data) {
+$(document).ready(function () {
+    $.get("header.html", function (data) {
         $("#header").html(data);
     });
 });
 
-$(document).ready(function(){
-    $.get("pro-header.html", function(data) {
+$(document).ready(function () {
+    $.get("pro-header.html", function (data) {
         $("#pro-header").html(data);
     });
 });
 
 /* Js code for include footer file */
-$(document).ready(function(){
-    $.get("footer.html", function(data) {
+$(document).ready(function () {
+    $.get("footer.html", function (data) {
         $("#footer").html(data);
     });
 });
 
-$(document).ready(function(){
-    $.get("pro-footer.html", function(data) {
+$(document).ready(function () {
+    $.get("pro-footer.html", function (data) {
         $("#pro-footer").html(data);
     });
 });
 
 /* Toggle Image Change Code */
-$(".LikeToggler").click(function() {
+$(".LikeToggler").click(function () {
     $(this).find('img').toggle();
 });
 
 /* JS code for hide show link your bank form */
-$(document).ready(function(){
-    $(".stepsDivs .DivStepDiv").each(function(e) {
+$(document).ready(function () {
+    $(".stepsDivs .DivStepDiv").each(function (e) {
         if (e != 0)
             $(this).hide();
     });
 
-    $("#next-form").click(function(){
+    $("#next-form").click(function () {
         if ($(".stepsDivs .DivStepDiv:visible").next().length != 0)
             $(".stepsDivs .DivStepDiv:visible").next().show().prev().hide();
         else {
@@ -612,7 +613,7 @@ $(document).ready(function(){
         return false;
     });
 
-    $("#prev-form").click(function(){
+    $("#prev-form").click(function () {
         if ($(".stepsDivs .DivStepDiv:visible").prev().length != 0)
             $(".stepsDivs .DivStepDiv:visible").prev().show().next().hide();
         else {
@@ -621,7 +622,7 @@ $(document).ready(function(){
         }
         return false;
     });
-    $("#next-form-1").click(function(){
+    $("#next-form-1").click(function () {
         if ($(".stepsDivs .DivStepDiv:visible").next().length != 0)
             $(".stepsDivs .DivStepDiv:visible").next().show().prev().hide();
         else {
@@ -631,7 +632,7 @@ $(document).ready(function(){
         return false;
     });
 
-    $("#prev-form-1").click(function(){
+    $("#prev-form-1").click(function () {
         if ($(".stepsDivs .DivStepDiv:visible").prev().length != 0)
             $(".stepsDivs .DivStepDiv:visible").prev().show().next().hide();
         else {
@@ -653,3 +654,18 @@ $(function () {
     });
 });
 
+/* JS Code for video play pause button */
+$("a[href='#']").click(function(e) {
+    e.preventDefault();
+});
+
+$(".video-btn").click(function(e) {
+    if($(this).hasClass("active")){
+        $(this).removeClass("active")
+        $('video').fadeOut().get(0).pause();
+    }
+    else{
+        $(this).addClass("active")
+        $('video').fadeIn().get(0).play()
+    }
+});

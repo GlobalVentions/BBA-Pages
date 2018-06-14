@@ -1060,6 +1060,9 @@ ul.member-benifits-ul li:before {
   .meet-the-bank .z-index-two {
     z-index: 2; }
 
+.img.heart-img-link {
+  cursor: pointer; }
+
 .most-featured-today .owl-featured-today.owl-carousel .owl-dots.disabled, .most-featured-today .owl-featured-today.owl-carousel .owl-nav.disabled {
   display: block !important; }
 .most-featured-today .owl-nav > div {
@@ -1090,6 +1093,9 @@ ul.member-benifits-ul li:before {
 
 .most-popular-videos .owl-most-popular.owl-carousel .owl-dots.disabled, .most-popular-videos .owl-most-popular.owl-carousel .owl-nav.disabled {
   display: block !important; }
+.most-popular-videos video {
+  width: 100%;
+  height: auto; }
 .most-popular-videos .owl-nav > div {
   text-indent: -999px;
   overflow: hidden;
@@ -2123,7 +2129,10 @@ body.overview-and-grid .Pattern-img-div img {
   font-size: 13px; }
 .pre-banking-tabs ul.preview-requirement-ul li {
   line-height: 17px;
-  margin-bottom: 12px; }
+  margin-bottom: 12px;
+  font-size: 12px; }
+  .pre-banking-tabs ul.preview-requirement-ul li span {
+    font-size: 13px; }
 .pre-banking-tabs .transp {
   position: absolute;
   left: 0;
