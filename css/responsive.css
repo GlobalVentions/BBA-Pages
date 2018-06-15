@@ -90,6 +90,7 @@
     .global-signup-bg {
         background-image: none!important;
     }
+
 }
 
 @media (max-width: 480px) {
@@ -270,6 +271,33 @@
         width: auto;
         top: 20px;
         margin-bottom: 30px;
+    }
+    .burger-menu-main {
+        width: 100%;
+        left: 0;
+        overflow: auto;
+        height: auto;
+    }
+    .burger-menu-main nav[role="full-horizontal"] {
+        right: auto;
+    }
+    .opportunities-menu-main {
+        width: 100%;
+        left: 0;
+        overflow: auto;
+        height: auto;
+    }
+    .opportunities-menu-main nav[role="full-horizontal"] {
+        right: auto;
+    }
+    .knowledge-menu-main {
+        width: 100%;
+        left: 0;
+        overflow: auto;
+        height: auto;
+    }
+    .knowledge-menu-main nav[role="full-horizontal"] {
+        right: auto;
     }
 }
 

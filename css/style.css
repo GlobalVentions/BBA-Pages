@@ -840,9 +840,165 @@ ul.member-benifits-ul li:before {
   height: 100%;
   width: 100%; }
 
+::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.5em; }
+
+::-webkit-scrollbar-button {
+  background: #ccc; }
+
+::-webkit-scrollbar-track-piece {
+  background: #888; }
+
+::-webkit-scrollbar-thumb {
+  background: #eee; }
+
 /* Icons CSS start */
 .icons .icons-text {
   line-height: 40px; }
+
+.burger-menu-main {
+  position: fixed;
+  width: 210px; }
+  .burger-menu-main nav[role="full-horizontal"] {
+    width: 100%;
+    position: relative;
+    right: 16px;
+    top: 0px; }
+    .burger-menu-main nav[role="full-horizontal"] ul {
+      width: 100%;
+      list-style: none;
+      position: relative;
+      top: 18px;
+      background-color: #ffffff;
+      padding: 15px 0 0 0;
+      -webkit-box-shadow: 0px 0px 10px 1px #f2f2f2;
+      -moz-box-shadow: 0px 0px 10px 1px #f2f2f2;
+      box-shadow: 0px 0px 10px 1px #f2f2f2;
+      max-height: 650px;
+      overflow: auto; }
+      .burger-menu-main nav[role="full-horizontal"] ul > li {
+        position: relative;
+        text-transform: capitalize;
+        cursor: pointer;
+        text-align: left;
+        transition-duration: .3s;
+        transition-timing-function: ease-in-out;
+        transition-property: background, color, padding, border-radius;
+        width: 100%;
+        white-space: nowrap;
+        padding: 0 20px;
+        line-height: 39px;
+        margin-bottom: 0; }
+        .burger-menu-main nav[role="full-horizontal"] ul > li .menu-fa-icon {
+          width: 9px;
+          position: relative;
+          top: 15px; }
+        .burger-menu-main nav[role="full-horizontal"] ul > li:last-child:after {
+          box-shadow: none; }
+        .burger-menu-main nav[role="full-horizontal"] ul > li:hover {
+          background-color: #f2f2f2; }
+          .burger-menu-main nav[role="full-horizontal"] ul > li:hover > a {
+            color: #1e1e20; }
+        .burger-menu-main nav[role="full-horizontal"] ul > li > a {
+          color: #1e1e20;
+          text-decoration: none;
+          font-size: 0.9em;
+          transition: color .3s ease-in-out; }
+
+.knowledge-menu-main {
+  position: fixed;
+  width: 210px; }
+  .knowledge-menu-main nav[role="full-horizontal"] {
+    width: 100%;
+    position: relative;
+    right: 10px;
+    bottom: 8px; }
+    .knowledge-menu-main nav[role="full-horizontal"] ul {
+      width: 100%;
+      list-style: none;
+      position: relative;
+      top: 18px;
+      background-color: #ffffff;
+      padding: 10px 0 0 0;
+      -webkit-box-shadow: 0px 0px 10px 1px #f2f2f2;
+      -moz-box-shadow: 0px 0px 10px 1px #f2f2f2;
+      box-shadow: 0px 0px 10px 1px #f2f2f2; }
+      .knowledge-menu-main nav[role="full-horizontal"] ul > li {
+        position: relative;
+        text-transform: capitalize;
+        cursor: pointer;
+        text-align: left;
+        transition-duration: .3s;
+        transition-timing-function: ease-in-out;
+        transition-property: background, color, padding, border-radius;
+        width: 100%;
+        white-space: nowrap;
+        padding: 0 20px;
+        line-height: 39px;
+        margin-bottom: 0; }
+        .knowledge-menu-main nav[role="full-horizontal"] ul > li .menu-fa-icon {
+          width: 9px;
+          position: relative;
+          top: 15px; }
+        .knowledge-menu-main nav[role="full-horizontal"] ul > li:last-child:after {
+          box-shadow: none; }
+        .knowledge-menu-main nav[role="full-horizontal"] ul > li:hover {
+          background-color: #f2f2f2; }
+          .knowledge-menu-main nav[role="full-horizontal"] ul > li:hover > a {
+            color: #1e1e20; }
+        .knowledge-menu-main nav[role="full-horizontal"] ul > li > a {
+          color: #1e1e20;
+          text-decoration: none;
+          font-size: 0.9em;
+          transition: color .3s ease-in-out; }
+
+.opportunities-menu-main {
+  position: fixed;
+  width: 210px; }
+  .opportunities-menu-main nav[role="full-horizontal"] {
+    width: 100%;
+    position: relative;
+    right: 18px;
+    bottom: 8px; }
+    .opportunities-menu-main nav[role="full-horizontal"] ul {
+      width: 100%;
+      list-style: none;
+      position: relative;
+      top: 18px;
+      background-color: #ffffff;
+      padding: 15px 0 0 0;
+      -webkit-box-shadow: 0px 0px 10px 1px #f2f2f2;
+      -moz-box-shadow: 0px 0px 10px 1px #f2f2f2;
+      box-shadow: 0px 0px 10px 1px #f2f2f2; }
+      .opportunities-menu-main nav[role="full-horizontal"] ul > li {
+        position: relative;
+        text-transform: capitalize;
+        cursor: pointer;
+        text-align: left;
+        transition-duration: .3s;
+        transition-timing-function: ease-in-out;
+        transition-property: background, color, padding, border-radius;
+        width: 100%;
+        white-space: nowrap;
+        padding: 0 20px;
+        line-height: 39px;
+        margin-bottom: 0; }
+        .opportunities-menu-main nav[role="full-horizontal"] ul > li .menu-fa-icon {
+          width: 9px;
+          position: relative;
+          top: 15px; }
+        .opportunities-menu-main nav[role="full-horizontal"] ul > li:last-child:after {
+          box-shadow: none; }
+        .opportunities-menu-main nav[role="full-horizontal"] ul > li:hover {
+          background-color: #f2f2f2; }
+          .opportunities-menu-main nav[role="full-horizontal"] ul > li:hover > a {
+            color: #1e1e20; }
+        .opportunities-menu-main nav[role="full-horizontal"] ul > li > a {
+          color: #1e1e20;
+          text-decoration: none;
+          font-size: 0.9em;
+          transition: color .3s ease-in-out; }
 
 .icons-symbol {
   line-height: 40px;
@@ -1093,9 +1249,6 @@ ul.member-benifits-ul li:before {
 
 .most-popular-videos .owl-most-popular.owl-carousel .owl-dots.disabled, .most-popular-videos .owl-most-popular.owl-carousel .owl-nav.disabled {
   display: block !important; }
-.most-popular-videos video {
-  width: 100%;
-  height: auto; }
 .most-popular-videos .owl-nav > div {
   text-indent: -999px;
   overflow: hidden;
@@ -1149,6 +1302,10 @@ ul.member-benifits-ul li:before {
   height: 30px;
   width: 30px;
   cursor: pointer; }
+
+video {
+  width: 100%;
+  height: auto; }
 
 .max-width-850 {
   max-width: 850px !important; }

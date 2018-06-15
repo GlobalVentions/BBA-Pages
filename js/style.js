@@ -24,9 +24,9 @@ $(function () {
     /* JS Code for video slider */
     if ($('.owl-most-popular').length) {
         $('.owl-most-popular').owlCarousel({
-/*            autoplay: true,
+            autoplay: true,
             autoplayTimeout: 6500,
-            smartSpeed: 1000,*/
+            smartSpeed: 1000,
             loop: true,
             nav: true,
             dots: false,
@@ -58,6 +58,9 @@ $(function () {
             center: true,
             nav: true,
             dots: false,
+            video: true,
+            videoWidth: true,
+            videoHeight: true,
             responsive: {
                 0: {
                     items: 1
@@ -98,9 +101,9 @@ $(function () {
 
     if ($('.owl-most-articles').length) {
         $('.owl-most-articles').owlCarousel({
-            autoplay: true,
+/*            autoplay: true,
             autoplayTimeout: 6500,
-            smartSpeed: 1000,
+            smartSpeed: 1000,*/
             loop: true,
             nav: true,
             dots: false,
@@ -654,18 +657,20 @@ $(function () {
     });
 });
 
+/* JS CODE FOR BURGER MENU MAIN TOGGLE */
+function menuToggle(){
+    $(".burger-menu-main").toggle();
+}
+
+function knowledgeBaseToggle(){
+    $(".knowledge-menu-main").toggle();
+}
+
+function opportunitiesToggle(){
+    $(".opportunities-menu-main").toggle();
+}
+
 /* JS Code for video play pause button */
 $("a[href='#']").click(function(e) {
     e.preventDefault();
-});
-
-$(".video-btn").click(function(e) {
-    if($(this).hasClass("active")){
-        $(this).removeClass("active")
-        $('video').fadeOut().get(0).pause();
-    }
-    else{
-        $(this).addClass("active")
-        $('video').fadeIn().get(0).play()
-    }
 });
