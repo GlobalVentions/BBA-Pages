@@ -345,6 +345,18 @@ ul.member-benifits-ul li:before {
   padding-right: 20px;
   font-size: 18px; }
 
+ul.found-jobs-ul {
+  list-style: none; }
+
+ul.found-jobs-ul li {
+  line-height: 30px;
+  font-size: 12px; }
+
+ul.found-jobs-ul li:before {
+  content: "\2714\0020";
+  padding-right: 20px;
+  font-size: 18px; }
+
 .link-bank-modal-body {
   width: 73%;
   margin: 0 auto 40px auto;
@@ -1392,6 +1404,15 @@ video {
   .show-details-btn:hover {
     text-decoration: underline; }
 
+.month-to-date-btn {
+  background: url(../images/icon/chevron-inactive.black@1x.png) no-repeat right 6px;
+  padding-right: 21px;
+  background-size: auto;
+  line-height: normal;
+  cursor: pointer; }
+  .month-to-date-btn:hover {
+    text-decoration: underline; }
+
 .hide-details-btn {
   background: url(../images/icon/chevron-active.purple@1x.png) no-repeat right 6px;
   padding-right: 21px;
@@ -1434,6 +1455,9 @@ video {
 
 .text-primary-black {
   color: #1e1e20 !important; }
+
+.text-black {
+  color: #000000 !important; }
 
 .text-primary-techgrey {
   color: #f2f2f2 !important; }
@@ -2232,6 +2256,17 @@ body.overview-and-grid .Pattern-img-div img {
   -moz-box-shadow: 0px 0px 10px 4px #cccccc;
   box-shadow: 0px 0px 10px 4px #cccccc; }
 
+.found-jobs {
+  box-sizing: border-box;
+  width: 395px;
+  border-radius: 15px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 10px 4px #cccccc;
+  -moz-box-shadow: 0px 0px 10px 4px #cccccc;
+  box-shadow: 0px 0px 10px 4px #cccccc; }
+  .found-jobs .paragraph-regular-14-19 {
+    letter-spacing: 0.3px; }
+
 .pre-banking-tabs .nav-tabs {
   border-bottom: none; }
 .pre-banking-tabs .nav-tabs .nav-item.show .nav-link, .pre-banking-tabs .nav-tabs .nav-link.active {
@@ -2303,6 +2338,14 @@ body.overview-and-grid .Pattern-img-div img {
     border: 2px solid #6b17b3 !important; }
   .pre-banking-tabs .transp .link3-bold-14-19 {
     font-size: 13px !important; }
+
+.main-dashboard .border-daily-report {
+  border: 1px solid #AAB2B5;
+  border-radius: 15px; }
+  .main-dashboard .border-daily-report .border-bottom {
+    border-bottom: 2px solid #e9ecef; }
+  .main-dashboard .border-daily-report .tag-text {
+    letter-spacing: 0.2px; }
 
 /* Media CSS start */
 @media (max-width: 768px) {

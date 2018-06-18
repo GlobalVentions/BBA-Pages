@@ -31,7 +31,6 @@ $(function () {
             nav: true,
             dots: false,
             margin: 15,
-            center: true,
             video: true,
             videoWidth: true,
             videoHeight: true,

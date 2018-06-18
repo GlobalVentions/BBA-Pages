@@ -416,6 +416,20 @@ ul.member-benifits-ul li:before {
   padding-right: 20px;
   font-size: 18px;
 }
+ul.found-jobs-ul {
+  list-style: none;
+}
+
+ul.found-jobs-ul li {
+  line-height: 30px;
+  font-size: 12px;
+}
+
+ul.found-jobs-ul li:before {
+  content: "\2714\0020";
+  padding-right: 20px;
+  font-size: 18px;
+}
 
 .link-bank-modal-body {
   width: 73%;
@@ -1025,19 +1039,24 @@ ul.member-benifits-ul li:before {
   height: 100%;
   width: 100%;
 }
+
 ::-webkit-scrollbar {
   width: 0.5em;
   height: 0.5em
 }
+
 ::-webkit-scrollbar-button {
   background: #ccc
 }
+
 ::-webkit-scrollbar-track-piece {
   background: #888
 }
+
 ::-webkit-scrollbar-thumb {
   background: #eee
 }
+
 /* Icons CSS start */
 .icons {
   .icons-text {
@@ -1627,11 +1646,11 @@ ul.member-benifits-ul li:before {
     cursor: pointer;
   }
 }
+
 video {
   width: 100%;
   height: auto;
 }
-
 
 .max-width-850 {
   max-width: 850px !important;
@@ -1743,6 +1762,16 @@ video {
     text-decoration: underline;
   }
 }
+.month-to-date-btn {
+  background: url(../images/icon/chevron-inactive.black@1x.png) no-repeat right 6px;
+  padding-right: 21px;
+  background-size: auto;
+  line-height: normal;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+}
 
 .hide-details-btn {
   background: url(../images/icon/chevron-active.purple@1x.png) no-repeat right 6px;
@@ -1796,6 +1825,9 @@ video {
 
 .text-primary-black {
   color: $color_black !important;
+}
+.text-black {
+  color: #000000 !important;
 }
 
 .text-primary-techgrey {
@@ -2827,6 +2859,19 @@ body.overview-and-grid {
   box-shadow: 0px 0px 10px 4px rgba(204, 204, 204, 1);
 }
 
+.found-jobs {
+  box-sizing: border-box;
+  width: 395px;
+  border-radius: 15px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 10px 4px rgba(204, 204, 204, 1);
+  -moz-box-shadow: 0px 0px 10px 4px rgba(204, 204, 204, 1);
+  box-shadow: 0px 0px 10px 4px rgba(204, 204, 204, 1);
+  .paragraph-regular-14-19{
+   letter-spacing: 0.3px;
+  }
+}
+
 .pre-banking-tabs {
   .nav-tabs {
     border-bottom: none;
@@ -2921,6 +2966,19 @@ body.overview-and-grid {
     }
     .link3-bold-14-19 {
       font-size: 13px !important;
+    }
+  }
+}
+
+.main-dashboard {
+  .border-daily-report {
+    border: 1px solid #AAB2B5;
+    border-radius: 15px;
+    .border-bottom{
+      border-bottom: 2px solid #e9ecef;
+    }
+    .tag-text{
+      letter-spacing: 0.2px;
     }
   }
 }

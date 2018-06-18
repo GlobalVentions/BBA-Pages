@@ -86,6 +86,11 @@
         top: 20px;
         margin-bottom: 30px;
     }
+    .found-jobs {
+        width: auto;
+        top: 20px;
+        margin-bottom: 30px;
+    }
 
     .global-signup-bg {
         background-image: none!important;
@@ -268,6 +273,11 @@
     }
 
     .member-benifits {
+        width: auto;
+        top: 20px;
+        margin-bottom: 30px;
+    }
+    .found-jobs {
         width: auto;
         top: 20px;
         margin-bottom: 30px;
