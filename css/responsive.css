@@ -91,7 +91,9 @@
         top: 20px;
         margin-bottom: 30px;
     }
-
+    .result-jobs{
+        width: auto;
+    }
     .global-signup-bg {
         background-image: none!important;
     }

@@ -173,6 +173,9 @@ html, body {
 .bg-tech-grey {
   background-color: $techgrey !important;
 }
+.bg-smart-green {
+  background-color: $smartgreen !important;
+}
 
 .bg-tech-grey-dark {
   background-color: #E3E4E5 !important;
@@ -2290,6 +2293,16 @@ body.overview-and-grid {
 }
 
 /* Modal CSS start */
+.JobModal{
+  .modal-footer {
+    width: 98%!important;
+    padding: 15px 0 0 0!important;
+  }
+  .modal-content {
+    min-height: 320px!important;
+  }
+}
+
 .custom-modal {
   .modal-dialog {
     min-height: calc(100vh - 60px);
@@ -2360,7 +2373,7 @@ body.overview-and-grid {
     width: auto;
     margin: 0 auto;
     padding: 10px;
-    border-radius: 3px;
+    border-radius: 6px;
     background: #fff;
     border: 2px solid $techgrey;
     cursor: pointer;
@@ -2375,6 +2388,7 @@ body.overview-and-grid {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     border: 2px solid #AAB2B5;
+    font-size: 14px;
   }
   .wrapper-dropdown-3.idleEmpty.active {
     box-shadow: none;
@@ -2872,6 +2886,37 @@ body.overview-and-grid {
   }
 }
 
+.result-jobs {
+  box-sizing: border-box;
+  width: 90%;
+  border-radius: 15px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 10px 4px rgba(204, 204, 204, 1);
+  -moz-box-shadow: 0px 0px 10px 4px rgba(204, 204, 204, 1);
+  box-shadow: 0px 0px 10px 4px rgba(204, 204, 204, 1);
+  .paragraph-regular-14-19{
+   letter-spacing: 0.3px;
+  }
+}
+
+.border-whole {
+  border-bottom: 1px solid #AAB2B5;
+  border-left: 1px solid #AAB2B5;
+  border-right: 1px solid #AAB2B5;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.border-right-apy {
+  border-right: 1px solid #AAB2B5;
+}
+.border-top-apy {
+  border-top: 1px solid $techgrey;
+}
+.txt-verti-middle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .pre-banking-tabs {
   .nav-tabs {
     border-bottom: none;
@@ -2915,13 +2960,6 @@ body.overview-and-grid {
       font-size: 18px;
       color: $brightsidepurple;
     }
-  }
-  .border-whole {
-    border-bottom: 1px solid #AAB2B5;
-    border-left: 1px solid #AAB2B5;
-    border-right: 1px solid #AAB2B5;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
   }
   .border-right-apy {
     border-right: 1px solid #AAB2B5;
@@ -2982,7 +3020,13 @@ body.overview-and-grid {
     }
   }
 }
-
+.border-bottom-lemo{
+  border-bottom: 2px solid #e9ecef;
+}
+.border-daily-report {
+  border: 1px solid #AAB2B5;
+  border-radius: 15px;
+}
 /* Media CSS start */
 @media(max-width: 768px) {
   .header-menu-text-pro {

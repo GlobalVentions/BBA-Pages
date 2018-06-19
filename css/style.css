@@ -153,6 +153,9 @@ html, body {
 .bg-tech-grey {
   background-color: #f2f2f2 !important; }
 
+.bg-smart-green {
+  background-color: #44bca3 !important; }
+
 .bg-tech-grey-dark {
   background-color: #E3E4E5 !important; }
 
@@ -1813,6 +1816,12 @@ body.overview-and-grid .Pattern-img-div img {
     font-weight: 600; }
 
 /* Modal CSS start */
+.JobModal .modal-footer {
+  width: 98% !important;
+  padding: 15px 0 0 0 !important; }
+.JobModal .modal-content {
+  min-height: 320px !important; }
+
 .custom-modal .modal-dialog {
   min-height: calc(100vh - 60px);
   display: flex;
@@ -1895,7 +1904,7 @@ body.overview-and-grid .Pattern-img-div img {
     width: auto;
     margin: 0 auto;
     padding: 10px;
-    border-radius: 3px;
+    border-radius: 6px;
     background: #fff;
     border: 2px solid #f2f2f2;
     cursor: pointer;
@@ -1907,7 +1916,8 @@ body.overview-and-grid .Pattern-img-div img {
     box-shadow: none;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
-    border: 2px solid #AAB2B5; }
+    border: 2px solid #AAB2B5;
+    font-size: 14px; }
   .form-inputs .wrapper-dropdown-3.idleEmpty.active {
     box-shadow: none;
     -webkit-box-shadow: none;
@@ -2267,6 +2277,35 @@ body.overview-and-grid .Pattern-img-div img {
   .found-jobs .paragraph-regular-14-19 {
     letter-spacing: 0.3px; }
 
+.result-jobs {
+  box-sizing: border-box;
+  width: 90%;
+  border-radius: 15px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 10px 4px #cccccc;
+  -moz-box-shadow: 0px 0px 10px 4px #cccccc;
+  box-shadow: 0px 0px 10px 4px #cccccc; }
+  .result-jobs .paragraph-regular-14-19 {
+    letter-spacing: 0.3px; }
+
+.border-whole {
+  border-bottom: 1px solid #AAB2B5;
+  border-left: 1px solid #AAB2B5;
+  border-right: 1px solid #AAB2B5;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px; }
+
+.border-right-apy {
+  border-right: 1px solid #AAB2B5; }
+
+.border-top-apy {
+  border-top: 1px solid #f2f2f2; }
+
+.txt-verti-middle {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 .pre-banking-tabs .nav-tabs {
   border-bottom: none; }
 .pre-banking-tabs .nav-tabs .nav-item.show .nav-link, .pre-banking-tabs .nav-tabs .nav-link.active {
@@ -2298,12 +2337,6 @@ body.overview-and-grid .Pattern-img-div img {
   .pre-banking-tabs .btn-ghost-large-plus-icon .plus-btn-icon {
     font-size: 18px;
     color: #6b17b3; }
-.pre-banking-tabs .border-whole {
-  border-bottom: 1px solid #AAB2B5;
-  border-left: 1px solid #AAB2B5;
-  border-right: 1px solid #AAB2B5;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px; }
 .pre-banking-tabs .border-right-apy {
   border-right: 1px solid #AAB2B5; }
 .pre-banking-tabs .border-top-apy {
@@ -2346,6 +2379,13 @@ body.overview-and-grid .Pattern-img-div img {
     border-bottom: 2px solid #e9ecef; }
   .main-dashboard .border-daily-report .tag-text {
     letter-spacing: 0.2px; }
+
+.border-bottom-lemo {
+  border-bottom: 2px solid #e9ecef; }
+
+.border-daily-report {
+  border: 1px solid #AAB2B5;
+  border-radius: 15px; }
 
 /* Media CSS start */
 @media (max-width: 768px) {
