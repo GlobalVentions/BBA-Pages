@@ -176,7 +176,9 @@
                             <div class="col-lg-3 col-md-3 col-7 z-index-two pl-2 pr-2">
                                 <div class="row mx-auto w-100">
                                     <div class="col-lg-12 col-md-12 col-12 p-0">
-                                        <button type="button" class="btn btn-primary-large-text">Apply Now</button>
+                                        <button type="button" class="btn btn-primary-large-text" data-toggle="modal"
+                                                data-target="#JobModal">Apply Now
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -665,6 +667,84 @@
             <div class="col-lg-8 col-md-12 col-11 p-0 mt-1 mb-5 mt-5 z-index-two">
                 <a href="#" target="_blank"><img src="images/advertiserment2.png" class="img-fluid"></a>
                 <h6 class="heading6-regular-10-13 pt-2 text-secondary-grey">Advertisement</h6>
+            </div>
+        </div>
+    </div>
+    <div class="row ml-0 mr-0">
+        <div class="col-lg-12 col-md-12 col-12">
+            <!-- Modal -->
+            <div class="custom-modal JobModal">
+                <div class="modal fade" id="JobModal" tabindex="-1" role="dialog"
+                     aria-labelledby="JobModalTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content p-4">
+                            <div class="modal-header p-0">
+                                <h2 id="exampleModalLongTitle"
+                                    class="modal-title heading2-regular-30-38 text-primary-black">Notify me of new
+                                    <strong>Chef</strong> jobs in <strong>Orlando, FL</strong></h2>
+                            </div>
+                            <div class="modal-body bg-white p-0 tellus-more-about-you">
+                                <form>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-12 col-12 pt-4 pb-2 pl-2 pr-2 m-0">
+                                            <label for="name" class="m-0 pl-1 more-about-label">Name</label>
+                                            <input type="text" class="form-control more-about-input"
+                                                   id="name" placeholder="John Smith">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-12 col-12 pt-0 pb-2 pl-2 pr-2 m-0">
+                                            <label for="email" class="m-0 pl-1 more-about-label">Email</label>
+                                            <input type="email" class="form-control more-about-input"
+                                                   id="email" placeholder="john@email.com">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-12 col-12 pt-0 pb-2 pl-2 pr-2 m-0">
+                                            <label for="phone" class="m-0 pl-1 more-about-label">Phone Number</label>
+                                            <input type="text" class="form-control more-about-input"
+                                                   id="phone" placeholder="111-222-3333">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6 col-12 pt-0 pb-2 pl-2 pr-2 m-0">
+                                            <label class="m-0 pl-1 more-about-label">Resume</label>
+                                            <div>
+                                                <label for="file-upload"
+                                                       class="btn-white-large-text font-weight-bold mt-3 text-center">
+                                                    Choose File
+                                                </label>
+                                            </div>
+                                            <input type="file" class="form-control-file" id="file-upload">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-12 col-12 pt-0 pb-2 pl-2 pr-2 m-0">
+                                            <label for="phone" class="m-0 pl-1 more-about-label">Cover Letter</label>
+                                            <textarea class="form-control more-about-input" rows="3"
+                                                      id="comment"></textarea>
+                                        </div>
+                                    </div>
+                                    <h5 class="paragraph-regular-14-19 text-primary-black">By clicking ‘Apply,’ we will
+                                        send your information to the employer listed on this application.</h5>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <div class="row m-0">
+                                    <div class="col-lg-6 col-md-6 col-6 p-0">
+                                        <a href="#"
+                                           class="float-left text-primary-brightsidepurple font-weight-bold modal-footer-link pt-2">Cancel</a>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-6 p-0">
+                                        <button type="button" class="btn btn-primary-large-text" data-toggle="modal"
+                                                data-target="#JobModal">Apply
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

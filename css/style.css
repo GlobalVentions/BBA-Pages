@@ -2150,8 +2150,9 @@ body.overview-and-grid .Pattern-img-div img {
 .tellus-more-about-you label.more-about-label {
   font-size: 13px; }
 .tellus-more-about-you .more-about-input {
-  padding: 0.675rem .75rem;
-  border: 2px solid #AAB2B5; }
+  padding: 0.600rem .75rem;
+  border: 2px solid #AAB2B5;
+  resize: none; }
   .tellus-more-about-you .more-about-input:focus {
     color: #495057;
     background-color: #fff;
@@ -2161,6 +2162,10 @@ body.overview-and-grid .Pattern-img-div img {
 .tellus-more-about-you .social-security-input {
   padding-left: 35px;
   padding-right: 100px; }
+.tellus-more-about-you .salary-optional {
+  padding-left: 30px;
+  padding-right: 15px;
+  font-size: 0.9rem; }
 .tellus-more-about-you .input-learn-more {
   right: 12px;
   position: absolute;
@@ -2173,6 +2178,30 @@ body.overview-and-grid .Pattern-img-div img {
   z-index: 5; }
 .tellus-more-about-you .occupation-input {
   padding-right: 100px; }
+.tellus-more-about-you input[type="file"] {
+  display: none; }
+.tellus-more-about-you .custom-file-upload {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer; }
+
+.cke_chrome {
+  border: 2px solid #AAB2B5 !important;
+  box-shadow: none !important;
+  border-radius: .25rem; }
+
+.cke_top {
+  box-shadow: none !important;
+  border-bottom: 0 !important;
+  background: #AEB6B9 !important;
+  background-image: none !important; }
+
+.cke_bottom {
+  box-shadow: none !important;
+  border-bottom: 0 !important;
+  background: #AEB6B9 !important;
+  background-image: none !important; }
 
 .global-signup-bg {
   background-image: url(../images/sand_wind_png.png);

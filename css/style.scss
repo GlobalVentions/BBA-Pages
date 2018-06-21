@@ -2730,8 +2730,9 @@ body.overview-and-grid {
     font-size: 13px;
   }
   .more-about-input {
-    padding: 0.675rem .75rem;
+    padding: 0.600rem .75rem;
     border: 2px solid #AAB2B5;
+    resize: none;
     &:focus {
       color: #495057;
       background-color: #fff;
@@ -2744,6 +2745,12 @@ body.overview-and-grid {
     padding-left: 35px;
     padding-right: 100px;
   }
+  .salary-optional {
+    padding-left: 30px;
+    padding-right: 15px;
+    font-size: 0.9rem;
+  }
+
   .input-learn-more {
     right: 12px;
     position: absolute;
@@ -2759,8 +2766,33 @@ body.overview-and-grid {
   .occupation-input {
     padding-right: 100px;
   }
+  input[type="file"] {
+    display: none;
+  }
+  .custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+  }
 }
-
+.cke_chrome {
+  border: 2px solid #AAB2B5!important;
+  box-shadow: none!important;
+  border-radius: .25rem;
+}
+.cke_top {
+  box-shadow:none!important;
+  border-bottom: 0!important;
+  background: $secondarygrey!important;
+  background-image: none!important;
+}
+.cke_bottom {
+  box-shadow:none!important;
+  border-bottom: 0!important;
+  background: $secondarygrey!important;
+  background-image: none!important;
+}
 .global-signup-bg {
   background-image: url(../images/sand_wind_png.png);
   background-repeat: no-repeat;
