@@ -75,6 +75,33 @@ $(function () {
             }
         });
     }
+    if ($('.owl-featured-today-second').length) {
+        $('.owl-featured-today-second').owlCarousel({
+            autoplay: true,
+            autoplayTimeout: 6500,
+            smartSpeed: 1000,
+            loop: true,
+            center: true,
+            nav: true,
+            dots: false,
+            video: true,
+            videoWidth: true,
+            videoHeight: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 2,
+                    margin: 15
+                },
+                992: {
+                    items: 2,
+                    margin: 40
+                }
+            }
+        });
+    }
     if ($('.owl-career-opportunities').length) {
         $('.owl-career-opportunities').owlCarousel({
             autoplay: true,
@@ -672,4 +699,36 @@ function opportunitiesToggle(){
 /* JS Code for video play pause button */
 $("a[href='#']").click(function(e) {
     e.preventDefault();
+});
+
+/* JS code for Checkckbox filte in post calculator page */
+$(document).ready(function()
+{
+    //hide all contents
+    $('div[id^=sb]').hide();
+
+    $('input[id^=chk]').change(function(){
+
+        // get checkbox index
+        var index = $(this).attr('id').replace('chk','');
+        //show respective contents
+        if($(this).is(':checked'))
+            $('#sb'+index).show();
+        else
+            $('#sb'+index).hide();
+    });
+
+    $(".default-banking").show();
+    $(".check_banking").click(function() {
+        if($(this).is(":checked")) {
+            $(".default-banking").hide();
+        } else {
+            $(".default-banking").show();
+        }
+    });
+
+    $(".unchecked").on("click", function() {
+        $(this).toggleClass("checked");
+    });
+
 });
