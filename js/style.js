@@ -695,6 +695,9 @@ function knowledgeBaseToggle(){
 function opportunitiesToggle(){
     $(".opportunities-menu-main").toggle();
 }
+function threeDotsToggle(){
+    $(".ThreeDots-menu-main").toggle();
+}
 
 /* JS Code for video play pause button */
 $("a[href='#']").click(function(e) {

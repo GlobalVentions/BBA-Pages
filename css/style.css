@@ -302,7 +302,8 @@ html, body {
 .header-menu-text {
   font-family: "FibraOne-Bold", Sans Serif;
   font-size: 17px;
-  padding: 15px 0; }
+  /*  padding: 15px 0;*/
+  padding: 12px 0; }
 
 .body-link-3 {
   padding: 0 !important; }
@@ -884,7 +885,7 @@ ul.found-jobs-ul li:before {
       width: 100%;
       list-style: none;
       position: relative;
-      top: 18px;
+      top: 14px;
       background-color: #ffffff;
       padding: 15px 0 0 0;
       -webkit-box-shadow: 0px 0px 10px 1px #f2f2f2;
@@ -1015,12 +1016,62 @@ ul.found-jobs-ul li:before {
           font-size: 0.9em;
           transition: color .3s ease-in-out; }
 
+.ThreeDots-menu-main {
+  position: fixed;
+  width: 235px;
+  cursor: initial;
+  /*  .arrow-up {
+      width: 0;
+      height: 0;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-bottom: 20px solid #f2f2f2;
+      margin: 0 auto;
+      position: relative;
+      bottom: 20px;
+      -webkit-box-shadow: 0px 0px 10px 1px $secondarygrey;
+      -moz-box-shadow: 0px 0px 10px 1px $secondarygrey;
+      box-shadow: 0px 0px 10px 1px $secondarygrey;
+    }*/ }
+  .ThreeDots-menu-main .ThreeDots-menu-main-bg {
+    background-color: #F2F2F2;
+    position: relative;
+    top: 28px;
+    right: 134px;
+    -webkit-box-shadow: 0px 0px 10px 1px #AEB6B9;
+    -moz-box-shadow: 0px 0px 10px 1px #AEB6B9;
+    box-shadow: 0px 0px 10px 1px #AEB6B9;
+    border-radius: 6px; }
+  .ThreeDots-menu-main .arrow-up {
+    position: relative;
+    box-sizing: border-box;
+    background: #F2F2F2;
+    box-shadow: 0px 3px 3px 0 #AEB6B9; }
+  .ThreeDots-menu-main .arrow-up::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    margin-left: -0.5em;
+    top: -0.4em;
+    left: 63%;
+    box-sizing: border-box;
+    border: 1em solid #AEB6B9;
+    border-color: transparent transparent #F2F2F2 #F2F2F2;
+    transform-origin: 0 0;
+    transform: rotate(135deg);
+    box-shadow: -3px 3px 3px 0 #AEB6B9;
+    border-radius: 5px; }
+
 .icons-symbol {
   line-height: 40px;
   display: inline-block;
   cursor: pointer; }
   .icons-symbol .icons-bg {
     background-color: #f2f2f2; }
+  .icons-symbol .ham-pro-burger-img {
+    position: relative;
+    left: 6px; }
   .icons-symbol .btn-burger {
     background-color: #ffffff;
     cursor: pointer; }
@@ -1070,7 +1121,7 @@ ul.found-jobs-ul li:before {
   justify-content: center; }
 
 .hero-container {
-  margin-top: 75px; }
+  margin-top: 70px; }
   .hero-container .hero-banner {
     /* Centered text */ }
     .hero-container .hero-banner .centered-text {
@@ -2270,7 +2321,8 @@ body.overview-and-grid .Pattern-img-div img {
     text-shadow: 0px 0px 3px #969696;
     -webkit-box-shadow: 0px 6px 3px -4px #cccccc;
     -moz-box-shadow: 0px 6px 3px -4px #cccccc;
-    box-shadow: 0px 6px 3px -4px #cccccc; }
+    box-shadow: 0px 6px 3px -4px #cccccc;
+    cursor: pointer; }
   .global-signup-bg .loginBtn--facebook:before {
     border-right: #485A96 1px solid;
     background: url("../images/fb-btn.png") 6px 6px no-repeat; }
@@ -2286,7 +2338,8 @@ body.overview-and-grid .Pattern-img-div img {
     text-shadow: 0px 0px 3px #969696;
     -webkit-box-shadow: 0px 6px 3px -4px #cccccc;
     -moz-box-shadow: 0px 6px 3px -4px #cccccc;
-    box-shadow: 0px 6px 3px -4px #cccccc; }
+    box-shadow: 0px 6px 3px -4px #cccccc;
+    cursor: pointer; }
   .global-signup-bg .loginBtn--google:before {
     background: url("../images/google-btn.png") 12px 12px no-repeat; }
   .global-signup-bg .loginBtn--google:hover,
@@ -2483,6 +2536,17 @@ body.overview-and-grid .Pattern-img-div img {
 
 input[type="checkbox"]:focus {
   outline: none; }
+
+.health-guru-reg-link {
+  text-decoration: none;
+  color: #6b17b3; }
+  .health-guru-reg-link:hover {
+    text-decoration: none;
+    color: #6b17b3; }
+
+.financial-guru-pos {
+  position: relative;
+  left: 90px; }
 
 /* Media CSS start */
 @media (max-width: 768px) {

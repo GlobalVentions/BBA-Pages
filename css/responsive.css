@@ -127,6 +127,15 @@
         top: 10px;
         right: 10px;
     }
+    .financial-guru-pos {
+        left: auto;
+    }
+    .icons-symbol-search{
+        display: none;
+    }
+    .hero-container {
+        margin-top: 75px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -363,6 +372,9 @@
     .top-right-slide-like {
         top: 10px;
         right: 10px;
+    }
+    .financial-guru-pos {
+        left: auto;
     }
 }
 

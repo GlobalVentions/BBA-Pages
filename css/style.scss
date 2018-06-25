@@ -362,7 +362,8 @@ html, body {
 .header-menu-text {
   font-family: $FibraOne-Bold;
   font-size: 17px;
-  padding: 15px 0;
+  /*  padding: 15px 0;*/
+  padding: 12px 0;
 }
 
 .body-link-3 {
@@ -1081,7 +1082,7 @@ ul.found-jobs-ul li:before {
       width: 100%;
       list-style: none;
       position: relative;
-      top: 18px;
+      top: 14px;
       background-color: $color_white;
       padding: 15px 0 0 0;
       -webkit-box-shadow: 0px 0px 10px 1px #f2f2f2;
@@ -1243,12 +1244,67 @@ ul.found-jobs-ul li:before {
   }
 }
 
+.ThreeDots-menu-main {
+  position: fixed;
+  width: 235px;
+  cursor: initial;
+  .ThreeDots-menu-main-bg {
+    background-color: #F2F2F2;
+    position: relative;
+    top: 28px;
+    right: 134px;
+    -webkit-box-shadow: 0px 0px 10px 1px $secondarygrey;
+    -moz-box-shadow: 0px 0px 10px 1px $secondarygrey;
+    box-shadow: 0px 0px 10px 1px $secondarygrey;
+    border-radius: 6px;
+  }
+/*  .arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid #f2f2f2;
+    margin: 0 auto;
+    position: relative;
+    bottom: 20px;
+    -webkit-box-shadow: 0px 0px 10px 1px $secondarygrey;
+    -moz-box-shadow: 0px 0px 10px 1px $secondarygrey;
+    box-shadow: 0px 0px 10px 1px $secondarygrey;
+  }*/
+  .arrow-up {
+    position: relative;
+    box-sizing: border-box;
+    background: #F2F2F2;
+    box-shadow: 0px 3px 3px 0 $secondarygrey;
+  }
+  .arrow-up::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    margin-left: -0.5em;
+    top: -0.4em;
+    left: 63%;
+    box-sizing: border-box;
+    border: 1em solid $secondarygrey;
+    border-color: transparent transparent #F2F2F2 #F2F2F2;
+    transform-origin: 0 0;
+    transform: rotate(135deg);
+    box-shadow: -3px 3px 3px 0 $secondarygrey;
+    border-radius: 5px;
+  }
+}
+
 .icons-symbol {
   line-height: 40px;
   display: inline-block;
   cursor: pointer;
   .icons-bg {
     background-color: $techgrey;
+  }
+  .ham-pro-burger-img {
+    position: relative;
+    left: 6px;
   }
   .btn-burger {
     background-color: $color_white;
@@ -1311,7 +1367,7 @@ ul.found-jobs-ul li:before {
 }
 
 .hero-container {
-  margin-top: 75px;
+  margin-top: 70px;
   .hero-banner {
     /* Centered text */
     .centered-text {
@@ -2885,6 +2941,7 @@ body.overview-and-grid {
     -webkit-box-shadow: 0px 6px 3px -4px rgba(204, 204, 204, 1);
     -moz-box-shadow: 0px 6px 3px -4px rgba(204, 204, 204, 1);
     box-shadow: 0px 6px 3px -4px rgba(204, 204, 204, 1);
+    cursor: pointer;
   }
   .loginBtn--facebook:before {
     border-right: #485A96 1px solid;
@@ -2906,6 +2963,7 @@ body.overview-and-grid {
     -webkit-box-shadow: 0px 6px 3px -4px rgba(204, 204, 204, 1);
     -moz-box-shadow: 0px 6px 3px -4px rgba(204, 204, 204, 1);
     box-shadow: 0px 6px 3px -4px rgba(204, 204, 204, 1);
+    cursor: pointer;
   }
   .loginBtn--google:before {
     background: url('../images/google-btn.png') 12px 12px no-repeat;
@@ -3140,15 +3198,17 @@ body.overview-and-grid {
   padding: 7px 20px 7px 7px;
   border-radius: 8px;
 }
+
 .custom-filter-chk.checked {
   background-color: #FAD136;
   padding: 7px 20px 7px 7px;
   border-radius: 8px;
-    .custom-control-description{
-      color: $color_black!important;
-    }
+  .custom-control-description {
+    color: $color_black !important;
+  }
 }
-.custom-control-description{
+
+.custom-control-description {
   color: $secondarygrey;
 }
 
@@ -3159,6 +3219,20 @@ body.overview-and-grid {
 
 input[type="checkbox"]:focus {
   outline: none;
+}
+
+.health-guru-reg-link {
+  text-decoration: none;
+  color: $brightsidepurple;
+  &:hover {
+    text-decoration: none;
+    color: $brightsidepurple;
+  }
+}
+
+.financial-guru-pos {
+  position: relative;
+  left: 90px;
 }
 
 /* Media CSS start */
