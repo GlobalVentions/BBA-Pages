@@ -687,16 +687,26 @@ $(function () {
 function menuToggle(){
     $(".burger-menu-main").toggle();
 }
-
+function promenuToggle(){
+    $(".pro-burger-menu-main").toggle();
+}
 function knowledgeBaseToggle(){
     $(".knowledge-menu-main").toggle();
 }
-
 function opportunitiesToggle(){
     $(".opportunities-menu-main").toggle();
 }
+function allopportunitiesToggle(){
+    $(".allopportunities-menu-main").toggle();
+}
+function allresourcesToggle(){
+    $(".allresources-menu-main").toggle();
+}
 function threeDotsToggle(){
     $(".ThreeDots-menu-main").toggle();
+}
+function searchToggle(){
+    $(".SearchToggle-main").toggle();
 }
 
 /* JS Code for video play pause button */
@@ -709,9 +719,7 @@ $(document).ready(function()
 {
     //hide all contents
     $('div[id^=sb]').hide();
-
     $('input[id^=chk]').change(function(){
-
         // get checkbox index
         var index = $(this).attr('id').replace('chk','');
         //show respective contents
@@ -720,7 +728,6 @@ $(document).ready(function()
         else
             $('#sb'+index).hide();
     });
-
     $(".default-banking").show();
     $(".check_banking").click(function() {
         if($(this).is(":checked")) {
@@ -729,9 +736,7 @@ $(document).ready(function()
             $(".default-banking").show();
         }
     });
-
     $(".unchecked").on("click", function() {
         $(this).toggleClass("checked");
     });
-
 });

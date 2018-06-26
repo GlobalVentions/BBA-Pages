@@ -146,6 +146,12 @@ html, body {
   .btn-brightsidepurple:focus {
     outline: none !important; }
 
+.border-top-adv {
+  border-top: 2px solid #EAEAEA; }
+
+.font-balance-trade-lines-inquiries {
+  font-size: 1.4rem; }
+
 .dropdownarrow-show {
   background: url(../images/icon/chevron-inactive.mediumGray@1x.png) no-repeat right 6px;
   background-position: bottom; }
@@ -167,6 +173,27 @@ html, body {
 
 .bg-text-yellow {
   background-color: #fabb36 !important; }
+
+.heading-alt-regular {
+  font-family: "FibraOneAlt-Regular", Sans Serif !important; }
+
+.heading-alt-bold {
+  font-family: "FibraOneAlt-Bold", Sans Serif !important; }
+
+.heading-alt-heavy {
+  font-family: "FibraOneAlt-Heavy", Sans Serif !important; }
+
+.heading-alt-semibold {
+  font-family: "FibraOneAlt-SemiBold", Sans Serif !important; }
+
+.heading-alt-light {
+  font-family: "FibraOneAlt-Light", Sans Serif !important; }
+
+.heading-alt-thin {
+  font-family: "FibraOneAlt-Thin", Sans Serif !important; }
+
+.heading-alt-ultrabold {
+  font-family: "FibraOneAlt-UltraBold", Sans Serif !important; }
 
 .heading1-bold-40-54 {
   font-family: "FibraOne-Bold", Sans Serif !important; }
@@ -300,10 +327,9 @@ html, body {
   font-size: 14px !important; }
 
 .header-menu-text {
-  font-family: "FibraOne-Bold", Sans Serif;
+  font-family: "FibraOneAlt-Bold", Sans Serif;
   font-size: 17px;
-  /*  padding: 15px 0;*/
-  padding: 12px 0; }
+  padding: 14px 0 10px; }
 
 .body-link-3 {
   padding: 0 !important; }
@@ -332,7 +358,12 @@ ul.what-you-get li {
   line-height: 35px; }
 
 .health-guru-heading {
-  font-size: 2.4rem; }
+  font-size: 2.3rem;
+  line-height: 50px; }
+
+.health-guru-heading1 {
+  font-size: 2.4rem;
+  line-height: 50px; }
 
 ul.what-you-get li:before {
   content: "\2714\0020"; }
@@ -488,7 +519,7 @@ ul.found-jobs-ul li:before {
       transform: translateY(-7px); }
 
 .header-menu-text-pro {
-  font-family: "FibraOne-Bold", Sans Serif;
+  font-family: "FibraOneAlt-Bold", Sans Serif;
   font-size: 17px;
   padding: 0 20px; }
 
@@ -543,8 +574,8 @@ ul.found-jobs-ul li:before {
   padding: 0.774rem 1.8rem !important;
   cursor: pointer;
   width: 100%;
-  font-weight: 600 !important;
-  font-weight: 600 !important; }
+  font-size: 0.9rem !important;
+  font-family: "FibraOneAlt-Regular", Sans Serif !important; }
   .btn-primary-large-text:hover {
     color: #ffffff;
     text-decoration: none;
@@ -607,10 +638,12 @@ ul.found-jobs-ul li:before {
   width: 100%;
   -webkit-box-shadow: 0px 0px 2px 2px #B5B5B5;
   box-shadow: 0px 0px 2px 2px #B5B5B5;
-  border: 2px solid #ffffff !important; }
+  border: 2px solid #ffffff !important;
+  font-family: "FibraOneAlt-Bold", Sans Serif;
+  font-size: 0.9rem !important; }
   .btn-white-large-text-icon .btn-arrow {
     position: absolute;
-    bottom: 20px;
+    bottom: 18px;
     right: 25px;
     width: 40px; }
   .btn-white-large-text-icon:hover {
@@ -861,13 +894,13 @@ ul.found-jobs-ul li:before {
   height: 0.5em; }
 
 ::-webkit-scrollbar-button {
-  background: #ccc; }
+  background: #000; }
 
 ::-webkit-scrollbar-track-piece {
   background: #888; }
 
 ::-webkit-scrollbar-thumb {
-  background: #eee; }
+  background: #ccc; }
 
 /* Icons CSS start */
 .icons .icons-text {
@@ -922,6 +955,56 @@ ul.found-jobs-ul li:before {
           font-size: 0.9em;
           transition: color .3s ease-in-out; }
 
+.pro-burger-menu-main {
+  position: fixed;
+  width: 210px;
+  z-index: 5; }
+  .pro-burger-menu-main nav[role="full-horizontal"] {
+    width: 100%;
+    position: relative;
+    right: 4px;
+    top: 0; }
+    .pro-burger-menu-main nav[role="full-horizontal"] ul {
+      width: 100%;
+      list-style: none;
+      position: relative;
+      top: 14px;
+      background-color: #ffffff;
+      padding: 15px 0 0 0;
+      -webkit-box-shadow: 0px 0px 10px 1px #f2f2f2;
+      -moz-box-shadow: 0px 0px 10px 1px #f2f2f2;
+      box-shadow: 0px 0px 10px 1px #f2f2f2;
+      max-height: 650px;
+      overflow: auto; }
+      .pro-burger-menu-main nav[role="full-horizontal"] ul > li {
+        position: relative;
+        text-transform: capitalize;
+        cursor: pointer;
+        text-align: left;
+        transition-duration: .3s;
+        transition-timing-function: ease-in-out;
+        transition-property: background, color, padding, border-radius;
+        width: 100%;
+        white-space: nowrap;
+        padding: 0 20px;
+        line-height: 39px;
+        margin-bottom: 0; }
+        .pro-burger-menu-main nav[role="full-horizontal"] ul > li .menu-fa-icon {
+          width: 9px;
+          position: relative;
+          top: 15px; }
+        .pro-burger-menu-main nav[role="full-horizontal"] ul > li:last-child:after {
+          box-shadow: none; }
+        .pro-burger-menu-main nav[role="full-horizontal"] ul > li:hover {
+          background-color: #f2f2f2; }
+          .pro-burger-menu-main nav[role="full-horizontal"] ul > li:hover > a {
+            color: #1e1e20; }
+        .pro-burger-menu-main nav[role="full-horizontal"] ul > li > a {
+          color: #1e1e20;
+          text-decoration: none;
+          font-size: 0.9em;
+          transition: color .3s ease-in-out; }
+
 .knowledge-menu-main {
   position: fixed;
   width: 210px; }
@@ -929,12 +1012,12 @@ ul.found-jobs-ul li:before {
     width: 100%;
     position: relative;
     right: 10px;
-    bottom: 8px; }
+    bottom: 13px; }
     .knowledge-menu-main nav[role="full-horizontal"] ul {
       width: 100%;
       list-style: none;
       position: relative;
-      top: 18px;
+      top: 22px;
       background-color: #ffffff;
       padding: 10px 0 0 0;
       -webkit-box-shadow: 0px 0px 10px 1px #f2f2f2;
@@ -976,12 +1059,12 @@ ul.found-jobs-ul li:before {
     width: 100%;
     position: relative;
     right: 18px;
-    bottom: 8px; }
+    bottom: 13px; }
     .opportunities-menu-main nav[role="full-horizontal"] ul {
       width: 100%;
       list-style: none;
       position: relative;
-      top: 18px;
+      top: 22px;
       background-color: #ffffff;
       padding: 15px 0 0 0;
       -webkit-box-shadow: 0px 0px 10px 1px #f2f2f2;
@@ -1016,23 +1099,111 @@ ul.found-jobs-ul li:before {
           font-size: 0.9em;
           transition: color .3s ease-in-out; }
 
+.allopportunities-menu-main {
+  position: fixed;
+  width: auto;
+  border-radius: 10px; }
+  .allopportunities-menu-main nav[role="full-horizontal"] {
+    width: 100%;
+    position: relative;
+    right: 18px;
+    bottom: 8px; }
+    .allopportunities-menu-main nav[role="full-horizontal"] ul {
+      width: 100%;
+      list-style: none;
+      position: relative;
+      top: 18px;
+      background-color: #ffffff;
+      padding: 15px 0;
+      -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.26);
+      -moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.26);
+      box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.26);
+      border-radius: 5px; }
+      .allopportunities-menu-main nav[role="full-horizontal"] ul > li {
+        position: relative;
+        text-transform: capitalize;
+        cursor: pointer;
+        text-align: left;
+        transition-duration: .3s;
+        transition-timing-function: ease-in-out;
+        transition-property: background, color, padding, border-radius;
+        width: 100%;
+        white-space: nowrap;
+        padding: 0 12px;
+        line-height: 35px;
+        margin-bottom: 0; }
+        .allopportunities-menu-main nav[role="full-horizontal"] ul > li .menu-fa-icon {
+          width: 9px;
+          position: relative;
+          top: 15px; }
+        .allopportunities-menu-main nav[role="full-horizontal"] ul > li:last-child:after {
+          box-shadow: none; }
+        .allopportunities-menu-main nav[role="full-horizontal"] ul > li > a {
+          color: #1e1e20;
+          text-decoration: none;
+          font-size: 0.9em;
+          transition: color .3s ease-in-out; }
+          .allopportunities-menu-main nav[role="full-horizontal"] ul > li > a div {
+            padding: 0 10px; }
+            .allopportunities-menu-main nav[role="full-horizontal"] ul > li > a div:hover {
+              background-color: #fad136;
+              border-radius: 6px; }
+
+.allresources-menu-main {
+  position: fixed;
+  width: auto;
+  border-radius: 10px; }
+  .allresources-menu-main nav[role="full-horizontal"] {
+    width: 100%;
+    position: relative;
+    right: 18px;
+    bottom: 8px; }
+    .allresources-menu-main nav[role="full-horizontal"] ul {
+      width: 100%;
+      list-style: none;
+      position: relative;
+      top: 18px;
+      background-color: #ffffff;
+      padding: 15px 0;
+      -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.26);
+      -moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.26);
+      box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.26);
+      border-radius: 5px; }
+      .allresources-menu-main nav[role="full-horizontal"] ul > li {
+        position: relative;
+        text-transform: capitalize;
+        cursor: pointer;
+        text-align: left;
+        transition-duration: .3s;
+        transition-timing-function: ease-in-out;
+        transition-property: background, color, padding, border-radius;
+        width: 100%;
+        white-space: nowrap;
+        padding: 0 12px;
+        line-height: 35px;
+        margin-bottom: 0; }
+        .allresources-menu-main nav[role="full-horizontal"] ul > li .menu-fa-icon {
+          width: 9px;
+          position: relative;
+          top: 15px; }
+        .allresources-menu-main nav[role="full-horizontal"] ul > li:last-child:after {
+          box-shadow: none; }
+        .allresources-menu-main nav[role="full-horizontal"] ul > li > a {
+          color: #1e1e20;
+          text-decoration: none;
+          font-size: 0.9em;
+          transition: color .3s ease-in-out; }
+          .allresources-menu-main nav[role="full-horizontal"] ul > li > a div {
+            padding: 0 10px; }
+            .allresources-menu-main nav[role="full-horizontal"] ul > li > a div:hover {
+              background-color: #fad136;
+              border-radius: 6px; }
+
 .ThreeDots-menu-main {
   position: fixed;
   width: 235px;
   cursor: initial;
-  /*  .arrow-up {
-      width: 0;
-      height: 0;
-      border-left: 20px solid transparent;
-      border-right: 20px solid transparent;
-      border-bottom: 20px solid #f2f2f2;
-      margin: 0 auto;
-      position: relative;
-      bottom: 20px;
-      -webkit-box-shadow: 0px 0px 10px 1px $secondarygrey;
-      -moz-box-shadow: 0px 0px 10px 1px $secondarygrey;
-      box-shadow: 0px 0px 10px 1px $secondarygrey;
-    }*/ }
+  z-index: 5; }
   .ThreeDots-menu-main .ThreeDots-menu-main-bg {
     background-color: #F2F2F2;
     position: relative;
@@ -1062,6 +1233,59 @@ ul.found-jobs-ul li:before {
     transform: rotate(135deg);
     box-shadow: -3px 3px 3px 0 #AEB6B9;
     border-radius: 5px; }
+
+.SearchToggle-main {
+  position: fixed;
+  width: 1441px;
+  cursor: initial; }
+  .SearchToggle-main .SearchToggle-main-bg {
+    background-color: #F2F2F2;
+    position: relative;
+    top: 27px;
+    right: 1138px;
+    box-shadow: 0 14px 25px -13px rgba(0, 0, 0, 0.26); }
+    .SearchToggle-main .SearchToggle-main-bg input.search-txt-box {
+      border: 0;
+      border-bottom: 1px solid #AAB2B5;
+      outline: 0;
+      background-color: transparent;
+      padding: 10px 0 10px 0;
+      font-size: 2.4rem;
+      text-align: center;
+      font-family: "FibraOneAlt-Bold", Sans Serif;
+      letter-spacing: 0.5px; }
+      .SearchToggle-main .SearchToggle-main-bg input.search-txt-box:focus {
+        box-shadow: none; }
+      .SearchToggle-main .SearchToggle-main-bg input.search-txt-box::-webkit-search-cancel-button {
+        -webkit-appearance: searchfield-cancel-button; }
+    .SearchToggle-main .SearchToggle-main-bg ::-webkit-input-placeholder {
+      /* Chrome/Opera/Safari */
+      color: #AAB2B5;
+      font-size: 2.4rem;
+      text-align: center;
+      font-family: "FibraOneAlt-Bold", Sans Serif;
+      letter-spacing: 0.5px; }
+    .SearchToggle-main .SearchToggle-main-bg ::-moz-placeholder {
+      /* Firefox 19+ */
+      color: #AAB2B5;
+      font-size: 2.4rem;
+      text-align: center;
+      font-family: "FibraOneAlt-Bold", Sans Serif;
+      letter-spacing: 0.5px; }
+    .SearchToggle-main .SearchToggle-main-bg :-ms-input-placeholder {
+      /* IE 10+ */
+      color: #AAB2B5;
+      font-size: 2.4rem;
+      text-align: center;
+      font-family: "FibraOneAlt-Bold", Sans Serif;
+      letter-spacing: 0.5px; }
+    .SearchToggle-main .SearchToggle-main-bg :-moz-placeholder {
+      /* Firefox 18- */
+      color: #AAB2B5;
+      font-size: 2.4rem;
+      text-align: center;
+      font-family: "FibraOneAlt-Bold", Sans Serif;
+      letter-spacing: 0.5px; }
 
 .icons-symbol {
   line-height: 40px;
@@ -1130,13 +1354,15 @@ ul.found-jobs-ul li:before {
       left: 17%;
       max-width: 435px; }
       .hero-container .hero-banner .centered-text .credit-without-score-text {
-        font-size: 3.5rem;
-        font-family: "OpenSans-bold", Sans Serif;
+        font-size: 3.4rem;
+        font-family: "FibraOneAlt-Bold", Sans Serif;
         line-height: 50px; }
       .hero-container .hero-banner .centered-text .opportunitytxt {
-        font-size: 1.2rem !important;
-        max-width: 352px;
-        line-height: 23px; }
+        font-size: 1.09rem !important;
+        max-width: 350px;
+        line-height: 23px;
+        font-family: "FibraOneAlt-Regular", Sans Serif;
+        color: #1E1E20; }
     .hero-container .hero-banner .bottom-left {
       position: absolute;
       bottom: -50px;
@@ -1188,7 +1414,7 @@ ul.found-jobs-ul li:before {
   box-shadow: 0px 0px 10px 1px #f2f2f2;
   min-height: 200px;
   border: 0;
-  border-radius: 10px; }
+  border-radius: 13px; }
   .best-help-you .card .img-top {
     display: none;
     position: absolute;
@@ -1455,7 +1681,8 @@ video {
   padding-right: 39px;
   background-size: 36px 12px;
   line-height: normal;
-  text-decoration: none; }
+  text-decoration: none;
+  font-size: 0.9rem !important; }
   .apply-btn:hover {
     text-decoration: none; }
 
@@ -1463,7 +1690,8 @@ video {
   background: url(../images/icon/arrow-left.purple@1x.png) no-repeat right 6px;
   padding-right: 55px;
   background-size: 42px 11px;
-  line-height: normal; }
+  line-height: normal;
+  text-decoration: underline; }
   .letsgo-btn:hover {
     text-decoration: underline; }
 
@@ -1475,6 +1703,16 @@ video {
   position: relative;
   top: 7px; }
   .opportunities-btn:hover {
+    text-decoration: underline; }
+
+.AllOpportunities-btn {
+  background: url(../images/icon/chevron-inactive.black@1x.png) no-repeat right 6px;
+  padding-right: 21px;
+  background-size: auto;
+  line-height: normal;
+  position: relative;
+  bottom: 10px; }
+  .AllOpportunities-btn:hover {
     text-decoration: underline; }
 
 .show-details-btn {
@@ -2204,7 +2442,7 @@ body.overview-and-grid .Pattern-img-div img {
   position: relative; }
   .financial-health-guru-block .financial-health-guru-img {
     position: absolute;
-    top: 20%; }
+    top: 17%; }
 
 .lock-img {
   width: 25px;
@@ -2213,10 +2451,7 @@ body.overview-and-grid .Pattern-img-div img {
 
 .health-guru-left {
   position: absolute;
-  top: 90px;
-  left: -77px; }
-  .health-guru-left img {
-    transform: rotate(180deg); }
+  top: 90px; }
 
 .health-dot-left {
   position: absolute;
@@ -2547,23 +2782,5 @@ input[type="checkbox"]:focus {
 .financial-guru-pos {
   position: relative;
   left: 90px; }
-
-/* Media CSS start */
-@media (max-width: 768px) {
-  .header-menu-text-pro {
-    font-size: 17px;
-    padding: 15px 20px; } }
-@media (max-width: 480px) {
-  .header-menu-text {
-    font-size: 11px !important;
-    padding: 15px 0 !important; }
-
-  .header-menu-text-pro {
-    font-size: 11px !important;
-    padding: 15px 0 0 !important; }
-
-  .header-menu-text-pro-sec {
-    font-size: 11px !important;
-    padding: 0 !important; } }
 
 /*# sourceMappingURL=style.css.map */

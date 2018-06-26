@@ -136,15 +136,37 @@
     .hero-container {
         margin-top: 75px;
     }
+    .header-menu-text-pro {
+        font-size: 17px;
+        padding: 15px 20px;
+    }
 }
 
 @media (max-width: 480px) {
+    .header-menu-text {
+        font-size: 11px !important;
+        padding: 12px 0 !important;
+    }
+    .header-menu-text-pro {
+        font-size: 11px !important;
+        padding: 12px 0 !important;
+    }
+    .header-menu-text-pro-sec {
+        font-size: 11px !important;
+        padding: 0 !important;
+    }
     .pre-banking-tabs .border-whole {
         border-bottom: 1px solid #AAB2B5;
         border-left: 1px solid #AAB2B5;
         border-right: 1px solid #AAB2B5;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
+    }
+    .ThreeDots-menu-main .ThreeDots-menu-main-bg{
+        right: 170px;
+    }
+    .ThreeDots-menu-main .arrow-up::after{
+        left: 79%;
     }
     .owl-featured-today.owl-carousel .owl-nav {
         display: none !important;
@@ -203,6 +225,12 @@
 
     .health-guru-heading {
         font-size: 1.4rem;
+        line-height: 35px;
+    }
+
+    .health-guru-heading1 {
+        font-size: 1.4rem;
+        line-height: 35px;
     }
 
     .financial-health-guru-block .financial-health-guru-img {
@@ -328,6 +356,37 @@
         overflow: auto;
         height: auto;
     }
+    .pro-burger-menu-main nav[role="full-horizontal"] {
+        width: 100%;
+        left: 0;
+        overflow: auto;
+        height: auto;
+        top: 0;
+        right: auto;
+    }
+    .pro-burger-menu-main {
+        width: 100%;
+        left: 0;
+        overflow: auto;
+        height: auto;
+        top: 114px;
+    }
+    .burger-menu-main{
+        top: 74px;
+    }
+    .burger-menu-main nav[role="full-horizontal"] ul{
+        position: initial;
+        max-height: 423px;
+    }
+    .pro-burger-menu-main nav[role="full-horizontal"] ul {
+        position: initial;
+    }
+    .knowledge-menu-main nav[role="full-horizontal"] ul{
+        position: initial;
+    }
+    .opportunities-menu-main nav[role="full-horizontal"] ul{
+        position: initial;
+    }
     .burger-menu-main nav[role="full-horizontal"] {
         right: auto;
     }
@@ -336,6 +395,7 @@
         left: 0;
         overflow: auto;
         height: auto;
+        top: 114px;
     }
     .opportunities-menu-main nav[role="full-horizontal"] {
         right: auto;
@@ -345,6 +405,7 @@
         left: 0;
         overflow: auto;
         height: auto;
+        top: 114px;
     }
     .knowledge-menu-main nav[role="full-horizontal"] {
         right: auto;
@@ -379,5 +440,8 @@
 }
 
 @media (max-width: 360px) {
-
+    .burger-menu-main nav[role="full-horizontal"] ul{
+        position: initial;
+        max-height: 423px;
+    }
 }
