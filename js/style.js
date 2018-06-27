@@ -739,4 +739,13 @@ $(document).ready(function()
     $(".unchecked").on("click", function() {
         $(this).toggleClass("checked");
     });
+    $('.z-indexradio').click(function() {
+        var $this = $(this);
+
+        if ($this.hasClass('text-white')) {
+            $this.removeClass('text-white');
+        } else {
+            $this.addClass('text-white');
+        }
+    });
 });

@@ -145,6 +145,21 @@ html, body {
 }
 
 /* GENERAL css */
+.show-me-chkbox{
+  position: relative;
+  right: 20px;
+}
+.z-indexradio{
+  position: relative;
+  z-index: 2;
+  padding: 13px 0;
+}
+.ltr-spacing{
+  letter-spacing: 0.2px!important;
+}
+.generalsizefont{
+  font-size: $general-font-size!important;
+}
 .btn-brightsidepurple {
   background-color: $color-button;
   color: $color_white;
@@ -201,6 +216,9 @@ html, body {
 
 .heading-alt-regular{
   font-family: $FibraOneAlt-Regular !important;
+}
+.heading-alt-regular-italic{
+  font-family: $FibraOneAlt-RegularItalic !important;
 }
 .heading-alt-bold{
   font-family: $FibraOneAlt-Bold !important;
@@ -500,6 +518,9 @@ ul.found-jobs-ul li:before {
       position: relative;
       top: 6px;
       left: 15px;
+      color: #8B8B8B;
+    }
+    .heading4-regular-18-24.inser-font {
       color: #F9F9F9;
     }
     .heading4-regular-18-24.account-was {
@@ -511,12 +532,12 @@ ul.found-jobs-ul li:before {
       left: auto;
       line-height: 30px;
     }
-    .heading4-regular-18-24.like-to-send {
-      font-size: 18px;
+    .heading4-bold-18-24.like-to-send {
+      font-size: 20px;
       position: relative;
       top: 6px;
       left: 0;
-      color: #8B8B8B;
+      color: #606060!important;
     }
     .custom-bank-form-group {
       border-radius: 20px;
@@ -645,9 +666,11 @@ ul.found-jobs-ul li:before {
   padding: 0.774rem 1.8rem !important;
   cursor: pointer;
   width: 100%;
+  font-size: $general-font-size!important;
+  font-family: $FibraOneAlt-Regular!important;
   .btn-arrow {
     position: absolute;
-    bottom: 20px;
+    bottom: 18px;
     right: 25px;
     width: 45px;
   }
@@ -945,9 +968,9 @@ ul.found-jobs-ul li:before {
     display: inline-block;
     color: #666;
     width: 100%;
-    z-index: 999999;
-    padding-top: 13px;
+/*    padding-top: 13px;*/
     text-align: center;
+    z-index: 2;
   }
   [type="radio"]:checked + label:before,
   [type="radio"]:not(:checked) + label:before {
@@ -1673,13 +1696,40 @@ ul.found-jobs-ul li:before {
     border: 2px solid $color_Silver;
     color: $color_Silver;
     padding: 12px 10px;
-    margin: 0 auto;
-    max-width: 250px;
+    max-width: 273px;
+    z-index: 2;
+    position: relative;
     .step-completion {
       background: url(../images/icon/checkmark-circle.inactive@1x.png) no-repeat left 1px;
       padding-left: 35px;
       background-size: 20px 20px;
       line-height: normal;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 253px;
+      border-bottom: 2px solid $color_Silver;
+      width: 81px;
+      margin: 0 20px;
+    }
+    &:before {
+      right: 100%;
+      z-index: 2;
+    }
+  }
+  .second-steps{
+    &:after {
+      left: 250px;
+      border-bottom: 2px solid $color_Silver;
+      width: 65px;
+      margin: 0 20px;
+    }
+  }
+  .last-steps{
+    &:after {
+      border-bottom:none !important;
     }
   }
   .bg-white-steps.active {
@@ -1690,6 +1740,9 @@ ul.found-jobs-ul li:before {
     border: 2px solid $smartgreen;
     color: $color_white;
     background-color: $smartgreen;
+    &:after {
+      border-bottom: 2px solid $smartgreen;
+    }
     .step-completion {
       background: url(../images/icon/checkmark-circle.active@1x.png) no-repeat left 1px;
       padding-left: 35px;
@@ -2015,6 +2068,9 @@ video {
 
 .max-width-1070 {
   max-width: 1070px !important;
+}
+.max-width-965 {
+  max-width: 965px !important;
 }
 
 .most-read-articles {
@@ -2714,6 +2770,7 @@ body.overview-and-grid {
       padding-top: 5px;
       text-decoration: underline;
       text-decoration-color: $brightsidepurple;
+      font-family: FibraOneAlt-Bold;
     }
   }
 }
@@ -2903,7 +2960,7 @@ body.overview-and-grid {
   .wrapper-dropdown-3.active .dropdown {
     opacity: 1;
     pointer-events: auto;
-    z-index: 2;
+    z-index: 4;
   }
 
   /* No CSS3 support */
@@ -3066,7 +3123,8 @@ body.overview-and-grid {
   position: relative;
   .financial-health-guru-img {
     position: absolute;
-    top: 17%;
+    top: 19%;
+    left: 10%;
   }
 }
 
@@ -3083,10 +3141,44 @@ body.overview-and-grid {
 
 .health-dot-left {
   position: absolute;
-  top: 75px;
+  top: 50px;
   left: 170px;
 }
-
+.half-circle-left {
+  position: absolute;
+  bottom: 205px;
+  left: 0;
+}
+.globe-triangle-right {
+  position: absolute;
+  bottom: 26px;
+  right: -90px;
+}
+.health-dot-right {
+  position: absolute;
+  top: 90px;
+  right: 170px;
+}
+.half-circle-right {
+  position: absolute;
+  bottom: 165px;
+  right: 0;
+}
+.globe-triangle-left {
+  position: absolute;
+  bottom: 5px;
+  left: -120px;
+}
+.half-diteed-circle-right {
+  position: absolute;
+  bottom: 410px;
+  right: 0;
+}
+.rainbow-left {
+  position: absolute;
+  top: 240px;
+  left: 0;
+}
 .max-width-450 {
   max-width: 450px;
 }
@@ -3164,7 +3256,7 @@ body.overview-and-grid {
 }
 
 .global-signup-bg {
-  background-image: url(../images/sand_wind_png.png);
+  background-image: url(../images/K2GOG8.png);
   background-repeat: no-repeat;
   background-size: Cover;
 
@@ -3345,6 +3437,7 @@ body.overview-and-grid {
     .rate-opportunity {
       position: relative;
       top: 3px;
+      font-size: $general-font-size;
     }
   }
   .btn-primary-large-text {
@@ -3353,6 +3446,8 @@ body.overview-and-grid {
   .btn-ghost-large-plus-icon {
     padding: 0.574rem 1.8rem !important;
     background-color: transparent;
+    font-family: $FibraOneAlt-Regular;
+    font-size: $general-font-size!important;
     &:hover {
       color: $techgrey;
       text-decoration: none;

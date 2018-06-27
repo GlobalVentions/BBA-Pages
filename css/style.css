@@ -131,6 +131,21 @@ html, body {
   overflow-x: hidden; }
 
 /* GENERAL css */
+.show-me-chkbox {
+  position: relative;
+  right: 20px; }
+
+.z-indexradio {
+  position: relative;
+  z-index: 2;
+  padding: 13px 0; }
+
+.ltr-spacing {
+  letter-spacing: 0.2px !important; }
+
+.generalsizefont {
+  font-size: 0.9rem !important; }
+
 .btn-brightsidepurple {
   background-color: #6B17B3;
   color: #ffffff;
@@ -176,6 +191,9 @@ html, body {
 
 .heading-alt-regular {
   font-family: "FibraOneAlt-Regular", Sans Serif !important; }
+
+.heading-alt-regular-italic {
+  font-family: "FibraOneAlt-RegularItalic", Sans Serif !important; }
 
 .heading-alt-bold {
   font-family: "FibraOneAlt-Bold", Sans Serif !important; }
@@ -419,6 +437,8 @@ ul.found-jobs-ul li:before {
     position: relative;
     top: 6px;
     left: 15px;
+    color: #8B8B8B; }
+  .link-bank-modal-body .bank-login-form-3 .heading4-regular-18-24.inser-font {
     color: #F9F9F9; }
   .link-bank-modal-body .bank-login-form-3 .heading4-regular-18-24.account-was {
     font-size: 21px;
@@ -428,12 +448,12 @@ ul.found-jobs-ul li:before {
     top: auto;
     left: auto;
     line-height: 30px; }
-  .link-bank-modal-body .bank-login-form-3 .heading4-regular-18-24.like-to-send {
-    font-size: 18px;
+  .link-bank-modal-body .bank-login-form-3 .heading4-bold-18-24.like-to-send {
+    font-size: 20px;
     position: relative;
     top: 6px;
     left: 0;
-    color: #8B8B8B; }
+    color: #606060 !important; }
   .link-bank-modal-body .bank-login-form-3 .custom-bank-form-group {
     border-radius: 20px;
     padding: .475rem 1rem;
@@ -545,10 +565,12 @@ ul.found-jobs-ul li:before {
   border-radius: 30px !important;
   padding: 0.774rem 1.8rem !important;
   cursor: pointer;
-  width: 100%; }
+  width: 100%;
+  font-size: 0.9rem !important;
+  font-family: "FibraOneAlt-Regular", Sans Serif !important; }
   .btn-primary-large-text-icon .btn-arrow {
     position: absolute;
-    bottom: 20px;
+    bottom: 18px;
     right: 25px;
     width: 45px; }
   .btn-primary-large-text-icon:hover {
@@ -792,9 +814,9 @@ ul.found-jobs-ul li:before {
   display: inline-block;
   color: #666;
   width: 100%;
-  z-index: 999999;
-  padding-top: 13px;
-  text-align: center; }
+  /*    padding-top: 13px;*/
+  text-align: center;
+  z-index: 2; }
 .custom-radio-bba-box [type="radio"]:checked + label:before,
 .custom-radio-bba-box [type="radio"]:not(:checked) + label:before {
   content: '';
@@ -1385,13 +1407,32 @@ ul.found-jobs-ul li:before {
   border: 2px solid #cccccc;
   color: #cccccc;
   padding: 12px 10px;
-  margin: 0 auto;
-  max-width: 250px; }
+  max-width: 273px;
+  z-index: 2;
+  position: relative; }
   .form-steps .bg-white-steps .step-completion {
     background: url(../images/icon/checkmark-circle.inactive@1x.png) no-repeat left 1px;
     padding-left: 35px;
     background-size: 20px 20px;
     line-height: normal; }
+  .form-steps .bg-white-steps:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 253px;
+    border-bottom: 2px solid #cccccc;
+    width: 81px;
+    margin: 0 20px; }
+  .form-steps .bg-white-steps:before {
+    right: 100%;
+    z-index: 2; }
+.form-steps .second-steps:after {
+  left: 250px;
+  border-bottom: 2px solid #cccccc;
+  width: 65px;
+  margin: 0 20px; }
+.form-steps .last-steps:after {
+  border-bottom: none !important; }
 .form-steps .bg-white-steps.active {
   border: 2px solid #44bca3;
   color: #1e1e20; }
@@ -1399,6 +1440,8 @@ ul.found-jobs-ul li:before {
   border: 2px solid #44bca3;
   color: #ffffff;
   background-color: #44bca3; }
+  .form-steps .bg-white-steps.completed:after {
+    border-bottom: 2px solid #44bca3; }
   .form-steps .bg-white-steps.completed .step-completion {
     background: url(../images/icon/checkmark-circle.active@1x.png) no-repeat left 1px;
     padding-left: 35px;
@@ -1632,6 +1675,9 @@ video {
 
 .max-width-1070 {
   max-width: 1070px !important; }
+
+.max-width-965 {
+  max-width: 965px !important; }
 
 .most-read-articles .owl-most-articles.owl-carousel .owl-dots.disabled, .most-read-articles .owl-most-articles.owl-carousel .owl-nav.disabled {
   display: block !important; }
@@ -2172,7 +2218,8 @@ body.overview-and-grid .Pattern-img-div img {
   .custom-modal .modal-footer .modal-footer-link {
     padding-top: 5px;
     text-decoration: underline;
-    text-decoration-color: #6b17b3; }
+    text-decoration-color: #6b17b3;
+    font-family: FibraOneAlt-Bold; }
 
 /*Loader CSS start*/
 .loader-pc .loader-pc-img {
@@ -2324,7 +2371,7 @@ body.overview-and-grid .Pattern-img-div img {
   .form-inputs .wrapper-dropdown-3.active .dropdown {
     opacity: 1;
     pointer-events: auto;
-    z-index: 2; }
+    z-index: 4; }
   .form-inputs .no-opacity .wrapper-dropdown-3 .dropdown,
   .form-inputs .no-pointerevents .wrapper-dropdown-3 .dropdown {
     display: none;
@@ -2442,7 +2489,8 @@ body.overview-and-grid .Pattern-img-div img {
   position: relative; }
   .financial-health-guru-block .financial-health-guru-img {
     position: absolute;
-    top: 17%; }
+    top: 19%;
+    left: 10%; }
 
 .lock-img {
   width: 25px;
@@ -2455,8 +2503,43 @@ body.overview-and-grid .Pattern-img-div img {
 
 .health-dot-left {
   position: absolute;
-  top: 75px;
+  top: 50px;
   left: 170px; }
+
+.half-circle-left {
+  position: absolute;
+  bottom: 205px;
+  left: 0; }
+
+.globe-triangle-right {
+  position: absolute;
+  bottom: 26px;
+  right: -90px; }
+
+.health-dot-right {
+  position: absolute;
+  top: 90px;
+  right: 170px; }
+
+.half-circle-right {
+  position: absolute;
+  bottom: 165px;
+  right: 0; }
+
+.globe-triangle-left {
+  position: absolute;
+  bottom: 5px;
+  left: -120px; }
+
+.half-diteed-circle-right {
+  position: absolute;
+  bottom: 410px;
+  right: 0; }
+
+.rainbow-left {
+  position: absolute;
+  top: 240px;
+  left: 0; }
 
 .max-width-450 {
   max-width: 450px; }
@@ -2518,7 +2601,7 @@ body.overview-and-grid .Pattern-img-div img {
   background-image: none !important; }
 
 .global-signup-bg {
-  background-image: url(../images/sand_wind_png.png);
+  background-image: url(../images/K2GOG8.png);
   background-repeat: no-repeat;
   background-size: Cover;
   /* Shared */
@@ -2665,12 +2748,15 @@ body.overview-and-grid .Pattern-img-div img {
   cursor: inherit; }
   .pre-banking-tabs .icons-symbol .rate-opportunity {
     position: relative;
-    top: 3px; }
+    top: 3px;
+    font-size: 0.9rem; }
 .pre-banking-tabs .btn-primary-large-text {
   padding: 0.574rem 1.8rem !important; }
 .pre-banking-tabs .btn-ghost-large-plus-icon {
   padding: 0.574rem 1.8rem !important;
-  background-color: transparent; }
+  background-color: transparent;
+  font-family: "FibraOneAlt-Regular", Sans Serif;
+  font-size: 0.9rem !important; }
   .pre-banking-tabs .btn-ghost-large-plus-icon:hover {
     color: #f2f2f2;
     text-decoration: none;

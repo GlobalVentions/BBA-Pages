@@ -29,6 +29,7 @@
         top: 25px;
         display: block;
         margin: 0 auto;
+        left: auto;
     }
 
     .most-read-articles .owl-nav > div {
@@ -140,9 +141,44 @@
         font-size: 17px;
         padding: 15px 20px;
     }
+    .form-steps .bg-white-steps{
+        margin: 0 auto;
+    }
+    .form-steps .second-steps:after {
+        left: 14px;
+        width: 130px;
+    }
+    .form-steps .first-step:after {
+        left: 205px;
+        width: 115px;
+    }
+    .form-steps .bg-white-steps.completed.first-step:after {
+        border-bottom: 2px solid #44bca3;
+        left: 15px;
+        width: 90px;
+    }
+    .form-steps .bg-white-steps.second-steps-2:after {
+        left: 210px;
+        width: 50px;
+    }
 }
 
 @media (max-width: 480px) {
+    .show-me-chkbox{
+        right: auto;
+    }
+    .form-steps .bg-white-steps.completed:after {
+        left: 15px;
+        width: 21px;
+    }
+    .form-steps .bg-white-steps:after {
+        left: 188px;
+        width: 50px;
+    }
+    .form-steps .second-steps:after {
+        left: 14px;
+        width: 50px;
+    }
     .header-menu-text {
         font-size: 11px !important;
         padding: 12px 0 !important;
@@ -237,6 +273,7 @@
         position: inherit;
         top: auto;
         width: 75%;
+        left: auto;
     }
 
     .great-financial-guru .heading2-regular-30-38 {
