@@ -124,6 +124,10 @@
         top: 55px;
         left: 75px
     }
+    .center-slide-like-dash {
+        top: 55px;
+        left: 75px
+    }
     .top-right-slide-like {
         top: 10px;
         right: 10px;
@@ -466,6 +470,11 @@
     .center-slide-like {
         top: 60px;
         left: 0;
+    }
+    .center-slide-like-dash {
+        top: 60px;
+        left: 0;
+        width: 100%;
     }
     .top-right-slide-like {
         top: 10px;

@@ -77,7 +77,7 @@ $(function () {
     }
     if ($('.owl-featured-today-second').length) {
         $('.owl-featured-today-second').owlCarousel({
-            autoplay: true,
+            autoplay: false,
             autoplayTimeout: 6500,
             smartSpeed: 1000,
             loop: true,
@@ -104,7 +104,7 @@ $(function () {
     }
     if ($('.owl-career-opportunities').length) {
         $('.owl-career-opportunities').owlCarousel({
-            autoplay: true,
+            autoplay: false,
             autoplayTimeout: 6500,
             smartSpeed: 1000,
             loop: true,

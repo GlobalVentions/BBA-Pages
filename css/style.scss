@@ -787,7 +787,7 @@ ul.found-jobs-ul li:before {
     position: absolute;
     bottom: 18px;
     right: 25px;
-    width: 40px;
+    width: 40px!important;
   }
   &:hover {
     color: $brightsidepurple;
@@ -2133,9 +2133,9 @@ video {
 }
 
 .apply-btn {
-  background: url(../images/icon/arrow-left-btn.white@1x.png) no-repeat right 6px;
+  background: url(../images/icon/arrow-left-btn.white@1x.png) no-repeat right 8px;
   padding-right: 39px;
-  background-size: 36px 12px;
+  background-size: 36px 9px;
   line-height: normal;
   text-decoration: none;
   font-size: $general-font-size!important;
@@ -2147,7 +2147,7 @@ video {
 .letsgo-btn {
   background: url(../images/icon/arrow-left.purple@1x.png) no-repeat right 6px;
   padding-right: 55px;
-  background-size: 42px 11px;
+  background-size: auto;
   line-height: normal;
   text-decoration: underline;
   &:hover {
@@ -2996,38 +2996,28 @@ body.overview-and-grid {
   }
   .top-left-circle {
     position: absolute;
-    top: -47px;
-    left: -99px;
+    top: -33px;
+    left: 0;
   }
   .top-right-triangle {
     position: absolute;
     top: 0;
-    right: -32px;
-    img {
-      max-width: 180px;
-    }
+    right: 0;
   }
   .top-right-arc {
     position: absolute;
-    top: 0;
-    right: -32px;
-    img {
-      max-width: 90px;
-      transform: rotate(170deg);
-    }
+    top: -70px;
+    right: 0;
   }
   .top-left-dotted {
     position: absolute;
-    top: 65px;
-    left: 110px;
+    top: 70px;
+    left: 125px;
   }
   .top-left-curve {
     position: absolute;
-    top: 100px;
-    left: -21px;
-    img {
-      transform: rotate(160deg);
-    }
+    top: 107px;
+    left: 0;
   }
   .footer-details {
     width: 85%;
@@ -3079,6 +3069,31 @@ body.overview-and-grid {
         display: inline;
       }
     }
+  }
+  .top-left-circle {
+    position: absolute;
+    top: -33px;
+    left: 0;
+  }
+  .top-right-triangle {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .top-right-arc {
+    position: absolute;
+    top: -70px;
+    right: 0;
+  }
+  .top-left-dotted {
+    position: absolute;
+    top: 70px;
+    left: 125px;
+  }
+  .top-left-curve {
+    position: absolute;
+    top: 107px;
+    left: 0;
   }
   .footer-details {
     width: 85%;
@@ -3540,6 +3555,15 @@ body.overview-and-grid {
 }
 
 .center-slide-like {
+  position: absolute;
+  top: 75px;
+  left: 90px;
+  .calc-icon {
+    display: -webkit-inline-box !important;
+    width: auto !important;
+  }
+}
+.center-slide-like-dash {
   position: absolute;
   top: 75px;
   left: 90px;
