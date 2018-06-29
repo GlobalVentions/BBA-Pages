@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" type="image/ico" href="images/favicon.ico"/>
+    <title>Account Settings</title>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.tagsinput.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="container p-0 fixed-top bg-white">
+        <div class="row ml-0 mr-0 mb-0 mt-3">
+            <div class="col-lg-12 col-md-12 col-12 p-0">
+                <div id="pro-header">
+                    <!-- Content will be inserted by jQuery from pro-header.html -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container p-0 hero-container">
+        <div class="row m-0">
+            <div class="col-lg-12 col-md-12 col-12 pt-lg-0 pt-md-5 p-0 pt-5">
+                <img src="images/account-settings@1x.png" class="img-fluid d-lg-block d-md-block d-none">
+                <img src="images/account-settings@2x.png" class="img-fluid d-lg-none d-md-none d-block">
+            </div>
+            <div class="col-lg-12 col-md-12 col-12 P-lg-0 p-md-0 pl-3 pr-3 pre-banking-tabs accout-settings-tabs">
+                <div class="row m-0 pl-lg-0 p-0 pt-md-3 pt-3">
+                    <div class="col-lg-12 col-md-12 col-12 pl-0 pr-0 pb-md-3 border border-top-0 border-left-0 border-right-0">
+                        <div class="row m-0">
+                            <div class="col-lg-8 col-md-12 col-12 p-0">
+                                <ul id="tabsJustified" class="nav nav-tabs">
+                                    <li class="nav-item"><a href="" data-target="#myprofile" data-toggle="tab"
+                                                            class="nav-link small heading-alt-bold text-primary-black active">My
+                                        Profile</a>
+                                    </li>
+                                    <li class="nav-item ml-lg-4"><a href="" data-target="#resetpassword"
+                                                                    data-toggle="tab"
+                                                                    class="nav-link small heading-alt-bold text-primary-black">Reset
+                                        Password</a>
+                                    </li>
+                                    <li class="nav-item ml-lg-4"><a href="" data-target="#linkedaccounts"
+                                                                    data-toggle="tab"
+                                                                    class="nav-link small heading-alt-bold text-primary-black">Linked
+                                        Accounts</a></li>
+                                    <li class="nav-item ml-lg-4"><a href="" data-target="#notifications"
+                                                                    data-toggle="tab"
+                                                                    class="nav-link small heading-alt-bold text-primary-black">Notifications</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-12 pl-0 pr-0 pt-lg-0 pb-lg-0 pt-md-0 pb-md-0 pt-0 pb-0">
+                        <div id="tabsJustifiedContent" class="tab-content">
+                            <div id="myprofile" class="tab-pane fade active show">
+                                <div class="row m-0">
+                                    <div class="col-lg-8 col-md-12 col-12 pl-0 pr-0 pt-4 pb-5 tellus-more-about-you">
+                                        <form>
+                                            <div class="form-row m-0">
+                                                <div class="form-group col-md-6 col-12">
+                                                    <label for="FirstName" class="m-0 more-about-label pl-1">First
+                                                        Name</label>
+                                                    <input type="text" class="form-control more-about-input"
+                                                           id="FirstName" placeholder="John">
+                                                </div>
+                                                <div class="form-group col-md-6 col-12">
+                                                    <label for="LastName" class="m-0 more-about-label pl-1">Last
+                                                        Name</label>
+                                                    <input type="text" class="form-control more-about-input"
+                                                           id="LastName" placeholder="Doe">
+                                                </div>
+                                            </div>
+                                            <div class="form-row m-0">
+                                                <div class="form-group col-md-6 col-12">
+                                                    <label for="EmailAddress" class="m-0 more-about-label pl-1">Email
+                                                        Address</label>
+                                                    <input type="email" class="form-control more-about-input"
+                                                           id="EmailAddress" placeholder="john@email.com">
+                                                </div>
+                                                <div class="form-group col-md-6 col-12">
+                                                    <label for="dob" class="m-0 more-about-label pl-1">Date of
+                                                        Birth</label>
+                                                    <input type="text" class="form-control more-about-input" id="dob"
+                                                           placeholder="john@email.com">
+                                                </div>
+                                            </div>
+                                            <div class="form-row m-0">
+                                                <div class="form-group col-md-6 col-12">
+                                                    <label for="Occupation"
+                                                           class="m-0 more-about-label pl-1">Occupation</label>
+                                                    <input type="text" class="form-control more-about-input"
+                                                           id="Occupation" placeholder="Student">
+                                                </div>
+                                                <div class="form-group position-relative col-md-6 col-12">
+                                                    <label for="Credit Card Number"
+                                                           class="m-0 more-about-label pl-1 text-secondary-grey">Social
+                                                        Security
+                                                        Number</label>
+                                                    <input type="text"
+                                                           class="form-control more-about-input settings-social-security-input"
+                                                           id="Credit Card Number" placeholder="xxx - xx - xxxx">
+                                                    <img src="images/icon/lock@1x.png"
+                                                         class="img-fluid pl-1 pr-2 lock-img social-security-lock">
+                                                    <img src="images/icon/tooltip.grey@1x.png"
+                                                         class="img-fluid pl-2 pr-1 lock-img social-security-info">
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="resetpassword" class="tab-pane fade">
+                                <div class="row m-0">
+                                    <div class="col-lg-8 col-md-12 col-12 pl-0 pr-0 pt-5 pb-5 tellus-more-about-you">
+                                        <form>
+                                            <div class="form-row m-0">
+                                                <div class="form-group col-md-6 col-12 pb-3">
+                                                    <input type="password" class="form-control more-about-input"
+                                                           id="oldpassword" placeholder="Old Password">
+                                                </div>
+                                            </div>
+                                            <div class="form-row m-0">
+                                                <div class="form-group col-md-6 col-12 pb-3">
+                                                    <input type="password" class="form-control more-about-input"
+                                                           id="newpassword" placeholder="New Password">
+                                                </div>
+                                            </div>
+                                            <div class="form-row m-0">
+                                                <div class="form-group col-md-6 col-12 pb-3">
+                                                    <input type="password" class="form-control more-about-input"
+                                                           id="reenternewpassword" placeholder="Re-enter New Password">
+                                                </div>
+                                            </div>
+                                            <div class="row m-0 justify-content-start">
+                                                <div class="col-md-3 col-12 pl-2 pr-0">
+                                                    <button type="button" class="btn btn-primary-large-text">Reset
+                                                        Password
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="linkedaccounts" class="tab-pane fade">
+                                <div class="row m-0">
+                                    <div class="col-lg-8 col-md-12 col-12 pl-0 pr-0 pt-5 pb-5 tellus-more-about-you">
+                                        <div class="link-account-border p-3">
+                                            <div class="row m-0">
+                                                <div class="col-lg-12 col-md-12 col-12 p-0">
+                                                    <div class="col-lg-12 col-md-12 col-12 p-0">
+                                                        <h5 class="mb-1 heading-alt-heavy">Chase Bank
+                                                            <span class="edit-link-account"><a href="#"
+                                                                                               class="heading-alt-regular text-secondary-grey"
+                                                                                               id="click"><u>Edit</u></a></span>
+                                                            <!--<span class="edit-link-account"><a href="#" class="heading-alt-bold text-primary-brightsidepurple"><u>Done</u></a></span>-->
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="connect">
+                                                <div class="row m-0">
+                                                    <div class="col-lg-10 col-md-9 col-9 p-0 text-left">
+                                                        <p class="mb-1 paragraph-regular-14-19 text-primary-black">Total
+                                                            Checking (...0000)</p>
+                                                    </div>
+                                                    <div class="col-lg-2 col-md-3 col-3 p-0 text-right">
+                                                        <p class="mb-1 paragraph-regular-14-19 text-primary-black">
+                                                            $2,397.17</p>
+                                                    </div>
+                                                    <div class="col-lg-10 col-md-9 col-9 p-0 text-left">
+                                                        <p class="mb-1 paragraph-regular-14-19 text-primary-black">Total
+                                                            Savings (…9999)</p>
+                                                    </div>
+                                                    <div class="col-lg-2 col-md-3 col-3 p-0 text-right">
+                                                        <p class="mb-1 paragraph-regular-14-19 text-primary-black">
+                                                            $16.524.39</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="editForm" class="hide-bank">
+                                                <div class="row m-0">
+                                                    <div class="col-lg-12 col-md-12 col-12 p-0">
+                                                        <form>
+                                                            <div class="form-row m-0">
+                                                                <div class="form-group col-lg-11 col-md-10 col-9 p-0">
+                                                                    <label for="AccountName1"
+                                                                           class="m-0 more-about-label pl-1">Account
+                                                                        Name</label>
+                                                                    <input type="text"
+                                                                           class="form-control more-about-input"
+                                                                           id="AccountName1"
+                                                                           value="Total Checking (...0000)">
+                                                                </div>
+                                                                <div class="form-group col-lg-1 col-md-2 col-3 pl-0 pr-0 text-center">
+                                                                    <span class="delete-link-account"><a href="#"
+                                                                                                         class="heading-alt-bold text-primary-brightsidepurple"><u>Delete</u></a></span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-row m-0">
+                                                                <div class="form-group col-lg-11 col-md-10 col-9 p-0">
+                                                                    <label for="AccountName2"
+                                                                           class="m-0 more-about-label pl-1">Account
+                                                                        Name</label>
+                                                                    <input type="text"
+                                                                           class="form-control more-about-input"
+                                                                           id="AccountName2"
+                                                                           value="Total Savings (…9999)">
+                                                                </div>
+                                                                <div class="form-group col-lg-1 col-md-2 col-3 pl-0 pr-0 text-center">
+                                                                    <span class="delete-link-account"><a href="#"
+                                                                                                         class="heading-alt-bold text-primary-brightsidepurple"><u>Delete</u></a></span>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="link-account-border p-3 mt-3">
+                                            <div class="row m-0">
+                                                <div class="col-lg-12 col-md-12 col-12 p-0">
+                                                    <h5 class="mb-1 heading-alt-heavy">CFE Federal Credit Union <span
+                                                            class="edit-link-account"><a href="#"
+                                                                                         class="heading-alt-regular text-secondary-grey"><u>Edit</u></a></span>
+                                                    </h5>
+                                                </div>
+                                                <div class="col-lg-10 col-md-9 col-9 p-0 text-left">
+                                                    <p class="mb-1 paragraph-regular-14-19 text-primary-black">Checking
+                                                        (...5555)</p>
+                                                </div>
+                                                <div class="col-lg-2 col-md-3 col-3 p-0 text-right">
+                                                    <p class="mb-1 paragraph-regular-14-19 text-primary-black">
+                                                        $4,230.40</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row ml-0 mr-0 mt-4 justify-content-start">
+                                            <div class="col-lg-3 col-md-5 col-12 p-0">
+                                                <button type="button" class="btn btn-ghost-large-plus-icon"><p
+                                                        class="text-left m-0"><i
+                                                        class="fa fa-plus plus-btn-icon pl-2 pr-2"></i>Link New Account
+                                                </p></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="notifications" class="tab-pane fade">
+                                <div class="row m-0 justify-content-start">
+                                    <div class="offset-lg-2 col-lg-4 col-md-12 col-12 pl-0 pr-0 pt-4 pb-0">
+                                        <table class="table table-sm table-borderless">
+                                            <thead>
+                                            <tr>
+                                                <th class="instance-th pb-3">Instance</th>
+                                                <th class="in-app-th pb-3">In-App</th>
+                                                <th class="email-th pb-3">Email</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>Instance</td>
+                                                <td>
+                                                    <span class="custom-toggle-bba">
+                                                        <label class="switch">
+                                                            <input type="checkbox">
+                                                            <span class="slider round"></span>
+                                                        </label>
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <span class="custom-toggle-bba">
+                                                        <label class="switch">
+                                                            <input type="checkbox" checked>
+                                                            <span class="slider round"></span>
+                                                        </label>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Instance</td>
+                                                <td>
+                                                    <span class="custom-toggle-bba">
+                                                        <label class="switch">
+                                                            <input type="checkbox" checked>
+                                                            <span class="slider round"></span>
+                                                        </label>
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <span class="custom-toggle-bba">
+                                                        <label class="switch">
+                                                            <input type="checkbox" checked>
+                                                            <span class="slider round"></span>
+                                                        </label>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Instance</td>
+                                                <td>
+                                                    <span class="custom-toggle-bba">
+                                                        <label class="switch">
+                                                            <input type="checkbox" checked>
+                                                            <span class="slider round"></span>
+                                                        </label>
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <span class="custom-toggle-bba">
+                                                        <label class="switch">
+                                                            <input type="checkbox">
+                                                            <span class="slider round"></span>
+                                                        </label>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Instance</td>
+                                                <td>
+                                                    <span class="custom-toggle-bba">
+                                                        <label class="switch">
+                                                            <input type="checkbox" checked>
+                                                            <span class="slider round"></span>
+                                                        </label>
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <span class="custom-toggle-bba">
+                                                        <label class="switch">
+                                                            <input type="checkbox" checked>
+                                                            <span class="slider round"></span>
+                                                        </label>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Instance</td>
+                                                <td>
+                                                    <span class="custom-toggle-bba">
+                                                        <label class="switch">
+                                                            <input type="checkbox">
+                                                            <span class="slider round"></span>
+                                                        </label>
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <span class="custom-toggle-bba">
+                                                        <label class="switch">
+                                                            <input type="checkbox" checked>
+                                                            <span class="slider round"></span>
+                                                        </label>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Instance</td>
+                                                <td>
+                                                    <span class="custom-toggle-bba">
+                                                        <label class="switch">
+                                                            <input type="checkbox" checked>
+                                                            <span class="slider round"></span>
+                                                        </label>
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <span class="custom-toggle-bba">
+                                                        <label class="switch">
+                                                            <input type="checkbox" checked>
+                                                            <span class="slider round"></span>
+                                                        </label>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Instance</td>
+                                                <td>
+                                                    <span class="custom-toggle-bba">
+                                                        <label class="switch">
+                                                            <input type="checkbox" checked>
+                                                            <span class="slider round"></span>
+                                                        </label>
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <span class="custom-toggle-bba">
+                                                        <label class="switch">
+                                                            <input type="checkbox">
+                                                            <span class="slider round"></span>
+                                                        </label>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Instance</td>
+                                                <td>
+                                                    <span class="custom-toggle-bba">
+                                                        <label class="switch">
+                                                            <input type="checkbox">
+                                                            <span class="slider round"></span>
+                                                        </label>
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <span class="custom-toggle-bba">
+                                                        <label class="switch">
+                                                            <input type="checkbox" checked>
+                                                            <span class="slider round"></span>
+                                                        </label>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Instance</td>
+                                                <td>
+                                                    <span class="custom-toggle-bba">
+                                                        <label class="switch">
+                                                            <input type="checkbox" checked>
+                                                            <span class="slider round"></span>
+                                                        </label>
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <span class="custom-toggle-bba">
+                                                        <label class="switch">
+                                                            <input type="checkbox" checked>
+                                                            <span class="slider round"></span>
+                                                        </label>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Instance</td>
+                                                <td>
+                                                    <span class="custom-toggle-bba">
+                                                        <label class="switch">
+                                                            <input type="checkbox">
+                                                            <span class="slider round"></span>
+                                                        </label>
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <span class="custom-toggle-bba">
+                                                        <label class="switch">
+                                                            <input type="checkbox" checked>
+                                                            <span class="slider round"></span>
+                                                        </label>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Instance</td>
+                                                <td>
+                                                    <span class="custom-toggle-bba">
+                                                        <label class="switch">
+                                                            <input type="checkbox" checked>
+                                                            <span class="slider round"></span>
+                                                        </label>
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <span class="custom-toggle-bba">
+                                                        <label class="switch">
+                                                            <input type="checkbox" checked>
+                                                            <span class="slider round"></span>
+                                                        </label>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Instance</td>
+                                                <td>
+                                                    <span class="custom-toggle-bba">
+                                                        <label class="switch">
+                                                            <input type="checkbox" checked>
+                                                            <span class="slider round"></span>
+                                                        </label>
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <span class="custom-toggle-bba">
+                                                        <label class="switch">
+                                                            <input type="checkbox">
+                                                            <span class="slider round"></span>
+                                                        </label>
+                                                    </span>
+                                                </td>
+                                            </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container p-0">
+    <footer class="pro-signup-footer">
+        <div class="row ml-0 mr-0 mb-0 mt-0">
+            <div class="col-lg-12 col-md-12 col-12 p-0 text-center">
+                <div id="pro-footer">
+                    <!-- Content will be inserted by jQuery from pro-footer.html -->
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/style.js"></script>
+<script type="text/javascript" src="js/dd-slick.js"></script>
+<script src="js/jquery.tagsinput.min.js"></script>
+<!--<script>
+    // JS CODE FOR Tags Input
+    jQuery('#tags').tagsInput({
+        width: 'auto'
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        $('#show').click(function () {
+            $('#info').toggle();
+            $('#show').toggleClass('show-details-btn hide-details-btn')
+            var visible = $('#info').is(":visible");
+            if (visible) {
+                $('#show').html('Hide Details');
+            } else {
+                $('#show').html('Show Details');
+            }
+
+        });
+
+        $('#show1').click(function () {
+            $('#info1').toggle();
+            $('#show1').toggleClass('show-details-btn hide-details-btn')
+            var visible = $('#info1').is(":visible");
+            if (visible) {
+                $('#show1').html('Hide Details');
+            } else {
+                $('#show1').html('Show Details');
+            }
+
+        });
+
+        $('#show2').click(function () {
+            $('#info2').toggle();
+            $('#show2').toggleClass('show-details-btn hide-details-btn')
+            var visible = $('#info2').is(":visible");
+            if (visible) {
+                $('#show2').html('Hide Details');
+            } else {
+                $('#show2').html('Show Details');
+            }
+
+        });
+
+        $('#show3').click(function () {
+            $('#info3').toggle();
+            $('#show3').toggleClass('show-details-btn hide-details-btn')
+            var visible = $('#info3').is(":visible");
+            if (visible) {
+                $('#show3').html('Hide Details');
+            } else {
+                $('#show3').html('Show Details');
+            }
+
+        });
+    });
+</script>-->
+
+</body>
+</html>

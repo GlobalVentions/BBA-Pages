@@ -77,7 +77,7 @@ $(function () {
     }
     if ($('.owl-featured-today-second').length) {
         $('.owl-featured-today-second').owlCarousel({
-            autoplay: false,
+            autoplay: true,
             autoplayTimeout: 6500,
             smartSpeed: 1000,
             loop: true,
@@ -746,6 +746,19 @@ $(document).ready(function()
             $this.removeClass('text-white');
         } else {
             $this.addClass('text-white');
+        }
+    });
+
+    /* JS Code for toggle in account settings page */
+    $('#click').click(function(){
+        $('#editForm').toggleClass('hide-bank');
+        $('#connect').toggleClass('hide-bank');
+
+        var visible = $('#connect').is(":visible");
+        if (visible) {
+            $('#click').html('Edit');
+        } else {
+            $('#click').html('Done');
         }
     });
 });

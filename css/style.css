@@ -855,8 +855,9 @@ ul.found-jobs-ul li:before {
 .custom-toggle-bba .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px; }
+  width: 50px;
+  height: 30px;
+  margin: 0; }
 .custom-toggle-bba .switch input {
   display: none; }
 .custom-toggle-bba .slider {
@@ -874,8 +875,8 @@ ul.found-jobs-ul li:before {
   content: "";
   height: 26px;
   width: 26px;
-  left: 4px;
-  bottom: 4px;
+  left: 2px;
+  bottom: 2px;
   background-color: white;
   -webkit-transition: .4s;
   transition: .4s; }
@@ -884,9 +885,9 @@ ul.found-jobs-ul li:before {
 .custom-toggle-bba input:focus + .slider {
   box-shadow: 0 0 1px #44bca3; }
 .custom-toggle-bba input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px); }
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px); }
 .custom-toggle-bba .slider.round {
   border-radius: 34px; }
 .custom-toggle-bba .slider.round:before {
@@ -2569,6 +2570,19 @@ body.overview-and-grid .Pattern-img-div img {
     border-color: #6b17b3;
     outline: 0;
     box-shadow: none; }
+.tellus-more-about-you .settings-social-security-input {
+  border: 2px solid #f2f2f2;
+  border-radius: 5px;
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.05);
+  padding: 0.600rem .75rem;
+  resize: none;
+  padding-left: 35px;
+  padding-right: 35px; }
+  .tellus-more-about-you .settings-social-security-input:focus {
+    color: #495057;
+    border: 2px solid #f2f2f2;
+    outline: 0;
+    box-shadow: none; }
 .tellus-more-about-you .social-security-input {
   padding-left: 35px;
   padding-right: 100px; }
@@ -2583,6 +2597,11 @@ body.overview-and-grid .Pattern-img-div img {
   z-index: 5; }
 .tellus-more-about-you .social-security-lock {
   left: 10px;
+  position: absolute;
+  top: 40px;
+  z-index: 5; }
+.tellus-more-about-you .social-security-info {
+  right: 15px;
   position: absolute;
   top: 42px;
   z-index: 5; }
@@ -2747,6 +2766,16 @@ body.overview-and-grid .Pattern-img-div img {
   justify-content: center;
   align-items: center; }
 
+.accout-settings-tabs {
+  /*  .nav-link {
+      width: 140px;
+      text-align: center;
+    }*/ }
+  .accout-settings-tabs .tellus-more-about-you .btn-primary-large-text {
+    padding: 0.774rem 1.8rem !important; }
+  .accout-settings-tabs .tellus-more-about-you .btn-ghost-large-plus-icon {
+    padding: 0.774rem 1.8rem !important; }
+
 .pre-banking-tabs .nav-tabs {
   border-bottom: none; }
 .pre-banking-tabs .nav-tabs .nav-item.show .nav-link, .pre-banking-tabs .nav-tabs .nav-link.active {
@@ -2756,7 +2785,9 @@ body.overview-and-grid .Pattern-img-div img {
 .pre-banking-tabs .nav-tabs .nav-link:focus, .pre-banking-tabs .nav-tabs .nav-link:hover {
   border-color: transparent; }
 .pre-banking-tabs .nav-link {
-  padding: 0.5rem 0.5rem; }
+  padding: 0.5rem 0.5rem;
+  width: 140px;
+  text-align: center; }
 .pre-banking-tabs .icons-symbol {
   cursor: inherit; }
   .pre-banking-tabs .icons-symbol .rate-opportunity {
@@ -2889,5 +2920,50 @@ input[type="checkbox"]:focus {
 .financial-guru-pos {
   position: relative;
   left: 90px; }
+
+.link-account-border {
+  border: 1px solid #AAB2B5;
+  border-radius: 10px; }
+  .link-account-border .edit-link-account {
+    font-size: 14px; }
+  .link-account-border .delete-link-account {
+    font-size: 14px;
+    position: relative;
+    top: 35px; }
+
+.table-borderless .instance-th {
+  width: 60%; }
+.table-borderless .in-app-th {
+  width: 20%; }
+.table-borderless .email-th {
+  width: 20%; }
+.table-borderless td {
+  border: none !important; }
+.table-borderless th {
+  border: none !important; }
+
+.hide-bank {
+  display: none; }
+
+.withou-leaving {
+  font-size: 14px;
+  max-width: 275px; }
+
+.without-leaving-a {
+  font-size: 14px; }
+
+.remove-part {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.favourite-bottom-right-border {
+  border-bottom: 1px solid #e9ecef;
+  border-right: 1px solid #e9ecef; }
+
+.no-favorites {
+  padding-top: 140px;
+  margin-bottom: 140px; }
 
 /*# sourceMappingURL=style.css.map */

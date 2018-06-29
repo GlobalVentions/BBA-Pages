@@ -145,21 +145,25 @@ html, body {
 }
 
 /* GENERAL css */
-.show-me-chkbox{
+.show-me-chkbox {
   position: relative;
   right: 20px;
 }
-.z-indexradio{
+
+.z-indexradio {
   position: relative;
   z-index: 2;
   padding: 13px 0;
 }
-.ltr-spacing{
-  letter-spacing: 0.2px!important;
+
+.ltr-spacing {
+  letter-spacing: 0.2px !important;
 }
-.generalsizefont{
-  font-size: $general-font-size!important;
+
+.generalsizefont {
+  font-size: $general-font-size !important;
 }
+
 .btn-brightsidepurple {
   background-color: $color-button;
   color: $color_white;
@@ -179,12 +183,15 @@ html, body {
     outline: none !important;
   }
 }
-.border-top-adv{
+
+.border-top-adv {
   border-top: 2px solid #EAEAEA;
 }
-.font-balance-trade-lines-inquiries{
+
+.font-balance-trade-lines-inquiries {
   font-size: 1.4rem;
 }
+
 .dropdownarrow-show {
   background: url(../images/icon/chevron-inactive.mediumGray@1x.png) no-repeat right 6px;
   background-position: bottom;
@@ -214,30 +221,38 @@ html, body {
   background-color: $textyellow !important;
 }
 
-.heading-alt-regular{
+.heading-alt-regular {
   font-family: $FibraOneAlt-Regular !important;
 }
-.heading-alt-regular-italic{
+
+.heading-alt-regular-italic {
   font-family: $FibraOneAlt-RegularItalic !important;
 }
-.heading-alt-bold{
+
+.heading-alt-bold {
   font-family: $FibraOneAlt-Bold !important;
 }
-.heading-alt-heavy{
+
+.heading-alt-heavy {
   font-family: $FibraOneAlt-Heavy !important;
 }
-.heading-alt-semibold{
+
+.heading-alt-semibold {
   font-family: $FibraOneAlt-SemiBold !important;
 }
-.heading-alt-light{
+
+.heading-alt-light {
   font-family: $FibraOneAlt-Light !important;
 }
-.heading-alt-thin{
+
+.heading-alt-thin {
   font-family: $FibraOneAlt-Thin !important;
 }
-.heading-alt-ultrabold{
+
+.heading-alt-ultrabold {
   font-family: $FibraOneAlt-UltraBold !important;
 }
+
 .heading1-bold-40-54 {
   font-family: $FibraOne-Bold !important;
 }
@@ -446,6 +461,7 @@ ul.what-you-get li {
   font-size: 2.3rem;
   line-height: 50px;
 }
+
 .health-guru-heading1 {
   font-size: 2.4rem;
   line-height: 50px;
@@ -537,7 +553,7 @@ ul.found-jobs-ul li:before {
       position: relative;
       top: 6px;
       left: 0;
-      color: #606060!important;
+      color: #606060 !important;
     }
     .custom-bank-form-group {
       border-radius: 20px;
@@ -666,8 +682,8 @@ ul.found-jobs-ul li:before {
   padding: 0.774rem 1.8rem !important;
   cursor: pointer;
   width: 100%;
-  font-size: $general-font-size!important;
-  font-family: $FibraOneAlt-Regular!important;
+  font-size: $general-font-size !important;
+  font-family: $FibraOneAlt-Regular !important;
   .btn-arrow {
     position: absolute;
     bottom: 18px;
@@ -703,8 +719,8 @@ ul.found-jobs-ul li:before {
   padding: 0.774rem 1.8rem !important;
   cursor: pointer;
   width: 100%;
-  font-size: $general-font-size!important;
-  font-family: $FibraOneAlt-Regular!important;
+  font-size: $general-font-size !important;
+  font-family: $FibraOneAlt-Regular !important;
   &:hover {
     color: $color_white;
     text-decoration: none;
@@ -782,12 +798,12 @@ ul.found-jobs-ul li:before {
   box-shadow: 0px 0px 2px 2px #B5B5B5;
   border: 2px solid $color_white !important;
   font-family: $FibraOneAlt-Bold;
-  font-size: $general-font-size!important;
+  font-size: $general-font-size !important;
   .btn-arrow {
     position: absolute;
     bottom: 18px;
     right: 25px;
-    width: 40px!important;
+    width: 40px !important;
   }
   &:hover {
     color: $brightsidepurple;
@@ -968,7 +984,7 @@ ul.found-jobs-ul li:before {
     display: inline-block;
     color: #666;
     width: 100%;
-/*    padding-top: 13px;*/
+    /*    padding-top: 13px;*/
     text-align: center;
     z-index: 2;
   }
@@ -1020,8 +1036,9 @@ ul.found-jobs-ul li:before {
   .switch {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
+    width: 50px;
+    height: 30px;
+    margin: 0;
   }
 
   .switch input {
@@ -1045,8 +1062,8 @@ ul.found-jobs-ul li:before {
     content: "";
     height: 26px;
     width: 26px;
-    left: 4px;
-    bottom: 4px;
+    left: 2px;
+    bottom: 2px;
     background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
@@ -1061,9 +1078,9 @@ ul.found-jobs-ul li:before {
   }
 
   input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
   }
 
   .slider.round {
@@ -1184,6 +1201,7 @@ ul.found-jobs-ul li:before {
     }
   }
 }
+
 .pro-burger-menu-main {
   position: fixed;
   width: 210px;
@@ -1405,9 +1423,9 @@ ul.found-jobs-ul li:before {
           text-decoration: none;
           font-size: 0.9em;
           transition: color .3s ease-in-out;
-          div{
+          div {
             padding: 0 10px;
-            &:hover{
+            &:hover {
               background-color: $eccentricyellow;
               border-radius: 6px;
             }
@@ -1417,6 +1435,7 @@ ul.found-jobs-ul li:before {
     }
   }
 }
+
 .allresources-menu-main {
   position: fixed;
   width: auto;
@@ -1463,9 +1482,9 @@ ul.found-jobs-ul li:before {
           text-decoration: none;
           font-size: 0.9em;
           transition: color .3s ease-in-out;
-          div{
+          div {
             padding: 0 10px;
-            &:hover{
+            &:hover {
               background-color: $eccentricyellow;
               border-radius: 6px;
             }
@@ -1535,7 +1554,7 @@ ul.found-jobs-ul li:before {
       text-align: center;
       font-family: "FibraOneAlt-Bold", Sans Serif;
       letter-spacing: 0.5px;
-      &:focus{
+      &:focus {
         box-shadow: none;
       }
       &::-webkit-search-cancel-button {
@@ -1719,7 +1738,7 @@ ul.found-jobs-ul li:before {
       z-index: 2;
     }
   }
-  .second-steps{
+  .second-steps {
     &:after {
       left: 250px;
       border-bottom: 2px solid $color_Silver;
@@ -1727,9 +1746,9 @@ ul.found-jobs-ul li:before {
       margin: 0 20px;
     }
   }
-  .last-steps{
+  .last-steps {
     &:after {
-      border-bottom:none !important;
+      border-bottom: none !important;
     }
   }
   .bg-white-steps.active {
@@ -2069,6 +2088,7 @@ video {
 .max-width-1070 {
   max-width: 1070px !important;
 }
+
 .max-width-965 {
   max-width: 965px !important;
 }
@@ -2138,7 +2158,7 @@ video {
   background-size: 36px 9px;
   line-height: normal;
   text-decoration: none;
-  font-size: $general-font-size!important;
+  font-size: $general-font-size !important;
   &:hover {
     text-decoration: none;
   }
@@ -3159,41 +3179,49 @@ body.overview-and-grid {
   top: 50px;
   left: 170px;
 }
+
 .half-circle-left {
   position: absolute;
   bottom: 205px;
   left: 0;
 }
+
 .globe-triangle-right {
   position: absolute;
   bottom: 26px;
   right: -90px;
 }
+
 .health-dot-right {
   position: absolute;
   top: 90px;
   right: 170px;
 }
+
 .half-circle-right {
   position: absolute;
   bottom: 165px;
   right: 0;
 }
+
 .globe-triangle-left {
   position: absolute;
   bottom: 5px;
   left: -120px;
 }
+
 .half-diteed-circle-right {
   position: absolute;
   bottom: 410px;
   right: 0;
 }
+
 .rainbow-left {
   position: absolute;
   top: 240px;
   left: 0;
 }
+
 .max-width-450 {
   max-width: 450px;
 }
@@ -3210,6 +3238,21 @@ body.overview-and-grid {
       color: #495057;
       background-color: #fff;
       border-color: $brightsidepurple;
+      outline: 0;
+      box-shadow: none;
+    }
+  }
+  .settings-social-security-input {
+    border: 2px solid $techgrey;
+    border-radius: 5px;
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.05);
+    padding: 0.600rem .75rem;
+    resize: none;
+    padding-left: 35px;
+    padding-right: 35px;
+    &:focus {
+      color: #495057;
+      border: 2px solid $techgrey;
       outline: 0;
       box-shadow: none;
     }
@@ -3232,6 +3275,12 @@ body.overview-and-grid {
   }
   .social-security-lock {
     left: 10px;
+    position: absolute;
+    top: 40px;
+    z-index: 5;
+  }
+  .social-security-info {
+    right: 15px;
     position: absolute;
     top: 42px;
     z-index: 5;
@@ -3432,6 +3481,21 @@ body.overview-and-grid {
   align-items: center;
 }
 
+.accout-settings-tabs {
+  /*  .nav-link {
+      width: 140px;
+      text-align: center;
+    }*/
+  .tellus-more-about-you {
+    .btn-primary-large-text {
+      padding: 0.774rem 1.8rem!important;
+    }
+    .btn-ghost-large-plus-icon{
+      padding: 0.774rem 1.8rem!important;
+    }
+  }
+}
+
 .pre-banking-tabs {
   .nav-tabs {
     border-bottom: none;
@@ -3446,6 +3510,8 @@ body.overview-and-grid {
   }
   .nav-link {
     padding: 0.5rem 0.5rem;
+    width: 140px;
+    text-align: center;
   }
   .icons-symbol {
     cursor: inherit;
@@ -3462,7 +3528,7 @@ body.overview-and-grid {
     padding: 0.574rem 1.8rem !important;
     background-color: transparent;
     font-family: $FibraOneAlt-Regular;
-    font-size: $general-font-size!important;
+    font-size: $general-font-size !important;
     &:hover {
       color: $techgrey;
       text-decoration: none;
@@ -3563,6 +3629,7 @@ body.overview-and-grid {
     width: auto !important;
   }
 }
+
 .center-slide-like-dash {
   position: absolute;
   top: 75px;
@@ -3615,9 +3682,60 @@ input[type="checkbox"]:focus {
     color: $brightsidepurple;
   }
 }
-
 .financial-guru-pos {
   position: relative;
   left: 90px;
 }
-
+.link-account-border{
+  border: 1px solid #AAB2B5;
+  border-radius: 10px;
+  .edit-link-account{
+    font-size: 14px;
+  }
+  .delete-link-account{
+    font-size: 14px;
+    position: relative;
+    top: 35px;
+  }
+}
+.table-borderless{
+  .instance-th{
+      width: 60%;
+  }
+  .in-app-th{
+      width: 20%;
+  }
+  .email-th{
+    width: 20%;
+  }
+  td{
+    border: none!important;
+  }
+  th{
+    border: none!important;
+  }
+}
+.hide-bank{
+  display: none;
+}
+.withou-leaving{
+  font-size: 14px;
+  max-width: 275px;
+}
+.without-leaving-a{
+  font-size: 14px;
+}
+.remove-part{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.favourite-bottom-right-border{
+  border-bottom: 1px solid #e9ecef;
+  border-right: 1px solid #e9ecef;
+}
+.no-favorites{
+  padding-top: 140px;
+  margin-bottom: 140px;
+}
