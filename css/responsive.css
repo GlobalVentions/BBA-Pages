@@ -87,80 +87,99 @@
         top: 20px;
         margin-bottom: 30px;
     }
+
     .found-jobs {
         width: auto;
         top: 20px;
         margin-bottom: 30px;
     }
-    .result-jobs{
+
+    .result-jobs {
         width: auto;
     }
+
     .global-signup-bg {
-        background-image: none!important;
+        background-image: none !important;
     }
-/*    .center-slide-like{
-        display: none;
-    }
-    .top-right-slide-like{
-        display: none;
-    }*/
+
+    /*    .center-slide-like{
+            display: none;
+        }
+        .top-right-slide-like{
+            display: none;
+        }*/
     .most-featured-today-second .owl-next {
         right: 100px;
         top: 65px;
     }
+
     .most-featured-today .owl-next {
         right: 100px;
         top: 65px;
     }
-    .most-featured-today .owl-prev{
+
+    .most-featured-today .owl-prev {
         left: 100px;
         top: 65px;
     }
-    .most-featured-today-second .owl-prev{
+
+    .most-featured-today-second .owl-prev {
         left: 100px;
         top: 65px;
     }
+
     .center-slide-like {
         top: 55px;
         left: 75px
     }
+
     .center-slide-like-dash {
         top: 55px;
         left: 75px
     }
+
     .top-right-slide-like {
         top: 10px;
         right: 10px;
     }
+
     .financial-guru-pos {
         left: auto;
     }
-    .icons-symbol-search{
+
+    .icons-symbol-search {
         display: none;
     }
+
     .hero-container {
         margin-top: 75px;
     }
+
     .header-menu-text-pro {
         font-size: 17px;
         padding: 15px 20px;
     }
-    .form-steps .bg-white-steps{
+
+    .form-steps .bg-white-steps {
         margin: 0 auto;
     }
+
     .form-steps .second-steps:after {
         left: 14px;
         width: 130px;
     }
+
     .form-steps .first-step:after {
         left: 205px;
         width: 115px;
     }
+
     .form-steps .bg-white-steps.completed.first-step:after {
         border-bottom: 2px solid #44bca3;
         left: 15px;
         width: 90px;
     }
+
     .form-steps .bg-white-steps.second-steps-2:after {
         left: 210px;
         width: 50px;
@@ -168,33 +187,40 @@
 }
 
 @media (max-width: 480px) {
-    .show-me-chkbox{
+    .show-me-chkbox {
         right: auto;
     }
+
     .form-steps .bg-white-steps.completed:after {
         left: 15px;
         width: 21px;
     }
+
     .form-steps .bg-white-steps:after {
         left: 188px;
         width: 50px;
     }
+
     .form-steps .second-steps:after {
         left: 14px;
         width: 50px;
     }
+
     .header-menu-text {
         font-size: 11px !important;
         padding: 12px 0 !important;
     }
+
     .header-menu-text-pro {
         font-size: 11px !important;
         padding: 12px 0 !important;
     }
+
     .header-menu-text-pro-sec {
         font-size: 11px !important;
         padding: 0 !important;
     }
+
     .pre-banking-tabs .border-whole {
         border-bottom: 1px solid #AAB2B5;
         border-left: 1px solid #AAB2B5;
@@ -202,22 +228,28 @@
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
     }
-    .ThreeDots-menu-main .ThreeDots-menu-main-bg{
+
+    .ThreeDots-menu-main .ThreeDots-menu-main-bg {
         right: 170px;
     }
-    .ThreeDots-menu-main .arrow-up::after{
+
+    .ThreeDots-menu-main .arrow-up::after {
         left: 79%;
     }
+
     .owl-featured-today.owl-carousel .owl-nav {
         display: none !important;
     }
+
     .form-steps .bg-white-steps .step-completion {
         padding-left: 22px !important;
     }
-    .just-for-you .step{
+
+    .just-for-you .step {
         top: auto;
         bottom: 10px;
     }
+
     .great-financial-body footer {
         margin-bottom: 235px;
     }
@@ -386,17 +418,20 @@
         top: 20px;
         margin-bottom: 30px;
     }
+
     .found-jobs {
         width: auto;
         top: 20px;
         margin-bottom: 30px;
     }
+
     .burger-menu-main {
         width: 100%;
         left: 0;
         overflow: auto;
         height: auto;
     }
+
     .pro-burger-menu-main nav[role="full-horizontal"] {
         width: 100%;
         left: 0;
@@ -405,6 +440,7 @@
         top: 0;
         right: auto;
     }
+
     .pro-burger-menu-main {
         width: 100%;
         left: 0;
@@ -412,25 +448,32 @@
         height: auto;
         top: 114px;
     }
-    .burger-menu-main{
+
+    .burger-menu-main {
         top: 74px;
     }
-    .burger-menu-main nav[role="full-horizontal"] ul{
+
+    .burger-menu-main nav[role="full-horizontal"] ul {
         position: initial;
         max-height: 423px;
     }
+
     .pro-burger-menu-main nav[role="full-horizontal"] ul {
         position: initial;
     }
-    .knowledge-menu-main nav[role="full-horizontal"] ul{
+
+    .knowledge-menu-main nav[role="full-horizontal"] ul {
         position: initial;
     }
-    .opportunities-menu-main nav[role="full-horizontal"] ul{
+
+    .opportunities-menu-main nav[role="full-horizontal"] ul {
         position: initial;
     }
+
     .burger-menu-main nav[role="full-horizontal"] {
         right: auto;
     }
+
     .opportunities-menu-main {
         width: 100%;
         left: 0;
@@ -438,9 +481,11 @@
         height: auto;
         top: 114px;
     }
+
     .opportunities-menu-main nav[role="full-horizontal"] {
         right: auto;
     }
+
     .knowledge-menu-main {
         width: 100%;
         left: 0;
@@ -448,56 +493,88 @@
         height: auto;
         top: 114px;
     }
+
     .knowledge-menu-main nav[role="full-horizontal"] {
         right: auto;
     }
+
     .most-featured-today-second .owl-next {
         right: 20px;
         top: 80px;
     }
+
     .most-featured-today .owl-next {
         right: 20px;
         top: 80px;
     }
-    .most-featured-today .owl-prev{
+
+    .most-featured-today .owl-prev {
         left: 20px;
         top: 80px;
     }
-    .most-featured-today-second .owl-prev{
+
+    .most-featured-today-second .owl-prev {
         left: 20px;
         top: 80px;
     }
+
     .center-slide-like {
         top: 60px;
         left: 0;
     }
+
     .center-slide-like-dash {
         top: 60px;
         left: 0;
         width: 100%;
     }
+
     .top-right-slide-like {
         top: 10px;
         right: 10px;
     }
+
     .financial-guru-pos {
         left: auto;
     }
+
     .pagination-1to7 .pagination-link {
-        font-size: 0.5rem!important;
+        font-size: 0.5rem !important;
     }
-    .favourite-bottom-right-border{
+
+    .favourite-bottom-right-border {
         border-right: none;
     }
+
     .no-favorites {
         padding-top: 35px;
         margin-bottom: 35px;
     }
+
+    .pre-banking-tabs .nav-link {
+        width: auto;
+    }
+
+    .arrow-down::after {
+        left: 40%;
+        border: 2em solid #AEB6B9;
+        border-color: transparent transparent #F2F2F2 #F2F2F2;
+    }
+    .border-right-status{
+        border-right: none;
+        border-bottom: 1px solid #AAB2B5;
+    }
 }
 
 @media (max-width: 360px) {
-    .burger-menu-main nav[role="full-horizontal"] ul{
+    .burger-menu-main nav[role="full-horizontal"] ul {
         position: initial;
         max-height: 423px;
+    }
+}
+
+@media (min-width: 992px) {
+    .offset-custom {
+        margin-left: 245px;
     }
 }

@@ -816,7 +816,8 @@ ul.found-jobs-ul li:before {
   width: 100%;
   /*    padding-top: 13px;*/
   text-align: center;
-  z-index: 2; }
+  z-index: 2;
+  background-color: #ffffff; }
 .custom-radio-bba-box [type="radio"]:checked + label:before,
 .custom-radio-bba-box [type="radio"]:not(:checked) + label:before {
   content: '';
@@ -1373,13 +1374,13 @@ ul.found-jobs-ul li:before {
     /* Centered text */ }
     .hero-container .hero-banner .centered-text {
       position: absolute;
-      top: 20%;
+      top: 19%;
       left: 17%;
-      max-width: 435px; }
+      max-width: 480px; }
       .hero-container .hero-banner .centered-text .credit-without-score-text {
-        font-size: 3.4rem;
+        font-size: 3.6rem;
         font-family: "FibraOneAlt-Bold", Sans Serif;
-        line-height: 50px; }
+        line-height: 60px; }
       .hero-container .hero-banner .centered-text .opportunitytxt {
         font-size: 1.09rem !important;
         max-width: 350px;
@@ -1493,13 +1494,33 @@ ul.found-jobs-ul li:before {
     top: 35px; }
 
 .financial-toolbox {
-  background-image: url(../images/01@1x.png); }
+  background-image: url(../images/01@1x.png);
+  background-repeat: no-repeat; }
   .financial-toolbox .z-index-two {
     z-index: 2; }
   .financial-toolbox .border-cayn {
     border-bottom: 2px solid #44bca3; }
   .financial-toolbox .LikeToggler {
     cursor: pointer; }
+
+.arrow-down {
+  box-sizing: border-box;
+  background: #F2F2F2;
+  box-shadow: 0px 3px 3px 0 #AEB6B9; }
+
+.arrow-down::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  margin-left: -0.5em;
+  top: 100%;
+  left: 45%;
+  box-sizing: border-box;
+  border: 3em solid #AEB6B9;
+  border-color: transparent transparent #F2F2F2 #F2F2F2;
+  transform-origin: 0 0;
+  transform: rotate(315deg); }
 
 .releted-calculators .z-index-two {
   z-index: 2; }
@@ -2586,6 +2607,9 @@ body.overview-and-grid .Pattern-img-div img {
 .tellus-more-about-you .social-security-input {
   padding-left: 35px;
   padding-right: 100px; }
+.tellus-more-about-you .social-security-input2 {
+  padding-left: 35px;
+  padding-right: 5px; }
 .tellus-more-about-you .salary-optional {
   padding-left: 30px;
   padding-right: 15px;
@@ -2965,5 +2989,42 @@ input[type="checkbox"]:focus {
 .no-favorites {
   padding-top: 140px;
   margin-bottom: 140px; }
+
+.mx-width-repayment {
+  max-width: 690px; }
+
+.border-bottom-status {
+  border-bottom: 1px solid #AAB2B5; }
+
+.border-right-status {
+  border-right: 1px solid #AAB2B5; }
+
+.based-results {
+  display: flex;
+  align-items: center; }
+
+.h5-calcu-center {
+  font-size: 1.1rem !important; }
+
+.max-width-center {
+  max-width: 365px; }
+
+.smart-read-toggle {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px; }
+  .smart-read-toggle .smart-read {
+    font-size: 1.2rem !important; }
+  .smart-read-toggle .custom-toggle-bba .slider {
+    background-color: transparent;
+    border: 1px solid #ffffff; }
+    .smart-read-toggle .custom-toggle-bba .slider:before {
+      bottom: 1px; }
+  .smart-read-toggle .custom-toggle-bba input:checked + .slider:before {
+    -webkit-transform: translateX(19px);
+    -ms-transform: translateX(19px);
+    transform: translateX(19px); }
 
 /*# sourceMappingURL=style.css.map */
