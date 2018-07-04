@@ -682,6 +682,18 @@ $(function () {
         }
     });
 });
+/* JS code for hide show div based on checkbox in Post article Page*/
+$(function () {
+    $("#smartread").click(function () {
+        if ($(this).is(":checked")) {
+            $("#divreadtimeone").hide();
+            $("#divreadtimetwo").show();
+        } else {
+            $("#divreadtimeone").show();
+            $("#divreadtimetwo").hide();
+        }
+    });
+});
 
 /* JS CODE FOR BURGER MENU MAIN TOGGLE */
 function menuToggle(){
@@ -739,7 +751,7 @@ $(document).ready(function()
     $(".unchecked").on("click", function() {
         $(this).toggleClass("checked");
     });
-    $('.z-indexradio').click(function() {
+/*    $('.z-indexradio').click(function() {
         var $this = $(this);
 
         if ($this.hasClass('text-white')) {
@@ -747,7 +759,7 @@ $(document).ready(function()
         } else {
             $this.addClass('text-white');
         }
-    });
+    });*/
 
     /* JS Code for toggle in account settings page */
     $('#click').click(function(){

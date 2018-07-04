@@ -564,6 +564,9 @@
         border-right: none;
         border-bottom: 1px solid #AAB2B5;
     }
+    .industry-headed{
+        font-size: 1.5rem!important;
+    }
 }
 
 @media (max-width: 360px) {

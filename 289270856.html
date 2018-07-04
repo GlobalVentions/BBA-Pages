@@ -77,9 +77,8 @@
                                                            id="inputSecurityNumber" placeholder="Email">
                                                 </div>
                                                 <div class="form-group position-relative">
-                                                    <input type="password"
-                                                           class="form-control more-about-input"
-                                                           id="inputOccupation" placeholder="Password">
+                                                        <input type="password" class="form-control form-control more-about-input signin-password" name="password" id="pwd0" placeholder="Password" />
+                                                        <a href="#" onclick="toggle_password();" class="signin_pwd text-black heading-alt-bold generalsizefont input-show text-uppercase" id="showhide">Show</a>
                                                 </div>
                                                 <div class="custom-radio-bba-box">
                                                     <div class="row m-0">
@@ -194,6 +193,20 @@
     jQuery('#tags').tagsInput({
         width: 'auto'
     });
+    // JS CODE FOR Tags Input
+    function toggle_password () {
+        var tag = document.getElementById("pwd0");
+        var tag2 = document.getElementById("showhide");
+        if (tag2.innerHTML === 'Show'){
+            tag.type="text";
+            tag2.innerText = 'Hide';
+        }
+        else {
+            tag.type="password";
+            tag2.innerText = 'Show';
+        }
+
+    }
 </script>
 </body>
 </html>
