@@ -135,6 +135,10 @@ html, body {
   position: relative;
   right: 20px; }
 
+ul.facts {
+  font-size: 0.8rem;
+  line-height: 30px; }
+
 .z-indexradio {
   position: relative;
   z-index: 2;
@@ -1701,6 +1705,9 @@ video {
 
 .max-width-850 {
   max-width: 850px !important; }
+
+.max-width-320 {
+  max-width: 320px !important; }
 
 .max-width-1070 {
   max-width: 1070px !important; }

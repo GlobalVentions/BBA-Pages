@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" type="image/ico" href="images/favicon.ico"/>
+    <title>Post Favorites</title>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.tagsinput.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="container p-0 fixed-top bg-white">
+        <div class="row ml-0 mr-0 mb-0 mt-3">
+            <div class="col-lg-12 col-md-12 col-12 p-0">
+                <div id="pro-header">
+                    <!-- Content will be inserted by jQuery from pro-header.html -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container p-0 hero-container">
+<!--        <div class="row m-0">
+            <div class="col-lg-12 col-md-12 col-12 pt-lg-0 pt-md-5 pt-5 pl-0 pr-0">
+                <img src="images/favorites@1x.png" class="img-fluid d-lg-block d-md-block d-none">
+                <img src="images/favorites@2x.png" class="img-fluid d-lg-none d-md-none d-block">
+            </div>
+        </div>-->
+        <div class="row ml-lg-0 mr-lg-0 ml-md-0 mr-md-0 ml-4 mr-4">
+            <div class="col-lg-7 col-xl-7 col-12 col-md-12 mt-lg-5 mt-md-5 mt-4 mb-0 mr-lg-0 mr-md-0 mr-4 p-0 border">
+                <div class="row m-0 ">
+                    <div class="col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3 p-lg-4 p-md-4 p-2 pl-xl-4 favourite-bottom-right-border">
+                        <img src="images/amazone-card.png" class="img-fluid mx-auto d-block"
+                             alt="most-read-articles-1">
+                    </div>
+                    <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9 p-lg-4 p-md-4 p-2 pl-xl-4 favourite-bottom-right-border">
+                        <p class="m-0 heading5-regular-12-16 text-primary-black">Credit Card Solutions</p>
+                        <p class="heading-alt-bold m-0 withou-leaving">Amazon Reward Card by Chase</p>
+                        <span class="float-right">
+                            <a href="#" data-toggle="modal" data-target="#viewopportunitymodal" class="heading-alt-bold text-primary-brightsidepurple m-0 without-leaving-a"><u>View Opportunity</u></a>
+                        </span>
+                        <p class="m-0 heading5-regular-12-16 text-primary-black max-width-320">Earn 50,000 bonus points after you spend $4,000 on purchases in the first 3 months...</p>
+                    </div>
+                </div>
+                <div class="row m-0">
+                    <div class="col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3 p-lg-4 p-md-4 p-2 pl-xl-4 favourite-bottom-right-border">
+                        <img src="images/boa.png"
+                             class="img-fluid mx-auto d-block"
+                             alt="bank-america-visa-card">
+                    </div>
+                    <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9 p-lg-4 p-md-4 p-2 pl-xl-4 favourite-bottom-right-border">
+                        <p class="m-0 heading5-regular-12-16 text-primary-black">Ceadit Card Solution</p>
+                        <p class="heading-alt-bold m-0 withou-leaving">Bank Of Amrica Traval Reword Card</p>
+                        <span class="float-right">
+                            <a href="#" data-toggle="modal" data-target="#viewopportunitymodal" class="heading-alt-bold text-primary-brightsidepurple m-0 without-leaving-a"><u>View Opportunity</u></a>
+                        </span>
+                        <p class="m-0 heading5-regular-12-16 text-primary-black max-width-320">Earn 50,000 bonus points after you spend $4,000 on purchases in the first 3 months...</p>
+                    </div>
+                </div>
+                <div class="row m-0">
+                    <div class="col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3 p-lg-4 p-md-4 p-2 pl-xl-4 favourite-bottom-right-border">
+                        <img src="images/skymiles-card.png"
+                             class="img-fluid mx-auto d-block"
+                             alt="bank-america-visa-card">
+                    </div>
+                    <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9 p-lg-4 p-md-4 p-2 pl-xl-4 favourite-bottom-right-border">
+                        <p class="m-0 heading5-regular-12-16 text-primary-black">Ceadit Card Solution</p>
+                        <p class="heading-alt-bold m-0 withou-leaving">Delta Skymiles Rewards Card</p>
+                        <span class="float-right">
+                            <a href="#" data-toggle="modal" data-target="#viewopportunitymodal" class="heading-alt-bold text-primary-brightsidepurple m-0 without-leaving-a"><u>View Opportunity</u></a>
+                        </span>
+                        <p class="m-0 heading5-regular-12-16 text-primary-black max-width-320">Earn 50,000 bonus points after you spend $4,000 on purchases in the first 3 months...</p>
+                    </div>
+                </div>
+                <div class="row m-0">
+                    <div class="col-12 col-sm-3  col-md-3 col-lg-3 col-xl-3 p-lg-4 p-md-4 p-2 pl-xl-4 favourite-bottom-right-border">
+                        <img src="images/most-read-articles-3.png"
+                             class="img-fluid mx-auto d-block"
+                             alt="video-slide2">
+                    </div>
+                    <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9 p-lg-4 p-md-4 p-2 pl-xl-4 favourite-bottom-right-border">
+                        <p class="m-0 heading5-regular-12-16 text-primary-black">Video</p>
+                        <p class="heading-alt-bold m-0 withou-leaving">How to choose a rewards card in a sea of rewards</p>
+                        <span class="float-right">
+                            <a href="#" class="heading-alt-bold text-primary-brightsidepurple m-0 without-leaving-a"><u>Watch Video</u></a>
+                        </span>
+                        <p class="m-0 heading5-regular-12-16 text-primary-black max-width-320">Earn 50,000 bonus points after you spend $4,000 on purchases in the first 3 months...</p>
+                    </div>
+                </div>
+                <div class="row m-0">
+                    <div class="col-12 col-sm-3  col-md-3 col-lg-3 col-xl-3 p-lg-4 p-md-4 p-2 pl-xl-4 favourite-bottom-right-border">
+                        <img src="images/video-slide2.png"
+                             class="img-fluid mx-auto d-block"
+                             alt="video-slide2">
+                    </div>
+                    <div class="col-12 col-sm-9 col-md-9 col-lg-9 col-xl-9 p-lg-4 p-md-4 p-2 pl-xl-4 favourite-bottom-right-border">
+                        <p class="m-0 heading5-regular-12-16 text-primary-black">Video</p>
+                        <p class="heading-alt-bold m-0 withou-leaving">How to choose a rewards card in a sea of rewards</p>
+                        <span class="float-right">
+                            <a href="#" class="heading-alt-bold text-primary-brightsidepurple m-0 without-leaving-a"><u>Watch Video</u></a>
+                        </span>
+                        <p class="m-0 heading5-regular-12-16 text-primary-black max-width-320">Earn 50,000 bonus points after you spend $4,000 on purchases in the first 3 months...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row ml-0 mr-0">
+            <div class="col-lg-12 col-md-12 col-12 mt-4 mb-4">
+                <div class="pagination-1to7">
+                    <nav aria-label="..." class="pagination-nav">
+                        <ul class="pagination m-0">
+                            <li class="page-item disabled">
+                                <span class="page-link pagination-link prev-underline m-0">Prev</span>
+                            </li>
+                            <li class="page-item"><a class="page-link pagination-link" href="#">1</a>
+                            </li>
+                            <li class="page-item"><a class="page-link pagination-link" href="#">2</a>
+                            </li>
+                            <li class="page-item"><a class="page-link pagination-link" href="#">3</a>
+                            </li>
+                            <li class="page-item"><a class="page-link pagination-link" href="#">4</a>
+                            </li>
+                            <li class="page-item"><a class="page-link pagination-link" href="#">5</a>
+                            </li>
+                            <li class="page-item active"><a class="page-link pagination-link" href="#">6</a>
+                            </li>
+                            <li class="page-item"><a class="page-link pagination-link" href="#">7</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link pagination-link pagination-next text-primary-brightsidepurple m-0"
+                                   href="#">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <p class="text-center pagination-bottom-text">Viewing Page 6 Of 7</p>
+            </div>
+        </div>
+        <div class="row m-0">
+            <div class="col-lg-8 col-md-12 col-11 p-0 mt-1 mb-5 z-index-two">
+                <a href="#" target="_blank"><img src="images/advertiserment2.png" class="img-fluid"></a>
+                <h6 class="heading6-regular-10-13 pt-2 text-secondary-grey">Advertisement</h6>
+            </div>
+        </div>
+    </div>
+    <div class="row ml-0 mr-0">
+        <div class="col-lg-12 col-md-12 col-12">
+            <!-- Modal -->
+            <div class="custom-opportunity-modal JobModal">
+                <div class="modal fade" id="viewopportunitymodal" tabindex="-1" role="dialog"
+                     aria-labelledby="JobModalTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header p-0">
+                            </div>
+                            <div class="modal-body bg-white p-0  border-radius-15 tellus-more-about-you">
+                                <div class="row m-0">
+                                    <div class="col-lg-12 col-md-12 col-12 p-0">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="general-wells-fargo">
+                                    <div class="row m-0">
+                                        <div class="col-lg-12 col-md-12 col-12 p-0">
+                                            <div class="row m-0 bg-tech-grey border-top-left-right-radius-15 p-lg-0 p-md-0 p-3">
+                                                <div class="col-lg-2 col-md-2 col-3 p-0 pt-lg-4 pb-lg-3 pl-lg-5 pt-md-4 pb-md-3 pl-md-3">
+                                                    <img src="images/bank-america-visa-card.png" class="img-fluid">
+                                                </div>
+                                                <div class="col-lg-6 col-md-8 col-12 pl-0 pr-0 pt-3 pt-lg-4 pb-lg-3 pl-lg-3 pt-md-4 pb-md-3 pl-md-3 text-center text-lg-left text-md-left">
+                                                    <h4 class="heading-alt-bold text-primary-black mb-0">The
+                                                        People Card Unlimited</h4>
+                                                    <div class="icons-symbol">
+                                                        <img src="images/icon/star-active@1x.png"
+                                                             class="img-fluid pl-1">
+                                                        <img src="images/icon/star-active@1x.png"
+                                                             class="img-fluid pl-1">
+                                                        <img src="images/icon/star-inactive@1x.png"
+                                                             class="img-fluid pl-1">
+                                                        <img src="images/icon/star-inactive@1x.png"
+                                                             class="img-fluid pl-1">
+                                                        <img src="images/icon/star-inactive@1x.png"
+                                                             class="img-fluid pl-1">
+                                                        <span class="heading-alt-regular text-secondary-grey rate-opportunity">(20) <u>Rate Opportunity</u></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-1 col-md-2 col-2 pl-0 pr-0 pt-2 pb-2 pt-lg-4 pb-lg-3 pl-lg-0 pt-md-4 pb-md-3 pl-md-3 d-inline-flex text-center">
+                                                    <div class="LikeToggler mr-1">
+                                                        <img src="images/icon/favorite-inactive@1x.png"
+                                                             class="img-fluid heart-img-link">
+                                                        <img src="images/icon/favorite-active@1x.png"
+                                                             class="img-fluid heart-img-link" style="display:none">
+                                                    </div>
+                                                    <div class="LikeTogglerShare">
+                                                        <a href="#"><img src="images/icon/share@1x.png"
+                                                                         class="img-fluid heart-img-link"></a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-md-12 col-12 p-0 pt-lg-3 pb-lg-3 pr-lg-5 pt-md-3 pb-md-3 pr-md-3 pl-lg-3">
+                                                    <div class="row m-0">
+                                                        <div class="col-lg-12 col-md-4 col-6 p-0">
+                                                            <button type="button"
+                                                                    class="btn btn-primary-large-text mt-lg-0 mt-md-0 ml-md-2 ml-lg-0 mt-2">
+                                                                Apply
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-lg-12 col-md-4 col-6 p-0">
+                                                            <button type="button"
+                                                                    class="btn btn-ghost-large-plus-icon mt-lg-2 mt-md-0 ml-md-2 ml-lg-0 mt-2 ml-md-2 ml-1">
+                                                                <p class="text-center m-0"><i
+                                                                        class="fa fa-plus plus-btn-icon pl-2 pr-2"></i>Compare
+                                                                </p></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row m-0">
+                                        <div class="col-lg-12 col-md-12 col-12 p-lg-0 p-md-2 pl-3 pr-3 pt-3 pb-0 border-whole">
+                                            <div class="row m-0">
+                                                <div class="col-lg-4 col-md-4 col-12 pl-0 pr-0 pt-2 pb-3 pt-lg-4 pb-lg-4 pl-lg-5 pt-md-4 pb-md-4 pl-md-3">
+                                                    <div class="row m-0">
+                                                        <div class="col-lg-12 col-md-12 col-12 p-0 border border-left-0 border-top-0 border-bottom-0 pr-lg-0 pr-md-3 pr-0">
+                                                            <h5 class="heading6-bold-10-13 text-primary-black mb-3 text-uppercase">
+                                                                OPPORTUNITIES REQUIREMENTS</h5>
+                                                            <img src="images/badge@1x.png" class="img-fluid mb-2">
+                                                            <img src="images/badget@1x.png" class="img-fluid mb-2">
+                                                            <img src="images/badgei@1x.png" class="img-fluid mb-4">
+                                                            <h5 class="heading6-bold-10-13 text-primary-black mb-0 text-uppercase">
+                                                                Your approval odds</h5>
+                                                            <div class="icons-symbol">
+                                                                <img src="images/icon/approval-active@1x.png"
+                                                                     class="img-fluid pl-1">
+                                                                <img src="images/icon/approval-active@1x.png"
+                                                                     class="img-fluid pl-1">
+                                                                <img src="images/icon/approval-active@1x.png"
+                                                                     class="img-fluid pl-1">
+                                                                <img src="images/icon/approval-inactive@1x.png"
+                                                                     class="img-fluid pl-1">
+                                                                <img src="images/icon/approval-inactive@1x.png"
+                                                                     class="img-fluid pl-1">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-8 col-md-8 col-12 pl-0 pr-0 pt-2 pb-3 pt-lg-3 pb-lg-3 pl-lg-5 pr-lg-5 pt-md-3 pb-md-3 pl-md-5 pr-md-5">
+                                                    <ul class="preview-requirement-ul pt-3 pl-3 pl-md-1 pl-1 m-0">
+                                                        <li>Earn 50,000 bonus after you spend $4,000 on
+                                                            purchases in the first 3 months from account
+                                                            opening. That's $625 toward travel when you redeem
+                                                            through Chase Ultimate Rewards.
+                                                        </li>
+                                                        <li>2X points on travel and dining at restaurants
+                                                            worldwide &amp; 1 point per dollar spent on all
+                                                            other purchases.
+                                                        </li>
+                                                        <li>Make business travel mre rewarding. Earn 50,000
+                                                            bonus miles after you spend $2,000 in purchases with
+                                                            your new Card within the first 3 months.
+                                                        </li>
+                                                        <li>Plus earn a additional 10,000 bonus miles after you
+                                                            nake an additional $1,000 in purchases on the Card
+                                                            within your first 6 months. Offer expires on
+                                                            4/11/200.
+                                                        </li>
+                                                        <li>Additionally, earn a $50 Statement credit after you
+                                                            make a Delta trip.
+                                                        </li>
+                                                        <li>Earn 5,000 bonus points after you add the first
+                                                            authorized user and make a purchase.
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-12 col-md-12 col-12 p-0 pt-lg-4 pb-lg-1 pt-md-3 pb-md-3 pl-0 pr-0 pt-3 pb-3 border-top-apy"
+                                                     id="info" style="">
+                                                    <h6 class="heading4-bold-18-24 text-primary-black pl-lg-5 pl-md-4">
+                                                        Rates and Fees</h6>
+                                                    <div class="row m-0">
+                                                        <div class="col-lg-6 col-md-12 col-12 pt-2 pb-3 pt-lg-3 pb-lg-2 pl-lg-5 pt-md-4 pb-md-0 pl-md-3 pr-md-3 p-0">
+                                                            <table class="table table-striped table-sm">
+                                                                <tbody>
+                                                                <tr>
+                                                                    <th class="heading6-bold-10-13 text-primary-black text-left text-uppercase pl-2 pl-lg-3 pl-md-3">
+                                                                        Intro Apr
+                                                                    </th>
+                                                                    <td class="heading5-regular-12-16 text-primary-black text-right pr-2 pr-lg-3 pr-md-3">
+                                                                        0% (15 Months)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th class="heading6-bold-10-13 text-primary-black text-left text-uppercase pl-2 pl-lg-3 pl-md-3">
+                                                                        Regular APR
+                                                                    </th>
+                                                                    <td class="heading5-regular-12-16 text-primary-black text-right pr-2 pr-lg-3 pr-md-3">
+                                                                        17.24%-24.24% Variable Apr
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th class="heading6-bold-10-13 text-primary-black text-left text-uppercase pl-2 pl-lg-3 pl-md-3">
+                                                                        Annual Fee
+                                                                    </th>
+                                                                    <td class="heading5-regular-12-16 text-primary-black text-right pr-2 pr-lg-3 pr-md-3">
+                                                                        $0.00
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th class="heading6-bold-10-13 text-primary-black text-left text-uppercase pl-2 pl-lg-3 pl-md-3">
+                                                                        Intro Balance transfer Apr
+                                                                    </th>
+                                                                    <td class="heading5-regular-12-16 text-primary-black text-right pr-2 pr-lg-3 pr-md-3">
+                                                                        0% (15 Months)
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th class="heading6-bold-10-13 text-primary-black text-left text-uppercase pl-2 pl-lg-3 pl-md-3">
+                                                                        Regular Balance transfer Apr
+                                                                    </th>
+                                                                    <td class="heading5-regular-12-16 text-primary-black text-right pr-2 pr-lg-3 pr-md-3">
+                                                                        14.24%-21.24% Variable Apr
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th class="heading6-bold-10-13 text-primary-black text-left text-uppercase pl-2 pl-lg-3 pl-md-3">
+                                                                        Late Fee
+                                                                    </th>
+                                                                    <td class="heading5-regular-12-16 text-primary-black text-right pr-2 pr-lg-3 pr-md-3">
+                                                                        Up to $38
+                                                                    </td>
+                                                                </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-12 col-12 pt-2 pb-3 pt-lg-3 pb-lg-2 pr-lg-5 pt-md-4 pb-md-0 pr-md-3 pl-md-3 p-0">
+                                                            <table class="table table-striped table-sm">
+                                                                <tbody>
+                                                                <tr>
+                                                                    <th class="heading6-bold-10-13 text-primary-black text-left text-uppercase pl-2 pl-lg-3 pl-md-3">
+                                                                        Cash Advance rate
+                                                                    </th>
+                                                                    <td class="heading5-regular-12-16 text-primary-black text-right pr-2 pr-lg-3 pr-md-3">
+                                                                        26.49%* Variable
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th class="heading6-bold-10-13 text-primary-black text-left text-uppercase pl-2 pl-lg-3 pl-md-3">
+                                                                        Cash Advance Fee
+                                                                    </th>
+                                                                    <td class="heading5-regular-12-16 text-primary-black text-right pr-2 pr-lg-3 pr-md-3">
+                                                                        3%, Min: %5
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th class="heading6-bold-10-13 text-primary-black text-left text-uppercase pl-2 pl-lg-3 pl-md-3">
+                                                                        penalty APr
+                                                                    </th>
+                                                                    <td class="heading5-regular-12-16 text-primary-black text-right pr-2 pr-lg-3 pr-md-3">
+                                                                        29.99%* Variable
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th class="heading6-bold-10-13 text-primary-black text-left text-uppercase pl-2 pl-lg-3 pl-md-3">
+                                                                        Balance transfer fee
+                                                                    </th>
+                                                                    <td class="heading5-regular-12-16 text-primary-black text-right pr-2 pr-lg-3 pr-md-3">
+                                                                        $0
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th class="heading6-bold-10-13 text-primary-black text-left text-uppercase pl-2 pl-lg-3 pl-md-3">
+                                                                        Foreign transaction fee
+                                                                    </th>
+                                                                    <td class="heading5-regular-12-16 text-primary-black text-right pr-2 pr-lg-3 pr-md-3">
+                                                                        2.7%
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th class="heading6-bold-10-13 text-primary-black text-left text-uppercase pl-2 pl-lg-3 pl-md-3">
+                                                                        Return payment fee
+                                                                    </th>
+                                                                    <td class="heading5-regular-12-16 text-primary-black text-right pr-2 pr-lg-3 pr-md-3">
+                                                                        Up to $38
+                                                                    </td>
+                                                                </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12 col-md-12 col-12 p-0 pt-lg-3 pb-lg-3 pt-md-3 pb-md-3 pl-0 pr-0 pt-3 pb-3 border-top-apy text-center">
+                                                    <a href="289180181.html"
+                                                       class="letsgo-btn heading-alt-bold text-primary-brightsidepurple">View
+                                                        more opportunities</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container p-0">
+        <footer class="pro-signup-footer">
+            <div class="row ml-0 mr-0 mb-0 mt-0">
+                <div class="col-lg-12 col-md-12 col-12 p-0 text-center">
+                    <div id="pro-footer">
+                        <!-- Content will be inserted by jQuery from pro-footer.html -->
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/style.js"></script>
+<script type="text/javascript" src="js/dd-slick.js"></script>
+<script src="js/jquery.tagsinput.min.js"></script>
+<script>
+    // JS CODE FOR Tags Input
+    jQuery('#tags').tagsInput({
+        width: 'auto'
+    });
+</script>
+</body>
+</html>
