@@ -39,7 +39,8 @@
                     <div class="col-lg-8 col-md-12 col-12 pl-lg-3 pr-lg-3 pl-md-3 pr-md-3 pl-0 pr-0">
                         <div class="row m-0">
                             <div class="col-lg-12 col-md-12 col-12 p-0">
-                                <h1 class="heading-alt-bold text-primary-black mb-2 industry-headed"> Where is the Financial Industry
+                                <h1 class="heading-alt-bold text-primary-black mb-2 industry-headed"> Where is the
+                                    Financial Industry
                                     Headed? </h1>
                                 <h5 class="heading-alt-bold text-primary-black mb-2"> By EL Mazyck </h5>
                             </div>
@@ -57,7 +58,8 @@
                                         <div class="col-lg-3 col-md-3 col-3 p-0">
                                             <div class="custom-toggle-bba pl-2">
                                                 <label class="switch">
-                                                    <input type="checkbox" id="smartread">
+                                                    <input type="checkbox" id="smartread" data-toggle="modal"
+                                                           data-target="#viewopportunitymodal"/>
                                                     <span class="slider round"></span>
                                                 </label>
                                             </div>
@@ -70,7 +72,7 @@
                 </div>
             </div>
         </div>
-        <div class="row ml-0 mr-0" id="divreadtimeone">
+        <div class="row ml-0 mr-0"> <!--id="divreadtimeone"-->
             <div class="col-lg-12 col-md-12 col-12 pt-4 pb-4">
                 <div class="row m-0">
                     <div class="col-lg-8 col-md-12 col-12 pl-lg-3 pr-lg-3 pl-md-3 pr-md-3 pl-0 pr-0 text-center">
@@ -160,6 +162,9 @@
                                         Advertisement</h6>
                                 </div>
                             </div>
+                            <div class="col-lg-12 col-md-12 col-12 pl-0 pr-0 pt-4 pb-2">
+
+                            </div>
                         </div>
                         <div class="row m-0">
                             <div class="col-lg-12 col-md-12 col-12 pl-0 pr-0 pt-5 pb-5 d-inline-flex">
@@ -178,7 +183,7 @@
                 </div>
             </div>
         </div>
-        <div class="row ml-0 mr-0" id="divreadtimetwo" style="display: none;">
+        <!--<div class="row ml-0 mr-0" id="divreadtimetwo" style="display: none;">
             <div class="col-lg-12 col-md-12 col-12 pt-4 pb-4">
                 <div class="row m-0">
                     <div class="col-lg-8 col-md-12 col-12">
@@ -206,11 +211,14 @@
                                     very expensive, and it becomes unmanageable when it goes beyond the limit. Your very
                                     close relation might be suffering from a disease that requires a lot of money for
                                     the treatment as well as monthly medicine is very expensive. In that case, applying
-                                    for a cash-out refinance <span class="bg-light-pink">loan</span> will help you to meet up the medical cost. As you
-                                    apply for the <span class="bg-light-pink">loan</span>, you can stay assured that monthly interest burden will not be
+                                    for a cash-out refinance <span class="bg-light-pink">loan</span> will help you to
+                                    meet up the medical cost. As you
+                                    apply for the <span class="bg-light-pink">loan</span>, you can stay assured that
+                                    monthly interest burden will not be
                                     much more as it has a lower rate of interest.</p>
                                 <p class="paragraph-regular-14-19 mb-4 text-primary-black max-width-575">You need to
-                                    make many calculations before you apply for the <span class="bg-light-pink">loan</span>, and it is a time taking
+                                    make many calculations before you apply for the <span
+                                            class="bg-light-pink">loan</span>, and it is a time taking
                                     process. But when you seek the recommendation of the experts, they will do the
                                     calculation as to how much amount you need to pay as interest every month and so on.
                                     The expert will give full assistance and will give the exact amount that you need to
@@ -219,8 +227,10 @@
                                 <div class="row m-0">
                                     <div class="col-lg-12 col-md-12 col-12 pl-0 pr-0 pt-5 pb-5 d-inline-flex">
                                         <div class="LikeToggler mr-2">
-                                            <img src="images/icon/favorite-inactive@1x.png" class="img-fluid heart-img-link">
-                                            <img src="images/icon/favorite-active@1x.png" class="img-fluid heart-img-link"
+                                            <img src="images/icon/favorite-inactive@1x.png"
+                                                 class="img-fluid heart-img-link">
+                                            <img src="images/icon/favorite-active@1x.png"
+                                                 class="img-fluid heart-img-link"
                                                  style="display:none">
                                         </div>
                                         <div class="LikeTogglerShare">
@@ -311,7 +321,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
         <div class="row m-0">
             <div class="col-lg-12 col-md-12 col-12 text-center p-0">
                 <div class="most-read-articles most-read-articles-multi bg-tech-grey pb-lg-5">
@@ -596,19 +606,173 @@
             </footer>
         </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
-    <script type="text/javascript" src="js/style.js"></script>
-    <script type="text/javascript" src="js/dd-slick.js"></script>
-    <script src="js/jquery.tagsinput.min.js"></script>
-    <script>
-        // JS CODE FOR Tags Input
-        jQuery('#tags').tagsInput({
-            width: 'auto'
-        });
-    </script>
+</div>
+<!-- Modal -->
+<div class="custom-opportunity-modal JobModal">
+    <div class="modal fade" id="viewopportunitymodal" tabindex="-1" role="dialog"
+         aria-labelledby="JobModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header p-0">
+                </div>
+                <div class="modal-body bg-white p-0  border-radius-15 tellus-more-about-you">
+                    <div class="row m-0">
+                        <div class="col-lg-12 col-md-12 col-12 p-0">
+                            <button type="button" id="summary-close" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row m-0">
+                        <div class="col-lg-8 col-md-12 col-12 p-4">
+                            <h4 class="heading-alt-bold text-primary-black mb-4 max-width-575">Summary</h4>
+                            <p class="paragraph-regular-14-19 mb-4 text-primary-black max-width-575">Let’s have a look
+                                at such factors. • Your lifespan • Your present spending habit • Your present saving
+                                habit • Your plan for retirement So, here are the steps that you need to follow to
+                                figure out the amount that you will need for a happy retirement.</p>
+                            <p class="paragraph-regular-14-19 mb-4 text-primary-black max-width-575">Do not ignore the
+                                rule of thumb for retirement saving Many people chose to ignore the rule of thumb
+                                advised by financial experts.</p>
+                            <p class="paragraph-regular-14-19 mb-4 text-primary-black max-width-575">You can figure out,
+                                how much you need to put in your retirement saving account on a monthly basis.
+                                Take the help of a fair retirement calculator Have a correct estimation of your
+                                retirement saving amount.
+                                Start in your 30s, and keep aside 15-25% of your pretax income to enjoy a significant
+                                saving for retirement.
+                                Factors on which retirement saving amount depends Since retirement is inevitable but
+                                will happen after several years; there are a lot of factors that influence the same.</p>
+                            <p class="paragraph-regular-14-19 mb-4 text-primary-black max-width-575">Nobody knows what
+                                amount he or she must have in the retirement saving account.</p>
+                            <p class="paragraph-regular-14-19 mb-4 text-primary-black max-width-575">It is also not true
+                                that these rules are not very effective as there is no one-fit-to-all solution, but yes
+                                they are indeed better than doing nothing for a retirement saving account.</p>
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-12 p-4">
+                            <div class="Summary_toggle_tbl">
+                                <table class="table table-hover table-sm">
+                                    <tbody>
+                                    <tr class="heading-alt-bold">
+                                        <th class="pl-3"><h5 class="mb-0">Best Words</h5></th>
+                                        <th><h5 class="mb-0">Count</h5></th>
+                                    </tr>
+                                    <tr height="20" class="no-hovere">
+                                        <th></th>
+                                        <th></th>
+                                    </tr>
+                                    <tr>
+                                        <td class="pl-3">retirement</td>
+                                        <td>18</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pl-3">saving</td>
+                                        <td>14</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pl-3">expenses</td>
+                                        <td>6</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pl-3">need</td>
+                                        <td>5</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pl-3">monthly</td>
+                                        <td>5</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pl-3">amount</td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pl-3">account</td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pl-3">rule</td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pl-3">thumb</td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pl-3">help</td>
+                                        <td>3</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!--<div class="col-lg-12 col-md-12 col-12 pt-0 pl-4 pr-4 pb-4">
+                            <h4 class="heading-alt-bold text-primary-black mb-4">Keyword Highlighting</h4>
+                            <p class="paragraph-regular-14-19 mb-4 text-primary-black">Let’s have a look
+                                at such factors. • Your lifespan • Your present spending habit • Your present <span class="bg-light-pink">Saving</span>
+                                habit • Your plan for <span class="bg-light-pink">retirement</span> So, here are the steps that you <span class="bg-light-pink">need</span> to follow to
+                                figure out the <span class="bg-light-pink">amount</span> that you will <span class="bg-light-pink">need</span> for a happy <span class="bg-light-pink">retirement</span>.</p>
+                            <p class="paragraph-regular-14-19 mb-4 text-primary-black">Do not ignore the
+                                <span class="bg-light-pink">rule</span> of <span class="bg-light-pink">thumb</span> for <span class="bg-light-pink">retirement saving</span> Many people chose to ignore the <span class="bg-light-pink">rule</span> of <span class="bg-light-pink">thumb</span>
+                                advised by financial experts.</p>
+                            <p class="paragraph-regular-14-19 mb-4 text-primary-black">You can figure out,
+                                how much you <span class="bg-light-pink">need</span> to put in your <span class="bg-light-pink">retirement saving account</span> on a <span class="bg-light-pink">monthly</span> basis.
+                                Take the <span class="bg-light-pink">help</span> of a fair <span class="bg-light-pink">retirement</span> calculator Have a correct estimation of your
+                                <span class="bg-light-pink">retirement saving amount.</span>
+                                Start in your 30s, and keep aside 15-25% of your pretax <span class="bg-light-pink">income</span> to enjoy a significant
+                                saving for retirement.
+                                Factors on which <span class="bg-light-pink">retirement saving amount</span> depends Since retirement is inevitable but
+                                will <span class="bg-light-pink">happen</span> after several years; there are a lot of factors that influence the same.</p>
+                            <p class="paragraph-regular-14-19 mb-4 text-primary-black">Nobody knows what
+                                amount he or she must have in the <span class="bg-light-pink">retirement saving account</span>.</p>
+                            <p class="paragraph-regular-14-19 mb-4 text-primary-black">It is also not true
+                                that these rules are not very <span class="bg-light-pink">effective</span> as there is no one-fit-to-all solution, but yes
+                                they are indeed better than doing nothing for a <span class="bg-light-pink">retirement saving account</span>.</p>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-12 pt-0 pl-4 pr-4 pb-4">
+                            <h4 class="heading-alt-bold text-primary-black mb-4">Sentences</h4>
+                            <p class="paragraph-regular-14-19 mb-4 text-primary-black">Let’s have a look
+                                at such factors. • Your lifespan • Your present spending habit • Your present saving
+                                habit • Your plan for retirement So, here are the steps that you need to follow to
+                                figure out the amount that you will need for a happy retirement.</p>
+                            <p class="paragraph-regular-14-19 mb-4 text-primary-black">Do not ignore the
+                                rule of thumb for retirement saving Many people chose to ignore the rule of thumb
+                                advised by financial experts.</p>
+                            <p class="paragraph-regular-14-19 mb-4 text-primary-black">You can figure out,
+                                how much you need to put in your retirement saving account on a monthly basis.
+                                Take the help of a fair retirement calculator Have a correct estimation of your
+                                retirement saving amount.
+                                Start in your 30s, and keep aside 15-25% of your pretax income to enjoy a significant
+                                saving for retirement.
+                                Factors on which retirement saving amount depends Since retirement is inevitable but
+                                will happen after several years; there are a lot of factors that influence the same.</p>
+                            <p class="paragraph-regular-14-19 mb-4 text-primary-black">Nobody knows what
+                                amount he or she must have in the retirement saving account.</p>
+                            <p class="paragraph-regular-14-19 mb-4 text-primary-black">It is also not true
+                                that these rules are not very effective as there is no one-fit-to-all solution, but yes
+                                they are indeed better than doing nothing for a retirement saving account.</p>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/style.js"></script>
+<script type="text/javascript" src="js/dd-slick.js"></script>
+<script src="js/jquery.tagsinput.min.js"></script>
+<script>
+    // JS CODE FOR Tags Input
+    jQuery('#tags').tagsInput({
+        width: 'auto'
+    });
+    $('#summary-close').click(function(e) {
+        $("#smartread").prop("checked", false);
+    });
+</script>
+
 </body>
 </html>

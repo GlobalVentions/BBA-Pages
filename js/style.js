@@ -127,9 +127,9 @@ $(function () {
 
     if ($('.owl-most-articles').length) {
         $('.owl-most-articles').owlCarousel({
-/*            autoplay: true,
+            autoplay: true,
             autoplayTimeout: 6500,
-            smartSpeed: 1000,*/
+            smartSpeed: 1000,
             loop: true,
             nav: true,
             dots: false,
@@ -683,7 +683,7 @@ $(function () {
     });
 });
 /* JS code for hide show div based on checkbox in Post article Page*/
-$(function () {
+/*$(function () {
     $("#smartread").click(function () {
         if ($(this).is(":checked")) {
             $("#divreadtimeone").hide();
@@ -693,7 +693,7 @@ $(function () {
             $("#divreadtimetwo").hide();
         }
     });
-});
+});*/
 
 /* JS CODE FOR BURGER MENU MAIN TOGGLE */
 function menuToggle(){
@@ -751,16 +751,10 @@ $(document).ready(function()
     $(".unchecked").on("click", function() {
         $(this).toggleClass("checked");
     });
-/*    $('.z-indexradio').click(function() {
+    $("label.filter-checkbox-label").click(function () {
         var $this = $(this);
-
-        if ($this.hasClass('text-white')) {
-            $this.removeClass('text-white');
-        } else {
-            $this.addClass('text-white');
-        }
-    });*/
-
+        $this.closest(".unchecked").toggleClass("checked");
+    });
     /* JS Code for toggle in account settings page */
     $('#click').click(function(){
         $('#editForm').toggleClass('hide-bank');

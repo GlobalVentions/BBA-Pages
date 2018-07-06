@@ -1670,6 +1670,8 @@ ul.found-jobs-ul li:before {
   height: 30px;
   width: 30px;
   cursor: pointer; }
+.most-popular-videos h5 {
+  min-height: 36px; }
 
 .owl-career-opportunities .owl-most-popular.owl-carousel .owl-dots.disabled, .owl-career-opportunities .owl-most-popular.owl-carousel .owl-nav.disabled {
   display: block !important; }
@@ -3012,13 +3014,11 @@ body.overview-and-grid .Pattern-img-div img {
 
 .custom-filter-chk {
   background-color: #E3E4E5;
-  padding: 7px 20px 7px 7px;
+  padding: 5px;
   border-radius: 8px; }
 
 .custom-filter-chk.checked {
-  background-color: #FAD136;
-  padding: 7px 20px 7px 7px;
-  border-radius: 8px; }
+  background-color: #FAD136; }
   .custom-filter-chk.checked .custom-control-description {
     color: #1e1e20 !important; }
 
