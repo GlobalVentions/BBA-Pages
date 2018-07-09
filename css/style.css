@@ -1233,6 +1233,60 @@ ul.found-jobs-ul li:before {
               background-color: #fad136;
               border-radius: 6px; }
 
+.financial-calculator-menu-main {
+  position: absolute;
+  width: auto;
+  border-radius: 10px;
+  z-index: 2; }
+  .financial-calculator-menu-main nav[role="full-horizontal"] {
+    width: 100%;
+    position: relative;
+    left: 20px;
+    top: 0; }
+    .financial-calculator-menu-main nav[role="full-horizontal"] ul {
+      width: 100%;
+      list-style: none;
+      position: relative;
+      top: 18px;
+      background-color: #6b17b3;
+      padding: 15px 0;
+      -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.26);
+      -moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.26);
+      box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.26);
+      border-radius: 5px; }
+      .financial-calculator-menu-main nav[role="full-horizontal"] ul > li {
+        position: relative;
+        text-transform: capitalize;
+        cursor: pointer;
+        text-align: left;
+        transition-duration: .3s;
+        transition-timing-function: ease-in-out;
+        transition-property: background, color, padding, border-radius;
+        width: 100%;
+        white-space: nowrap;
+        padding: 0;
+        line-height: 35px;
+        margin-bottom: 0; }
+        .financial-calculator-menu-main nav[role="full-horizontal"] ul > li .menu-fa-icon {
+          width: 9px;
+          position: relative;
+          top: 15px; }
+        .financial-calculator-menu-main nav[role="full-horizontal"] ul > li:last-child:after {
+          box-shadow: none; }
+        .financial-calculator-menu-main nav[role="full-horizontal"] ul > li > a {
+          color: #ffffff;
+          text-decoration: underline;
+          font-size: 0.9em;
+          transition: color .3s ease-in-out; }
+          .financial-calculator-menu-main nav[role="full-horizontal"] ul > li > a div {
+            padding: 0 10px;
+            /*
+            &:hover {
+              background-color: $eccentricyellow;
+              border-radius: 6px;
+            }
+            */ }
+
 .ThreeDots-menu-main {
   position: fixed;
   width: 235px;
@@ -2675,6 +2729,29 @@ body.overview-and-grid .Pattern-img-div img {
   display: inline-block;
   padding: 6px 12px;
   cursor: pointer; }
+.tellus-more-about-you select.form-control.custom-select-BBA:not([size]):not([multiple]) {
+  height: calc(2.25rem + 11px); }
+.tellus-more-about-you .custom-select-BBA {
+  padding: 0.600rem .75rem;
+  border: 2px solid #AAB2B5;
+  resize: none; }
+  .tellus-more-about-you .custom-select-BBA:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #6b17b3;
+    outline: 0;
+    box-shadow: none; }
+.tellus-more-about-you .signature-select {
+  padding: 0.600rem .75rem 0.66rem 3rem; }
+.tellus-more-about-you .dollar-sign {
+  position: absolute;
+  bottom: 12px;
+  left: 17px; }
+
+.no-hover {
+  text-decoration: none !important; }
+  .no-hover:focus {
+    text-decoration: none !important; }
 
 .cke_chrome {
   border: 2px solid #AAB2B5 !important;
@@ -3207,5 +3284,29 @@ input[type="checkbox"]:focus {
     text-decoration: underline;
     text-decoration-color: #6b17b3;
     font-family: FibraOneAlt-Bold; }
+
+.financial-calculator-button {
+  border-radius: 3px; }
+  .financial-calculator-button:hover {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #8E28E7; }
+  .financial-calculator-button a {
+    color: #ffffff;
+    text-decoration: none; }
+    .financial-calculator-button a:hover {
+      color: #ffffff;
+      text-decoration: none; }
+
+.calculator-sublisting .opportunitytxt {
+  font-size: 1.09rem !important;
+  line-height: 23px;
+  font-family: "FibraOneAlt-Regular", Sans Serif;
+  color: #1E1E20; }
+
+.calculator-font-size {
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  line-height: 25px; }
 
 /*# sourceMappingURL=style.css.map */

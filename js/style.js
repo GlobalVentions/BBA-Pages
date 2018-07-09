@@ -696,6 +696,24 @@ $(function () {
 });*/
 
 /* JS CODE FOR BURGER MENU MAIN TOGGLE */
+/*function menuToggle(){
+    $('.burger-menu-dropdown').click(function(event){
+        event.stopPropagation();
+        $(".burger-menu-main").toggle();
+    });
+    $(".burger-menu-main").on("click", function (event) {
+        event.stopPropagation();
+    });
+}
+$(document).on("click", function () {
+    $(".burger-menu-main").hide();
+});*/
+function calculatortipsToggle(){
+    $(".calculator-tips-description").toggle();
+}
+function calculatordisclaimerToggle(){
+    $(".calculator-disclaimer-description").toggle();
+}
 function menuToggle(){
     $(".burger-menu-main").toggle();
 }
@@ -713,6 +731,9 @@ function allopportunitiesToggle(){
 }
 function allresourcesToggle(){
     $(".allresources-menu-main").toggle();
+}
+function financialcalculatorToggle(){
+    $(".financial-calculator-menu-main").toggle();
 }
 function threeDotsToggle(){
     $(".ThreeDots-menu-main").toggle();
