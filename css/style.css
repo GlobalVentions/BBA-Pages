@@ -2326,6 +2326,9 @@ body.overview-and-grid .Pattern-img-div img {
     text-decoration-color: #6b17b3;
     font-family: FibraOneAlt-Bold; }
 
+.custom-modal.calculator-modal .modal-content {
+  min-height: 300px; }
+
 /*Loader CSS start*/
 .loader-pc .loader-pc-img {
   display: block;
@@ -2730,11 +2733,18 @@ body.overview-and-grid .Pattern-img-div img {
   padding: 6px 12px;
   cursor: pointer; }
 .tellus-more-about-you select.form-control.custom-select-BBA:not([size]):not([multiple]) {
-  height: calc(2.25rem + 11px); }
+  height: calc(2.25rem + 10px); }
 .tellus-more-about-you .custom-select-BBA {
   padding: 0.600rem .75rem;
   border: 2px solid #AAB2B5;
-  resize: none; }
+  resize: none;
+  border-radius: 7px;
+  background: url("../images/icon/chevron-inactive.mediumGray@1x.png") white no-repeat 98.5% !important;
+  /* !important used for overriding all other customisations */
+  background: url("../images/icon/chevron-inactive.mediumGray@1x.png") white no-repeat calc(100% - 10px) !important;
+  /* Better placement regardless of input width */
+  -webkit-appearance: none;
+  background-position: right center; }
   .tellus-more-about-you .custom-select-BBA:focus {
     color: #495057;
     background-color: #fff;

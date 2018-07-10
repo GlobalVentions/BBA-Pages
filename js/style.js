@@ -708,6 +708,9 @@ $(function () {
 $(document).on("click", function () {
     $(".burger-menu-main").hide();
 });*/
+function calculatorresiltdetailsToggle(){
+    $(".calculator-result-description").toggle();
+}
 function calculatortipsToggle(){
     $(".calculator-tips-description").toggle();
 }

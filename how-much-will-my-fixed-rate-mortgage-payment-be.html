@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="icon" type="image/ico" href="images/favicon.png"/>
-    <title>Should I Refinance</title>
+    <title>How much will my fixed rate mortgage payment be?</title>
 
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -43,242 +43,81 @@
                             problems. From personal budgets to mortgages, or planning for retirement to we have the
                             calculators that’s quick and easy to use. Look below and we hope you enjoy this calculator!
                         </p>
-                        <h3 class="heading-alt-bold text-black general-size mt-4">Should I refinance?</h3>
+                        <h3 class="heading-alt-bold text-black general-size mt-4">How much will my fixed rate mortgage
+                            payment be?</h3>
                         <p class="paragraph-regular-14-19 text-black mb-1 mt-2 pt-2">
-                            When you refinance at a lower interest rate, you usually pay refinancing costs including
-                            points, fees, and closing costs. This calculator will tell you if the amount you save in
-                            interest will exceed these refinancing costs. The calculated results depend on how long you
-                            plan to keep this property.</p>
+                            This calculator computes the payments (principal and interest) for a fixed rate loan.
+                        </p>
                         <div class="row m-0">
                             <div class="col-lg-10 col-md-12 col-12 pl-0 pr-0 mt-3 tellus-more-about-you">
                                 <form>
-                                    <h6 class="heading-alt-bold text-black general-size text-left mt-3 mb-2">Existing
-                                        Loan</h6>
                                     <div class="form-row">
                                         <div class="form-group col-md-6 pt-2 pb-2 m-0">
-                                            <label for="oloanamount"
-                                                   class="more-about-label col-lg-12 col-md-12 col-12 pr-0 pt-0 pb-0 pl-1 text-left mb-0">Original
-                                                loan amount</label>
-                                            <input type="text" class="form-control more-about-input" id="oloanamount"
-                                                   placeholder="Original loan amount" value="$400,000.00">
-                                        </div>
-                                        <div class="form-group col-md-6 pt-2 pb-2 m-0">
-                                            <label for="oloanamount"
-                                                   class="more-about-label col-lg-12 col-md-12 col-12 pr-0 pt-0 pb-0 pl-1 text-left mb-0">Original
-                                                term</label>
-                                            <input type="text" class="form-control more-about-input" id="oterm"
-                                                   value="30">
+                                            <label for="Homeprice"
+                                                   class="more-about-label col-lg-12 col-md-12 col-12 pr-0 pt-0 pb-0 pl-1 text-left mb-0">
+                                                Home price
+                                            </label>
+                                            <input type="text" class="form-control more-about-input" id="Homeprice"
+                                                   placeholder="Home price" value="$350,000.00">
                                         </div>
                                     </div>
-                                    <div class="form-row ml-0 mr-0 mt-2 mb-2 justify-content-start">
-                                        <label class="more-about-label col-lg-12 col-md-12 col-12 pr-0 pt-0 pb-0 pl-1 text-left mb-0">Original
-                                            mortgage length</label>
-                                        <div class="col-lg-12 col-md-12 col-12 p-0 mt-1 text-left">
+                                    <div class="form-row">
+                                        <label for="Downpayment"
+                                               class="more-about-label col-lg-12 col-md-12 col-12 pr-0 pt-2 pb-0 pl-2 text-left mb-0">
+                                            Down payment
+                                        </label>
+                                        <div class="form-group col-md-6 pt-1 pb-2 m-0">
+                                            <input type="text" class="form-control more-about-input" id="Downpayment"
+                                                   placeholder="Home price" value="$350,000.00">
+                                        </div>
+                                        <div class="form-group col-md-6 pt-3 pb-2 m-0 text-left pl-lg-5 pl-md-5">
                                             <div class="custom-radio-bba">
-                                                <input type="radio" id="months" name="radio-group" checked="checked">
+                                                <input type="radio" id="percentage" name="per dollar" checked="checked">
+                                                <label for="percentage" class="more-about-label text-black">%</label>
+                                                &nbsp;&nbsp;&nbsp;
+                                                <input type="radio" id="dollar" name="per dollar">
+                                                <label for="dollar" class="more-about-label text-black">$</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <label for="term"
+                                               class="more-about-label col-lg-12 col-md-12 col-12 pr-0 pt-2 pb-0 pl-2 text-left mb-0">
+                                            Loan term
+                                        </label>
+                                        <div class="form-group col-md-6 pt-1 pb-2 m-0">
+                                            <input type="text" class="form-control more-about-input" id="term"
+                                                   placeholder="Term" value="30">
+                                        </div>
+                                        <div class="form-group col-md-6 pt-3 pb-2 m-0 text-left pl-lg-5 pl-md-5">
+                                            <div class="custom-radio-bba">
+                                                <input type="radio" id="months" name="months years" checked="checked">
                                                 <label for="months" class="more-about-label text-black">Months</label>
                                                 &nbsp;&nbsp;&nbsp;
-                                                <input type="radio" id="years" name="radio-group">
+                                                <input type="radio" id="years" name="months years">
                                                 <label for="years" class="more-about-label text-black">Years</label>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="form-row">
-                                        <label class="more-about-label col-lg-12 col-md-12 col-12 pr-0 pt-0 pb-0 pl-2 text-left mb-0">Date
-                                            of loan</label>
-                                        <div class="form-group col-md-6 pt-2 pb-2 m-0">
-                                            <select class="form-control custom-select-BBA" name="LOANSTARTMONTH"
-                                                    id="tvcLOANSTARTMONTH">
-                                                <option value="1">Jan</option>
-                                                <option value="2">Feb</option>
-                                                <option value="3">Mar</option>
-                                                <option value="4">Apr</option>
-                                                <option value="5">May</option>
-                                                <option value="6">Jun</option>
-                                                <option value="7" selected="selected">Jul</option>
-                                                <option value="8">Aug</option>
-                                                <option value="9">Sep</option>
-                                                <option value="10">Oct</option>
-                                                <option value="11">Nov</option>
-                                                <option value="12">Dec</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group col-md-6 pt-2 pb-2 m-0">
-                                            <select class="form-control custom-select-BBA" name="LOANSTARTYEAR"
-                                                    id="tvcLOANSTARTYEAR">
-                                                <option value="1989">1989</option>
-                                                <option value="1990">1990</option>
-                                                <option value="1991">1991</option>
-                                                <option value="1992">1992</option>
-                                                <option value="1993">1993</option>
-                                                <option value="1994">1994</option>
-                                                <option value="1995">1995</option>
-                                                <option value="1996">1996</option>
-                                                <option value="1997">1997</option>
-                                                <option value="1998">1998</option>
-                                                <option value="1999">1999</option>
-                                                <option value="2000">2000</option>
-                                                <option value="2001">2001</option>
-                                                <option value="2002">2002</option>
-                                                <option value="2003">2003</option>
-                                                <option value="2004">2004</option>
-                                                <option value="2005">2005</option>
-                                                <option value="2006">2006</option>
-                                                <option value="2007">2007</option>
-                                                <option value="2008">2008</option>
-                                                <option value="2009">2009</option>
-                                                <option value="2010">2010</option>
-                                                <option value="2011">2011</option>
-                                                <option value="2012">2012</option>
-                                                <option value="2013">2013</option>
-                                                <option value="2014">2014</option>
-                                                <option value="2015">2015</option>
-                                                <option value="2016">2016</option>
-                                                <option value="2017">2017</option>
-                                                <option value="2018" selected="selected">2018</option>
-                                                <option value="2019">2019</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="form-row">
                                         <div class="form-group col-md-6 pt-2 pb-2 m-0">
                                             <label for="interest-rate"
-                                                   class="more-about-label col-lg-12 col-md-12 col-12 pr-0 pt-0 pb-0 pl-1 text-left mb-0">Current
-                                                interest rate</label>
+                                                   class="more-about-label col-lg-12 col-md-12 col-12 pr-0 pt-0 pb-1 pl-1 text-left mb-0">
+                                                Interest rate
+                                            </label>
                                             <input type="text" class="form-control more-about-input" id="interest-rate"
-                                                   placeholder="Current interest rate" value="5.700 %">
+                                                   placeholder="interest rate" value="5.700 %">
                                         </div>
                                     </div>
-                                    <h6 class="heading-alt-bold text-black general-size text-left mt-4 mb-2">New
-                                        Loan</h6>
-                                    <div class="form-row">
-                                        <div class="form-group col-md-6 pt-2 pb-2 m-0">
-                                            <label for="upon-refinance"
-                                                   class="more-about-label col-lg-12 col-md-12 col-12 pr-0 pt-0 pb-0 pl-1 text-left mb-0">Amount
-                                                you wish to cash out upon refinance</label>
-                                            <input type="text" class="form-control more-about-input" id="upon-refinance"
-                                                   placeholder="Amount you wish to cash out upon refinance"
-                                                   value="$5,000.00">
-                                        </div>
-                                        <div class="form-group col-md-6 pt-2 pb-2 m-0">
-                                            <label for="newinterestrate"
-                                                   class="more-about-label col-lg-12 col-md-12 col-12 pr-0 pt-0 pb-0 pl-1 text-left mb-0">New
-                                                interest rate</label>
-                                            <input type="text" class="form-control more-about-input"
-                                                   id="newinterestrate"
-                                                   value="5.250 %">
-                                        </div>
-                                    </div>
-                                    <div class="form-row">
-                                        <div class="form-group col-md-6 pt-2 pb-2 m-0">
-                                            <label for="fees-and-closing-costs"
-                                                   class="more-about-label col-lg-12 col-md-12 col-12 pr-0 pt-0 pb-0 pl-1 text-left mb-0">Fees
-                                                and closing costs</label>
-                                            <input type="text" class="form-control more-about-input"
-                                                   id="fees-and-closing-costs"
-                                                   value="5.250 %">
-                                        </div>
-                                        <div class="form-group col-md-6 pt-2 pb-2 m-0">
-                                            <label for="new-term"
-                                                   class="more-about-label col-lg-12 col-md-12 col-12 pr-0 pt-0 pb-0 pl-1 text-left mb-0">New
-                                                term</label>
-                                            <input type="text" class="form-control more-about-input" id="new-term"
-                                                   placeholder="new term" value="30">
-                                        </div>
-                                    </div>
-                                    <div class="form-row">
-                                        <div class="form-group col-md-6 pt-2 pb-2 m-0">
-                                            <label for="Points"
-                                                   class="more-about-label col-lg-12 col-md-12 col-12 pr-0 pt-0 pb-0 pl-1 text-left mb-0">Points</label>
-                                            <input type="text" class="form-control more-about-input" id="Points"
-                                                   placeholder="Points" value="1.0000 %">
-                                        </div>
-                                    </div>
-                                    <div class="form-row ml-0 mr-0 mt-2 mb-2 justify-content-start">
-                                        <label class="more-about-label col-lg-12 col-md-12 col-12 pr-0 pt-0 pb-0 pl-1 text-left mb-0">New
-                                            loan term</label>
-                                        <div class="col-lg-12 col-md-12 col-12 p-0 mt-1 text-left">
-                                            <div class="custom-radio-bba">
-                                                <input type="radio" id="months1" name="loan-term" checked="checked">
-                                                <label for="months1" class="more-about-label text-black">Months</label>
-                                                &nbsp;&nbsp;&nbsp;
-                                                <input type="radio" id="years1" name="loan-term">
-                                                <label for="years1" class="more-about-label text-black">Years</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h6 class="heading-alt-bold text-black general-size text-left mt-4 mb-2">Other
-                                        Information</h6>
-                                    <div class="form-row">
-                                        <div class="form-group col-md-6 pt-2 pb-2 m-0">
-                                            <label for="income-tax-rate"
-                                                   class="more-about-label col-lg-12 col-md-12 col-12 pr-0 pt-0 pb-0 pl-1 text-left mb-0">Your
-                                                income tax rate</label>
-                                            <input type="text" class="form-control more-about-input"
-                                                   id="income-tax-rate"
-                                                   placeholder="Your income tax rate" value="28.000 %">
-                                        </div>
-                                    </div>
-                                    <div class="form-row">
-                                        <div class="form-group col-md-6 pt-2 pb-2 m-0">
-                                            <label for="your-saving-rate"
-                                                   class="more-about-label col-lg-12 col-md-12 col-12 pr-0 pt-0 pb-0 pl-1 text-left mb-0">Your
-                                                savings rate (or investment rate of return)</label>
-                                            <input type="text" class="form-control more-about-input"
-                                                   id="your-saving-rate"
-                                                   placeholder="Your saving rate" value="2.300 %">
-                                        </div>
-                                        <div class="form-group col-md-6 pt-2 pb-2 m-0">
-                                            <label for="balloon-term"
-                                                   class="more-about-label col-lg-12 col-md-12 col-12 pr-0 pt-0 pb-0 pl-1 text-left mb-0">Balloon
-                                                term</label>
-                                            <input type="text" class="form-control more-about-input" id="balloon-term"
-                                                   value="15">
-                                        </div>
-                                    </div>
-                                    <div class="form-row ml-0 mr-0 mt-2 mb-2 justify-content-start">
-                                        <label class="more-about-label col-lg-12 col-md-12 col-12 pr-0 pt-0 pb-0 pl-1 text-left mb-0">How
-                                            long you will keep this property</label>
-                                        <div class="col-lg-12 col-md-12 col-12 p-0 mt-1 text-left">
-                                            <div class="custom-radio-bba">
-                                                <input type="radio" id="months2" name="property" checked="checked">
-                                                <label for="months2" class="more-about-label text-black">Months</label>
-                                                &nbsp;&nbsp;&nbsp;
-                                                <input type="radio" id="years2" name="property">
-                                                <label for="years2" class="more-about-label text-black">Years</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row m-0 pt-lg-1 pt-md-1 pt-1">
+                                    <div class="row m-0 pt-lg-2 pt-md-2 pt-2">
                                         <div class="col-lg-1 col-md-1 col-1 p-0 text-left">
                                             <div class="custom-checkbox-bba">
-                                                <input type="checkbox" id="graph" class="checkbox-custom" name="graph">
+                                                <input type="checkbox" id="Show-Payment-Schedule"
+                                                       class="checkbox-custom" name="Show payment schedule">
                                             </div>
                                         </div>
                                         <div class="col-lg-11 col-md-11 col-11 pr-0 pl-2 text-left">
-                                            <span class="show-me-chkbox generalsizefont">Graph</span>
-                                        </div>
-                                    </div>
-                                    <div class="row m-0 pt-lg-1 pt-md-1 pt-1">
-                                        <div class="col-lg-1 col-md-1 col-1 p-0 text-left">
-                                            <div class="custom-checkbox-bba">
-                                                <input type="checkbox" id="Current-Payment-Schedule"
-                                                       class="checkbox-custom" name="Current Payment Schedule">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-11 col-md-11 col-11 pr-0 pl-2 text-left">
-                                            <span class="show-me-chkbox generalsizefont">Current Payment Schedule</span>
-                                        </div>
-                                    </div>
-                                    <div class="row m-0 pt-lg-1 pt-md-1 pt-1">
-                                        <div class="col-lg-1 col-md-1 col-1 p-0 text-left">
-                                            <div class="custom-checkbox-bba">
-                                                <input type="checkbox" id="Refinance-Payment-Schedule"
-                                                       class="checkbox-custom" name="Refinance Payment Schedule">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-11 col-md-11 col-11 pr-0 pl-2 text-left">
-                                            <span class="show-me-chkbox generalsizefont">Refinance Payment Schedule</span>
+                                            <span class="show-me-chkbox generalsizefont">Show payment schedule</span>
                                         </div>
                                     </div>
                                     <div class="row m-0">
@@ -291,42 +130,45 @@
                         </div>
                         <div class="row m-0">
                             <div class="col-lg-12 col-md-12 col-12 pl-0 pr-0 mt-3">
-                                <div class="max-width-850 mx-auto p-0 text-center calculator-sublisting">
+                                <div class="max-width-850 mx-auto p-0 text-left calculator-sublisting">
                                     <p class="mb-0 mt-lg-3 opportunitytxt">
-                                        Refinancing will immediately cost you $5,550.00 to cover the loan origination
-                                        fees. It will take 47 months before the savings in interest offsets the
-                                        origination fees. If you plan to stay at this property for 15 years, you will
-                                        save $9,787.32.
+                                        Your payment will be $1,625.12.
                                     </p>
-                                    <h3 class="heading-alt-bold text-primary-black general-size mt-5 mb-0">Financial Details</h3>
+                                    <h3 class="heading-alt-bold text-primary-black general-size mt-5 mb-0 text-center">Financial Details</h3>
                                     <div class="table-responsive mt-4">
                                         <table class="table text-left table-sm generalsizefont">
-                                            <thead class="thead-dark">
-                                            <tr>
-                                                <th scope="col">#</th>
-                                                <th scope="col">Current Loan</th>
-                                                <th scope="col">Refinance</th>
-                                                <th scope="col">Savings</th>
-                                            </tr>
-                                            </thead>
                                             <tbody>
                                             <tr>
-                                                <th scope="row">Monthly Payment</th>
-                                                <td>$2,321.60</td>
-                                                <td>$2,236.42</td>
-                                                <td>$85.18</td>
+                                                <th scope="row">Home price</th>
+                                                <td>$350,000.00</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">Origination Cost</th>
-                                                <td></td>
-                                                <td>$5,550.00</td>
-                                                <td>($5,550.00)</td>
+                                                <th scope="row">Down payment</th>
+                                                <td>20.000 %</td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">Total Loan Cost (PV)</th>
-                                                <td>$480,567.44</td>
-                                                <td>$470,780.12</td>
-                                                <td>$9,787.32</td>
+                                                <th scope="row">Total amount financed</th>
+                                                <td>$280,000.00</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Payment amount</th>
+                                                <td>$1,625.12</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Total payments</th>
+                                                <td>$585,044.48</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Interest rate</th>
+                                                <td>5.700 %</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Interest compounding</th>
+                                                <td>Monthly</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Total finance charge</th>
+                                                <td>$305,044.48</td>
                                             </tr>
                                             </tbody>
                                         </table>
@@ -341,24 +183,9 @@
                                         <div class="col-lg-12 col-md-12 col-12 pl-0 pr-0 mt-2 text-left calculator-tips-description"
                                              style="display: none;">
                                             <p class="paragraph-regular-14-19 text-black mb-1 pt-1">
-                                                In this analysis, cash out is not considered as part of the cost of the
-                                                loan since the cash could theoretically be put back into the loan.
-                                            </p>
-                                            <p class="paragraph-regular-14-19 text-black mb-1 mt-2 pt-2">
-                                                Your tax rate is used to calculate the monthly advantage of your
-                                                interest deduction. If you wish not to include the interest deduction
-                                                advantage, you may set your tax rate to 0. Please keep in mind that your
-                                                tax deduction may be limited beyond the scope of this calculator. Talk
-                                                to your tax advisor before using these results in your specific
-                                                situation.
-                                            </p>
-                                            <p class="paragraph-regular-14-19 text-black mb-1 mt-2 pt-2">
-                                                The total loan cost figure is actually the present value of all the
-                                                payments for as long as you keep this property, using the investment
-                                                rate of return as a discount rate. You may also think of it as the
-                                                amount you would have to invest today (e.g., in a savings account) to
-                                                cover all the payments for as long as you keep this property. Negative
-                                                savings are indicated by brackets.
+                                                Your payment amount includes principal and interest. It does not include
+                                                property tax, association dues, private mortgage insurance, and other
+                                                insurance or costs.
                                             </p>
                                         </div>
                                         <div class="col-lg-12 col-md-12 col-12 pl-0 pr-0 mt-2 text-left">
