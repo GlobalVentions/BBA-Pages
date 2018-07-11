@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="icon" type="image/ico" href="images/favicon.png"/>
-    <title>Should I rent or buy</title>
+    <title>How long will my retirement savings last?</title>
 
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -43,256 +43,66 @@
                             problems. From personal budgets to mortgages, or planning for retirement to we have the
                             calculators that’s quick and easy to use. Look below and we hope you enjoy this calculator!
                         </p>
-                        <h3 class="heading-alt-bold text-black general-size mt-4">Should I rent or buy?</h3>
+                        <h3 class="heading-alt-bold text-black general-size mt-4">How long will my retirement savings
+                            last?</h3>
                         <p class="paragraph-regular-14-19 text-black mb-1 mt-2 pt-2">
-                            This calculator compares the cost of renting versus the real cost of buying a home.
+                            Use this calculator to find out how long you can make recurring withdrawals of a specified
+                            amount from your savings account.
                         </p>
                         <div class="row m-0">
                             <div class="col-lg-10 col-md-12 col-12 pl-0 pr-0 mt-3 tellus-more-about-you">
                                 <form>
-                                    <h6 class="heading-alt-bold text-black general-size text-left mt-3 mb-2">Rent
-                                        Information</h6>
                                     <div class="form-row">
                                         <div class="form-group col-md-6 pt-2 pb-2 m-0">
-                                            <label for="monthlyrent"
-                                                   class="more-about-label col-lg-12 col-md-12 col-12 pr-0 pt-0 pb-0 pl-1 text-left mb-0">Monthly
-                                                rent</label>
-                                            <input type="text" class="form-control more-about-input" id="monthlyrent"
-                                                   placeholder="Monthly rent" value="$2,100.00">
-                                        </div>
-                                        <div class="form-group col-md-6 pt-2 pb-2 m-0">
-                                            <label for="monthlyrenterinsurance"
-                                                   class="more-about-label col-lg-12 col-md-12 col-12 pr-0 pt-0 pb-0 pl-1 text-left mb-0">Monthly
-                                                renter's insurance</label>
-                                            <input type="text" class="form-control more-about-input"
-                                                   id="monthlyrenterinsurance"
-                                                   value="$30.00" placeholder="Monthly renter's insurance">
-                                        </div>
-                                    </div>
-                                    <div class="form-row">
-                                        <div class="form-group col-md-6 pt-2 pb-2 m-0">
-                                            <label for="increase-each-year"
-                                                   class="more-about-label col-lg-12 col-md-12 col-12 pr-0 pt-0 pb-0 pl-1 text-left mb-0">How
-                                                much will rent increase each year?</label>
-                                            <input type="text" class="form-control more-about-input"
-                                                   id="increase-each-year"
-                                                   placeholder="How much will rent increase each year?" value="3.000 %">
-                                        </div>
-                                        <div class="form-group col-md-6 pt-2 pb-2 m-0">
-                                            <label for="Homeprice"
+                                            <label for="starting-balance"
                                                    class="more-about-label col-lg-12 col-md-12 col-12 pr-0 pt-0 pb-0 pl-1 text-left mb-0">
-                                                Home price
+                                                Starting balance</label>
+                                            <input type="text" class="form-control more-about-input"
+                                                   id="starting-balance"
+                                                   placeholder="Starting balance" value="$100,000.00">
+                                        </div>
+                                        <div class="form-group col-md-6 pt-2 pb-2 m-0">
+                                            <label for="withdrawal-amount"
+                                                   class="more-about-label col-lg-12 col-md-12 col-12 pr-0 pt-0 pb-0 pl-1 text-left mb-0">Withdrawal
+                                                amount</label>
+                                            <input type="text" class="form-control more-about-input"
+                                                   id="withdrawal-amount"
+                                                   value="$1,000.00" placeholder="Withdrawal amount">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6 pt-2 pb-2 m-0">
+                                            <label for="rate-of-return"
+                                                   class="more-about-label col-lg-12 col-md-12 col-12 pr-0 pt-0 pb-0 pl-1 text-left mb-0">Rate
+                                                of return</label>
+                                            <input type="text" class="form-control more-about-input"
+                                                   id="rate-of-return"
+                                                   value="3.000 %" placeholder="Rate of return">
+                                        </div>
+                                        <div class="form-group col-md-6 pt-2 pb-2 m-0">
+                                            <label for="tvcWITHDRAWALPERIOD"
+                                                   class="more-about-label col-lg-12 col-md-12 col-12 pr-0 pt-0 pb-0 pl-1 text-left mb-0">
+                                                Withdrawal period
                                             </label>
-                                            <input type="text" class="form-control more-about-input" id="Homeprice"
-                                                   placeholder="Home price" value="$350,000.00">
+                                            <select class="custom-select-BBA form-control" name="WITHDRAWALPERIOD"
+                                                    id="tvcWITHDRAWALPERIOD">
+                                                <option value="4">Biweekly</option>
+                                                <option value="6" selected="selected">Monthly</option>
+                                                <option value="8">Quarterly</option>
+                                                <option value="11">Semiannual</option>
+                                                <option value="12">Annual</option>
+                                            </select>
                                         </div>
                                     </div>
-                                    <div class="form-row">
-                                        <label for="Downpayment"
-                                               class="more-about-label col-lg-12 col-md-12 col-12 pr-0 pt-2 pb-0 pl-2 text-left mb-0">
-                                            Down payment
-                                        </label>
-                                        <div class="form-group col-md-6 pt-1 pb-2 m-0">
-                                            <input type="text" class="form-control more-about-input" id="Downpayment"
-                                                   placeholder="Home price" value="$350,000.00">
-                                        </div>
-                                        <div class="form-group col-md-6 pt-3 pb-2 m-0 text-left pl-lg-5 pl-md-5">
-                                            <div class="custom-radio-bba">
-                                                <input type="radio" id="percentage" name="per dollar" checked="checked">
-                                                <label for="percentage" class="more-about-label text-black">%</label>
-                                                &nbsp;&nbsp;&nbsp;
-                                                <input type="radio" id="dollar" name="per dollar">
-                                                <label for="dollar" class="more-about-label text-black">$</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-row">
-                                        <div class="form-group col-md-6 pt-2 pb-2 m-0">
-                                            <label for="interest-rate"
-                                                   class="more-about-label col-lg-12 col-md-12 col-12 pr-0 pt-0 pb-1 pl-1 text-left mb-0">
-                                                Interest rate
-                                            </label>
-                                            <input type="text" class="form-control more-about-input" id="interest-rate"
-                                                   placeholder="interest rate" value="5.700 %">
-                                        </div>
-                                    </div>
-                                    <div class="form-row">
-                                        <label for="term"
-                                               class="more-about-label col-lg-12 col-md-12 col-12 pr-0 pt-2 pb-0 pl-2 text-left mb-0">
-                                            Loan term
-                                        </label>
-                                        <div class="form-group col-md-6 pt-1 pb-2 m-0">
-                                            <input type="text" class="form-control more-about-input" id="term"
-                                                   placeholder="Term" value="30">
-                                        </div>
-                                        <div class="form-group col-md-6 pt-3 pb-2 m-0 text-left pl-lg-5 pl-md-5">
-                                            <div class="custom-radio-bba">
-                                                <input type="radio" id="months" name="months years" checked="checked">
-                                                <label for="months" class="more-about-label text-black">Months</label>
-                                                &nbsp;&nbsp;&nbsp;
-                                                <input type="radio" id="years" name="months years">
-                                                <label for="years" class="more-about-label text-black">Years</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-row">
-                                        <div class="form-group col-md-6 pt-2 pb-2 m-0">
-                                            <label for="points"
-                                                   class="more-about-label col-lg-12 col-md-12 col-12 pr-0 pt-0 pb-0 pl-1 text-left mb-0">Points</label>
-                                            <input type="text" class="form-control more-about-input" id="points"
-                                                   placeholder="Points" value="1.000 %">
-                                        </div>
-                                        <div class="form-group col-md-6 pt-2 pb-2 m-0">
-                                            <label for="cloasing-cost"
-                                                   class="more-about-label col-lg-12 col-md-12 col-12 pr-0 pt-0 pb-0 pl-1 text-left mb-0">Closing
-                                                cost for buying</label>
-                                            <input type="text" class="form-control more-about-input" id="cloasing-cost"
-                                                   value="$1,500.00" placeholder="Closing cost for buying">
-                                        </div>
-                                    </div>
-                                    <h6 class="heading-alt-bold text-black general-size text-left mt-4 mb-2">Home
-                                        Information</h6>
-                                    <div class="form-row">
-                                        <label for="annual-property-taxes"
-                                               class="more-about-label col-lg-12 col-md-12 col-12 pr-0 pt-2 pb-0 pl-2 text-left mb-0">
-                                            Annual property taxes
-                                        </label>
-                                        <div class="form-group col-md-6 pt-1 pb-2 m-0">
-                                            <input type="text" class="form-control more-about-input"
-                                                   id="annual-property-taxes"
-                                                   placeholder="Annual property taxes" value="1.250 %">
-                                        </div>
-                                        <div class="form-group col-md-6 pt-3 pb-2 m-0 text-left pl-lg-5 pl-md-5">
-                                            <div class="custom-radio-bba">
-                                                <input type="radio" id="percentages" name="per dollars"
-                                                       checked="checked">
-                                                <label for="percentages" class="more-about-label text-black">%</label>
-                                                &nbsp;&nbsp;&nbsp;
-                                                <input type="radio" id="dollars" name="per dollars">
-                                                <label for="dollars" class="more-about-label text-black">$</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-row">
-                                        <div class="form-group col-md-6 pt-2 pb-2 m-0">
-                                            <label for="average-monthly-maintenance"
-                                                   class="more-about-label col-lg-12 col-md-12 col-12 pr-0 pt-0 pb-0 pl-1 text-left mb-0">Average
-                                                monthly maintenance</label>
-                                            <input type="text" class="form-control more-about-input"
-                                                   id="average-monthly-maintenance"
-                                                   placeholder="Average monthly maintenance"
-                                                   value="$125.00">
-                                        </div>
-                                        <div class="form-group col-md-6 pt-2 pb-2 m-0">
-                                            <label for="monthly-insurance"
-                                                   class="more-about-label col-lg-12 col-md-12 col-12 pr-0 pt-0 pb-0 pl-1 text-left mb-0">Monthly
-                                                homeowner's insurance</label>
-                                            <input type="text" class="form-control more-about-input"
-                                                   id="monthly-insurance"
-                                                   value="$100.00" placeholder="Monthly homeowner's insurance">
-                                        </div>
-                                    </div>
-                                    <div class="form-row">
-                                        <div class="form-group col-md-6 pt-2 pb-2 m-0">
-                                            <label for="each-year"
-                                                   class="more-about-label col-lg-12 col-md-12 col-12 pr-0 pt-0 pb-0 pl-1 text-left mb-0">How
-                                                much will your home appreciate each year?</label>
-                                            <input type="text" class="form-control more-about-input"
-                                                   id="each-year"
-                                                   value="4.000 %"
-                                                   placeholder="How much will your home appreciate each year?">
-                                        </div>
-                                        <div class="form-group col-md-6 pt-2 pb-2 m-0">
-                                            <label for="monthly-costs"
-                                                   class="more-about-label col-lg-12 col-md-12 col-12 pr-0 pt-0 pb-0 pl-1 text-left mb-0">Other
-                                                monthly costs
-                                                (Association dues, etc.)</label>
-                                            <input type="text" class="form-control more-about-input" id="monthly-costs"
-                                                   placeholder="Other monthly costs (Association dues, etc.)"
-                                                   value="$50.00">
-                                        </div>
-                                    </div>
-                                    <h6 class="heading-alt-bold text-black general-size text-left mt-4 mb-2">Personal
-                                        Information</h6>
-                                    <div class="form-row">
-                                        <div class="form-group col-md-6 pt-2 pb-2 m-0">
-                                            <label for="tax-rate"
-                                                   class="more-about-label col-lg-12 col-md-12 col-12 pr-0 pt-0 pb-0 pl-1 text-left mb-0">State
-                                                and Federal tax rate</label>
-                                            <input type="text" class="form-control more-about-input"
-                                                   id="tax-rate"
-                                                   value="25.000 %" placeholder="State and Federal tax rate">
-                                        </div>
-                                        <div class="form-group col-md-6 pt-2 pb-2 m-0">
-                                            <label for="Investment-rate"
-                                                   class="more-about-label col-lg-12 col-md-12 col-12 pr-0 pt-0 pb-0 pl-1 text-left mb-0">Investment
-                                                rate of return(or bank account savings rate)</label>
-                                            <input type="text" class="form-control more-about-input"
-                                                   id="Investment-rate"
-                                                   placeholder="Investment rate of return(or bank account savings rate)"
-                                                   value="2.300 %">
-                                        </div>
-                                    </div>
-                                    <div class="form-row">
-                                        <label for="term"
-                                               class="more-about-label col-lg-12 col-md-12 col-12 pr-0 pt-2 pb-0 pl-2 text-left mb-0">
-                                            How long will you stay in this property?
-                                        </label>
-                                        <div class="form-group col-md-6 pt-1 pb-2 m-0">
-                                            <input type="text" class="form-control more-about-input" id="property"
-                                                   placeholder="How long will you stay in this property?" value="30">
-                                        </div>
-                                        <div class="form-group col-md-6 pt-3 pb-2 m-0 text-left pl-lg-5 pl-md-5">
-                                            <div class="custom-radio-bba">
-                                                <input type="radio" id="monthes" name="propertys" checked="checked">
-                                                <label for="monthes" class="more-about-label text-black">Months</label>
-                                                &nbsp;&nbsp;&nbsp;
-                                                <input type="radio" id="yeares" name="propertys">
-                                                <label for="yeares" class="more-about-label text-black">Years</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h6 class="heading-alt-bold text-black general-size text-left mt-4 mb-2">Sale
-                                        Information</h6>
-                                    <div class="form-row">
-                                        <label for="agent-commission"
-                                               class="more-about-label col-lg-12 col-md-12 col-12 pr-0 pt-2 pb-0 pl-2 text-left mb-0">
-                                            Real estate agent commission
-                                        </label>
-                                        <div class="form-group col-md-6 pt-1 pb-2 m-0">
-                                            <input type="text" class="form-control more-about-input"
-                                                   id="agent-commission"
-                                                   placeholder="Real estate agent commission" value="6.000 %">
-                                        </div>
-                                        <div class="form-group col-md-6 pt-3 pb-2 m-0 text-left pl-lg-5 pl-md-5">
-                                            <div class="custom-radio-bba">
-                                                <input type="radio" id="percentagess" name="per dollarss"
-                                                       checked="checked">
-                                                <label for="percentagess" class="more-about-label text-black">%</label>
-                                                &nbsp;&nbsp;&nbsp;
-                                                <input type="radio" id="dollarss" name="per dollarss">
-                                                <label for="dollarss" class="more-about-label text-black">$</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-row">
-                                        <div class="form-group col-md-6 pt-2 pb-2 m-0">
-                                            <label for="closing-cost"
-                                                   class="more-about-label col-lg-12 col-md-12 col-12 pr-0 pt-0 pb-0 pl-1 text-left mb-0">Closing
-                                                cost for selling</label>
-                                            <input type="text" class="form-control more-about-input"
-                                                   id="closing-cost"
-                                                   placeholder="Closing cost for selling" value="$2,000.00">
-                                        </div>
-                                    </div>
-                                    <div class="row m-0 pt-lg-1 pt-md-1 pt-1">
+                                    <div class="row m-0 pt-lg-2 pt-md-2 pt-2">
                                         <div class="col-lg-1 col-md-1 col-1 p-0 text-left">
                                             <div class="custom-checkbox-bba">
-                                                <input type="checkbox" id="graph" class="checkbox-custom" name="graph">
+                                                <input type="checkbox" id="Show-Payment-Schedule"
+                                                       class="checkbox-custom" name="Show payment schedule">
                                             </div>
                                         </div>
                                         <div class="col-lg-11 col-md-11 col-11 pr-0 pl-2 text-left">
-                                            <span class="show-me-chkbox generalsizefont">Show gain vs term graph</span>
+                                            <span class="show-me-chkbox generalsizefont">Show amortization schedule</span>
                                         </div>
                                     </div>
                                     <div class="row m-0">
@@ -306,174 +116,11 @@
                         <div class="row m-0">
                             <div class="col-lg-12 col-md-12 col-12 pl-0 pr-0 mt-3">
                                 <div class="max-width-850 mx-auto p-0 text-left calculator-sublisting">
-                                    <h6 class="mb-2 heading-alt-bold">ANSWER</h6>
-                                    <p class="mb-0 mt-lg-1 opportunitytxt">
-                                        If you buy, you could save $84,567.85 over the next 5 years.
+                                    <p class="heading-alt-bold text-secondary-powerblue generalsizefont mb-1 mt-2 pt-2">
+                                        You would be able to make 114 Monthly withdrawals in the amount of $1,000.00 and
+                                        one final withdrawal of $926.43.
                                     </p>
                                     <div class="row m-0">
-                                        <div class="col-lg-12 col-md-12 col-12 pl-0 pr-0 mt-2 text-left">
-                                            <a href="#"
-                                               class="generalsizefont heading-alt-bold text-primary-brightsidepurple no-hover"
-                                               id="Calculator-results-detail"
-                                               onclick="calculatorresiltdetailsToggle();">Calculator results detail</a>
-                                        </div>
-                                        <div class="col-lg-12 col-md-12 col-12 pl-0 pr-0 mt-2 text-left calculator-result-description"
-                                             style="display: none;">
-                                            <h3 class="heading-alt-bold text-primary-black general-size mt-2 mb-0 text-center">
-                                                Payment breakdown</h3>
-                                            <div class="table-responsive mt-4">
-                                                <table class="table text-left table-sm generalsizefont">
-                                                    <thead class="thead-dark">
-                                                    <tr>
-                                                        <th>#</th>
-                                                        <th>Rent</th>
-                                                        <th>Buy</th>
-                                                    </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                    <tr>
-                                                        <th scope="row">Monthly payment</th>
-                                                        <td>$2,100.00</td>
-                                                        <td>$1,524.56</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">Monthly taxes, maintenance, insurance,
-                                                            association dues and PMI
-                                                        </th>
-                                                        <td>$30.00</td>
-                                                        <td>$639.58</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">Total monthly payment</th>
-                                                        <td>$2,130.00 to $2,393.57</td>
-                                                        <td>$2,164.14</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">Total payments over 5 years</th>
-                                                        <td>$135,590.22</td>
-                                                        <td>$129,848.40</td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                            <h3 class="heading-alt-bold text-primary-black general-size mt-2 mb-0 text-center">
-                                                Tax savings over 5 years</h3>
-                                            <div class="table-responsive mt-4">
-                                                <table class="table text-left table-sm generalsizefont">
-                                                    <thead class="thead-dark">
-                                                    <tr>
-                                                        <th>#</th>
-                                                        <th>Rent</th>
-                                                        <th>Buy</th>
-                                                    </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                    <tr>
-                                                        <th scope="row">Total payments</th>
-                                                        <td>$135,590.22</td>
-                                                        <td>$129,848.40</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">Total payments less tax savings</th>
-                                                        <td>$135,590.22</td>
-                                                        <td>$106,418.02</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">Total tax savings</th>
-                                                        <td>$0.00</td>
-                                                        <td>$23,430.38</td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                            <h3 class="heading-alt-bold text-primary-black general-size mt-2 mb-0 text-center">
-                                                Home appreciation vs comparison investment over 5 years</h3>
-                                            <div class="table-responsive mt-4">
-                                                <table class="table text-left table-sm generalsizefont">
-                                                    <thead class="thead-dark">
-                                                    <tr>
-                                                        <th>#</th>
-                                                        <th>Rent</th>
-                                                        <th>Buy</th>
-                                                    </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                    <tr>
-                                                        <th scope="row">Sale price of home</th>
-                                                        <td></td>
-                                                        <td>$425,828.51</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">Remaining loan balance</th>
-                                                        <td></td>
-                                                        <td>($257,573.14)</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">Cost for purchase and sale of home</th>
-                                                        <td></td>
-                                                        <td>($31,849.71)</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">Down payment, points, and closing costs
-                                                            invested
-                                                        </th>
-                                                        <td>$74,300.00</td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">Investment return</th>
-                                                        <td>$8,946.69</td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">Investment tax owed</th>
-                                                        <td>($2,236.67)</td>
-                                                        <td></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">Gain on home or comparison investment</th>
-                                                        <td>$81,010.02</td>
-                                                        <td>$136,405.66</td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                            <h3 class="heading-alt-bold text-primary-black general-size mt-2 mb-0 text-center">
-                                                Total cost analysis over 5 years</h3>
-                                            <div class="table-responsive mt-4">
-                                                <table class="table text-left table-sm generalsizefont">
-                                                    <thead class="thead-dark">
-                                                    <tr>
-                                                        <th>#</th>
-                                                        <th>Rent</th>
-                                                        <th>Buy</th>
-                                                    </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                    <tr>
-                                                        <th scope="row">Total payments</th>
-                                                        <td>$135,590.22</td>
-                                                        <td>$129,848.40</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">Total tax savings</th>
-                                                        <td></td>
-                                                        <td>($23,430.38)</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">Gain on home or comparison investment</th>
-                                                        <td>($81,010.02)</td>
-                                                        <td>($136,405.66)</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">Total</th>
-                                                        <td>$54,580.20</td>
-                                                        <td>($29,987.64)</td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
                                         <div class="col-lg-12 col-md-12 col-12 pl-0 pr-0 mt-2 text-left">
                                             <a href="#"
                                                class="generalsizefont heading-alt-bold text-primary-brightsidepurple no-hover"
@@ -483,38 +130,9 @@
                                         <div class="col-lg-12 col-md-12 col-12 pl-0 pr-0 mt-2 text-left calculator-tips-description"
                                              style="display: none;">
                                             <p class="paragraph-regular-14-19 text-black mb-1 pt-1">
-                                                Home purchase is potentially the greatest investment you will make in
-                                                your lifetime. This calculator considers only the financial benefits of
-                                                renting vs buying. Home ownership has other benefits as well. Please
-                                                consider all the factors when making your final decision.
-                                            </p>
-                                            <p class="paragraph-regular-14-19 text-black mb-1 mt-2 pt-2">
-                                                Your tax rate is used to calculate the monthly advantage of your
-                                                interest deduction. If you wish not to include the interest deduction
-                                                advantage, you may set your tax rate to 0. Please keep in mind that your
-                                                tax deduction may be limited beyond the scope of this calculator. Talk
-                                                to your tax advisor before using these results in your specific
-                                                situation. </p>
-                                            <p class="paragraph-regular-14-19 text-black mb-1 mt-2 pt-2">
-                                                Your investment rate of return is used to compare the difference between
-                                                investing in a house and investing elsewhere (e.g., like your savings
-                                                account). </p>
-                                            <p class="paragraph-regular-14-19 text-black mb-1 pt-1">
-                                                Tax on your yield in equity is not taken into account. Talk to your tax
-                                                advisor if you think you may be subject to this tax. </p>
-                                            <p class="paragraph-regular-14-19 text-black mb-1 mt-2 pt-2">
-                                                This calculator does not consider the potential benefits of accepting
-                                                the standard rent credit or the standard deduction when comparing the
-                                                tax savings of renting versus buying a home. The decision to itemize or
-                                                accept the standard deduction is beyond the scope of this calculator.
-                                            </p>
-                                            <p class="paragraph-regular-14-19 text-black mb-1 mt-2 pt-2">
-                                                "Cost for purchase and sale of home" includes agent commission for
-                                                selling as well as closing costs, points, and fees for buying.
-                                            </p>
-                                            <p class="paragraph-regular-14-19 text-black mb-1 mt-2 pt-2">
-                                                This calculator assumes that the difference between the monthly rent
-                                                payment and the monthly mortgage payment is not invested.
+                                                This calculator assumes that periodic withdrawals will start on the
+                                                first day of the current month and that Daily compounding is used for
+                                                the accrual of interest on your savings.
                                             </p>
                                         </div>
                                         <div class="col-lg-12 col-md-12 col-12 pl-0 pr-0 mt-2 text-left">
@@ -560,8 +178,7 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row m-0">
+
             <div class="col-lg-12 col-md-12 col-12 p-0">
                 <div class="advertisement pt-0 pb-0 pb-md-5 pb-lg-5">
                     <div class="max-width-850 mx-auto">
