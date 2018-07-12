@@ -108,6 +108,12 @@ $positivepink: #d10b4f;
 $pureorange: #ea520f;
 $textyellow: #fabb36;
 $secondarygrey: #AEB6B9;
+$prog1-colorgrd-top: #F9AF5C;
+$prog1-colorgrd-bottom: #DC7E33;
+$prog2-colorgrd-top: #E6E6E6;
+$prog2-colorgrd-bottom: #CBCBCB;
+$prog3-colorgrd-top: #FFEA06;
+$prog3-colorgrd-bottom: #F4BA25;
 
 // Mixins
 @mixin transition($property: all, $duration: 400ms, $animate: linear, $delay:0s) {
@@ -3998,6 +4004,12 @@ input[type="checkbox"]:focus {
 .border-bottom-status {
   border-bottom: 1px solid #AAB2B5;
 }
+.border-bottom-yield {
+  border-bottom: 2px solid $brightsidepurple;
+}
+.border-top-yield {
+  border-top: 2px solid $brightsidepurple;
+}
 
 .border-right-status {
   border-right: 1px solid #AAB2B5;
@@ -4179,4 +4191,207 @@ input[type="checkbox"]:focus {
   h5{
     text-shadow: 0px 0px 10px rgba(7, 7, 7, 1);
   }
+}
+
+/* Post Badges page CSS start */
+.discovery_pt{
+  -webkit-box-shadow: 0px 2px 8px 0px rgba(227,224,227,1);
+  -moz-box-shadow: 0px 2px 8px 0px rgba(227,224,227,1);
+  box-shadow: 0px 2px 8px 0px rgba(227,224,227,1);
+  max-width: 78%;
+  background-color: $color-white;
+  padding: 7px 25px;
+  margin: 0 auto;
+  border-radius: 10px;
+  position: absolute;
+  width: 100%;
+  left: 11%;
+  top: 79%;
+}
+.tab button.active {
+  background-color:$textyellow;
+}
+.tab button {
+  cursor: pointer;
+  padding: 8px 28px;
+  transition: 0.3s;
+  font-size: 17px;
+  border-radius: 6px;
+  border: 0;
+  outline: none;
+  background:none;
+}
+.btn-bar{
+  margin: 20px auto;
+}
+.progress-Header-bar {
+  width: 70%;
+  flex-direction: column;
+  color: $color-white;
+  background: linear-gradient(to bottom, $smartgreen, $smartgreen);
+  transition: width .6s ease;
+  border-radius: 15px;
+  .icons-symbol {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    left: 25%;
+    border: 2px solid $eccentricyellow;
+    border-radius: 15px;
+    line-height: 0;
+  }
+  .icons-symbol1{
+    left: 50%;
+  }
+  .icons-symbol2{
+    left: 75%;
+    border: 2px solid #e9ecef;
+    width: 20px;
+
+  }
+  .icons-symbol3{
+    left: 98%;
+    border: 2px solid #e9ecef;
+    width: 20px;
+
+  }
+}
+.badge_content{
+  background-image: url("../images/behind-score-mobile.png");
+  padding: 5px;
+  .badge-header {
+    -webkit-box-shadow: -2px -1px 23px -4px rgba(209, 209, 209, 1);
+    -moz-box-shadow: -2px -1px 23px -4px rgba(209, 209, 209, 1);
+    box-shadow: -2px -1px 23px -4px rgba(209, 209, 209, 1);
+    background: $color-white;
+    border: 1px solid $color-white;
+    border-radius: 15px;
+    padding: 1%;
+    margin-top: 10px;
+
+
+  }
+
+  .custom-btn{
+    border: 1px solid $brightsidepurple;
+    background-color: $brightsidepurple;
+    border-radius: 21px;
+    font-size: 15px;
+    padding: 8px;
+    min-width: 100px;
+    cursor: pointer;
+  }
+  /*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+  .badge-icon{
+    -webkit-box-shadow: -2px -1px 23px -4px rgba(209,209,209,1);
+    -moz-box-shadow: -2px -1px 23px -4px rgba(209,209,209,1);
+    box-shadow: -2px -1px 23px -4px rgba(209,209,209,1);
+    background: $color-white;
+    border: 1px solid $color-white;
+    border-radius: 15px;
+    padding: 12px 0;
+    margin-bottom: 15px;
+  }
+  .lvl{
+    font-size: 0.9rem;
+  }
+  .progress{
+    display: flex;
+    width: 100%;
+    height: 1rem;
+    overflow: hidden;
+    font-size: .75rem;
+    background-color: #e9ecef;
+    border-radius: 15px;
+
+    .progress-bar1{
+      width: 50%;
+      flex-direction: column;
+      justify-content: center;
+      color: $color-white;
+      text-align: center;
+      background: linear-gradient(to bottom, $prog1-colorgrd-top , $prog1-colorgrd-bottom);
+      transition: width .6s ease;
+      border-radius: 15px;
+    }
+    .progress-bar2{
+      width: 73%;
+      flex-direction: column;
+      justify-content: center;
+      color: $color-white;
+      text-align: center;
+      background: linear-gradient(to bottom, $prog2-colorgrd-top , $prog2-colorgrd-bottom);
+      transition: width .6s ease;
+      border-radius: 15px;
+    }
+    .progress-bar3{
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      color: $color-white;
+      text-align: center;
+      background: linear-gradient(to bottom, $prog3-colorgrd-top , $prog3-colorgrd-bottom);
+      transition: width .6s ease;
+      border-radius: 15px;
+    }
+    .progress-bar4{
+      width: 2%;
+      flex-direction: column;
+      justify-content: center;
+      color: $color-white;
+      text-align: center;
+      background: linear-gradient(to bottom, $prog1-colorgrd-top , $prog1-colorgrd-bottom);
+      transition: width .6s ease;
+      border-radius: 15px;
+      .begin-points{
+        position: absolute;
+        left: 50%;
+        font-size: 12px;
+        color:$brightsidepurple;
+      }
+    }
+  }
+}
+.reward-icon {
+  -webkit-box-shadow: -2px -1px 23px -4px rgba(209, 209, 209, 1);
+  -moz-box-shadow: -2px -1px 23px -4px rgba(209, 209, 209, 1);
+  box-shadow: -2px -1px 23px -4px rgba(209, 209, 209, 1);
+  background: $color-white;
+  border: 1px solid $color-white;
+  border-radius: 15px;
+  padding: 10px;
+  margin-bottom: 10px;
+  .disabled{
+    background-color: gray;
+    border: 1px solid $smartgreen;
+    cursor: inherit;
+  }
+  .Reward-img{
+    opacity: 0.5;
+  }
+  .Reward-Links{
+    color:$brightsidepurple;
+    font-weight: bold;
+  }
+}
+.transparance {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(242, 242, 242, 0.5);
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  img.lock-small{
+    width: 30px !important;
+    margin: 0 auto;
+  }
+
+}
+.min-height-video-heading {
+  min-height: 45px;
+}
+.lavel-image{
+  width: 84px!important;
 }

@@ -22,6 +22,31 @@ $(function () {
     }
 
     /* JS Code for video slider */
+    if ($('.badge-slider').length) {
+        $('.badge-slider').owlCarousel({
+            autoplay: true,
+            autoplayTimeout: 6500,
+            smartSpeed: 1000,
+            loop: true,
+            nav: false,
+            dots: true,
+            margin: 15,
+            video: true,
+            videoWidth: true,
+            videoHeight: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 1
+                },
+                992: {
+                    items: 1
+                }
+            }
+        });
+    }
     if ($('.owl-most-popular').length) {
         $('.owl-most-popular').owlCarousel({
             autoplay: true,
@@ -806,4 +831,16 @@ $(document).ready(function()
             }
         });
     });
+    $(document).ready(function() {
+
+        $('.btn-add').on("click", function(){
+            //we select the box clone it and insert it after the box
+            $('.clonebox:first').clone().insertAfter(".clonebox:last");
+        });
+
+        $(document).on("click", ".btn-remove", function() {
+            $(this).closest(".clonebox").remove();
+        });
+    });
+
 });
