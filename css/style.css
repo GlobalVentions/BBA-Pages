@@ -150,6 +150,13 @@ ul.facts {
 .generalsizefont {
   font-size: 0.9rem !important; }
 
+.generalsizefont-p {
+  font-size: 0.7rem !important; }
+
+.generalsizefont-link {
+  font-size: 0.8rem !important;
+  text-decoration: underline; }
+
 .btn-brightsidepurple {
   background-color: #6B17B3;
   color: #ffffff;
@@ -1727,6 +1734,30 @@ ul.found-jobs-ul li:before {
 .most-popular-videos h5 {
   min-height: 36px; }
 
+.badge-rewards-slider .owl-dots {
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -webkit-justify-content: center;
+  justify-content: center; }
+.badge-rewards-slider .owl-dot:hover, .badge-rewards-slider .owl-dot.active {
+  background: #E79143; }
+.badge-rewards-slider .owl-dot {
+  height: 7px;
+  width: 7px;
+  background: #ffffff;
+  display: inline-block;
+  border-radius: 100%;
+  margin: 0 1px;
+  border: 1px solid #AEB6B9; }
+.badge-rewards-slider .badge-slider.owl-carousel .owl-item img.heart-img-link {
+  height: 30px;
+  width: 30px;
+  cursor: pointer; }
+.badge-rewards-slider h5 {
+  min-height: 36px; }
+
 .owl-career-opportunities .owl-most-popular.owl-carousel .owl-dots.disabled, .owl-career-opportunities .owl-most-popular.owl-carousel .owl-nav.disabled {
   display: block !important; }
 .owl-career-opportunities .owl-nav > div {
@@ -2693,6 +2724,9 @@ body.overview-and-grid .Pattern-img-div img {
 .tellus-more-about-you .social-security-input {
   padding-left: 35px;
   padding-right: 100px; }
+.tellus-more-about-you .social-security-input-for-calcl {
+  padding-left: 30px;
+  padding-right: 10px; }
 .tellus-more-about-you .signin-password {
   padding-right: 100px; }
 .tellus-more-about-you .social-security-input2 {
@@ -2717,6 +2751,16 @@ body.overview-and-grid .Pattern-img-div img {
   left: 10px;
   position: absolute;
   top: 40px;
+  z-index: 5; }
+.tellus-more-about-you .social-security-dollar {
+  left: 10px;
+  position: absolute;
+  top: 23px;
+  z-index: 5; }
+.tellus-more-about-you .social-security-dollar-2 {
+  left: 10px;
+  position: absolute;
+  top: 16px;
   z-index: 5; }
 .tellus-more-about-you .social-security-info {
   right: 15px;
@@ -3343,7 +3387,7 @@ input[type="checkbox"]:focus {
   box-shadow: 0px 2px 8px 0px #e3e0e3;
   max-width: 78%;
   background-color: #ffffff;
-  padding: 7px 25px;
+  padding: 7px 25px 18px;
   margin: 0 auto;
   border-radius: 10px;
   position: absolute;
@@ -3378,7 +3422,7 @@ input[type="checkbox"]:focus {
     display: inline-block;
     cursor: pointer;
     position: absolute;
-    bottom: 20px;
+    top: -4px;
     left: 25%;
     border: 2px solid #fad136;
     border-radius: 15px;
@@ -3462,7 +3506,7 @@ input[type="checkbox"]:focus {
       transition: width .6s ease;
       border-radius: 15px; }
     .badge_content .progress .progress-bar4 {
-      width: 2%;
+      width: 2.5%;
       flex-direction: column;
       justify-content: center;
       color: #ffffff;
@@ -3472,9 +3516,8 @@ input[type="checkbox"]:focus {
       border-radius: 15px; }
       .badge_content .progress .progress-bar4 .begin-points {
         position: absolute;
-        left: 50%;
-        font-size: 12px;
-        color: #6b17b3; }
+        left: 40%;
+        font-size: 12px; }
 
 .reward-icon {
   -webkit-box-shadow: -2px -1px 23px -4px #d1d1d1;
@@ -3482,12 +3525,12 @@ input[type="checkbox"]:focus {
   box-shadow: -2px -1px 23px -4px #d1d1d1;
   background: #ffffff;
   border: 1px solid #ffffff;
-  border-radius: 15px;
-  padding: 10px;
+  border-radius: 5px;
+  padding: 20px 10px;
   margin-bottom: 10px; }
   .reward-icon .disabled {
-    background-color: gray;
-    border: 1px solid #44bca3;
+    background-color: #AEB6B9 !important;
+    border: 1px solid #AEB6B9 !important;
     cursor: inherit; }
   .reward-icon .Reward-img {
     opacity: 0.5; }
@@ -3512,5 +3555,14 @@ input[type="checkbox"]:focus {
 
 .lavel-image {
   width: 84px !important; }
+
+/*Article slider class for Banking-Article-1.html*/
+.article-slider-image {
+  height: 145px !important; }
+
+.FCRA {
+  position: relative;
+  right: 25px;
+  width: 100%; }
 
 /*# sourceMappingURL=style.css.map */

@@ -570,6 +570,33 @@
     .resposive-df-h4 {
         font-size: 0.9rem;
     }
+    .discovery_pt{
+        position: initial;
+        max-width: 98%;
+        margin: 10px auto 0;
+        padding: 7px 10px 18px;
+    }
+    .progress-Header-bar .icons-symbol3{
+        left: 90% !important;
+    }
+    .progress-Header-bar .icons-symbol{
+        left: 22%;
+    }
+    .progress-Header-bar .icons-symbol1{
+        left: 44%;
+    }
+    .progress-Header-bar .icons-symbol2{
+        left: 70%;
+    }
+    .badge_content .badge-icon{
+        padding: 15px;
+    }
+    .badge_content .progress .progress-bar4{
+        width: 4.5%;
+    }
+    .badge_content .progress .progress-bar4 .begin-points{
+        left: 31%;
+    }
 }
 
 @media (max-width: 360px) {

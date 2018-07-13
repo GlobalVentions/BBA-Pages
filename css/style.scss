@@ -172,6 +172,13 @@ ul.facts {
 .generalsizefont {
   font-size: $general-font-size !important;
 }
+.generalsizefont-p {
+  font-size: 0.7rem !important;
+}
+.generalsizefont-link {
+  font-size: 0.8rem !important;
+  text-decoration: underline;
+}
 
 .btn-brightsidepurple {
   background-color: $color-button;
@@ -2139,7 +2146,37 @@ ul.found-jobs-ul li:before {
     min-height: 36px;
   }
 }
+.badge-rewards-slider {
+  .owl-dots {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+  .owl-dot:hover, .owl-dot.active {
+    background: #E79143;
+  }
+  .owl-dot {
+    height: 7px;
+    width: 7px;
+    background: $color_white;
+    display: inline-block;
+    border-radius: 100%;
+    margin: 0 1px;
+    border: 1px solid $secondarygrey;
+  }
 
+  .badge-slider.owl-carousel .owl-item img.heart-img-link {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+  }
+  h5 {
+    min-height: 36px;
+  }
+}
 .owl-career-opportunities {
   .owl-most-popular.owl-carousel .owl-dots.disabled, .owl-most-popular.owl-carousel .owl-nav.disabled {
     display: block !important;
@@ -3387,6 +3424,10 @@ body.overview-and-grid {
     padding-left: 35px;
     padding-right: 100px;
   }
+  .social-security-input-for-calcl {
+    padding-left: 30px;
+    padding-right: 10px;
+  }
   .signin-password {
     padding-right: 100px;
   }
@@ -3417,6 +3458,18 @@ body.overview-and-grid {
     left: 10px;
     position: absolute;
     top: 40px;
+    z-index: 5;
+  }
+  .social-security-dollar {
+    left: 10px;
+    position: absolute;
+    top: 23px;
+    z-index: 5;
+  }
+  .social-security-dollar-2 {
+    left: 10px;
+    position: absolute;
+    top: 16px;
     z-index: 5;
   }
   .social-security-info {
@@ -4200,7 +4253,7 @@ input[type="checkbox"]:focus {
   box-shadow: 0px 2px 8px 0px rgba(227,224,227,1);
   max-width: 78%;
   background-color: $color-white;
-  padding: 7px 25px;
+  padding: 7px 25px 18px;
   margin: 0 auto;
   border-radius: 10px;
   position: absolute;
@@ -4235,7 +4288,7 @@ input[type="checkbox"]:focus {
     display: inline-block;
     cursor: pointer;
     position: absolute;
-    bottom: 20px;
+    top: -4px;
     left: 25%;
     border: 2px solid $eccentricyellow;
     border-radius: 15px;
@@ -4336,7 +4389,7 @@ input[type="checkbox"]:focus {
       border-radius: 15px;
     }
     .progress-bar4{
-      width: 2%;
+      width: 2.5%;
       flex-direction: column;
       justify-content: center;
       color: $color-white;
@@ -4346,9 +4399,8 @@ input[type="checkbox"]:focus {
       border-radius: 15px;
       .begin-points{
         position: absolute;
-        left: 50%;
+        left: 40%;
         font-size: 12px;
-        color:$brightsidepurple;
       }
     }
   }
@@ -4359,12 +4411,12 @@ input[type="checkbox"]:focus {
   box-shadow: -2px -1px 23px -4px rgba(209, 209, 209, 1);
   background: $color-white;
   border: 1px solid $color-white;
-  border-radius: 15px;
-  padding: 10px;
+  border-radius: 5px;
+  padding: 20px 10px;
   margin-bottom: 10px;
   .disabled{
-    background-color: gray;
-    border: 1px solid $smartgreen;
+    background-color: $secondarygrey!important;
+    border: 1px solid $secondarygrey!important;
     cursor: inherit;
   }
   .Reward-img{
@@ -4394,4 +4446,13 @@ input[type="checkbox"]:focus {
 }
 .lavel-image{
   width: 84px!important;
+}
+/*Article slider class for Banking-Article-1.html*/
+.article-slider-image{
+  height:145px !important;
+}
+.FCRA {
+  position: relative;
+  right: 25px;
+  width: 100%;
 }

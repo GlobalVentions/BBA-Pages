@@ -843,4 +843,14 @@ $(document).ready(function()
         });
     });
 
+    $(document).ready(function(){
+        $('.results-rate').on("click", function(){
+            $(".funding-rate").addClass("d-block");
+        });
+        $('.reset-rate').on("click", function(){
+            $(".funding-rate").removeClass("d-block");
+            $(".funding-rate").addClass("d-none");
+        });
+    });
+
 });
