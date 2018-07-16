@@ -384,10 +384,15 @@ ul.facts {
     -moz-border-radius: 50px; }
 
 ul.what-you-get {
-  list-style: none; }
+  /*  list-style: none;*/
+  list-style-image: url("../images/icon/checkmark.black@1x.png"); }
 
 ul.what-you-get li {
-  line-height: 35px; }
+  line-height: 25px;
+  font-size: 0.8rem;
+  color: #1e1e20 !important;
+  font-family: "OpenSans-regular", Sans Serif;
+  padding-left: 10px; }
 
 .health-guru-heading {
   font-size: 2.3rem;
@@ -397,21 +402,21 @@ ul.what-you-get li {
   font-size: 2.4rem;
   line-height: 50px; }
 
-ul.what-you-get li:before {
-  content: "\2714\0020"; }
-
+/*ul.what-you-get li:before {
+  content: "\2714\0020";
+}*/
 ul.member-benifits-ul {
-  list-style: none; }
+  list-style-image: url("../images/icon/checkmark.black@1x.png"); }
 
 ul.member-benifits-ul li {
-  line-height: 35px;
+  line-height: 30px;
   font-size: 12px; }
 
-ul.member-benifits-ul li:before {
+/*ul.member-benifits-ul li:before {
   content: "\2714\0020";
   padding-right: 20px;
-  font-size: 18px; }
-
+  font-size: 18px;
+}*/
 ul.found-jobs-ul {
   list-style: none; }
 
@@ -1733,6 +1738,16 @@ ul.found-jobs-ul li:before {
   cursor: pointer; }
 .most-popular-videos h5 {
   min-height: 36px; }
+.most-popular-videos .owl-video-tn {
+  background-size: cover !important; }
+.most-popular-videos .owl-video-play-icon {
+  background: url(../images/owl-video-play.png) no-repeat !important; }
+.most-popular-videos .item-video iframe {
+  height: 153px; }
+.most-popular-videos .item-video .owl-video-wrapper {
+  position: relative;
+  height: 153px;
+  background: #000; }
 
 .badge-rewards-slider .owl-dots {
   display: flex;
@@ -1935,6 +1950,11 @@ video {
 
 .border-radius-15 {
   border-radius: 15px !important; }
+
+.border-radius-25rem {
+  padding: 0.25rem 0.5rem !important;
+  border-radius: .25rem !important;
+  max-width: 150px; }
 
 .border-top-left-right-radius-15 {
   border-top-left-radius: 15px !important;
@@ -3550,6 +3570,9 @@ input[type="checkbox"]:focus {
     width: 30px !important;
     margin: 0 auto; }
 
+.transparance-white {
+  background: rgba(255, 255, 255, 0.5) !important; }
+
 .min-height-video-heading {
   min-height: 45px; }
 
@@ -3564,5 +3587,18 @@ input[type="checkbox"]:focus {
   position: relative;
   right: 25px;
   width: 100%; }
+
+.calc-pos-checkbox {
+  position: relative;
+  top: 4px; }
+
+/*
+input.have-credit-card-chkbox + div.have-credit-card-div {
+  display: none;
+}
+input.have-credit-card-chkbox:checked + div.have-credit-card-div {
+  display: block;
+}
+*/
 
 /*# sourceMappingURL=style.css.map */

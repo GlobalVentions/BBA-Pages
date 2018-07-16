@@ -21,7 +21,7 @@ $(function () {
         $("#prev").toggle(index !== 0);
     }
 
-    /* JS Code for video slider */
+    /* JS Code for Badge slider */
     if ($('.badge-slider').length) {
         $('.badge-slider').owlCarousel({
             autoplay: true,
@@ -31,9 +31,6 @@ $(function () {
             nav: false,
             dots: true,
             margin: 15,
-            video: true,
-            videoWidth: true,
-            videoHeight: true,
             responsive: {
                 0: {
                     items: 1
@@ -57,8 +54,9 @@ $(function () {
             dots: false,
             margin: 15,
             video: true,
-            videoWidth: true,
-            videoHeight: true,
+            videoWidth: false,
+            videoHeight: false,
+            lazyLoad:true,
             responsive: {
                 0: {
                     items: 1
@@ -852,5 +850,14 @@ $(document).ready(function()
             $(".funding-rate").addClass("d-none");
         });
     });
-
+    /* JS code for hide show div based on checkbox in Global Sign Up Page*/
+    $(function () {
+        $(".have-credit-card-chkbox").click(function () {
+            if ($(this).is(":checked")) {
+                $(".have-credit-card-div").show();
+            } else {
+                $(".have-credit-card-div").hide();
+            }
+        });
+    });
 });
