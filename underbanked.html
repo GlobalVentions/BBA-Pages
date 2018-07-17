@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="icon" type="image/ico" href="images/favicon.png"/>
-    <title>Pro Calculator Center</title>
+    <title>Underbanked Calculator</title>
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/style.css" rel="stylesheet">
@@ -28,7 +28,7 @@
     </div>
     <div class="container p-0 hero-container">
         <div class="row m-0">
-            <div class="col-lg-12 col-md-12 col-12 P-lg-0 p-md-0 p-0 pt-0">
+            <div class="col-lg-12 col-md-12 col-12 pt-lg-0 pt-md-5 p-md-0 p-0 pt-5">
                 <img src="images/calculatorCenterB@1x.png" class="img-fluid d-lg-block d-md-block d-none">
                 <img src="images/calculatorCenter@2x.png" class="img-fluid d-lg-none d-md-none d-block">
             </div>
@@ -51,7 +51,7 @@
                             </div>
                             <div class="row m-0 justify-content-start just-for-you">
                                 <div class="col-lg-12 col-md-12 col-12 pl-0 pr-0 mt-3 tellus-more-about-you">
-                                    <form name="yrdy" id="questionform" class="form-questions">
+                                    <form method="post" id="questionform" class="form-questions">
                                         <div class="tab">
                                             <div class="row m-0 border-bottom-status justify-content-start">
                                                 <div class="col-lg-10 col-md-12 col-12 p-0">
@@ -142,47 +142,27 @@
                                                 </div>
                                             </div>
                                             <div class="row m-0 border-bottom-status justify-content-start">
-                                                <div class="col-lg-10 col-md-12 col-12 p-0">
+                                                <div class="col-lg-12 col-md-12 col-12 p-0">
                                                     <div class="row pt-4 pb-4 m-0">
                                                         <div class="col-md-12 col-12 p-0">
-                                                            <div class="custom-checkbox-bba">
+                                                            <div class="custom-radio-bba">
                                                             <span class="heading-alt-bold pr-3">Do you currently have a bank account with a checking or savings facility?
 </span>
-                                                                <input type="checkbox"
-                                                                       class="checkbox-custom calc-pos-checkbox"
-                                                                       name="checkbox1" id="Yes" >
-                                                                <label for="Yes" class="mb-0 filter-checkbox-label">
-                                                                    <p class="custom-control-description link4-bold-14-19 p-0 m-0 text-left text-black">
-                                                                        Yes</p>
-                                                                </label>
-                                                                &nbsp;&nbsp;&nbsp;
-                                                                <input type="checkbox"
-                                                                       class="checkbox-custom calc-pos-checkbox"
-                                                                       name="checkbox1" id="No">
-                                                                <label for="No" class="mb-0 filter-checkbox-label">
-                                                                    <p class="custom-control-description link4-bold-14-19 p-0 m-0 text-left text-black">
-                                                                        No</p>
-                                                                </label>
+                                                                <input type="radio" id="yes" name="savings-facility" checked="">
+                                                                <label for="yes">Yes</label>
+                                                                &nbsp;&nbsp;
+                                                                <input type="radio" id="no" name="savings-facility">
+                                                                <label for="no">No</label>
                                                             </div>
                                                         </div>
                                                         <div class="col-md-12 col-12 p-0">
-                                                            <div class="custom-checkbox-bba">
+                                                            <div class="custom-radio-bba">
                                                                 <span class="heading-alt-bold pr-3">Have you been th victim identity theft' or credir card fraud?</span>
-                                                                <input type="checkbox"
-                                                                       class="checkbox-custom calc-pos-checkbox"
-                                                                       name="checkbox1" id="Yes1">
-                                                                <label for="Yes1" class="mb-0 filter-checkbox-label">
-                                                                    <p class="custom-control-description link4-bold-14-19 p-0 m-0 text-left text-black">
-                                                                        Yes</p>
-                                                                </label>
-                                                                &nbsp;&nbsp;&nbsp;
-                                                                <input type="checkbox"
-                                                                       class="checkbox-custom calc-pos-checkbox"
-                                                                       name="checkbox1" id="No1">
-                                                                <label for="No1" class="mb-0 filter-checkbox-label">
-                                                                    <p class="custom-control-description link4-bold-14-19 p-0 m-0 text-left text-black">
-                                                                        No</p>
-                                                                </label>
+                                                                <input type="radio" id="yes1" name="credir-card-fraud" checked="">
+                                                                <label for="yes1">Yes</label>
+                                                                &nbsp;&nbsp;
+                                                                <input type="radio" id="no1" name="credir-card-fraud">
+                                                                <label for="no1">No</label>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -191,50 +171,30 @@
                                         </div>
                                         <div class="tab">
                                             <div class="row m-0 border-bottom-status justify-content-start">
-                                                <div class="col-lg-10 col-md-12 col-12 p-0">
+                                                <div class="col-lg-12 col-md-12 col-12 p-0">
                                                     <div class="row pt-4 pb-4 m-0">
                                                         <div class="col-md-12 col-12 p-0">
-                                                            <div class="custom-checkbox-bba">
+                                                            <div class="custom-radio-bba">
                                                             <span class="heading-alt-bold pr-3">Have you ever taken out a Payday Loan??
 </span>
-                                                                <input type="checkbox"
-                                                                       class="checkbox-custom calc-pos-checkbox"
-                                                                       name="checkbox1" id="Yes2">
-                                                                <label for="Yes2" class="mb-0 filter-checkbox-label">
-                                                                    <p class="custom-control-description link4-bold-14-19 p-0 m-0 text-left text-black">
-                                                                        Yes</p>
-                                                                </label>
-                                                                &nbsp;&nbsp;&nbsp;
-                                                                <input type="checkbox"
-                                                                       class="checkbox-custom calc-pos-checkbox"
-                                                                       name="checkbox1" id="No2">
-                                                                <label for="No2" class="mb-0 filter-checkbox-label">
-                                                                    <p class="custom-control-description link4-bold-14-19 p-0 m-0 text-left text-black">
-                                                                        No</p>
-                                                                </label>
+                                                                <input type="radio" id="yes2" name="Payday-Loan" checked="">
+                                                                <label for="yes2">Yes</label>
+                                                                &nbsp;&nbsp;
+                                                                <input type="radio" id="no2" name="Payday-Loan">
+                                                                <label for="no2">No</label>
                                                             </div>
                                                         </div>
                                                         <div class="col-md-12 col-12 p-0">
-                                                            <div class="custom-checkbox-bba">
+                                                            <div class="custom-radio-bba">
                                                                 <span class="heading-alt-bold pr-3">Do you currently have a credit card?</span>
-                                                                <input type="checkbox"
-                                                                       class="checkbox-custom calc-pos-checkbox have-credit-card-chkbox"
-                                                                       name="checkbox1" id="Yes3">
-                                                                <label for="Yes3" class="mb-0 filter-checkbox-label">
-                                                                    <p class="custom-control-description link4-bold-14-19 p-0 m-0 text-left text-black">
-                                                                        Yes</p>
-                                                                </label>
-                                                                &nbsp;&nbsp;&nbsp;
-                                                                <input type="checkbox"
-                                                                       class="checkbox-custom calc-pos-checkbox"
-                                                                       name="checkbox1" id="No3">
-                                                                <label for="No3" class="mb-0 filter-checkbox-label">
-                                                                    <p class="custom-control-description link4-bold-14-19 p-0 m-0 text-left text-black">
-                                                                        No</p>
-                                                                </label>
+                                                                <input type="radio" id="yes3" name="have-credit-card">
+                                                                <label for="yes3">Yes</label>
+                                                                &nbsp;&nbsp;
+                                                                <input type="radio" id="no3" name="have-credit-card" checked="">
+                                                                <label for="no3">No</label>
                                                             </div>
                                                         </div>
-                                                        <div class="col-md-12 col-12 p-0 mt-2 have-credit-card-div" style="display: none;">
+                                                        <div class="col-md-12 col-12 p-0 mt-2 hide-credit-card" id="have-credit-card-div">
                                                             <span class="heading-alt-bold pr-3">How many credit cards you have? <input
                                                                     type="text" class="more-about-input border-radius-25rem"
                                                                     id="Credits-card" placeholder=""></span>
@@ -245,63 +205,33 @@
                                                                     id="Credits-limits" placeholder="" value="$ 0.00"></span>
                                                         </div>
                                                         <div class="col-md-12 col-12 p-0">
-                                                            <div class="custom-checkbox-bba">
+                                                            <div class="custom-radio-bba">
                                                                 <span class="heading-alt-bold pr-3">Do you have a mortgage?</span>
-                                                                <input type="checkbox"
-                                                                       class="checkbox-custom calc-pos-checkbox"
-                                                                       name="checkbox1" id="Yes4">
-                                                                <label for="Yes4" class="mb-0 filter-checkbox-label">
-                                                                    <p class="custom-control-description link4-bold-14-19 p-0 m-0 text-left text-black">
-                                                                        Yes</p>
-                                                                </label>
-                                                                &nbsp;&nbsp;&nbsp;
-                                                                <input type="checkbox"
-                                                                       class="checkbox-custom calc-pos-checkbox"
-                                                                       name="checkbox1" id="No4">
-                                                                <label for="No4" class="mb-0 filter-checkbox-label">
-                                                                    <p class="custom-control-description link4-bold-14-19 p-0 m-0 text-left text-black">
-                                                                        No</p>
-                                                                </label>
+                                                                <input type="radio" id="yes4" name="have-mortgage" checked="">
+                                                                <label for="yes4">Yes</label>
+                                                                &nbsp;&nbsp;
+                                                                <input type="radio" id="no4" name="have-mortgage">
+                                                                <label for="no4">No</label>
                                                             </div>
                                                         </div>
                                                         <div class="col-md-12 col-12 p-0">
-                                                            <div class="custom-checkbox-bba">
+                                                            <div class="custom-radio-bba">
                                                                 <span class="heading-alt-bold pr-3">Do you have a student loan?</span>
-                                                                <input type="checkbox"
-                                                                       class="checkbox-custom calc-pos-checkbox"
-                                                                       name="checkbox1" id="Yes5">
-                                                                <label for="Yes5" class="mb-0 filter-checkbox-label">
-                                                                    <p class="custom-control-description link4-bold-14-19 p-0 m-0 text-left text-black">
-                                                                        Yes</p>
-                                                                </label>
-                                                                &nbsp;&nbsp;&nbsp;
-                                                                <input type="checkbox"
-                                                                       class="checkbox-custom calc-pos-checkbox"
-                                                                       name="checkbox1" id="No5">
-                                                                <label for="No5" class="mb-0 filter-checkbox-label">
-                                                                    <p class="custom-control-description link4-bold-14-19 p-0 m-0 text-left text-black">
-                                                                        No</p>
-                                                                </label>
+                                                                <input type="radio" id="yes5" name="student-loan" checked="">
+                                                                <label for="yes5">Yes</label>
+                                                                &nbsp;&nbsp;
+                                                                <input type="radio" id="no5" name="student-loan">
+                                                                <label for="no5">No</label>
                                                             </div>
                                                         </div>
                                                         <div class="col-md-12 col-12 p-0">
-                                                            <div class="custom-checkbox-bba">
+                                                            <div class="custom-radio-bba">
                                                                 <span class="heading-alt-bold pr-3">Do you have a car loan?</span>
-                                                                <input type="checkbox"
-                                                                       class="checkbox-custom calc-pos-checkbox"
-                                                                       name="checkbox1" id="Yes6">
-                                                                <label for="Yes6" class="mb-0 filter-checkbox-label">
-                                                                    <p class="custom-control-description link4-bold-14-19 p-0 m-0 text-left text-black">
-                                                                        Yes</p>
-                                                                </label>
-                                                                &nbsp;&nbsp;&nbsp;
-                                                                <input type="checkbox"
-                                                                       class="checkbox-custom calc-pos-checkbox"
-                                                                       name="checkbox1" id="No6">
-                                                                <label for="No6" class="mb-0 filter-checkbox-label">
-                                                                    <p class="custom-control-description link4-bold-14-19 p-0 m-0 text-left text-black">
-                                                                        No</p>
-                                                                </label>
+                                                                <input type="radio" id="yes6" name="car-loan" checked="">
+                                                                <label for="yes6">Yes</label>
+                                                                &nbsp;&nbsp;
+                                                                <input type="radio" id="no6" name="car-loan">
+                                                                <label for="no6">No</label>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -326,122 +256,7 @@
                                                          class="img-fluid btn-arrow"></p></button>
                                             </div>
                                         </div>
-                                        <!--<div class="row m-0 justify-content-start">
-                                            <div class="col-lg-12 col-md-12 col-12 pl-0 pr-0 pt-4 pb-4">
-                                                <div class="row m-0">
-                                                    <div class="col-lg-6 col-md-6 col-6 pl-0 pr-0 pt-3 pb-3 pb-lg-0 pb-md-0 text-lg-left text-md-left text-left">
-                                                        <a href="289180951.html"
-                                                           class="skip-this-no-arrow link3-bold-14-19 text-primary-brightsidepurple">Clear
-                                                            Results</a>
-                                                    </div>
-                                                    <div class="col-lg-6 col-md-6 col-6 pl-0 pr-0 text-lg-right text-md-right text-right">
-                                                        <div class="row m-0 justify-content-lg-end justify-content-md-end">
-                                                            <div class="col-lg-5 col-md-9 col-12 p-0">
-                                                                <a href="#calculate"
-                                                                   class="btn btn-primary-large-text mt-lg-0 mt-md-0 ml-md-2 ml-lg-0 mt-2">
-                                                                    Calculate
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>-->
                                     </form>
-                                    <!--<form id="questionform" class="form-questions">
-                                        <div class="tab">
-                                            <div class="row m-0">
-                                                <div class="col-lg-12 col-md-12 col-12 pl-0 pr-0 pb-4  pt-4 pt-lg-0 pt-md-0 border border-right-0 border-left-0 border-top-0">
-                                                    <div class="row m-0">
-                                                        <div class="col-lg-12 col-md-12 col-12 pt-lg-3 pt-md-3 pb-4 mb-lg-5 mb-md-4 mb-4 pl-0 pr-0 few-question-div">
-                                                            <h6 class="heading-alt-bold text-primary-black mb-0 few-questions">
-                                                                Answer a few
-                                                                questions and we'll grob the best opportunities tailored to your
-                                                                financial needs.
-                                                            </h6>
-                                                        </div>
-                                                    </div>
-                                                    <h6 href="#"
-                                                        class="heading5-bold-caps-12-17 text-secondary-grey">
-                                                        Question 1 of 4</h6>
-                                                    <div class="form-group col-md-5 col-12 p-0 form-inputs tellus-more-about-you">
-                                                        <label class="mt-3 more-about-label">Question
-                                                            goes here</label>
-                                                        <select class="form-control custom-select-BBA signature-select" name="question">
-                                                            <option value="300,000">300,000</option>
-                                                            <option value="200,000">200,000</option>
-                                                            <option value="500,000">500,000</option>
-                                                        </select>
-                                                        <div class="dollar-sign">
-                                                            <img src="images/icon/dollarSign@1x.png" class="img-fluid">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="tab">
-                                            <div class="row m-0">
-                                                <div class="col-lg-12 col-md-12 col-12 pl-0 pr-0 pb-4  pt-4 pt-lg-0 pt-md-0">
-                                                    <div class="row m-0">
-                                                        <div class="col-lg-8 col-md-8 col-12 pt-lg-3 pt-md-3 pb-4 mb-lg-2 mb-md-2 mb-2 pl-0 pr-0 few-question-div  border border-right-0 border-left-0 border-top-0">
-                                                            <h3 class="heading-alt-bold text-primary-black mb-1 few-questions">
-                                                                Fantastic!
-                                                            </h3>
-                                                            <h5 class="heading-alt-semibold text-primary-black mb-0 few-questions">
-                                                                We found 18 opportunities just for you
-                                                            </h5>
-                                                        </div>
-                                                        <div class="col-lg-4 col-md-4 col-12 pt-lg-3 pt-md-3 pb-4 mb-lg-2 mb-md-2 mb-2 pl-0 pr-0 few-question-div">
-                                                            <div class="row m-0 justify-content-lg-end">
-                                                                <div class="col-lg-3 col-md-6 col-12 p-0">
-                                                                    <img src="images/refineResults@1x.png" class="img-fluid">
-                                                                </div>
-                                                                <div class="col-lg-6 col-md-6 col-12 p-0 pt-lg-4">
-                                                                    <a href="#" class="link3-bold-14-19 text-primary-brightsidepurple">Refine Results</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-4 col-md-4 col-12 pt-lg-3 pt-md-3 pb-4 mb-lg-5 mb-md-4 mb-4 pl-0 pr-0 few-question-div  border border-right-0 border-left-0 border-top-0">
-                                                            <p class="heading5-bold-12-17 text-uppercase text-primary-black mb-1">
-                                                                Credit Cards Found
-                                                            </p>
-                                                            <a href="#" class="link3-bold-14-19 text-primary-brightsidepurple">18</a>
-                                                        </div>
-                                                        <div class="col-lg-2 offset-lg-2 col-md-4 col-12 pt-lg-3 pt-md-3 pb-4 mb-lg-5 mb-md-4 mb-4 pl-0 pr-0 few-question-div  border border-right-0 border-left-0 border-top-0">
-                                                            <p class="heading5-bold-12-17 text-uppercase text-primary-black mb-1">
-                                                                APR
-                                                            </p>
-                                                            <a href="#" class="link3-bold-14-19 text-primary-brightsidepurple">>10%</a>
-                                                        </div>
-                                                        <div class="col-lg-2 offset-lg-2 col-md-4 col-12 pt-lg-3 pt-md-3 pb-4 mb-lg-5 mb-md-4 mb-4 pl-0 pr-0 few-question-div  border border-right-0 border-left-0 border-top-0">
-                                                            <p class="heading5-bold-12-17 text-uppercase text-primary-black mb-1">
-                                                                Credit Card Type
-                                                            </p>
-                                                            <a href="#" class="link3-bold-14-19 text-primary-brightsidepurple">Rewards</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row m-0 pt-3 pb-3 fantastic-step-completed">
-                                            <div class="col-lg-3 col-md-4 col-12 p-0 text-lg-left text-md-left text-center pb-4 pb-lg-0 pb-md-0">
-                                                <a href="#"
-                                                   class="link3-bold-14-19 text-primary-brightsidepurple"
-                                                   id="prevBtn" onclick="nextPrev(-1)">Back</a>
-                                            </div>
-                                            <div class="col-lg-6 col-md-4 col-12 p-0 text-center">
-                                                <span class="step"></span>
-                                                <span class="step"></span>
-                                            </div>
-                                            <div class="col-lg-3 col-md-4 col-6 p-0">
-                                                <button type="button"
-                                                        class="btn btn-primary-large-text-icon" id="nextBtn"
-                                                        onclick="nextPrev(1)"><p class="text-left m-0">Next
-                                                    <img src="images/icon/arrow-left-btn.white@1x.png"
-                                                         class="img-fluid btn-arrow"></p></button>
-                                            </div>
-                                        </div>
-                                    </form>-->
                                 </div>
                             </div>
                         </div>
@@ -929,7 +744,7 @@
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/owl.carousel.min.js"></script>
 <script type="text/javascript" src="js/style.js"></script>
-<script type="text/javascript" src="js/form-wizard.js"></script>
+<script type="text/javascript" src="js/trending-form-wizard.js"></script>
 <script type="text/javascript" src="js/dd-slick.js"></script>
 <script src="js/jquery.tagsinput.min.js"></script>
 <script>

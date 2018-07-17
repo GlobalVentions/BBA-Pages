@@ -850,14 +850,10 @@ $(document).ready(function()
             $(".funding-rate").addClass("d-none");
         });
     });
-    /* JS code for hide show div based on checkbox in Global Sign Up Page*/
-    $(function () {
-        $(".have-credit-card-chkbox").click(function () {
-            if ($(this).is(":checked")) {
-                $(".have-credit-card-div").show();
-            } else {
-                $(".have-credit-card-div").hide();
-            }
-        });
+    /* JS code for hide show div based on Radio button in Trending Calculators*/
+    $(function() {
+        $('input[name=have-credit-card]').on('click init-post-format', function() {
+            $('#have-credit-card-div').toggle($('#yes3').prop('checked'));
+        }).trigger('init-post-format');
     });
 });

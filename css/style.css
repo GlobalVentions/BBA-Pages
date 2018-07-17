@@ -3592,13 +3592,7 @@ input[type="checkbox"]:focus {
   position: relative;
   top: 4px; }
 
-/*
-input.have-credit-card-chkbox + div.have-credit-card-div {
-  display: none;
-}
-input.have-credit-card-chkbox:checked + div.have-credit-card-div {
-  display: block;
-}
-*/
+.hide-credit-card {
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */
