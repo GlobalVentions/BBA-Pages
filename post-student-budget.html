@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" type="image/ico" href="images/favicon.png"/>
+    <title>Student Budget Calculator</title>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css"><link rel="stylesheet" type="text/css" href="css/initcarousel-1.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.tagsinput.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="container p-0 fixed-top bg-white">
+        <div class="row ml-0 mr-0 mb-0 mt-3">
+            <div class="col-lg-12 col-md-12 col-12 p-0">
+                <div id="pro-header">
+                    <!-- Content will be inserted by jQuery from pro-header.html -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container p-0 hero-container">
+        <div class="row m-0">
+            <div class="col-lg-12 col-md-12 col-12 pt-lg-0 pt-md-5 p-md-0 p-0 pt-5">
+                <img src="images/calculatorCenterB@1x.png" class="img-fluid d-lg-block d-md-block d-none">
+                <img src="images/calculatorCenter@2x.png" class="img-fluid d-lg-none d-md-none d-block">
+            </div>
+            <div class="col-lg-12 col-md-12 col-12 p-0 bg-tech-grey">
+                <div class="financial-toolbox pt-4 pb-0 pt-lg-4 pt-md-4 pt-md-5 pb-md-0 pl-lg-0 pr-lg-0 pl-md-3 pr-md-3 pl-3 pr-3">
+                    <div class="arrow-down"></div>
+                    <div class="row m-0 justify-content-start">
+                        <div class="offset-custom col-lg-8 col-md-12 col-12 pl-0 pr-0 pt-4 pb-0">
+                            <div class="row m-0">
+                                <div class="col-lg-1 col-md-2 col-2 p-0">
+                                    <img src="images/calculator-icon21.png" class="img-fluid">
+                                </div>
+                                <div class="col-lg-11 col-md-10 col-10 pr-0 pl-2 pb-2 w-100 mx-auto">
+                                    <h4 class="heading-alt-bold ltr-spacing text-uppercase">Student Budget CALCULATOR</h4>
+                                    <p class="paragraph-regular-14-19 mb-1 mt-2 text-primary-black mx-width-repayment">
+                                        Keeping on track with your credit card repayments will help to boost your
+                                        credit history, use this credit card calculator to calculate how long it
+                                        will take to pay off your credit card balance.</p>
+                                </div>
+                            </div>
+                            <div class="row m-0 justify-content-start just-for-you">
+                                <div class="col-lg-12 col-md-12 col-12 pl-0 pr-0 mt-3 tellus-more-about-you">
+                                    <form method="post" id="questionform" class="form-questions">
+                                        <div class="tab">
+                                            <div class="row m-0 border-bottom-status justify-content-start">
+                                                <div class="col-lg-10 col-md-12 col-12 p-0">
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-4">
+                                                            <label for="First Name" class="m-0 more-about-label pl-1">First
+                                                                Name</label>
+                                                            <input type="text" class="form-control more-about-input"
+                                                                   id="First Name" placeholder="John" autocomplete="firstname" name="fname">
+                                                        </div>
+                                                        <div class="form-group col-md-4 pr-1">
+                                                            <label for="Last Name" class="m-0 more-about-label pl-1">Last
+                                                                Name</label>
+                                                            <input type="text" class="form-control more-about-input"
+                                                                   id="Last Name" placeholder="Doe" autocomplete="lastname" name="lname">
+                                                        </div>
+                                                        <div class="form-group col-md-4 form-inputs tellus-more-about-you">
+                                                            <label class="pl-1 m-0 more-about-label">State</label>
+                                                            <select class="form-control custom-select-BBA"
+                                                                    name="question">
+                                                                <option value="Keyword or Title">State</option>
+                                                                <option value="Demo Title 1">Florida</option>
+                                                                <option value="Demo Title 2">Gujarat</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row m-0">
+                                                        <div class="col-md-8 col-12 pl-0 pr-lg-1">
+                                                            <div class="custom-radio-bba-box">
+                                                                <div class="row m-0 justify-content-start pb-4">
+                                                                    <label class="m-0 more-about-label col-lg-12 col-md-12 col-12 pl-1 pr-0">Employment
+                                                                        Status</label>
+                                                                    <div class="col-lg-3 col-md-3 col-6 pl-0 pr-0 pt-1">
+                                                                        <input type="radio" id="radio1" name="BankName"
+                                                                               checked="" >
+                                                                        <label for="radio1"
+                                                                               class="paragraph-regular-14-19 text-primary-black">
+                                                                            <p
+                                                                                    class="z-indexradio mb-0">
+                                                                                Employed</p>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="col-lg-3 col-md-3 col-6 pl-0 pr-0 pt-1">
+                                                                        <input type="radio" id="radio2"
+                                                                               name="BankName">
+                                                                        <label for="radio2"
+                                                                               class="paragraph-regular-14-19 text-primary-black">
+                                                                            <p
+                                                                                    class="z-indexradio mb-0">
+                                                                                Unemployed</p>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="col-lg-3 col-md-3 col-6 pl-0 pr-0 pt-1">
+                                                                        <input type="radio" id="radio3"
+                                                                               name="BankName">
+                                                                        <label for="radio3"
+                                                                               class="paragraph-regular-14-19 text-primary-black">
+                                                                            <p
+                                                                                    class="z-indexradio mb-0">Self
+                                                                                Employed</p>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="col-lg-3 col-md-3 col-6 pl-0 pr-0 pt-1">
+                                                                        <input type="radio" id="radio4"
+                                                                               name="BankName">
+                                                                        <label for="radio4"
+                                                                               class="paragraph-regular-14-19 text-primary-black">
+                                                                            <p
+                                                                                    class="z-indexradio mb-0">
+                                                                                Retired</p>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 col-12 pr-2 pl-lg-2 p-0">
+                                                            <div class="form-row">
+                                                                <div class="form-group col-md-12 pl-1 pr-0">
+                                                                    <label for="First Name"
+                                                                           class="m-0 more-about-label pl-1">Email</label>
+                                                                    <input type="email"
+                                                                           class="form-control more-about-input"
+                                                                           id="email" placeholder="John@email.com" autocomplete="email" name="email">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row m-0 border-bottom-status justify-content-start">
+                                                <div class="col-lg-12 col-md-12 col-12 p-0">
+                                                    <div class="row pt-4 pb-4 m-0">
+                                                        <div class="col-md-12 col-12 p-0">
+                                                            <div class="custom-radio-bba">
+                                                            <span class="heading-alt-bold pr-3">Do you currently have a bank account with a checking or savings facility?
+</span>
+                                                                <input type="radio" id="yes" name="savings-facility" checked="">
+                                                                <label for="yes">Yes</label>
+                                                                &nbsp;&nbsp;
+                                                                <input type="radio" id="no" name="savings-facility">
+                                                                <label for="no">No</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-12 col-12 p-0">
+                                                            <div class="custom-radio-bba">
+                                                                <span class="heading-alt-bold pr-3">Have you been th victim identity theft' or credir card fraud?</span>
+                                                                <input type="radio" id="yes1" name="credir-card-fraud" checked="">
+                                                                <label for="yes1">Yes</label>
+                                                                &nbsp;&nbsp;
+                                                                <input type="radio" id="no1" name="credir-card-fraud">
+                                                                <label for="no1">No</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab">
+                                            <div class="row m-0 border-bottom-status justify-content-start">
+                                                <div class="col-lg-12 col-md-12 col-12 p-0">
+                                                    <div class="row pt-4 pb-4 m-0">
+                                                        <div class="col-md-12 col-12 p-0">
+                                                            <div class="custom-radio-bba">
+                                                            <span class="heading-alt-bold pr-3">Have you ever taken out a Payday Loan??
+</span>
+                                                                <input type="radio" id="yes2" name="Payday-Loan" checked="">
+                                                                <label for="yes2">Yes</label>
+                                                                &nbsp;&nbsp;
+                                                                <input type="radio" id="no2" name="Payday-Loan">
+                                                                <label for="no2">No</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-12 col-12 p-0">
+                                                            <div class="custom-radio-bba">
+                                                                <span class="heading-alt-bold pr-3">Do you currently have a credit card?</span>
+                                                                <input type="radio" id="yes3" name="have-credit-card">
+                                                                <label for="yes3">Yes</label>
+                                                                &nbsp;&nbsp;
+                                                                <input type="radio" id="no3" name="have-credit-card" checked="">
+                                                                <label for="no3">No</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-12 col-12 p-0 mt-2 hide-credit-card" id="have-credit-card-div">
+                                                            <span class="heading-alt-bold pr-3">How many credit cards you have? <input
+                                                                    type="text" class="more-about-input border-radius-25rem"
+                                                                    id="Credits-card" placeholder=""></span>
+                                                        </div>
+                                                        <div class="col-md-12 col-12 p-0 mt-2" >
+                                                            <span class="heading-alt-bold pr-3">What is your current credit limit(s)? <input
+                                                                    type="text" class="more-about-input border-radius-25rem"
+                                                                    id="Credits-limits" placeholder="" value="$ 0.00"></span>
+                                                        </div>
+                                                        <div class="col-md-12 col-12 p-0">
+                                                            <div class="custom-radio-bba">
+                                                                <span class="heading-alt-bold pr-3">Do you have a mortgage?</span>
+                                                                <input type="radio" id="yes4" name="have-mortgage" checked="">
+                                                                <label for="yes4">Yes</label>
+                                                                &nbsp;&nbsp;
+                                                                <input type="radio" id="no4" name="have-mortgage">
+                                                                <label for="no4">No</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-12 col-12 p-0">
+                                                            <div class="custom-radio-bba">
+                                                                <span class="heading-alt-bold pr-3">Do you have a student loan?</span>
+                                                                <input type="radio" id="yes5" name="student-loan" checked="">
+                                                                <label for="yes5">Yes</label>
+                                                                &nbsp;&nbsp;
+                                                                <input type="radio" id="no5" name="student-loan">
+                                                                <label for="no5">No</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-12 col-12 p-0">
+                                                            <div class="custom-radio-bba">
+                                                                <span class="heading-alt-bold pr-3">Do you have a car loan?</span>
+                                                                <input type="radio" id="yes6" name="car-loan" checked="">
+                                                                <label for="yes6">Yes</label>
+                                                                &nbsp;&nbsp;
+                                                                <input type="radio" id="no6" name="car-loan">
+                                                                <label for="no6">No</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row m-0 pt-3 pb-3 fantastic-step-completed">
+                                            <div class="col-lg-3 col-md-4 col-12 p-0 text-lg-left text-md-left text-center pb-4 pb-lg-0 pb-md-0">
+                                                <a href="#"
+                                                   class="link3-bold-14-19 text-primary-brightsidepurple"
+                                                   id="prevBtn" onclick="nextPrev(-1)">Back</a>
+                                            </div>
+                                            <div class="col-lg-6 col-md-4 col-12 p-0 text-center">
+                                                <span class="step"></span>
+                                                <span class="step"></span>
+                                            </div>
+                                            <div class="col-lg-3 col-md-4 col-6 p-0">
+                                                <button type="button"
+                                                        class="btn btn-primary-large-text-icon" id="nextBtn"
+                                                        onclick="nextPrev(1)"><p class="text-left m-0">Next
+                                                    <img src="images/icon/arrow-left-btn.white@1x.png"
+                                                         class="img-fluid btn-arrow"></p></button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-12 P-lg-0 p-md-0 pl-3 pr-3 pre-banking-tabs">
+                <div class="row m-0 pl-lg-0 p-0 pt-md-3 pt-3">
+                    <div class="col-lg-12 col-md-12 col-12 pl-0 pr-0 pt-lg-5 pb-lg-0 pt-md-0 pb-md-0 pt-0 pb-0">
+                        <div class="row m-0">
+                            <div class="col-lg-8 col-md-12 col-12 pl-0 pr-0 pt-5 pb-0">
+                                <div class="row ml-0 mr-0 mb-4 bg-tech-grey pt-4 pb-4" id="calculate">
+                                    <div class="col-lg-5 col-md-6 col-12 pl-0 pr-0 text-center border-right-status">
+                                        <h5 class="heading-alt-regular color-black mb-2 h5-calcu-center">It will take
+                                            you</h5>
+                                        <h1 class="heading-alt-bold color-black mb-2">13 Months</h1>
+                                        <h5 class="heading-alt-regular color-black mb-2 h5-calcu-center">to pay off your
+                                            credit
+                                            debt.</h5>
+                                    </div>
+                                    <div class="col-lg-7 col-md-6 col-12 pl-lg-4 pr-lg-0 pr-md-0 pl-md-4 pl-4 pr-4 pt-2 pt-lg-0 pt-md-0 based-results">
+                                        <h5 class="heading-alt-regular color-black mb-2 h5-calcu-center max-width-center text-center text-lg-left text-md-left">
+                                            Based on your results, the
+                                            following refinancing loans can help you save!</h5>
+                                    </div>
+                                </div>
+                                <div class="general-wells-fargo">
+                                    <div class="row m-0">
+                                        <div class="col-lg-12 col-md-12 col-12 p-0">
+                                            <div class="row m-0 bg-tech-grey border-top-left-right-radius-15 p-lg-0 p-md-0 p-3">
+                                                <div class="col-lg-2 col-md-2 col-3 p-0 pt-lg-4 pb-lg-3 pl-lg-5 pt-md-4 pb-md-3 pl-md-3">
+                                                    <img src="images/sofi.png"
+                                                         class="img-fluid">
+                                                </div>
+                                                <div class="col-lg-6 col-md-8 col-12 pl-0 pr-0 pt-3 pt-lg-4 pb-lg-3 pl-lg-5 pt-md-4 pb-md-3 pl-md-3 text-center text-lg-left text-md-left">
+                                                    <h4 class="heading-alt-bold text-primary-black mb-0">
+                                                        Personal Loans America</h4>
+                                                    <div class="icons-symbol">
+                                                        <img src="images/icon/star-active@1x.png"
+                                                             class="img-fluid pl-1">
+                                                        <img src="images/icon/star-active@1x.png"
+                                                             class="img-fluid pl-1">
+                                                        <img src="images/icon/star-active@1x.png"
+                                                             class="img-fluid pl-1">
+                                                        <img src="images/icon/star-inactive@1x.png"
+                                                             class="img-fluid pl-1">
+                                                        <img src="images/icon/star-inactive@1x.png"
+                                                             class="img-fluid pl-1">
+                                                        <span class="paragraph-regular-14-19 text-secondary-grey rate-opportunity">(15) <u>Rate Opportunity</u></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-1 col-md-2 col-2 pl-0 pr-0 pt-2 pb-2 pt-lg-4 pb-lg-3 pl-lg-0 pt-md-4 pb-md-3 pl-md-3 d-inline-flex text-center">
+                                                    <div class="LikeToggler mr-1 mt-lg-3">
+                                                        <img src="images/icon/favorite-inactive@1x.png"
+                                                             class="img-fluid heart-img-link">
+                                                        <img src="images/icon/favorite-active@1x.png"
+                                                             class="img-fluid heart-img-link"
+                                                             style="display:none">
+                                                    </div>
+                                                    <div class="LikeTogglerShare mt-lg-3">
+                                                        <a href="#"><img src="images/icon/share@1x.png"
+                                                                         class="img-fluid heart-img-link"></a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-md-12 col-12 p-0 pt-lg-4 pb-lg-3 pr-lg-5 pt-md-3 pb-md-3 pr-md-3 pl-lg-3">
+                                                    <div class="row m-0">
+                                                        <div class="col-lg-12 col-md-4 col-6 p-0 pt-lg-2">
+                                                            <button type="button"
+                                                                    class="btn btn-primary-large-text mt-lg-0 mt-md-0 ml-md-2 ml-lg-0 mt-2">
+                                                                Learn More
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row m-0">
+                                        <div class="col-lg-12 col-md-12 col-12 p-lg-0 p-md-2 pl-3 pr-3 pt-3 pb-3 border-whole">
+                                            <div class="row m-0">
+                                                <div class="col-lg-4 col-md-4 col-12 pl-0 pr-0 pt-2 pb-3 pt-lg-4 pb-lg-4 pl-lg-5 pt-md-4 pb-md-4 pl-md-3">
+                                                    <div class="row m-0">
+                                                        <div class="col-lg-12 col-md-12 col-12 p-0 border border-left-0 border-top-0 border-bottom-0 pr-lg-0 pr-md-3 pr-0 pt-2 pb-2">
+                                                            <h5 class="heading6-bold-10-13 text-primary-black mb-3 text-uppercase">
+                                                                OPPORTUNITIES REQUIREMENTS</h5>
+                                                            <img src="images/badge@1x.png"
+                                                                 class="img-fluid mb-2">
+                                                            <img src="images/badget@1x.png"
+                                                                 class="img-fluid mb-2">
+                                                            <img src="images/badgei@1x.png"
+                                                                 class="img-fluid mb-4">
+                                                            <h5 class="heading6-bold-10-13 text-primary-black mb-0 text-uppercase">
+                                                                Your approval odds</h5>
+                                                            <div class="icons-symbol">
+                                                                <img src="images/icon/approval-active@1x.png"
+                                                                     class="img-fluid pl-1">
+                                                                <img src="images/icon/approval-active@1x.png"
+                                                                     class="img-fluid pl-1">
+                                                                <img src="images/icon/approval-active@1x.png"
+                                                                     class="img-fluid pl-1">
+                                                                <img src="images/icon/approval-inactive@1x.png"
+                                                                     class="img-fluid pl-1">
+                                                                <img src="images/icon/approval-inactive@1x.png"
+                                                                     class="img-fluid pl-1">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-8 col-md-8 col-12 pl-0 pr-0 ">
+                                                    <div class="row m-0">
+                                                        <div class="col-lg-12 col-md-12 col-12 p-0 pt-2 pb-3 pt-lg-3 pb-lg-3 pl-lg-5 pr-lg-5 pt-md-3 pb-md-3 pl-md-5 pr-md-5">
+                                                            <ul class="preview-requirement-ul pt-3 pl-3 pl-md-1 pl-1 m-0">
+                                                                <li><span>Join over 1.5 million customers</span>
+                                                                </li>
+                                                                <li><span>10+ years leading marketplace lending and an A+ BBB rating</span>
+                                                                </li>
+                                                                <li><span>99% of customers would recommend personal loans through Lending Club to a friend</span>
+                                                                </li>
+                                                                <li><span>Fast and convenient online application. No office visit or faxing required</span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row m-0">
+                                                        <div class="col-lg-12 col-md-12 col-12 p-0 pt-0 pb-0 pt-lg-0 pb-lg-0 pl-lg-0 pr-lg-0 pt-md-0 pb-md-0 pl-md-2 pr-md-2">
+                                                            <div class="row m-0">
+                                                                <div class="col-lg-3 col-md-3 col-3 p-0 ">
+                                                                    <p class="m-0 heading5-bold-12-17 text-primary-black text-center">
+                                                                        LOAN LENGTH</p>
+                                                                </div>
+                                                                <div class="col-lg-3 col-md-3 col-3 p-0">
+                                                                    <p class="m-0 heading5-bold-12-17 text-primary-black text-center">
+                                                                        LOAN AMMOUNT</p>
+                                                                </div>
+                                                                <div class="col-lg-3 col-md-3 col-3 p-0">
+                                                                    <p class="m-0 heading5-bold-12-17 text-primary-black text-center">
+                                                                        EST. MONTHLY PAYMENT</p>
+                                                                </div>
+                                                                <div class="col-lg-3 col-md-3 col-3 p-0">
+                                                                    <p class="m-0 heading5-bold-12-17 text-primary-black text-center">
+                                                                        EST APR</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row ml-0 mr-0 mt-2 pt-2 pb-3 bg-tech-grey border-radius-15 ml-lg-2 mr-lg-2 ml-md-2 mr-md-2">
+                                                                <div class="col-lg-3 col-md-3 col-3 pl-0 pr-0 pt-3 pb-3 border-right-apy">
+                                                                    <h6 class="mb-0 heading3-bold-24-32 text-primary-black text-center">
+                                                                        32 Months</h6>
+                                                                </div>
+                                                                <div class="col-lg-3 col-md-3 col-3 pl-0 pr-0 pt-3 pb-3 border-right-apy">
+                                                                    <h6 class="mb-0 heading3-bold-24-32 text-primary-black text-center">
+                                                                        $5,000</h6>
+                                                                </div>
+                                                                <div class="col-lg-3 col-md-3 col-3 pl-0 pr-0 pt-3 pb-3 border-right-apy">
+                                                                    <h6 class="mb-0 heading3-bold-24-32 text-primary-black text-center">
+                                                                        $156</h6>
+                                                                </div>
+                                                                <div class="col-lg-3 col-md-3 col-3 pl-0 pr-0 pt-3 pb-3">
+                                                                    <h6 class="mb-0 heading3-bold-24-32 text-primary-black text-center">
+                                                                        7.39% - 29.99%</h6>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="general-wells-fargo mt-4">
+                                    <div class="row m-0">
+                                        <div class="col-lg-12 col-md-12 col-12 p-0">
+                                            <div class="row m-0 bg-tech-grey border-top-left-right-radius-15 p-lg-0 p-md-0 p-3">
+                                                <div class="col-lg-2 col-md-2 col-3 p-0 pt-lg-4 pb-lg-3 pl-lg-5 pt-md-4 pb-md-3 pl-md-3">
+                                                    <img src="images/sofi.png"
+                                                         class="img-fluid">
+                                                </div>
+                                                <div class="col-lg-6 col-md-8 col-12 pl-0 pr-0 pt-3 pt-lg-4 pb-lg-3 pl-lg-5 pt-md-4 pb-md-3 pl-md-3 text-center text-lg-left text-md-left">
+                                                    <h4 class="heading-alt-bold text-primary-black mb-0">
+                                                        Personal Loans America</h4>
+                                                    <div class="icons-symbol">
+                                                        <img src="images/icon/star-active@1x.png"
+                                                             class="img-fluid pl-1">
+                                                        <img src="images/icon/star-active@1x.png"
+                                                             class="img-fluid pl-1">
+                                                        <img src="images/icon/star-active@1x.png"
+                                                             class="img-fluid pl-1">
+                                                        <img src="images/icon/star-inactive@1x.png"
+                                                             class="img-fluid pl-1">
+                                                        <img src="images/icon/star-inactive@1x.png"
+                                                             class="img-fluid pl-1">
+                                                        <span class="paragraph-regular-14-19 text-secondary-grey rate-opportunity">(15) <u>Rate Opportunity</u></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-1 col-md-2 col-2 pl-0 pr-0 pt-2 pb-2 pt-lg-4 pb-lg-3 pl-lg-0 pt-md-4 pb-md-3 pl-md-3 d-inline-flex text-center">
+                                                    <div class="LikeToggler mr-1 mt-lg-3">
+                                                        <img src="images/icon/favorite-inactive@1x.png"
+                                                             class="img-fluid heart-img-link">
+                                                        <img src="images/icon/favorite-active@1x.png"
+                                                             class="img-fluid heart-img-link"
+                                                             style="display:none">
+                                                    </div>
+                                                    <div class="LikeTogglerShare mt-lg-3">
+                                                        <a href="#"><img src="images/icon/share@1x.png"
+                                                                         class="img-fluid heart-img-link"></a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-md-12 col-12 p-0 pt-lg-4 pb-lg-3 pr-lg-5 pt-md-3 pb-md-3 pr-md-3 pl-lg-3">
+                                                    <div class="row m-0">
+                                                        <div class="col-lg-12 col-md-4 col-6 p-0 pt-lg-2">
+                                                            <button type="button"
+                                                                    class="btn btn-primary-large-text mt-lg-0 mt-md-0 ml-md-2 ml-lg-0 mt-2">
+                                                                Learn More
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row m-0">
+                                        <div class="col-lg-12 col-md-12 col-12 p-lg-0 p-md-2 pl-3 pr-3 pt-3 pb-3 border-whole">
+                                            <div class="row m-0">
+                                                <div class="col-lg-4 col-md-4 col-12 pl-0 pr-0 pt-2 pb-3 pt-lg-4 pb-lg-4 pl-lg-5 pt-md-4 pb-md-4 pl-md-3">
+                                                    <div class="row m-0">
+                                                        <div class="col-lg-12 col-md-12 col-12 p-0 border border-left-0 border-top-0 border-bottom-0 pr-lg-0 pr-md-3 pr-0 pt-2 pb-2">
+                                                            <h5 class="heading6-bold-10-13 text-primary-black mb-3 text-uppercase">
+                                                                OPPORTUNITIES REQUIREMENTS</h5>
+                                                            <img src="images/badge@1x.png"
+                                                                 class="img-fluid mb-2">
+                                                            <img src="images/badget@1x.png"
+                                                                 class="img-fluid mb-2">
+                                                            <img src="images/badgei@1x.png"
+                                                                 class="img-fluid mb-4">
+                                                            <h5 class="heading6-bold-10-13 text-primary-black mb-0 text-uppercase">
+                                                                Your approval odds</h5>
+                                                            <div class="icons-symbol">
+                                                                <img src="images/icon/approval-active@1x.png"
+                                                                     class="img-fluid pl-1">
+                                                                <img src="images/icon/approval-active@1x.png"
+                                                                     class="img-fluid pl-1">
+                                                                <img src="images/icon/approval-active@1x.png"
+                                                                     class="img-fluid pl-1">
+                                                                <img src="images/icon/approval-inactive@1x.png"
+                                                                     class="img-fluid pl-1">
+                                                                <img src="images/icon/approval-inactive@1x.png"
+                                                                     class="img-fluid pl-1">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-8 col-md-8 col-12 pl-0 pr-0 ">
+                                                    <div class="row m-0">
+                                                        <div class="col-lg-12 col-md-12 col-12 p-0 pt-2 pb-3 pt-lg-3 pb-lg-3 pl-lg-5 pr-lg-5 pt-md-3 pb-md-3 pl-md-5 pr-md-5">
+                                                            <ul class="preview-requirement-ul pt-3 pl-3 pl-md-1 pl-1 m-0">
+                                                                <li><span>Join over 1.5 million customers</span>
+                                                                </li>
+                                                                <li><span>10+ years leading marketplace lending and an A+ BBB rating</span>
+                                                                </li>
+                                                                <li><span>99% of customers would recommend personal loans through Lending Club to a friend</span>
+                                                                </li>
+                                                                <li><span>Fast and convenient online application. No office visit or faxing required</span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row m-0">
+                                                        <div class="col-lg-12 col-md-12 col-12 p-0 pt-0 pb-0 pt-lg-0 pb-lg-0 pl-lg-0 pr-lg-0 pt-md-0 pb-md-0 pl-md-2 pr-md-2">
+                                                            <div class="row m-0">
+                                                                <div class="col-lg-3 col-md-3 col-3 p-0 ">
+                                                                    <p class="m-0 heading5-bold-12-17 text-primary-black text-center">
+                                                                        LOAN LENGTH</p>
+                                                                </div>
+                                                                <div class="col-lg-3 col-md-3 col-3 p-0">
+                                                                    <p class="m-0 heading5-bold-12-17 text-primary-black text-center">
+                                                                        LOAN AMMOUNT</p>
+                                                                </div>
+                                                                <div class="col-lg-3 col-md-3 col-3 p-0">
+                                                                    <p class="m-0 heading5-bold-12-17 text-primary-black text-center">
+                                                                        EST. MONTHLY PAYMENT</p>
+                                                                </div>
+                                                                <div class="col-lg-3 col-md-3 col-3 p-0">
+                                                                    <p class="m-0 heading5-bold-12-17 text-primary-black text-center">
+                                                                        EST APR</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row ml-0 mr-0 mt-2 pt-2 pb-3 bg-tech-grey border-radius-15 ml-lg-2 mr-lg-2 ml-md-2 mr-md-2">
+                                                                <div class="col-lg-3 col-md-3 col-3 pl-0 pr-0 pt-3 pb-3 border-right-apy">
+                                                                    <h6 class="mb-0 heading3-bold-24-32 text-primary-black text-center">
+                                                                        32 Months</h6>
+                                                                </div>
+                                                                <div class="col-lg-3 col-md-3 col-3 pl-0 pr-0 pt-3 pb-3 border-right-apy">
+                                                                    <h6 class="mb-0 heading3-bold-24-32 text-primary-black text-center">
+                                                                        $5,000</h6>
+                                                                </div>
+                                                                <div class="col-lg-3 col-md-3 col-3 pl-0 pr-0 pt-3 pb-3 border-right-apy">
+                                                                    <h6 class="mb-0 heading3-bold-24-32 text-primary-black text-center">
+                                                                        $156</h6>
+                                                                </div>
+                                                                <div class="col-lg-3 col-md-3 col-3 pl-0 pr-0 pt-3 pb-3">
+                                                                    <h6 class="mb-0 heading3-bold-24-32 text-primary-black text-center">
+                                                                        7.39% - 29.99%</h6>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="general-wells-fargo mt-4">
+                                    <div class="row m-0">
+                                        <div class="col-lg-12 col-md-12 col-12 p-0">
+                                            <div class="row m-0 bg-tech-grey border-top-left-right-radius-15 p-lg-0 p-md-0 p-3">
+                                                <div class="col-lg-2 col-md-2 col-3 p-0 pt-lg-4 pb-lg-3 pl-lg-5 pt-md-4 pb-md-3 pl-md-3">
+                                                    <img src="images/sofi.png"
+                                                         class="img-fluid">
+                                                </div>
+                                                <div class="col-lg-6 col-md-8 col-12 pl-0 pr-0 pt-3 pt-lg-4 pb-lg-3 pl-lg-5 pt-md-4 pb-md-3 pl-md-3 text-center text-lg-left text-md-left">
+                                                    <h4 class="heading-alt-bold text-primary-black mb-0">
+                                                        Personal Loans America</h4>
+                                                    <div class="icons-symbol">
+                                                        <img src="images/icon/star-active@1x.png"
+                                                             class="img-fluid pl-1">
+                                                        <img src="images/icon/star-active@1x.png"
+                                                             class="img-fluid pl-1">
+                                                        <img src="images/icon/star-active@1x.png"
+                                                             class="img-fluid pl-1">
+                                                        <img src="images/icon/star-inactive@1x.png"
+                                                             class="img-fluid pl-1">
+                                                        <img src="images/icon/star-inactive@1x.png"
+                                                             class="img-fluid pl-1">
+                                                        <span class="paragraph-regular-14-19 text-secondary-grey rate-opportunity">(15) <u>Rate Opportunity</u></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-1 col-md-2 col-2 pl-0 pr-0 pt-2 pb-2 pt-lg-4 pb-lg-3 pl-lg-0 pt-md-4 pb-md-3 pl-md-3 d-inline-flex text-center">
+                                                    <div class="LikeToggler mr-1 mt-lg-3">
+                                                        <img src="images/icon/favorite-inactive@1x.png"
+                                                             class="img-fluid heart-img-link">
+                                                        <img src="images/icon/favorite-active@1x.png"
+                                                             class="img-fluid heart-img-link"
+                                                             style="display:none">
+                                                    </div>
+                                                    <div class="LikeTogglerShare mt-lg-3">
+                                                        <a href="#"><img src="images/icon/share@1x.png"
+                                                                         class="img-fluid heart-img-link"></a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-md-12 col-12 p-0 pt-lg-4 pb-lg-3 pr-lg-5 pt-md-3 pb-md-3 pr-md-3 pl-lg-3">
+                                                    <div class="row m-0">
+                                                        <div class="col-lg-12 col-md-4 col-6 p-0 pt-lg-2">
+                                                            <button type="button"
+                                                                    class="btn btn-primary-large-text mt-lg-0 mt-md-0 ml-md-2 ml-lg-0 mt-2">
+                                                                Learn More
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row m-0">
+                                        <div class="col-lg-12 col-md-12 col-12 p-lg-0 p-md-2 pl-3 pr-3 pt-3 pb-3 border-whole">
+                                            <div class="row m-0">
+                                                <div class="col-lg-4 col-md-4 col-12 pl-0 pr-0 pt-2 pb-3 pt-lg-4 pb-lg-4 pl-lg-5 pt-md-4 pb-md-4 pl-md-3">
+                                                    <div class="row m-0">
+                                                        <div class="col-lg-12 col-md-12 col-12 p-0 border border-left-0 border-top-0 border-bottom-0 pr-lg-0 pr-md-3 pr-0 pt-2 pb-2">
+                                                            <h5 class="heading6-bold-10-13 text-primary-black mb-3 text-uppercase">
+                                                                OPPORTUNITIES REQUIREMENTS</h5>
+                                                            <img src="images/badge@1x.png"
+                                                                 class="img-fluid mb-2">
+                                                            <img src="images/badget@1x.png"
+                                                                 class="img-fluid mb-2">
+                                                            <img src="images/badgei@1x.png"
+                                                                 class="img-fluid mb-4">
+                                                            <h5 class="heading6-bold-10-13 text-primary-black mb-0 text-uppercase">
+                                                                Your approval odds</h5>
+                                                            <div class="icons-symbol">
+                                                                <img src="images/icon/approval-active@1x.png"
+                                                                     class="img-fluid pl-1">
+                                                                <img src="images/icon/approval-active@1x.png"
+                                                                     class="img-fluid pl-1">
+                                                                <img src="images/icon/approval-active@1x.png"
+                                                                     class="img-fluid pl-1">
+                                                                <img src="images/icon/approval-inactive@1x.png"
+                                                                     class="img-fluid pl-1">
+                                                                <img src="images/icon/approval-inactive@1x.png"
+                                                                     class="img-fluid pl-1">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-8 col-md-8 col-12 pl-0 pr-0 ">
+                                                    <div class="row m-0">
+                                                        <div class="col-lg-12 col-md-12 col-12 p-0 pt-2 pb-3 pt-lg-3 pb-lg-3 pl-lg-5 pr-lg-5 pt-md-3 pb-md-3 pl-md-5 pr-md-5">
+                                                            <ul class="preview-requirement-ul pt-3 pl-3 pl-md-1 pl-1 m-0">
+                                                                <li><span>Join over 1.5 million customers</span>
+                                                                </li>
+                                                                <li><span>10+ years leading marketplace lending and an A+ BBB rating</span>
+                                                                </li>
+                                                                <li><span>99% of customers would recommend personal loans through Lending Club to a friend</span>
+                                                                </li>
+                                                                <li><span>Fast and convenient online application. No office visit or faxing required</span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row m-0">
+                                                        <div class="col-lg-12 col-md-12 col-12 p-0 pt-0 pb-0 pt-lg-0 pb-lg-0 pl-lg-0 pr-lg-0 pt-md-0 pb-md-0 pl-md-2 pr-md-2">
+                                                            <div class="row m-0">
+                                                                <div class="col-lg-3 col-md-3 col-3 p-0 ">
+                                                                    <p class="m-0 heading5-bold-12-17 text-primary-black text-center">
+                                                                        LOAN LENGTH</p>
+                                                                </div>
+                                                                <div class="col-lg-3 col-md-3 col-3 p-0">
+                                                                    <p class="m-0 heading5-bold-12-17 text-primary-black text-center">
+                                                                        LOAN AMMOUNT</p>
+                                                                </div>
+                                                                <div class="col-lg-3 col-md-3 col-3 p-0">
+                                                                    <p class="m-0 heading5-bold-12-17 text-primary-black text-center">
+                                                                        EST. MONTHLY PAYMENT</p>
+                                                                </div>
+                                                                <div class="col-lg-3 col-md-3 col-3 p-0">
+                                                                    <p class="m-0 heading5-bold-12-17 text-primary-black text-center">
+                                                                        EST APR</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row ml-0 mr-0 mt-2 pt-2 pb-3 bg-tech-grey border-radius-15 ml-lg-2 mr-lg-2 ml-md-2 mr-md-2">
+                                                                <div class="col-lg-3 col-md-3 col-3 pl-0 pr-0 pt-3 pb-3 border-right-apy">
+                                                                    <h6 class="mb-0 heading3-bold-24-32 text-primary-black text-center">
+                                                                        32 Months</h6>
+                                                                </div>
+                                                                <div class="col-lg-3 col-md-3 col-3 pl-0 pr-0 pt-3 pb-3 border-right-apy">
+                                                                    <h6 class="mb-0 heading3-bold-24-32 text-primary-black text-center">
+                                                                        $5,000</h6>
+                                                                </div>
+                                                                <div class="col-lg-3 col-md-3 col-3 pl-0 pr-0 pt-3 pb-3 border-right-apy">
+                                                                    <h6 class="mb-0 heading3-bold-24-32 text-primary-black text-center">
+                                                                        $156</h6>
+                                                                </div>
+                                                                <div class="col-lg-3 col-md-3 col-3 pl-0 pr-0 pt-3 pb-3">
+                                                                    <h6 class="mb-0 heading3-bold-24-32 text-primary-black text-center">
+                                                                        7.39% - 29.99%</h6>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row m-0">
+                            <div class="col-lg-6 col-md-12 col-11 p-0 mt-5 mb-5 z-index-two">
+                                <a href="#" target="_blank"><img src="images/advertiserment1.png"
+                                                                 class="img-fluid"></a>
+                                <h6 class="heading6-regular-10-13 pt-2 text-secondary-grey">
+                                    Advertisement</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container p-0">
+    <footer class="pro-signup-footer">
+        <div class="row ml-0 mr-0 mb-0 mt-0">
+            <div class="col-lg-12 col-md-12 col-12 p-0 text-center">
+                <div id="pro-footer">
+                    <!-- Content will be inserted by jQuery from pro-footer.html -->
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script>
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/style.js"></script><script type="text/javascript" src="js/amazingcarousel.js"></script><script type="text/javascript" src="js/initcarousel-1.js"></script>
+<script type="text/javascript" src="js/trending-form-wizard.js"></script>
+<script type="text/javascript" src="js/dd-slick.js"></script>
+<script src="js/jquery.tagsinput.min.js"></script>
+<script>
+    // JS CODE FOR Tags Input
+    jQuery('#tags').tagsInput({
+        width: 'auto'
+    });
+</script>
+</body>
+</html>

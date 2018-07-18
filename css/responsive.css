@@ -184,13 +184,25 @@
         left: 210px;
         width: 50px;
     }
+    .report-header-slider{
+        max-height:220px!important;
+    }
+    #amazingcarousel-1 .amazingcarousel-prev {
+        margin-left: -50px!important;
+    }
+
+    #amazingcarousel-1 .amazingcarousel-next {
+        margin-right: -50px!important;
+    }
 }
 
 @media (max-width: 480px) {
     .show-me-chkbox {
         right: auto;
     }
-
+    .report-top-left{
+        display: none;
+    }
     .form-steps .bg-white-steps.completed:after {
         left: 15px;
         width: 21px;
@@ -596,6 +608,9 @@
     }
     .badge_content .progress .progress-bar4 .begin-points{
         left: 31%;
+    }
+    .report-header-slider {
+        max-height: 200px !important;
     }
 }
 

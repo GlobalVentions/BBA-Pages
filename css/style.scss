@@ -4490,3 +4490,9 @@ input[type="checkbox"]:focus {
 .hide-credit-card {
   display: none;
 }
+.report-header-slider{
+  max-height: 350px !important;
+}
+.report-slide-content{
+  min-height: 80px;
+}

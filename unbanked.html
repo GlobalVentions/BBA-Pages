@@ -12,7 +12,7 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css"><link rel="stylesheet" type="text/css" href="css/initcarousel-1.css">
     <link rel="stylesheet" type="text/css" href="css/jquery.tagsinput.css">
 </head>
 <body>
@@ -20,8 +20,8 @@
     <div class="container p-0 fixed-top bg-white">
         <div class="row ml-0 mr-0 mb-0 mt-3">
             <div class="col-lg-12 col-md-12 col-12 p-0">
-                <div id="pro-header">
-                    <!-- Content will be inserted by jQuery from pro-header.html -->
+                <div id="header">
+                    <!-- Content will be inserted by jQuery from header.html -->
                 </div>
             </div>
         </div>
@@ -61,13 +61,15 @@
                                                             <label for="First Name" class="m-0 more-about-label pl-1">First
                                                                 Name</label>
                                                             <input type="text" class="form-control more-about-input"
-                                                                   id="First Name" placeholder="John" autocomplete="firstname" name="fname">
+                                                                   id="First Name" placeholder="John"
+                                                                   autocomplete="firstname" name="fname">
                                                         </div>
                                                         <div class="form-group col-md-4 pr-1">
                                                             <label for="Last Name" class="m-0 more-about-label pl-1">Last
                                                                 Name</label>
                                                             <input type="text" class="form-control more-about-input"
-                                                                   id="Last Name" placeholder="Doe" autocomplete="lastname" name="lname">
+                                                                   id="Last Name" placeholder="Doe"
+                                                                   autocomplete="lastname" name="lname">
                                                         </div>
                                                         <div class="form-group col-md-4 form-inputs tellus-more-about-you">
                                                             <label class="pl-1 m-0 more-about-label">State</label>
@@ -87,7 +89,7 @@
                                                                         Status</label>
                                                                     <div class="col-lg-3 col-md-3 col-6 pl-0 pr-0 pt-1">
                                                                         <input type="radio" id="radio1" name="BankName"
-                                                                               checked="" >
+                                                                               checked="">
                                                                         <label for="radio1"
                                                                                class="paragraph-regular-14-19 text-primary-black">
                                                                             <p
@@ -135,7 +137,8 @@
                                                                            class="m-0 more-about-label pl-1">Email</label>
                                                                     <input type="email"
                                                                            class="form-control more-about-input"
-                                                                           id="email" placeholder="John@email.com" autocomplete="email" name="email">
+                                                                           id="email" placeholder="John@email.com"
+                                                                           autocomplete="email" name="email">
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -149,7 +152,8 @@
                                                             <div class="custom-radio-bba">
                                                             <span class="heading-alt-bold pr-3">Do you currently have a bank account with a checking or savings facility?
 </span>
-                                                                <input type="radio" id="yes" name="savings-facility" checked="">
+                                                                <input type="radio" id="yes" name="savings-facility"
+                                                                       checked="">
                                                                 <label for="yes">Yes</label>
                                                                 &nbsp;&nbsp;
                                                                 <input type="radio" id="no" name="savings-facility">
@@ -159,7 +163,8 @@
                                                         <div class="col-md-12 col-12 p-0">
                                                             <div class="custom-radio-bba">
                                                                 <span class="heading-alt-bold pr-3">Have you been th victim identity theft' or credir card fraud?</span>
-                                                                <input type="radio" id="yes1" name="credir-card-fraud" checked="">
+                                                                <input type="radio" id="yes1" name="credir-card-fraud"
+                                                                       checked="">
                                                                 <label for="yes1">Yes</label>
                                                                 &nbsp;&nbsp;
                                                                 <input type="radio" id="no1" name="credir-card-fraud">
@@ -178,7 +183,8 @@
                                                             <div class="custom-radio-bba">
                                                             <span class="heading-alt-bold pr-3">Have you ever taken out a Payday Loan??
 </span>
-                                                                <input type="radio" id="yes2" name="Payday-Loan" checked="">
+                                                                <input type="radio" id="yes2" name="Payday-Loan"
+                                                                       checked="">
                                                                 <label for="yes2">Yes</label>
                                                                 &nbsp;&nbsp;
                                                                 <input type="radio" id="no2" name="Payday-Loan">
@@ -191,24 +197,30 @@
                                                                 <input type="radio" id="yes3" name="have-credit-card">
                                                                 <label for="yes3">Yes</label>
                                                                 &nbsp;&nbsp;
-                                                                <input type="radio" id="no3" name="have-credit-card" checked="">
+                                                                <input type="radio" id="no3" name="have-credit-card"
+                                                                       checked="">
                                                                 <label for="no3">No</label>
                                                             </div>
                                                         </div>
-                                                        <div class="col-md-12 col-12 p-0 mt-2 hide-credit-card" id="have-credit-card-div">
+                                                        <div class="col-md-12 col-12 p-0 mt-2 hide-credit-card"
+                                                             id="have-credit-card-div">
                                                             <span class="heading-alt-bold pr-3">How many credit cards you have? <input
-                                                                    type="text" class="more-about-input border-radius-25rem"
+                                                                    type="text"
+                                                                    class="more-about-input border-radius-25rem"
                                                                     id="Credits-card" placeholder=""></span>
                                                         </div>
-                                                        <div class="col-md-12 col-12 p-0 mt-2" >
+                                                        <div class="col-md-12 col-12 p-0 mt-2">
                                                             <span class="heading-alt-bold pr-3">What is your current credit limit(s)? <input
-                                                                    type="text" class="more-about-input border-radius-25rem"
-                                                                    id="Credits-limits" placeholder="" value="$ 0.00"></span>
+                                                                    type="text"
+                                                                    class="more-about-input border-radius-25rem"
+                                                                    id="Credits-limits" placeholder=""
+                                                                    value="$ 0.00"></span>
                                                         </div>
                                                         <div class="col-md-12 col-12 p-0">
                                                             <div class="custom-radio-bba">
                                                                 <span class="heading-alt-bold pr-3">Do you have a mortgage?</span>
-                                                                <input type="radio" id="yes4" name="have-mortgage" checked="">
+                                                                <input type="radio" id="yes4" name="have-mortgage"
+                                                                       checked="">
                                                                 <label for="yes4">Yes</label>
                                                                 &nbsp;&nbsp;
                                                                 <input type="radio" id="no4" name="have-mortgage">
@@ -218,7 +230,8 @@
                                                         <div class="col-md-12 col-12 p-0">
                                                             <div class="custom-radio-bba">
                                                                 <span class="heading-alt-bold pr-3">Do you have a student loan?</span>
-                                                                <input type="radio" id="yes5" name="student-loan" checked="">
+                                                                <input type="radio" id="yes5" name="student-loan"
+                                                                       checked="">
                                                                 <label for="yes5">Yes</label>
                                                                 &nbsp;&nbsp;
                                                                 <input type="radio" id="no5" name="student-loan">
@@ -228,7 +241,8 @@
                                                         <div class="col-md-12 col-12 p-0">
                                                             <div class="custom-radio-bba">
                                                                 <span class="heading-alt-bold pr-3">Do you have a car loan?</span>
-                                                                <input type="radio" id="yes6" name="car-loan" checked="">
+                                                                <input type="radio" id="yes6" name="car-loan"
+                                                                       checked="">
                                                                 <label for="yes6">Yes</label>
                                                                 &nbsp;&nbsp;
                                                                 <input type="radio" id="no6" name="car-loan">
@@ -363,6 +377,34 @@
                                                                 <img src="images/icon/approval-inactive@1x.png"
                                                                      class="img-fluid pl-1">
                                                             </div>
+                                                            <div class="transp">
+                                                                <a href="#">
+                                                                </a>
+                                                                <div class="posi-lock pt-lg-5 p-0 pt-md-4 pt-5"><a
+                                                                        href="#">
+                                                                </a>
+                                                                    <div class="row m-0"><a href="#">
+                                                                    </a>
+                                                                        <div class="col-lg-9 col-md-8 col-8 p-0 text-center">
+                                                                            <a href="#">
+                                                                                <div class="unlock-requirements p-3">
+                                                                                    <div class="icons-symbol d-block text-center">
+                                                                                        <img src="images/icon/lock.large@1x.png"
+                                                                                             class="img-fluid pl-1 mb-3">
+                                                                                    </div>
+                                                                                    <p class="paragraph-bold-14-34 text-primary-brightsidepurple text-center m-0">
+                                                                                        Sign in today to unlock
+                                                                                        requirements.</p>
+                                                                                </div>
+                                                                            </a>
+                                                                            <p class="mt-2 mb-0"><a href="#"></a><a
+                                                                                    href="#"
+                                                                                    class="link3-bold-14-19 text-primary-brightsidepurple">Preview
+                                                                                Requirements</a></p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -505,6 +547,34 @@
                                                                 <img src="images/icon/approval-inactive@1x.png"
                                                                      class="img-fluid pl-1">
                                                             </div>
+                                                            <div class="transp">
+                                                                <a href="#">
+                                                                </a>
+                                                                <div class="posi-lock pt-lg-5 p-0 pt-md-4 pt-5"><a
+                                                                        href="#">
+                                                                </a>
+                                                                    <div class="row m-0"><a href="#">
+                                                                    </a>
+                                                                        <div class="col-lg-9 col-md-8 col-8 p-0 text-center">
+                                                                            <a href="#">
+                                                                                <div class="unlock-requirements p-3">
+                                                                                    <div class="icons-symbol d-block text-center">
+                                                                                        <img src="images/icon/lock.large@1x.png"
+                                                                                             class="img-fluid pl-1 mb-3">
+                                                                                    </div>
+                                                                                    <p class="paragraph-bold-14-34 text-primary-brightsidepurple text-center m-0">
+                                                                                        Sign in today to unlock
+                                                                                        requirements.</p>
+                                                                                </div>
+                                                                            </a>
+                                                                            <p class="mt-2 mb-0"><a href="#"></a><a
+                                                                                    href="#"
+                                                                                    class="link3-bold-14-19 text-primary-brightsidepurple">Preview
+                                                                                Requirements</a></p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -646,6 +716,34 @@
                                                                      class="img-fluid pl-1">
                                                                 <img src="images/icon/approval-inactive@1x.png"
                                                                      class="img-fluid pl-1">
+                                                            </div>
+                                                            <div class="transp">
+                                                                <a href="#">
+                                                                </a>
+                                                                <div class="posi-lock pt-lg-5 p-0 pt-md-4 pt-5"><a
+                                                                        href="#">
+                                                                </a>
+                                                                    <div class="row m-0"><a href="#">
+                                                                    </a>
+                                                                        <div class="col-lg-9 col-md-8 col-8 p-0 text-center">
+                                                                            <a href="#">
+                                                                                <div class="unlock-requirements p-3">
+                                                                                    <div class="icons-symbol d-block text-center">
+                                                                                        <img src="images/icon/lock.large@1x.png"
+                                                                                             class="img-fluid pl-1 mb-3">
+                                                                                    </div>
+                                                                                    <p class="paragraph-bold-14-34 text-primary-brightsidepurple text-center m-0">
+                                                                                        Sign in today to unlock
+                                                                                        requirements.</p>
+                                                                                </div>
+                                                                            </a>
+                                                                            <p class="mt-2 mb-0"><a href="#"></a><a
+                                                                                    href="#"
+                                                                                    class="link3-bold-14-19 text-primary-brightsidepurple">Preview
+                                                                                Requirements</a></p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -727,11 +825,11 @@
     </div>
 </div>
 <div class="container p-0">
-    <footer class="pro-signup-footer">
+    <footer class="pre-signup-footer">
         <div class="row ml-0 mr-0 mb-0 mt-0">
             <div class="col-lg-12 col-md-12 col-12 p-0 text-center">
-                <div id="pro-footer">
-                    <!-- Content will be inserted by jQuery from pro-footer.html -->
+                <div id="footer">
+                    <!-- Content will be inserted by jQuery from footer.html -->
                 </div>
             </div>
         </div>
@@ -744,7 +842,7 @@
         crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/owl.carousel.min.js"></script>
-<script type="text/javascript" src="js/style.js"></script>
+<script type="text/javascript" src="js/style.js"></script><script type="text/javascript" src="js/amazingcarousel.js"></script><script type="text/javascript" src="js/initcarousel-1.js"></script>
 <script type="text/javascript" src="js/trending-form-wizard.js"></script>
 <script type="text/javascript" src="js/dd-slick.js"></script>
 <script src="js/jquery.tagsinput.min.js"></script>

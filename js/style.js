@@ -51,6 +51,7 @@ $(function () {
             smartSpeed: 1000,
             loop: true,
             nav: true,
+            center: true,
             dots: false,
             margin: 15,
             video: true,
