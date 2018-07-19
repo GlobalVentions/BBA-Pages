@@ -74,7 +74,7 @@ $(function () {
     /* JS Code for video slider */
     if ($('.owl-featured-today').length) {
         $('.owl-featured-today').owlCarousel({
-            autoplay: true,
+            autoplay: false,
             autoplayTimeout: 6500,
             smartSpeed: 1000,
             loop: true,

@@ -17,6 +17,9 @@
 }
 
 @media (max-width: 768px) {
+    iframe.detail-video{
+        height: 325px !important;
+    }
     .primary-div {
         transform: inherit !important;
         height: auto !important;
@@ -187,16 +190,13 @@
     .report-header-slider{
         max-height:220px!important;
     }
-    #amazingcarousel-1 .amazingcarousel-prev {
-        margin-left: -50px!important;
-    }
-
-    #amazingcarousel-1 .amazingcarousel-next {
-        margin-right: -50px!important;
-    }
 }
 
 @media (max-width: 480px) {
+    iframe.detail-video{
+        width:100%;
+        height: 190px !important;
+    }
     .show-me-chkbox {
         right: auto;
     }

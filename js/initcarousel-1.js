@@ -23,7 +23,7 @@ jQuery(document).ready(function(){
             descriptionbottomcss:'{color:#333; font-size:12px; font-family:Arial,Helvetica,sans-serif; overflow:hidden; text-align:left; margin:4px 0px 0px; padding: 0px;}'
         });
     }
-    jQuery("#amazingcarousel-1/*,#amazingcarousel-2*/").amazingcarousel({
+    jQuery("#amazingcarousel-1,#amazingcarousel-2").amazingcarousel({
         jsfolder:jsFolder,
         width:275,
         height:180,
