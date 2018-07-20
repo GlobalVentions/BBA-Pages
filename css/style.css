@@ -563,7 +563,7 @@ ul.found-jobs-ul li:before {
   padding: 0 20px; }
 
 .bg-brightsidepurple {
-  background-color: #6b17b3;
+  background-color: #6b17b3 !important;
   color: #ffffff; }
 
 .navi-badge {
@@ -623,6 +623,9 @@ ul.found-jobs-ul li:before {
     background-color: #8E28E7; }
   .btn-primary-large-text:focus {
     outline: none !important; }
+
+.btn-ghost-large-text.reply-btn {
+  padding: 0.624rem 1.8rem !important; }
 
 .btn-ghost-large-text {
   background-color: #ffffff;
@@ -928,6 +931,8 @@ ul.found-jobs-ul li:before {
   .custom-add-button-bba .btn-add:focus {
     outline: none;
     box-shadow: none; }
+.custom-add-button-bba .big-btn-add {
+  font-size: 60px !important; }
 
 /* Photography css start */
 .photography-div {
@@ -2243,6 +2248,8 @@ body.overview-and-grid .Pattern-img-div img {
   box-shadow: 0px 0px 30px 0px gainsboro; }
   .pagination-1to7 .prev-underline {
     text-decoration: underline; }
+  .pagination-1to7 ul.pagination {
+    background-color: #ffffff; }
   .pagination-1to7 li:first-child.page-item {
     border-right: 1px solid #dddddd;
     padding: 5px;
@@ -2350,6 +2357,14 @@ body.overview-and-grid .Pattern-img-div img {
 .JobModal .modal-content {
   min-height: 320px !important; }
 
+.custom-modal .modal-dialog.CommunityModal {
+  max-width: 760px !important; }
+.custom-modal .modal-dialog.CommunitypurpleModal {
+  max-width: 625px !important; }
+  .custom-modal .modal-dialog.CommunitypurpleModal .modal-header .close {
+    position: relative !important;
+    bottom: 60px;
+    right: 4px; }
 .custom-modal .modal-dialog {
   min-height: calc(100vh - 60px);
   display: flex;
@@ -2753,6 +2768,9 @@ body.overview-and-grid .Pattern-img-div img {
 .tellus-more-about-you .social-security-input {
   padding-left: 35px;
   padding-right: 100px; }
+.tellus-more-about-you .ask-question-input {
+  padding-left: 45px;
+  padding-right: 10px; }
 .tellus-more-about-you .social-security-input-for-calcl {
   padding-left: 30px;
   padding-right: 10px; }
@@ -2780,6 +2798,11 @@ body.overview-and-grid .Pattern-img-div img {
   left: 10px;
   position: absolute;
   top: 40px;
+  z-index: 5; }
+.tellus-more-about-you .social-security-plus {
+  left: 17px;
+  position: absolute;
+  top: 17px;
   z-index: 5; }
 .tellus-more-about-you .social-security-dollar {
   left: 10px;
@@ -3070,7 +3093,7 @@ body.overview-and-grid .Pattern-img-div img {
   border-color: transparent; }
 .pre-banking-tabs .nav-link {
   padding: 0.5rem 0.5rem;
-  width: 140px;
+  width: 145px;
   text-align: center; }
 .pre-banking-tabs .icons-symbol {
   cursor: inherit; }
@@ -3613,5 +3636,23 @@ input[type="checkbox"]:focus {
 iframe.detail-video {
   width: 100%;
   height: 523px; }
+
+.border-answer-quetion {
+  border: 2px solid #AAB2B5;
+  border-radius: 5px; }
+  .border-answer-quetion .person-detail {
+    position: relative;
+    right: 35px; }
+  .border-answer-quetion .profile-image-adv {
+    width: fit-content;
+    padding: 1px;
+    border: 2px solid #FAD136;
+    border-radius: 100%; }
+  .border-answer-quetion .user-status {
+    /* width: fit-content; */
+    display: inline-flex; }
+  .border-answer-quetion .verified-advisor {
+    border-radius: 5px;
+    height: fit-content; }
 
 /*# sourceMappingURL=style.css.map */
