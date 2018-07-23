@@ -758,6 +758,9 @@ ul.found-jobs-ul li:before {
 .btn-ghost-large-text.reply-btn{
   padding: 0.624rem 1.8rem !important;
 }
+.btn-ghost-large-text.reply-btn-small{
+  padding: 0.624rem 0.8rem !important;
+}
 .btn-ghost-large-text {
   background-color: $color_white;
   color: $brightsidepurple;
@@ -2475,6 +2478,9 @@ video {
 
 .text-primary-black {
   color: $color_black !important;
+}
+.text-modal-black{
+  color: #252932!important;
 }
 
 .text-black {
@@ -4276,6 +4282,72 @@ input[type="checkbox"]:focus {
     }
   }
 }
+.custom-advisor-detail-modal {
+  .modal-dialog {
+    min-height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: auto;
+    max-width: 960px;
+    @media(max-width: 768px) {
+      min-height: calc(100vh - 20px);
+    }
+  }
+  .modal-header {
+    border-bottom: none;
+    padding: 10px 15px 20px 15px;
+    .modal-title {
+      font-size: 1.8rem;
+    }
+    .close {
+      font-size: 2rem;
+      cursor: pointer;
+      padding: 2px !important;
+      &:focus {
+        outline: none !important;
+      }
+    }
+  }
+  .modal-content {
+    border-radius: .9rem;
+    min-height: 350px;
+    background-color: transparent!important;
+    button.close {
+      position: absolute;
+      right: 16px;
+      top: -35px;
+      color: $color_white;
+      z-index: 2;
+      font-size: 28px;
+      cursor: pointer;
+    }
+    ul.preview-requirement-ul {
+      font-size: 13px;
+    }
+    ul.preview-requirement-ul li {
+      line-height: 17px;
+      margin-bottom: 12px;
+      font-size: 12px;
+      span {
+        font-size: 13px;
+      }
+    }
+  }
+  .modal-footer {
+    display: block;
+    width: 94%;
+    margin: 0 auto;
+    border-top: 2px solid #e9ecef;
+    padding: 15px 0;
+    .modal-footer-link {
+      padding-top: 5px;
+      text-decoration: underline;
+      text-decoration-color: $brightsidepurple;
+      font-family: FibraOneAlt-Bold;
+    }
+  }
+}
 .financial-calculator-button{
   border-radius: 3px;
   &:hover{
@@ -4559,7 +4631,6 @@ iframe.detail-video{
     border-radius: 100%;
   }
   .user-status {
-    /* width: fit-content; */
     display: inline-flex;
   }
   .verified-advisor {
@@ -4567,3 +4638,67 @@ iframe.detail-video{
     height: fit-content;
   }
 }
+.profile-image-community-detail{
+  .commuunity-profile {
+    border-radius: 100%;
+  }
+}
+.financial-advisior-profile {
+  -webkit-box-shadow: 0px 0px 13px -1px rgba(204, 204, 204, 1);
+  -moz-box-shadow: 0px 0px 13px -1px rgba(204, 204, 204, 1);
+  box-shadow: 0px 0px 13px -1px rgba(204, 204, 204, 1);
+  .border-top-bottom-div {
+    border-top: 2px solid #F2F2F2;
+    border-bottom: 2px solid #F2F2F2;;
+  }
+  .border-right-div {
+    border-right: 2px solid #F2F2F2;;
+  }
+}
+.related-question-image{
+  width: 25px;
+  height: 25px;
+}
+.profile-image-adv {
+  width: fit-content;
+  padding: 2px;
+  border: 2px solid #FAD136;
+  border-radius: 100%;
+}
+.owl-financial-advisor {
+/*  .owl-nav.disabled{
+    display: block !important;
+  }*/
+  .owl-nav > div {
+    text-indent: -999px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 100px;
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all;
+  }
+
+  .owl-nav > div:hover {
+    opacity: 0.7;
+  }
+
+  .owl-prev {
+    height: 45px;
+    width: 45px;
+    background: url(../images/icon/left@1x.png) no-repeat center;
+    left: 225px;
+    top: 160px;
+  }
+
+  .owl-next {
+    height: 45px;
+    width: 45px;
+    background: url(../images/icon/right@1x.png) no-repeat center;
+    right: 225px;
+    top: 160px;
+  }
+}
+.cmspage{
+  max-width: 1215px!important;
+}
+

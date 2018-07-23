@@ -17,6 +17,9 @@
 }
 
 @media (max-width: 768px) {
+    .custom-advisor-detail-modal .modal-dialog {
+        max-width: 725px!important;
+    }
     .custom-modal .modal-dialog.CommunityModal {
         max-width: 680px !important;
     }

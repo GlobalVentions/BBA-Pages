@@ -126,6 +126,32 @@ $(function () {
             }
         });
     }
+
+    /* JS Code for video slider */
+    if ($('.owl-financial-advisor').length) {
+        $('.owl-financial-advisor').owlCarousel({
+            autoplay: false,
+            autoplayTimeout: 6500,
+            smartSpeed: 1000,
+            loop: true,
+            center: true,
+            nav: false,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 2,
+                    margin: 20
+                },
+                992: {
+                    items: 4,
+                    margin: 20
+                }
+            }
+        });
+    }
     if ($('.owl-career-opportunities').length) {
         $('.owl-career-opportunities').owlCarousel({
             autoplay: false,
