@@ -17,6 +17,9 @@
 }
 
 @media (max-width: 768px) {
+    .creditcard-compare-md{
+        justify-content: center;
+    }
     .custom-advisor-detail-modal .modal-dialog {
         max-width: 725px!important;
     }

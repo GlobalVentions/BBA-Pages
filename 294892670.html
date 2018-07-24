@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" type="image/ico" href="images/favicon.png"/>
+    <title>Advisor Sign In</title>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css"><link rel="stylesheet" type="text/css" href="css/initcarousel-1.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.tagsinput.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="container p-0 fixed-top bg-white">
+        <div class="row ml-0 mr-0 mb-0 mt-3">
+            <div class="col-lg-12 col-md-12 col-12 p-0">
+                <div id="header">
+                    <!-- Content will be inserted by jQuery from header.html -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container p-0 hero-container">
+        <div class="row m-0">
+            <div class="col-lg-12 col-md-12 col-12 pl-0 pr-0 pt-lg-0 pt-md-0 pt-0">
+                <img src="images/advisor@1x.png" class="img-fluid w-100 d-lg-block d-md-block d-none">
+                <img src="images/advisor@2x.png" class="img-fluid d-lg-none d-md-none d-block">
+            </div>
+        </div>
+        <div class="row m-0">
+            <div class="col-lg-12 col-md-12 col-12 P-lg-0 p-md-0 pl-3 pr-3 global-signin-bg">
+                <div class="row m-0 pl-lg-0 p-0 pt-md-4">
+                    <div class="col-lg-12 col-md-12 col-12 pl-0 pr-0 pt-lg-4 pb-lg-4 pt-md-4 pb-md-4 pt-4 pb-3">
+                        <div class="row m-0">
+                            <div class="col-lg-4 col-md-12 col-12 p-0">
+                                <div class="great-financial-guru">
+                                    <div class="row m-0 justify-content-start">
+                                        <div class="col-lg-12 col-md-12 col-12 p-0">
+                                            <div class="row m-0">
+                                                <div class="col-lg-6 col-md-5 col-12 pr-1 pr-lg-4 pr-md-0 pl-0 pt-2 pb-2">
+                                                    <button class="loginBtn loginBtn--facebook w-100 pt-1 pb-1">
+                                                        Sign in with Facebook
+                                                    </button>
+                                                </div>
+                                                <div class="col-lg-6 col-md-5 col-12 pr-1 pr-lg-0 ml-lg-0 ml-md-2 pr-md-0 pl-0 pt-2 pb-2">
+                                                    <button class="loginBtn loginBtn--google w-100 pt-1 pb-1">
+                                                        <span class="heading4-regular-18-24">Sign in with Google</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12 col-md-12 col-12 pl-0 pr-0 mt-3 decorated pt-3 pb-3 text-center">
+                                                <h6 class="heading-alt-regular">Or sign in with your
+                                                    email</h6>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-12 pl-0 pr-0 mt-3 tellus-more-about-you">
+                                            <form>
+                                                <div class="form-row justify-content-center">
+                                                    <div class="form-group col-md-10 pt-0 pb-2">
+                                                        <input type="email"
+                                                               class="form-control more-about-input"
+                                                               id="inputSecurityNumber" placeholder="Email">
+                                                    </div>
+                                                </div>
+                                                <div class="form-row justify-content-center">
+                                                    <div class="form-group col-md-10 position-relative">
+                                                        <input type="password" class="form-control form-control more-about-input signin-password" name="password" placeholder="Password" id="pwd0" />
+                                                        <a href="#" onclick="toggle_password();" class="signin_pwd text-black heading-alt-bold generalsizefont input-show text-uppercase" id="showhide">Show</a>
+                                                    </div>
+                                                </div>
+                                                <div class="row m-0 justify-content-center mt-4">
+                                                    <div class="col-lg-5 col-md-9 col-12 p-0">
+                                                        <a href="289181153.html"
+                                                           class="btn btn-primary-large-text-icon font-weight-bold">
+                                                            <p class="text-left m-0">Sign In <img
+                                                                    src="images/icon/arrow-left-btn.white@1x.png"
+                                                                    class="img-fluid btn-arrow">
+                                                            </p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="row m-0 text-center">
+                                                    <div class="col-lg-7 col-md-9 col-12 p-0 text-center pt-2">
+                                                        <a href="#" class="text-secondary-grey forgot-password-link">Forgot
+                                                            Password?</a>
+                                                    </div>
+                                                </div>
+                                                <div class="row ml-0 mr-0 mt-5 text-center">
+                                                    <div class="col-lg-7 col-md-9 col-12 p-0 text-center pt-2 pb-2 bg-tech-grey">
+                                                        <p class="mb-0">Don't have an account? <a href="289270856.html"
+                                                                                                  class="text-primary-brightsidepurple font-weight-bold forgot-password-link">Sign
+                                                            Up</a></p>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container p-0">
+        <footer class="pre-signup-footer">
+            <div class="row ml-0 mr-0 mb-0 mt-0">
+                <div class="col-lg-12 col-md-12 col-12 p-0 text-center">
+                    <div id="footer">
+                        <!-- Content will be inserted by jQuery from footer.html -->
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/style.js"></script><script type="text/javascript" src="js/amazingcarousel.js"></script><script type="text/javascript" src="js/initcarousel-1.js"></script>
+<script type="text/javascript" src="js/dd-slick.js"></script>
+<script src="js/jquery.tagsinput.min.js"></script>
+<script>
+    // JS CODE FOR Tags Input
+    function toggle_password () {
+        var tag = document.getElementById("pwd0");
+        var tag2 = document.getElementById("showhide");
+        if (tag2.innerHTML === 'Show'){
+            tag.type="text";
+            tag2.innerText = 'Hide';
+        }
+        else {
+            tag.type="password";
+            tag2.innerText = 'Show';
+        }
+
+    }
+</script>
+</body>
+</html>

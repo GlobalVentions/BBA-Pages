@@ -12,7 +12,8 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css"><link rel="stylesheet" type="text/css" href="css/initcarousel-1.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="css/initcarousel-1.css">
     <link rel="stylesheet" type="text/css" href="css/jquery.tagsinput.css">
 </head>
 <body>
@@ -54,6 +55,11 @@
                                     <li class="nav-item ml-lg-4"><a href="" data-target="#notifications"
                                                                     data-toggle="tab"
                                                                     class="nav-link small heading-alt-bold text-primary-black">Notifications</a>
+                                    </li>
+                                    <li class="nav-item ml-lg-4"><a href="" data-target="#Advisor-Settings"
+                                                                    data-toggle="tab"
+                                                                    class="nav-link small heading-alt-bold text-primary-black">Advisor
+                                        Settings</a>
                                     </li>
                                 </ul>
                             </div>
@@ -501,6 +507,113 @@
                                     </div>
                                 </div>
                             </div>
+                            <div id="Advisor-Settings" class="tab-pane fade">
+                                <div class="row m-0 pl-lg-0 pt-0 pb-0 pl-3 pr-0 pt-md-0">
+                                    <div class="col-lg-8 col-md-12 col-12 pl-0 pr-0 pt-lg-2 pb-lg-3 pt-md-3 pb-md-3 pt-5 pb-3 border border-right-0 border-left-0 border-top-0">
+                                        <form>
+                                            <div class="row m-0 justify-content-start">
+                                                <div class="col-lg-7 col-md-8 col-12 p-0">
+                                                    <div class="great-financial-guru">
+                                                        <div class="row m-0 justify-content-start">
+                                                            <div class="col-lg-12 col-md-12 col-12 pl-0 pr-0 mt-3 tellus-more-about-you">
+                                                                <div class="form-row">
+                                                                    <div class="form-group col-md-10">
+                                                                        <label for="company-name"
+                                                                               class="m-0 pl-2 more-about-label">Company
+                                                                            Name</label>
+                                                                        <input type="text"
+                                                                               class="form-control more-about-input"
+                                                                               name="CompanyName" value="Carson & Co." id="company-name"
+                                                                               placeholder="Compnay Name">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-row">
+                                                                    <div class="form-group col-md-10">
+                                                                        <label for="position"
+                                                                               class="m-0 pl-2 more-about-label">Position</label>
+                                                                        <input type="text"
+                                                                               class="form-control more-about-input"
+                                                                               name="Position" value="Client Liason" id="position"
+                                                                               placeholder="Position">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-row">
+                                                                    <div class="form-group position-relative col-md-10">
+                                                                        <label for="rate"
+                                                                               class="m-0 pl-2 more-about-label">Rate</label>
+                                                                        <input type="text" id="rate"
+                                                                               class="form-control more-about-input social-security-input-for-calcl"
+                                                                               name="rate" value="$50 - $75/hr" placeholder="Rate">
+                                                                        <img src="images/icon/dollarSign@1x.png"
+                                                                             class="img-fluid pl-1 pr-2 lock-img social-security-dollar-ad">
+                                                                        <label class=" more-about-label text-secondary-grey m-0">Big
+                                                                            Bank
+                                                                            Alternative will take a 10% portion of this
+                                                                            fee.</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-row">
+                                                                    <div class="form-group position-relative col-md-10">
+                                                                        <label for="advisor-status" class="m-0 more-about-label">Advisor Status</label>
+                                                                        <div class="custom-toggle-bba">
+                                                                            <label class="switch">
+                                                                                <input type="checkbox" checked="" id="advisor-status">
+                                                                                <span class="slider round"></span>
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-5 col-md-4 col-12 p-0 upload-profilepic-preview text-center">
+                                                    <div class="form-group mt-4">
+                                                        <div class="profile-image-upload mx-auto mb-3">
+                                                            <img id="img-upload">
+                                                        </div>
+                                                        <div class="input-group text-center">
+                                                            <span class="input-group-btn mx-auto">
+                                                                <span class="btn btn-file btn-ghost-large-text heading-alt-bold generalsizefont">
+                                                                    Change Photo <input type="file" id="imgInp">
+                                                                </span>
+                                                            </span>
+                                                            <input type="text" class="form-control d-none">
+                                                        </div>
+                                                        <a href="#" class="generalsizefont-link text-secondary-grey">Remove Photo</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="col-lg-8 col-md-12 col-12 pl-0 pr-0 pt-0 pb-4">
+                                        <div class="row m-0">
+                                            <div class="col-lg-12 col-md-12 col-12 pt-4 pb-4 pl-0 pr-0 border border-top-0 border-right-0 border-left-0">
+                                                <h6 class="heading-alt-regular generalsizefont-p text-black pt-2 mb-0 pl-1">
+                                                    Areas of
+                                                    Expertise</h6>
+                                                <div class="row m-0 justify-content-start">
+                                                    <div class="col-lg-12 col-md-12 col-12 p-0 mt-1 d-inline-flex">
+                                                        <div class="custom-add-button-bba text-center">
+                                                            <button type="button" class="btn btn-add big-btn-add"><i
+                                                                    class="fa fa-plus-circle"></i>
+                                                            </button>
+                                                        </div>
+                                                        <a href="#"
+                                                           class="btn w-auto btn-ghost-large-text reply-btn-small heading-alt-bold generalsizefont mt-2 mb-2 ml-2">
+                                                            Banking
+                                                        </a>
+                                                        <a href="#"
+                                                           class="btn w-auto btn-ghost-large-text reply-btn-small heading-alt-bold generalsizefont mt-2 mb-2 ml-2">
+                                                            Credit Cards
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -524,7 +637,9 @@
         crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/owl.carousel.min.js"></script>
-<script type="text/javascript" src="js/style.js"></script><script type="text/javascript" src="js/amazingcarousel.js"></script><script type="text/javascript" src="js/initcarousel-1.js"></script>
+<script type="text/javascript" src="js/style.js"></script>
+<script type="text/javascript" src="js/amazingcarousel.js"></script>
+<script type="text/javascript" src="js/initcarousel-1.js"></script>
 <script type="text/javascript" src="js/dd-slick.js"></script>
 <script src="js/jquery.tagsinput.min.js"></script>
 </body>
