@@ -675,7 +675,17 @@ ul.found-jobs-ul li:before {
     }
   }
 }
-
+.active-header{
+  background-color: $brightsidepurple;
+  color: $color_white!important;
+  h6{
+    color: $color_white!important;
+  }
+}
+.banner-header-small-logo {
+  position: relative;
+  top: 5px;
+}
 .header-menu-text-pro {
   font-family: $FibraOneAlt-Bold;
   font-size: 17px;
@@ -4749,4 +4759,93 @@ iframe.detail-video{
   position: absolute;
   left: 950px;
   bottom: 85px;
+}
+.add-banner-link{
+  display: -webkit-box;
+  .addbanner-link{
+    position: relative;
+    top: 16px;
+  }
+}
+.verticle-tabing-add-banner{
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.26);
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.26);
+  border-radius: 5px;
+  position: relative;
+  bottom: 72px;
+  right: 100px;
+  .nav.nav-tabs {
+    float: left;
+    display: block;
+    margin-right: 20px;
+    border-bottom:0;
+    border-right: 2px solid #E3E4E5;
+    padding-right: 15px;
+  }
+  .nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+/*    background: #ccc;*/
+  }
+  .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover{
+    border: 1px solid $color_white!important;
+    background-color: #E3E4E5!important;
+    border-radius: 6px;
+    border-color: transparent !important;;
+  }
+  .nav-tabs .nav-link.active {
+    color: $color_black;
+    background-color: #E3E4E5;
+    border-radius: 6px;
+    border-color: transparent !important;
+  }
+  .nav-tabs .nav-link {
+    border: 1px solid transparent;
+    color: $color_black;
+  }
+  .tab-content>.active {
+    display: block;
+/*    background: #007bff;
+    min-height: 165px;*/
+  }
+  .nav.nav-tabs {
+    width: auto;
+    list-style: none;
+    background-color: #ffffff;
+    padding: 15px 0;
+    border-radius: 5px;
+    li.nav-item{
+      position: relative;
+      text-transform: capitalize;
+      cursor: pointer;
+      text-align: left;
+      transition-duration: .3s;
+      transition-timing-function: ease-in-out;
+      transition-property: background, color, padding, border-radius;
+      width: 100%;
+      white-space: nowrap;
+      padding: 0 12px;
+      line-height: 35px;
+      margin-bottom: 0;
+    }
+  }
+  .detail-banner-tab-sub{
+/*    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-left: 35px;*/
+  }
+}
+
+.bannar-half-page{
+  box-shadow: 0 0 12px 0 rgba(0,0,0,0.09);
+  max-width: 299px !important;
+}
+.banner-medium-page{
+  box-shadow: 0 0 12px 0 rgba(0,0,0,0.09);
+  max-height: 280px!important;
+  max-width: 299px !important;
 }

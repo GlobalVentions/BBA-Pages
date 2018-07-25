@@ -644,6 +644,12 @@ $(function () {
     var dd1 = new DropDown($('#dd11'));
 });
 
+/* Js code for include Banner header file */
+$(document).ready(function () {
+    $.get("banner-header.html", function (data) {
+        $("#bannerheader").html(data);
+    });
+});
 /* Js code for include header file */
 $(document).ready(function () {
     $.get("header.html", function (data) {
@@ -761,14 +767,17 @@ $(document).on("click", function () {
 function calculatorresiltdetailsToggle(){
     $(".calculator-result-description").toggle();
 }
+function calculatorresiltdetailsToggle(){
+    $(".calculator-result-description").toggle();
+}
 function calculatortipsToggle(){
     $(".calculator-tips-description").toggle();
 }
 function calculatordisclaimerToggle(){
     $(".calculator-disclaimer-description").toggle();
 }
-function menuToggle(){
-    $(".burger-menu-main").toggle();
+function AddBannerMenuButtonToggle(){
+    $(".verticle-tabing-add-banner").toggle();
 }
 function promenuToggle(){
     $(".pro-burger-menu-main").toggle();
@@ -796,9 +805,9 @@ function searchToggle(){
 }
 
 /* JS Code for video play pause button */
-$("a[href='#']").click(function(e) {
+/*$("a[href='#']").click(function(e) {
     e.preventDefault();
-});
+});*/
 
 /* JS code for Checkckbox filte in post calculator page */
 $(document).ready(function()
@@ -843,7 +852,7 @@ $(document).ready(function()
     });
 
     /* Js code for smooth scrolling */
-    $(document).ready(function(){
+/*    $(document).ready(function(){
         $("a").on('click', function(event) {
             if (this.hash !== "") {
                 event.preventDefault();
@@ -855,7 +864,7 @@ $(document).ready(function()
                 });
             }
         });
-    });
+    });*/
     $(document).ready(function() {
 
         $('.btn-add').on("click", function(){

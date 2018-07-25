@@ -188,6 +188,10 @@
         left: 205px;
         width: 115px;
     }
+    .form-steps .first-step.banner-step-first:after {
+        left: 205px;
+        width: 30px;
+    }
 
     .form-steps .bg-white-steps.completed.first-step:after {
         border-bottom: 2px solid #44bca3;
