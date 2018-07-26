@@ -646,6 +646,11 @@ $(function () {
 
 /* Js code for include Banner header file */
 $(document).ready(function () {
+    $.get("banner-header-lock.html", function (data) {
+        $("#bannerheaderlock").html(data);
+    });
+});
+$(document).ready(function () {
     $.get("banner-header.html", function (data) {
         $("#bannerheader").html(data);
     });
@@ -784,6 +789,9 @@ function promenuToggle(){
 }
 function knowledgeBaseToggle(){
     $(".knowledge-menu-main").toggle();
+}
+function menuToggle(){
+    $(".burger-menu-main").toggle();
 }
 function opportunitiesToggle(){
     $(".opportunities-menu-main").toggle();

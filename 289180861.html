@@ -262,41 +262,191 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row m-0 p-3">
-                                            <div class="col-lg-12 col-md-12 col-12 pl-0 pr-0 pb-3 border border-left-0 border-top-0 border-right-0">
-                                                <div class="row m-0">
-                                                    <div class="col-lg-3 col-md-6 col-12 pl-lg-5 mb-lg-0 mb-md-3 mb-3 text-lg-left text-md-center text-center border border-left-0 border-bottom-0 border-top-0 no-right-border">
-                                                        <h5 class="heading-alt-bold text-black m-0">half page</h5>
-                                                        <p class="paragraph-regular-14-19 text-black generalsizefont m-0">
-                                                            300 <span aria-hidden="true">×</span> 600</p>
-                                                        <p class="paragraph-regular-14-19 text-black generalsizefont m-0">
-                                                            15 second Animation</p>
-                                                    </div>
-                                                    <div class="col-lg-3 col-md-6 col-12 mb-lg-0 mb-md-3 mb-3 text-lg-left text-md-center text-center pt-lg-3 m-0">
-                                                        <a href="#"
-                                                           class="paragraph-regular-14-19 generalsizefont text-primary-brightsidepurple font-weight-bold m-0">add
-                                                            banner</a>
-                                                    </div>
-                                                    <div class="col-lg-4 col-md-6 col-12 mb-lg-0 mb-md-3 mb-3 text-lg-left text-md-center text-center pt-lg-3 m-0">
-                                                        <p class="paragraph-regular-14-19 generalsizefont text-secondary-grey m-0">
-                                                            <span class="font-weight-bold">Note:</span>File type must be
-                                                            either JPEG or GIF and not exceed 2MB.</p>
-                                                    </div>
-                                                    <div class="col-lg-2 col-md-6 col-12 text-center pt-lg-3 m-0">
-                                                        <a href="#"
-                                                           class="paragraph-regular-14-19 generalsizefont text-secondary-grey m-0"><u>Delete</u></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
                                         <div class="row m-0">
                                             <div class="col-lg-12 col-md-12 col-12 p-0 mt-1 pb-2 pt-4 pl-3 add-banner-link">
                                                 <div class="custom-add-button-bba text-center">
-                                                    <button type="button" class="btn btn-add big-btn-add"><i
+                                                    <button type="button" class="btn btn-add big-btn-add" onclick="AddBannerMenuButtonToggle();"><i
                                                             class="fa fa-plus-circle"></i></button>
                                                 </div>
-                                                <a class="ml-3 heading-alt-bold generalsizefont-link text-primary-brightsidepurple addbanner-link">Add
+                                                <a class="ml-3 heading-alt-bold generalsizefont-link text-primary-brightsidepurple addbanner-link" onclick="AddBannerMenuButtonToggle();">Add
                                                     Banner/Link</a>
+                                            </div>
+                                            <div class="col-lg-7 col-md-9 col-12 p-0 mt-2 ">
+                                                <div class="verticle-tabing-add-banner" style="display: none;">
+                                                    <ul class="nav nav-tabs" id="myTab1" role="tablist">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link pt-0 pb-0" data-toggle="tab"
+                                                               href="#Skyscraper" role="tab" aria-controls="Skyscraper">Skyscraper</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link pt-0 pb-0" data-toggle="tab"
+                                                               href="#WideSkyscraper" role="tab"
+                                                               aria-controls="Wide Skyscraper">Wide Skyscraper</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link pt-0 pb-0" data-toggle="tab"
+                                                               href="#SmallSquare" role="tab"
+                                                               aria-controls="Small Square">Small Square</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link pt-0 pb-0" data-toggle="tab"
+                                                               href="#Square" role="tab"
+                                                               aria-controls="Square">Square</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link pt-0 pb-0" data-toggle="tab"
+                                                               href="#MediumRectangle" role="tab"
+                                                               aria-controls="Medium Rectangle">Medium Rectangle</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link pt-0 pb-0 active" data-toggle="tab"
+                                                               href="#Half-Page" role="tab" aria-controls="Half-Page">Half-Page</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link pt-0 pb-0" data-toggle="tab"
+                                                               href="#Banner" role="tab"
+                                                               aria-controls="Banner">Banner</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link pt-0 pb-0" data-toggle="tab"
+                                                               href="#Leaderboard" role="tab"
+                                                               aria-controls="Leaderboard">Leaderboard</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link pt-0 pb-0" data-toggle="tab"
+                                                               href="#Large-Leaderboard" role="tab"
+                                                               aria-controls="Large Leaderboard">Large Leaderboard</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link pt-0 pb-0" data-toggle="tab"
+                                                               href="#Mobile-Leaderboard" role="tab"
+                                                               aria-controls="Mobile Leaderboard">Mobile Leaderboard</a>
+                                                        </li>
+                                                    </ul>
+
+                                                    <div class="tab-content">
+                                                        <div class="tab-pane" id="Skyscraper" role="tabpanel">
+                                                            <div class="detail-banner-tab">
+                                                                <div class="detail-banner-tab-sub pt-lg-5 pt-md-5 pt-5">
+                                                                    <img src="images/half-page.png"
+                                                                         class="img-fluid mx-auto d-block">
+                                                                    <h4 class="heading-alt-bold text-primary-black mb-1 mt-3 text-left general-size">
+                                                                        Skyscraper</h4>
+                                                                    <p class="mb-1" >300 x 600</p>
+                                                                    <p class="mb-1" >15 Second Animation</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane" id="WideSkyscraper" role="tabpanel">
+                                                            <div class="detail-banner-tab">
+                                                                <div class="detail-banner-tab-sub pt-lg-5 pt-md-5 pt-5">
+                                                                    <img src="images/half-page.png"
+                                                                         class="img-fluid mx-auto d-block">
+                                                                    <h4 class="heading-alt-bold text-primary-black mb-1 mt-3 text-left general-size">
+                                                                        Wide Skyscraper</h4>
+                                                                    <p class="mb-1" >300 x 600</p>
+                                                                    <p class="mb-1" >15 Second Animation</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane" id="SmallSquare" role="tabpanel">
+                                                            <div class="detail-banner-tab">
+                                                                <div class="detail-banner-tab-sub pt-lg-5 pt-md-5 pt-5">
+                                                                    <img src="images/half-page.png"
+                                                                         class="img-fluid mx-auto d-block">
+                                                                    <h4 class="heading-alt-bold text-primary-black mb-1 mt-3 text-left general-size">
+                                                                        Small Square</h4>
+                                                                    <p class="mb-1" >300 x 600</p>
+                                                                    <p class="mb-1" >15 Second Animation</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane" id="Square" role="tabpanel">
+                                                            <div class="detail-banner-tab">
+                                                                <div class="detail-banner-tab-sub pt-lg-5 pt-md-5 pt-5">
+                                                                    <img src="images/half-page.png"
+                                                                         class="img-fluid mx-auto d-block">
+                                                                    <h4 class="heading-alt-bold text-primary-black mb-1 mt-3 text-left general-size">
+                                                                        Square</h4>
+                                                                    <p class="mb-1" >300 x 600</p>
+                                                                    <p class="mb-1" >15 Second Animation</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane" id="MediumRectangle" role="tabpanel">
+                                                            <div class="detail-banner-tab">
+                                                                <div class="detail-banner-tab-sub pt-lg-5 pt-md-5 pt-5">
+                                                                    <img src="images/half-page.png"
+                                                                         class="img-fluid mx-auto d-block">
+                                                                    <h4 class="heading-alt-bold text-primary-black mb-1 mt-3 text-left general-size">
+                                                                        Medium Rectangle</h4>
+                                                                    <p class="mb-1" >300 x 600</p>
+                                                                    <p class="mb-1" >15 Second Animation</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane active" id="Half-Page" role="tabpanel">
+                                                            <div class="detail-banner-tab">
+                                                                <div class="detail-banner-tab-sub pt-lg-5 pt-md-5 pt-5">
+                                                                    <img src="images/half-page.png"
+                                                                         class="img-fluid mx-auto d-block">
+                                                                    <h4 class="heading-alt-bold text-primary-black mb-1 mt-3 text-left general-size">
+                                                                        Half Page</h4>
+                                                                    <p class="mb-1" >300 x 600</p>
+                                                                    <p class="mb-1" >15 Second Animation</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane" id="Banner" role="tabpanel">
+                                                            <div class="detail-banner-tab">
+                                                                <div class="detail-banner-tab-sub pt-lg-5 pt-md-5 pt-5">
+                                                                    <img src="images/half-page.png"
+                                                                         class="img-fluid mx-auto d-block">
+                                                                    <h4 class="heading-alt-bold text-primary-black mb-1 mt-3 text-left general-size">
+                                                                        Banner</h4>
+                                                                    <p class="mb-1" >300 x 600</p>
+                                                                    <p class="mb-1" >15 Second Animation</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane" id="Leaderboard" role="tabpanel">
+                                                            <div class="detail-banner-tab">
+                                                                <div class="detail-banner-tab-sub pt-lg-5 pt-md-5 pt-5">
+                                                                    <img src="images/half-page.png"
+                                                                         class="img-fluid mx-auto d-block">
+                                                                    <h4 class="heading-alt-bold text-primary-black mb-1 mt-3 text-left general-size">
+                                                                        Leaderboard</h4>
+                                                                    <p class="mb-1" >300 x 600</p>
+                                                                    <p class="mb-1" >15 Second Animation</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane" id="Large-Leaderboard" role="tabpanel">
+                                                            <div class="detail-banner-tab">
+                                                                <div class="detail-banner-tab-sub pt-lg-5 pt-md-5 pt-5">
+                                                                    <img src="images/half-page.png"
+                                                                         class="img-fluid mx-auto d-block">
+                                                                    <h4 class="heading-alt-bold text-primary-black mb-1 mt-3 text-left general-size">
+                                                                        Large Leaderboard</h4>
+                                                                    <p class="mb-1" >300 x 600</p>
+                                                                    <p class="mb-1" >15 Second Animation</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane" id="Mobile-Leaderboard" role="tabpanel">
+                                                            <div class="detail-banner-tab">
+                                                                <div class="detail-banner-tab-sub pt-lg-5 pt-md-5 pt-5">
+                                                                    <img src="images/half-page.png"
+                                                                         class="img-fluid mx-auto d-block">
+                                                                    <h4 class="heading-alt-bold text-primary-black mb-1 mt-3 text-left general-size">
+                                                                        Mobile Leaderboard</h4>
+                                                                    <p class="mb-1" >300 x 600</p>
+                                                                    <p class="mb-1" >15 Second Animation</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </form>
@@ -312,12 +462,12 @@
                                 <div class="col-lg-6 col-md-8 col-6 pl-0 pr-0 text-lg-right text-md-right text-right">
                                     <div class="row m-0 justify-content-lg-end justify-content-md-end">
                                         <div class="col-lg-5 col-md-7 col-12 p-0">
-                                            <a href="289180844.html"
-                                                    class="btn btn-primary-large-text-icon font-weight-bold"><p
+                                            <button type="button"
+                                               class="btn btn-primary-large-text-icon font-weight-bold"><p
                                                     class="text-left m-0">Continue <img
                                                     src="images/icon/arrow-left-btn.white@1x.png"
                                                     class="img-fluid btn-arrow">
-                                            </p></a>
+                                            </p></button>
                                         </div>
                                     </div>
                                 </div>

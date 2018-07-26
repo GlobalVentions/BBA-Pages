@@ -17,6 +17,9 @@
 }
 
 @media (max-width: 768px) {
+    .banner-ads-text {
+        display: none!important;
+    }
     .creditcard-compare-md{
         justify-content: center;
     }
@@ -205,6 +208,33 @@
     }
     .report-header-slider{
         max-height:220px!important;
+    }
+    .verticle-tabing-add-banner{
+        right: auto;
+    }
+    .border.border-left-0.border-bottom-0.border-top-0.no-right-border{
+        border-right: none!important;
+    }
+    .price-txt {
+        font-size: 1.5rem;
+    }
+    .opportunities-text {
+        font-size: 0.8rem!important;
+    }
+    .publisher-get-started .btn-primary-large-text{
+        padding: 0.774rem 0 !important;
+    }
+    .publisher-get-started .btn-white-large-text{
+        padding: 0.774rem 0 !important;
+    }
+    .advertiser-border-left-0{
+        border: 1px solid #AAB2B5!important;
+    }
+    .advertiser-border-bottom-0{
+        border-bottom: 0!important;
+    }
+    .advertiser-border.advertiser-border-bottom{
+        border-bottom: 0!important;
     }
 }
 
@@ -630,6 +660,47 @@
     }
     .report-header-slider {
         max-height: 200px !important;
+    }
+    .verticle-tabing-add-banner .nav.nav-tabs{
+        font-size: 12px;
+    }
+    .verticle-tabing-add-banner{
+        right: 0;
+        top: -15px;
+    }
+    .verticle-tabing-add-banner .nav.nav-tabs li.nav-item{
+        padding: 0 6px;
+    }
+    .advertiser-border-left-0{
+        border: 1px solid #AAB2B5!important;
+    }
+    .advertiser-border-bottom-0{
+        border-bottom: 0!important;
+    }
+    .advertiser-border.advertiser-border-bottom{
+        border-bottom: 0!important;
+    }
+    .banner-ads-text {
+        position: initial;
+        bottom: 0;
+    }
+    .opportunities-text {
+        font-size: 0.61rem!important;
+        min-height: 30px;
+    }
+    .publisher-basic {
+        font-size: 0.95rem;
+    }
+    .price-txt {
+        font-size: 0.95rem;
+    }
+    .publisher-get-started .btn-primary-large-text{
+        padding: 0.5rem 0 !important;
+        font-size: 0.8rem!important;
+    }
+    .publisher-get-started .btn-white-large-text {
+        padding: 0.5rem 0 !important;
+        font-size: 0.8rem!important;
     }
 }
 
