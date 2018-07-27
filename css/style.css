@@ -3960,4 +3960,41 @@ iframe.detail-video {
 .advertiser-border-right-0 {
   border-right: 0 !important; }
 
+.line-height-date {
+  line-height: 1px; }
+
+.loan-snap-stand {
+  max-width: 5px !important;
+  height: 100%;
+  margin: 0 auto; }
+
+.custom-BBA-file-upload-button .btn-white-large-text {
+  padding: 0.524rem 1.8rem !important; }
+
+.choose-standard {
+  position: relative;
+  top: 5px; }
+
+.dashboard-balance .border-yellow {
+  border-bottom: 2px solid #fabb36; }
+.dashboard-balance .border-ornage {
+  border-bottom: 2px solid #ea520f; }
+.dashboard-balance .border-cayn {
+  border-bottom: 2px solid #44bca3; }
+.dashboard-balance .label-div {
+  position: relative;
+  top: 35px; }
+
+.bannar-half-page {
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.09);
+  max-width: 299px !important; }
+
+.banner-medium-page {
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.09);
+  max-height: 280px !important;
+  max-width: 299px !important; }
+
+.d-webkit-inline-box {
+  display: -webkit-inline-box !important; }
+
 /*# sourceMappingURL=style.css.map */
