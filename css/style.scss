@@ -172,6 +172,9 @@ ul.facts {
 .generalsizefont {
   font-size: $general-font-size !important;
 }
+.generalsizefont-small {
+  font-size: 0.8rem !important;
+}
 .generalsizefont-p {
   font-size: 0.7rem !important;
 }
@@ -1071,7 +1074,69 @@ ul.found-jobs-ul li:before {
     transform: scale(1);
   }
 }
-
+.custom-radio-bba-yes-no {
+  [type="radio"]:checked,
+  [type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+  }
+  [type="radio"]:checked + label,
+  [type="radio"]:not(:checked) + label {
+    position: relative;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    background-color: $color_white;
+    border: 2px solid #AAB2B5;
+    margin-bottom: 0;
+  }
+  [type="radio"]:checked + label:before,
+  [type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 46px;
+/*    border: 2px solid #AAB2B5;*/
+    border-radius: 0;
+    width: 100%;
+  }
+  [type="radio"]:checked + label:after,
+  [type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 100%;
+    height: 46px;
+    background: $brightsidepurple;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  [type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  [type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  .yes-border-radius{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  .no-border-radius{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+}
 .custom-checkbox-bba {
 /*  .checkbox-custom {
     zoom: 2.2;
@@ -1083,6 +1148,9 @@ ul.found-jobs-ul li:before {
 
 }
 .custom-radio-bba-box [type="radio"]:checked + label{
+  color: $color_white!important;
+}
+.custom-radio-bba-yes-no [type="radio"]:checked + label{
   color: $color_white!important;
 }
 /* Custom Toggle button css start */
@@ -2365,7 +2433,14 @@ video {
 .line-height-25 {
   line-height: 25px;
 }
-
+.line-height-17 {
+  line-height: 17px;
+}
+.box-shadow-none{
+ box-shadow: none!important;
+  margin-right: 0!important;
+  margin-left: 0!important;
+}
 .w-85 {
   width: 85% !important;
 }
@@ -4959,3 +5034,139 @@ iframe.detail-video{
 .d-webkit-inline-box{
   display: -webkit-inline-box!important;
 }
+
+.increament-decreament-input-button{
+  border: 2px solid #AAB2B5!important;
+  background-color: $color_white!important;
+}
+
+.progress{
+  width: 150px;
+  height: 150px !important;
+  line-height: 150px;
+  background: none !important;
+  margin: 0 auto;
+  box-shadow: none;
+  position: relative;
+}
+.progress:after{
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 12px solid #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.progress > span{
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+.progress .progress-left{
+  left: 0;
+}
+.progress .progress-bar{
+  width: 100%;
+  height: 100%;
+  background: none;
+  border-width: 12px;
+  border-style: solid;
+  position: absolute;
+  top: 0;
+}
+.progress .progress-left .progress-bar{
+  left: 100%;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+  border-left: 0;
+  -webkit-transform-origin: center left;
+  transform-origin: center left;
+}
+.progress .progress-right{
+  right: 0;
+}
+.progress .progress-right .progress-bar{
+  left: -100%;
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 80px;
+  border-right: 0;
+  -webkit-transform-origin: center right;
+  transform-origin: center right;
+  animation: loading-1 1.8s linear forwards;
+}
+.progress .progress-value{
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  background: #ffffff;
+  font-size: 24px;
+  color: #d10b4f;
+  line-height: 135px;
+  text-align: center;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+.progress.blue .progress-bar{
+  border-color: #d10b4f;
+}
+.progress.blue .progress-left .progress-bar{
+  animation: loading-2 1.5s linear forwards 1.8s;
+}
+
+@keyframes loading-1{
+  0%{
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100%{
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+@keyframes loading-2{
+  0%{
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100%{
+    -webkit-transform: rotate(144deg);
+    transform: rotate(144deg);
+  }
+}
+@keyframes loading-3{
+  0%{
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100%{
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}
+@keyframes loading-4{
+  0%{
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100%{
+    -webkit-transform: rotate(36deg);
+    transform: rotate(36deg);
+  }
+}
+@keyframes loading-5{
+  0%{
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100%{
+    -webkit-transform: rotate(126deg);
+    transform: rotate(126deg);
+  }
+}
+

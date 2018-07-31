@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" type="image/ico" href="images/favicon.png"/>
+    <title>Credit Factors</title>
+
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="css/initcarousel-1.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="container p-0 fixed-top bg-white">
+        <div class="row ml-0 mr-0 mb-0 mt-0">
+            <div class="col-lg-12 col-md-12 col-12 p-0">
+                <div id="bannerheader">
+                    <!-- Content will be inserted by jQuery from header.html -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container p-0 hero-container">
+        <div class="row m-0">
+            <div class="col-lg-12 col-md-12 col-12 pt-lg-0 p-md-0 p-0 pt-4 pt-md-5">
+                <img src="images/advertiserp@1x.png" class="img-fluid d-lg-block d-md-block d-none">
+                <img src="images/advertiser@2x.png" class="img-fluid d-lg-none d-md-none d-block">
+            </div>
+        </div>
+        <div class="row m-0 pt-lg-0 pt-md-0 pt-0">
+            <div class="col-lg-12 col-md-12 col-12 p-lg-3 pt-md-4 pb-md-4 pl-md-2 pr-md-2 pt-2 pb-2 pl-0 pr-0 bg-tech-grey form-steps">
+                <div class="max-width-965 mx-auto">
+                    <div class="row m-0 text-left">
+                        <div class="col-lg-4 col-md-3 col-2 pl-2 pr-2 pl-lg-0 pr-lg-0">
+                            <div class="bg-white-steps completed stes-width first-step">
+                                <p class="mb-0">
+                                    <span class="step-completion"></span>
+                                    <span class="heading5-bold-caps-12-17 d-lg-inline-flex d-md-none d-none">STEP 1 </span>
+                                    <span class="paragraph-regular-14-19 d-lg-inline-flex d-md-none d-none">- Your Info</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-5 col-7 pl-lg-3 pr-lg-0 pl-1 pr-1">
+                            <div class="bg-white-steps active second-steps-2">
+                                <p class="mb-0">
+                                    <span class="step-completion"></span>
+                                    <span class="heading5-bold-caps-12-17">STEP 2 </span>
+                                    <span class="paragraph-regular-14-19">- Company Info</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-3 col-2 pl-lg-4 pr-lg-0">
+                            <div class="bg-white-steps stes-width last-steps">
+                                <p class="mb-0">
+                                    <span class="step-completion"></span>
+                                    <span class="heading5-bold-caps-12-17 mobile-count text-primary-black d-lg-none d-md-inline d-inline"> 3 </span>
+                                    <span class="heading5-bold-caps-12-17 d-lg-inline-flex d-md-none d-none">STEP 3 </span>
+                                    <span class="paragraph-regular-14-19 d-lg-inline-flex d-md-none d-none">- Make Payment</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="stepsDivs">
+            <div class="row m-0 DivStepDiv">
+                <div class="col-lg-12 col-md-12 col-12 P-lg-0 p-md-0 pl-3 pr-3">
+                    <div class="row m-0 pl-lg-0 p-0 pt-md-0">
+                        <div class="col-lg-8 col-md-12 col-12 pl-0 pr-0 pt-lg-5 pb-lg-3 pt-md-5 pb-md-3 pt-5 pb-3 border border-right-0 border-left-0 border-top-0">
+                            <div class="row m-0">
+                                <div class="col-lg-12 col-md-12 col-12 p-0">
+                                    <h3 class="heading-alt-bold text-primary-black ">Choose Maximum Negative Credit
+                                        Factors</h3>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-12 p-0">
+                                    <form method="post">
+                                        <div class="custom-checkbox-bba pl-2">
+                                            <input type="checkbox" id="choosestandard"
+                                                   class="checkbox-custom choose-standard"
+                                                   name="checkbox1">
+                                            <label for="choosestandard" class="heading-alt-light generalsizefont-small">Or
+                                                choose Standard Acceptance Discrepancies</label>
+                                        </div>
+                                        <div class="row ml-0 mr-0 mt-4">
+                                            <div class="col-lg-12 col-md-12 col-12 p-0 bg-tech-grey">
+                                                <div class="balances-count bg-pure-orange border-radius-15 pt-3 pb-3 pl-3 pr-3">
+                                                    <span class="d-webkit-inline-box">
+                                                        <img src="images/balances-big.png" class="img-fluid">
+                                                        <h4 class="pl-3 mb-0 text-white heading-alt-bold">Balances</h4>
+                                                        <img src="images/icon/tooltip.grey@1x.png"
+                                                             class="img-fluid pl-3"></span>
+                                                    <span class="bg-white float-right heading-alt-bold generalsizefont-p mt-0 pt-2 pb-2 pl-4 pr-4 border-radius-25rem">N/A</span>
+                                                </div>
+                                                <div class="row m-0 pt-4 pb-0 pb-lg-4 input-spinner">
+                                                    <div class="col-lg-3 col-md-6 col-12 pl-lg-4 pr-lg-4 pt-lg-0 pt-md-0 pb-lg-0 pb-md-3 pt-2">
+                                                        <label class="m-0 pl-2 more-about-label generalsizefont-small line-height-17">Late
+                                                            Payment: 30, 60, 90 and 120 Days</label>
+                                                        <div class="input-group" id="spinner">
+                                                            <span class="input-group-btn btn-group-lg">
+                                                                <button type="button"
+                                                                        class="btn box-shadow-none increament-decreament-input-button border-right-0"
+                                                                        data-action="increment"><img
+                                                                        src="images/icon/add.purple@1x.png"
+                                                                        class="img-fluid pb-1"></button>
+                                                            </span>
+                                                            <input name="qty" type="text"
+                                                                   class="form-control text-center increament-decreament-input-button"
+                                                                   value="0" min="0" max="1000" disabled>
+                                                            <span class="input-group-btn btn-group-lg">
+                                                                <button type="button"
+                                                                        class="btn box-shadow-none increament-decreament-input-button border-left-0"
+                                                                        data-action="decrement"><img
+                                                                        src="images/icon/less.purple@1x.png"
+                                                                        class="img-fluid pb-1"></button>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-md-6 col-12 pl-lg-4 pr-lg-4 pt-lg-0 pt-md-0 pb-lg-0 pb-md-3 pt-2">
+                                                        <label class="m-0 pl-2 pt-lg-3 more-about-label generalsizefont-small">Collections</label>
+                                                        <div class="input-group" id="spinner">
+                                                            <span class="input-group-btn btn-group-lg">
+                                                                <button type="button"
+                                                                        class="btn box-shadow-none increament-decreament-input-button border-right-0"
+                                                                        data-action="increment"><img
+                                                                        src="images/icon/add.purple@1x.png"
+                                                                        class="img-fluid pb-1"></button>
+                                                            </span>
+                                                            <input name="qty" type="text"
+                                                                   class="form-control text-center increament-decreament-input-button"
+                                                                   value="0" min="0" max="1000" disabled>
+                                                            <span class="input-group-btn btn-group-lg">
+                                                                <button type="button"
+                                                                        class="btn box-shadow-none increament-decreament-input-button border-left-0"
+                                                                        data-action="decrement"><img
+                                                                        src="images/icon/less.purple@1x.png"
+                                                                        class="img-fluid pb-1"></button>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-md-6 col-12 pl-lg-4 pr-lg-4 pt-lg-0 pt-md-0 pb-lg-0 pb-md-3 pt-2">
+                                                        <label class="m-0 pl-2 pt-lg-3 more-about-label generalsizefont-small">Charge-offs</label>
+                                                        <div class="input-group" id="spinner">
+                                                            <span class="input-group-btn btn-group-lg">
+                                                                <button type="button"
+                                                                        class="btn box-shadow-none increament-decreament-input-button border-right-0"
+                                                                        data-action="increment"><img
+                                                                        src="images/icon/add.purple@1x.png"
+                                                                        class="img-fluid pb-1"></button>
+                                                            </span>
+                                                            <input name="qty" type="text"
+                                                                   class="form-control text-center increament-decreament-input-button"
+                                                                   value="0" min="0" max="1000" disabled>
+                                                            <span class="input-group-btn btn-group-lg">
+                                                                <button type="button"
+                                                                        class="btn box-shadow-none increament-decreament-input-button border-left-0"
+                                                                        data-action="decrement"><img
+                                                                        src="images/icon/less.purple@1x.png"
+                                                                        class="img-fluid pb-1"></button>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-md-6 col-12 pl-lg-4 pr-lg-4 pt-lg-0 pt-md-0 pb-lg-0 pb-md-3 pt-2">
+                                                        <label class="m-0 pl-2 pt-lg-3 more-about-label generalsizefont-small">Tax
+                                                            Liens</label>
+                                                        <div class="input-group" id="spinner">
+                                                            <span class="input-group-btn btn-group-lg">
+                                                                <button type="button"
+                                                                        class="btn box-shadow-none increament-decreament-input-button border-right-0"
+                                                                        data-action="increment"><img
+                                                                        src="images/icon/add.purple@1x.png"
+                                                                        class="img-fluid pb-1"></button>
+                                                            </span>
+                                                            <input name="qty" type="text"
+                                                                   class="form-control text-center increament-decreament-input-button"
+                                                                   value="0" min="0" max="1000" disabled>
+                                                            <span class="input-group-btn btn-group-lg">
+                                                                <button type="button"
+                                                                        class="btn box-shadow-none increament-decreament-input-button border-left-0"
+                                                                        data-action="decrement"><img
+                                                                        src="images/icon/less.purple@1x.png"
+                                                                        class="img-fluid pb-1"></button>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row m-0 pt-0 pb-4 input-spinner">
+                                                    <div class="col-lg-3 col-md-6 col-12 pl-lg-4 pr-lg-4 pt-lg-0 pt-md-0 pb-lg-0 pb-md-3 pt-2">
+                                                        <label class="m-0 pl-2 pt-lg-4 mt-lg-2 more-about-label generalsizefont-small">Judgements</label>
+                                                        <div class="input-group" id="spinner">
+                                                            <span class="input-group-btn btn-group-lg">
+                                                                <button type="button"
+                                                                        class="btn box-shadow-none increament-decreament-input-button border-right-0"
+                                                                        data-action="increment"><img
+                                                                        src="images/icon/add.purple@1x.png"
+                                                                        class="img-fluid pb-1"></button>
+                                                            </span>
+                                                            <input name="qty" type="text"
+                                                                   class="form-control text-center increament-decreament-input-button"
+                                                                   value="0" min="0" max="1000" disabled>
+                                                            <span class="input-group-btn btn-group-lg">
+                                                                <button type="button"
+                                                                        class="btn box-shadow-none increament-decreament-input-button border-left-0"
+                                                                        data-action="decrement"><img
+                                                                        src="images/icon/less.purple@1x.png"
+                                                                        class="img-fluid pb-1"></button>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-md-6 col-12 pl-lg-4 pr-lg-4 pt-lg-0 pt-md-0 pb-lg-0 pb-md-3 pt-2">
+                                                        <label class="m-0 pl-2 pt-lg-4 mt-lg-2 more-about-label generalsizefont-small">Debt
+                                                            Consolidations Marks</label>
+                                                        <div class="input-group" id="spinner">
+                                                            <span class="input-group-btn btn-group-lg">
+                                                                <button type="button"
+                                                                        class="btn box-shadow-none increament-decreament-input-button border-right-0"
+                                                                        data-action="increment"><img
+                                                                        src="images/icon/add.purple@1x.png"
+                                                                        class="img-fluid pb-1"></button>
+                                                            </span>
+                                                            <input name="qty" type="text"
+                                                                   class="form-control text-center increament-decreament-input-button"
+                                                                   value="0" min="0" max="1000" disabled>
+                                                            <span class="input-group-btn btn-group-lg">
+                                                                <button type="button"
+                                                                        class="btn box-shadow-none increament-decreament-input-button border-left-0"
+                                                                        data-action="decrement"><img
+                                                                        src="images/icon/less.purple@1x.png"
+                                                                        class="img-fluid pb-1"></button>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-md-6 col-12 pl-lg-4 pr-lg-4 pt-lg-0 pt-md-0 pb-lg-0 pb-md-3 pt-2">
+                                                        <div class="custom-radio-bba-yes-no">
+                                                            <div class="row m-0">
+                                                                <label class="m-0 pl-2 pt-lg-3 pt-md-3 line-height-17 more-about-label generalsizefont-small w-100">Bankruptcies
+                                                                    not saying "Withdrawn" or "Dismissed"</label>
+                                                                <div class="col-lg-6 col-md-6 col-6 pl-0 pr-0 pt-1">
+                                                                    <input type="radio" id="yes" name="Yes-No">
+                                                                    <label for="yes"
+                                                                           class="paragraph-regular-14-19 text-primary-black border-right-0 yes-border-radius">
+                                                                        <p class="z-indexradio mb-0">Yes</p></label>
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-6 col-6 pl-0 pr-0 pt-1">
+                                                                    <input type="radio" id="no" name="Yes-No">
+                                                                    <label for="no"
+                                                                           class="paragraph-regular-14-19 text-primary-black no-border-radius">
+                                                                        <p class="z-indexradio mb-0">No</p></label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-md-6 col-12 pl-lg-4 pr-lg-4 pt-lg-0 pt-md-0 pb-lg-0 pb-md-3 pt-2">
+                                                        <label class="m-0 pl-2 line-height-17 more-about-label generalsizefont-small">Repossession
+                                                            Indication when it should say "Voluntarily
+                                                            Surremdered"</label>
+                                                        <div class="input-group" id="spinner">
+                                                            <span class="input-group-btn btn-group-lg">
+                                                                <button type="button"
+                                                                        class="btn box-shadow-none increament-decreament-input-button border-right-0"
+                                                                        data-action="increment"><img
+                                                                        src="images/icon/add.purple@1x.png"
+                                                                        class="img-fluid pb-1"></button>
+                                                            </span>
+                                                            <input name="qty" type="text"
+                                                                   class="form-control text-center increament-decreament-input-button"
+                                                                   value="0" min="0" max="1000" disabled>
+                                                            <span class="input-group-btn btn-group-lg">
+                                                                <button type="button"
+                                                                        class="btn box-shadow-none increament-decreament-input-button border-left-0"
+                                                                        data-action="decrement"><img
+                                                                        src="images/icon/less.purple@1x.png"
+                                                                        class="img-fluid pb-1"></button>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row ml-0 mr-0 mt-5">
+                                            <div class="col-lg-12 col-md-12 col-12 p-0 bg-tech-grey">
+                                                <div class="balances-count bg-power-blue border-radius-15 pt-3 pb-3 pl-3 pr-3">
+                                                    <span class="d-webkit-inline-box">
+                                                        <img src="images/trade-lines-big.png" class="img-fluid">
+                                                        <h4 class="pl-3 pt-1 mb-0 text-white heading-alt-bold">Trade Lines</h4>
+                                                        <img src="images/icon/tooltip.grey@1x.png"
+                                                             class="img-fluid pl-3 pt-1"></span>
+                                                    <span class="bg-white float-right heading-alt-bold generalsizefont-p mt-0 pt-2 pb-2 pl-4 pr-4 border-radius-25rem">N/A</span>
+                                                </div>
+                                                <div class="row m-0 pt-4 pb-0 pb-lg-4 input-spinner">
+                                                    <div class="col-lg-3 col-md-6 col-12 pl-lg-4 pr-lg-4 pt-lg-0 pt-md-0 pb-lg-0 pb-md-3 pt-2">
+                                                        <label class="m-0 pl-2 more-about-label generalsizefont-small pt-lg-3">Incorrect
+                                                            Balances</label>
+                                                        <div class="input-group" id="spinner">
+                                                            <span class="input-group-btn btn-group-lg">
+                                                                <button type="button"
+                                                                        class="btn box-shadow-none increament-decreament-input-button border-right-0"
+                                                                        data-action="increment"><img
+                                                                        src="images/icon/add.purple@1x.png"
+                                                                        class="img-fluid pb-1"></button>
+                                                            </span>
+                                                            <input name="qty" type="text"
+                                                                   class="form-control text-center increament-decreament-input-button"
+                                                                   value="0" min="0" max="1000" disabled>
+                                                            <span class="input-group-btn btn-group-lg">
+                                                                <button type="button"
+                                                                        class="btn box-shadow-none increament-decreament-input-button border-left-0"
+                                                                        data-action="decrement"><img
+                                                                        src="images/icon/less.purple@1x.png"
+                                                                        class="img-fluid pb-1"></button>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-md-6 col-12 pl-lg-4 pr-lg-4 pt-lg-0 pt-md-0 pb-lg-0 pb-md-3 pt-2">
+                                                        <div class="custom-radio-bba-yes-no">
+                                                            <div class="row m-0">
+                                                                <label class="m-0 pl-2 line-height-17 more-about-label generalsizefont-small w-100">Credit
+                                                                    Limits Listed Incorrectly</label>
+                                                                <div class="col-lg-6 col-md-6 col-6 pl-0 pr-0 pt-1">
+                                                                    <input type="radio" id="yes1" name="yes-no1">
+                                                                    <label for="yes1"
+                                                                           class="paragraph-regular-14-19 text-primary-black border-right-0 yes-border-radius">
+                                                                        <p class="z-indexradio mb-0">Yes</p></label>
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-6 col-6 pl-0 pr-0 pt-1">
+                                                                    <input type="radio" id="no1" name="yes-no1">
+                                                                    <label for="no1"
+                                                                           class="paragraph-regular-14-19 text-primary-black no-border-radius">
+                                                                        <p class="z-indexradio mb-0">No</p></label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-md-6 col-12 pl-lg-4 pr-lg-4 pt-lg-0 pt-md-0 pb-lg-0 pb-md-3 pt-2">
+                                                        <label class="m-0 pl-2 pt-lg-3 more-about-label generalsizefont-small">Duplicate
+                                                            Collections</label>
+                                                        <div class="input-group" id="spinner">
+                                                            <span class="input-group-btn btn-group-lg">
+                                                                <button type="button"
+                                                                        class="btn box-shadow-none increament-decreament-input-button border-right-0"
+                                                                        data-action="increment"><img
+                                                                        src="images/icon/add.purple@1x.png"
+                                                                        class="img-fluid pb-1"></button>
+                                                            </span>
+                                                            <input name="qty" type="text"
+                                                                   class="form-control text-center increament-decreament-input-button"
+                                                                   value="0" min="0" max="1000" disabled>
+                                                            <span class="input-group-btn btn-group-lg">
+                                                                <button type="button"
+                                                                        class="btn box-shadow-none increament-decreament-input-button border-left-0"
+                                                                        data-action="decrement"><img
+                                                                        src="images/icon/less.purple@1x.png"
+                                                                        class="img-fluid pb-1"></button>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-md-6 col-12 pl-lg-4 pr-lg-4 pt-lg-0 pt-md-0 pb-lg-0 pb-md-3 pt-2">
+                                                        <label class="m-0 pl-2 pt-lg-3 more-about-label generalsizefont-small">Accounts
+                                                            listed Incorrectly</label>
+                                                        <div class="input-group" id="spinner">
+                                                            <span class="input-group-btn btn-group-lg">
+                                                                <button type="button"
+                                                                        class="btn box-shadow-none increament-decreament-input-button border-right-0"
+                                                                        data-action="increment"><img
+                                                                        src="images/icon/add.purple@1x.png"
+                                                                        class="img-fluid pb-1"></button>
+                                                            </span>
+                                                            <input name="qty" type="text"
+                                                                   class="form-control text-center increament-decreament-input-button"
+                                                                   value="0" min="0" max="1000" disabled>
+                                                            <span class="input-group-btn btn-group-lg">
+                                                                <button type="button"
+                                                                        class="btn box-shadow-none increament-decreament-input-button border-left-0"
+                                                                        data-action="decrement"><img
+                                                                        src="images/icon/less.purple@1x.png"
+                                                                        class="img-fluid pb-1"></button>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row m-0 pt-0 pb-4 input-spinner">
+                                                    <div class="col-lg-3 col-md-6 col-12 pl-lg-4 pr-lg-4 pt-lg-0 pt-md-0 pb-lg-0 pb-md-3 pt-2">
+                                                        <label class="m-0 pl-2 pt-lg-4 mt-lg-2 more-about-label generalsizefont-small">Credit
+                                                            Lines Not Listed</label>
+                                                        <div class="input-group" id="spinner">
+                                                            <span class="input-group-btn btn-group-lg">
+                                                                <button type="button"
+                                                                        class="btn box-shadow-none increament-decreament-input-button border-right-0"
+                                                                        data-action="increment"><img
+                                                                        src="images/icon/add.purple@1x.png"
+                                                                        class="img-fluid pb-1"></button>
+                                                            </span>
+                                                            <input name="qty" type="text"
+                                                                   class="form-control text-center increament-decreament-input-button"
+                                                                   value="0" min="0" max="1000" disabled>
+                                                            <span class="input-group-btn btn-group-lg">
+                                                                <button type="button"
+                                                                        class="btn box-shadow-none increament-decreament-input-button border-left-0"
+                                                                        data-action="decrement"><img
+                                                                        src="images/icon/less.purple@1x.png"
+                                                                        class="img-fluid pb-1"></button>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-md-6 col-12 pl-lg-4 pr-lg-4 pt-lg-0 pt-md-0 pb-lg-0 pb-md-3 pt-2">
+                                                        <div class="custom-radio-bba-yes-no">
+                                                            <div class="row m-0">
+                                                                <label class="m-0 pl-2 pt-lg-3 more-about-label generalsizefont-small w-100">Paid
+                                                                    Accounts Still Showing that You Owe</label>
+                                                                <div class="col-lg-6 col-md-6 col-6 pl-0 pr-0 pt-1">
+                                                                    <input type="radio" id="yes2" name="yes-no2">
+                                                                    <label for="yes2"
+                                                                           class="paragraph-regular-14-19 text-primary-black border-right-0 yes-border-radius">
+                                                                        <p class="z-indexradio mb-0">Yes</p></label>
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-6 col-6 pl-0 pr-0 pt-1">
+                                                                    <input type="radio" id="no2" name="yes-no2">
+                                                                    <label for="no2"
+                                                                           class="paragraph-regular-14-19 text-primary-black no-border-radius">
+                                                                        <p class="z-indexradio mb-0">No</p></label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-md-6 col-12 pl-lg-4 pr-lg-4 pt-lg-0 pt-md-0 pb-lg-0 pb-md-3 pt-2">
+                                                        <label class="m-0 pl-2 pt-lg-3 pt-md-3 line-height-17 more-about-label generalsizefont-small w-100">Closed
+                                                            Accounts Shown as Open</label>
+                                                        <div class="input-group" id="spinner">
+                                                            <span class="input-group-btn btn-group-lg">
+                                                                <button type="button"
+                                                                        class="btn box-shadow-none increament-decreament-input-button border-right-0"
+                                                                        data-action="increment"><img
+                                                                        src="images/icon/add.purple@1x.png"
+                                                                        class="img-fluid pb-1"></button>
+                                                            </span>
+                                                            <input name="qty" type="text"
+                                                                   class="form-control text-center increament-decreament-input-button"
+                                                                   value="0" min="0" max="1000" disabled>
+                                                            <span class="input-group-btn btn-group-lg">
+                                                                <button type="button"
+                                                                        class="btn box-shadow-none increament-decreament-input-button border-left-0"
+                                                                        data-action="decrement"><img
+                                                                        src="images/icon/less.purple@1x.png"
+                                                                        class="img-fluid pb-1"></button>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-md-6 col-12 pl-lg-4 pr-lg-4 pt-lg-0 pt-md-0 pb-lg-0 pb-md-3 pt-2">
+                                                        <div class="custom-radio-bba-yes-no">
+                                                            <div class="row m-0">
+                                                                <label class="m-0 pl-2 line-height-17 more-about-label generalsizefont-small w-100">Closed
+                                                                    Accounts Should Say "Closed by Consumer" and Not
+                                                                    "Closed by
+                                                                    Creditor"</label>
+                                                                <div class="col-lg-6 col-md-6 col-6 pl-0 pr-0 pt-1">
+                                                                    <input type="radio" id="yes3" name="yes-no3">
+                                                                    <label for="yes3"
+                                                                           class="paragraph-regular-14-19 text-primary-black border-right-0 yes-border-radius">
+                                                                        <p class="z-indexradio mb-0">Yes</p></label>
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-6 col-6 pl-0 pr-0 pt-1">
+                                                                    <input type="radio" id="no3" name="yes-no3">
+                                                                    <label for="no3"
+                                                                           class="paragraph-regular-14-19 text-primary-black no-border-radius">
+                                                                        <p class="z-indexradio mb-0">No</p></label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row ml-0 mr-0 mt-5">
+                                            <div class="col-lg-12 col-md-12 col-12 p-0 bg-tech-grey">
+                                                <div class="balances-count bg-text-yellow border-radius-15 pt-3 pb-3 pl-3 pr-3">
+                                                    <span class="d-webkit-inline-box">
+                                                        <img src="images/inquiries-big.png" class="img-fluid">
+                                                        <h4 class="pl-3 pt-1 mb-0 text-white heading-alt-bold">Inquiries</h4>
+                                                        <img src="images/icon/tooltip.grey@1x.png"
+                                                             class="img-fluid pl-3 pt-1"></span>
+                                                    <span class="bg-white float-right heading-alt-bold generalsizefont-p mt-0 pt-2 pb-2 pl-4 pr-4 border-radius-25rem">N/A</span>
+                                                </div>
+                                                <div class="row m-0 pt-4 pb-0 pb-lg-4 input-spinner">
+                                                    <div class="col-lg-3 col-md-6 col-12 pl-lg-4 pr-lg-4 pt-lg-0 pt-md-0 pb-lg-0 pb-md-3 pt-2">
+                                                        <div class="custom-radio-bba-yes-no">
+                                                            <div class="row m-0">
+                                                                <label class="m-0 pl-2 more-about-label generalsizefont-small pt-lg-3 w-100">Unauthorized
+                                                                    Users</label>
+                                                                <div class="col-lg-6 col-md-6 col-6 pl-0 pr-0 pt-1">
+                                                                    <input type="radio" id="yes4" name="yes-no4">
+                                                                    <label for="yes4"
+                                                                           class="paragraph-regular-14-19 text-primary-black border-right-0 yes-border-radius">
+                                                                        <p class="z-indexradio mb-0">Yes</p></label>
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-6 col-6 pl-0 pr-0 pt-1">
+                                                                    <input type="radio" id="no4" name="yes-no4">
+                                                                    <label for="no4"
+                                                                           class="paragraph-regular-14-19 text-primary-black no-border-radius">
+                                                                        <p class="z-indexradio mb-0">No</p></label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-md-6 col-12 pl-lg-4 pr-lg-4 pt-lg-0 pt-md-0 pb-lg-0 pb-md-3 pt-2">
+                                                        <div class="custom-radio-bba-yes-no">
+                                                            <div class="row m-0">
+                                                                <label class="m-0 pl-2 line-height-17 more-about-label generalsizefont-small">Customers
+                                                                    Listed as Deceased</label>
+                                                                <div class="col-lg-6 col-md-6 col-6 pl-0 pr-0 pt-1">
+                                                                    <input type="radio" id="yes5" name="yes-no5">
+                                                                    <label for="yes5"
+                                                                           class="paragraph-regular-14-19 text-primary-black border-right-0 yes-border-radius">
+                                                                        <p class="z-indexradio mb-0">Yes</p></label>
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-6 col-6 pl-0 pr-0 pt-1">
+                                                                    <input type="radio" id="no5" name="yes-no5">
+                                                                    <label for="no5"
+                                                                           class="paragraph-regular-14-19 text-primary-black no-border-radius">
+                                                                        <p class="z-indexradio mb-0">No</p></label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-md-6 col-12 pl-lg-4 pr-lg-4 pt-lg-0 pt-md-0 pb-lg-0 pb-md-3 pt-2">
+                                                        <div class="custom-radio-bba-yes-no">
+                                                            <div class="row m-0">
+                                                                <label class="m-0 pl-2 pt-lg-3 more-about-label generalsizefont-small w-100">Former
+                                                                    Spouce Name</label>
+                                                                <div class="col-lg-6 col-md-6 col-6 pl-0 pr-0 pt-1">
+                                                                    <input type="radio" id="yes6" name="yes-no6">
+                                                                    <label for="yes6"
+                                                                           class="paragraph-regular-14-19 text-primary-black border-right-0 yes-border-radius">
+                                                                        <p class="z-indexradio mb-0">Yes</p></label>
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-6 col-6 pl-0 pr-0 pt-1">
+                                                                    <input type="radio" id="no6" name="yes-no6">
+                                                                    <label for="no6"
+                                                                           class="paragraph-regular-14-19 text-primary-black no-border-radius">
+                                                                        <p class="z-indexradio mb-0">No</p></label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-md-6 col-12 pl-lg-4 pr-lg-4 pt-lg-0 pt-md-0 pb-lg-0 pb-md-3 pt-2">
+                                                        <div class="custom-radio-bba-yes-no">
+                                                            <div class="row m-0">
+                                                                <label class="m-0 pl-2 line-height-17 more-about-label generalsizefont-small w-100">Negative
+                                                                    Accounts from Your Divorce</label>
+                                                                <div class="col-lg-6 col-md-6 col-6 pl-0 pr-0 pt-1">
+                                                                    <input type="radio" id="yes7" name="yes-no7">
+                                                                    <label for="yes7"
+                                                                           class="paragraph-regular-14-19 text-primary-black border-right-0 yes-border-radius">
+                                                                        <p class="z-indexradio mb-0">Yes</p></label>
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-6 col-6 pl-0 pr-0 pt-1">
+                                                                    <input type="radio" id="no7" name="yes-no7">
+                                                                    <label for="no7"
+                                                                           class="paragraph-regular-14-19 text-primary-black no-border-radius">
+                                                                        <p class="z-indexradio mb-0">No</p></label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row m-0 pt-0 pb-0 pb-lg-4 input-spinner">
+                                                    <div class="col-lg-3 col-md-6 col-12 pl-lg-4 pr-lg-4 pt-lg-0 pt-md-0 pb-lg-0 pb-md-3 pt-2">
+                                                        <label class="m-0 pl-2 pt-lg-4 mt-lg-2 more-about-label generalsizefont-small">Negative
+                                                            Consigned Accounts</label>
+                                                        <div class="input-group" id="spinner">
+                                                            <span class="input-group-btn btn-group-lg">
+                                                                <button type="button"
+                                                                        class="btn box-shadow-none increament-decreament-input-button border-right-0"
+                                                                        data-action="increment"><img
+                                                                        src="images/icon/add.purple@1x.png"
+                                                                        class="img-fluid pb-1"></button>
+                                                            </span>
+                                                            <input name="qty" type="text"
+                                                                   class="form-control text-center increament-decreament-input-button"
+                                                                   value="0" min="0" max="1000" disabled>
+                                                            <span class="input-group-btn btn-group-lg">
+                                                                <button type="button"
+                                                                        class="btn box-shadow-none increament-decreament-input-button border-left-0"
+                                                                        data-action="decrement"><img
+                                                                        src="images/icon/less.purple@1x.png"
+                                                                        class="img-fluid pb-1"></button>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-md-6 col-12 pl-lg-4 pr-lg-4 pt-lg-0 pt-md-0 pb-lg-0 pb-md-3 pt-2">
+                                                        <label class="m-0 pl-2 pt-lg-4 mt-lg-2 more-about-label generalsizefont-small">Unauthorized
+                                                            Inquiries</label>
+                                                        <div class="input-group" id="spinner">
+                                                            <span class="input-group-btn btn-group-lg">
+                                                                <button type="button"
+                                                                        class="btn box-shadow-none increament-decreament-input-button border-right-0"
+                                                                        data-action="increment"><img
+                                                                        src="images/icon/add.purple@1x.png"
+                                                                        class="img-fluid pb-1"></button>
+                                                            </span>
+                                                            <input name="qty" type="text"
+                                                                   class="form-control text-center increament-decreament-input-button"
+                                                                   value="0" min="0" max="1000" disabled>
+                                                            <span class="input-group-btn btn-group-lg">
+                                                                <button type="button"
+                                                                        class="btn box-shadow-none increament-decreament-input-button border-left-0"
+                                                                        data-action="decrement"><img
+                                                                        src="images/icon/less.purple@1x.png"
+                                                                        class="img-fluid pb-1"></button>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-md-6 col-12 pl-lg-4 pr-lg-4 pt-lg-0 pt-md-0 pb-lg-0 pb-md-3 pt-2">
+                                                        <div class="custom-radio-bba-yes-no">
+                                                            <div class="row m-0">
+                                                                <label class="m-0 pl-2 pt-lg-3 line-height-17 more-about-label generalsizefont-small w-100">Illegally
+                                                                    Re-aged Collection Accounts</label>
+                                                                <div class="col-lg-6 col-md-6 col-6 pl-0 pr-0 pt-1">
+                                                                    <input type="radio" id="yes8" name="yes-no8">
+                                                                    <label for="yes8"
+                                                                           class="paragraph-regular-14-19 text-primary-black border-right-0 yes-border-radius">
+                                                                        <p class="z-indexradio mb-0">Yes</p></label>
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-6 col-6 pl-0 pr-0 pt-1">
+                                                                    <input type="radio" id="no8" name="yes-no8">
+                                                                    <label for="no8"
+                                                                           class="paragraph-regular-14-19 text-primary-black no-border-radius">
+                                                                        <p class="z-indexradio mb-0">No</p></label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-md-6 col-12 pl-lg-4 pr-lg-4 pt-lg-0 pt-md-0 pb-lg-0 pb-md-3 pt-2">
+                                                        <label class="m-0 pl-2 pt-lg-4 mt-lg-2 more-about-label generalsizefont-small">Foreclosure
+                                                            Attempts</label>
+                                                        <div class="input-group" id="spinner">
+                                                            <span class="input-group-btn btn-group-lg">
+                                                                <button type="button"
+                                                                        class="btn box-shadow-none increament-decreament-input-button border-right-0"
+                                                                        data-action="increment"><img
+                                                                        src="images/icon/add.purple@1x.png"
+                                                                        class="img-fluid pb-1"></button>
+                                                            </span>
+                                                            <input name="qty" type="text"
+                                                                   class="form-control text-center increament-decreament-input-button"
+                                                                   value="0" min="0" max="1000" disabled>
+                                                            <span class="input-group-btn btn-group-lg">
+                                                                <button type="button"
+                                                                        class="btn box-shadow-none increament-decreament-input-button border-left-0"
+                                                                        data-action="decrement"><img
+                                                                        src="images/icon/less.purple@1x.png"
+                                                                        class="img-fluid pb-1"></button>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row m-0 pt-0 pb-4 input-spinner justify-content-start">
+                                                    <div class="col-lg-3 col-md-6 col-12 pl-lg-4 pr-lg-4 pt-lg-0 pt-md-0 pb-lg-0 pb-md-3 pt-2">
+                                                        <div class="custom-radio-bba-yes-no">
+                                                            <div class="row m-0">
+                                                                <label class="m-0 pl-2 pt-lg-3 line-height-17 more-about-label generalsizefont-small w-100">Consumer
+                                                                    Credit Counselling Loan Indications</label>
+                                                                <div class="col-lg-6 col-md-6 col-6 pl-0 pr-0 pt-1">
+                                                                    <input type="radio" id="yes9" name="yes-no9">
+                                                                    <label for="yes9"
+                                                                           class="paragraph-regular-14-19 text-primary-black border-right-0 yes-border-radius">
+                                                                        <p class="z-indexradio mb-0">Yes</p></label>
+                                                                </div>
+                                                                <div class="col-lg-6 col-md-6 col-6 pl-0 pr-0 pt-1">
+                                                                    <input type="radio" id="no9" name="yes-no9">
+                                                                    <label for="no9"
+                                                                           class="paragraph-regular-14-19 text-primary-black no-border-radius">
+                                                                        <p class="z-indexradio mb-0">No</p></label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-md-12 col-12 pl-0 pr-0 pt-4 pb-4">
+                            <div class="row m-0">
+                                <div class="col-lg-6 col-md-6 col-12 pl-0 pr-0 pt-3 pb-3 pb-lg-0 pb-md-0 text-lg-left text-md-left text-left">
+                                    <a href="289180710.html" class="letsgo-btn-reverse link3-bold-14-19 text-primary-brightsidepurple">Go
+                                        Back</a>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-12 pl-0 pr-0 text-lg-right text-md-right text-right">
+                                    <div class="row m-0 justify-content-lg-end justify-content-md-end">
+                                        <div class="col-lg-5 col-md-9 col-12 p-0">
+                                            <a href="289180722.html"
+                                               class="btn btn-primary-large-text-icon font-weight-bold"><p
+                                                    class="text-left m-0">Continue <img
+                                                    src="images/icon/arrow-left-btn.white@1x.png"
+                                                    class="img-fluid btn-arrow">
+                                            </p></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="health-dot-right d-lg-none d-md-none d-none">
+                        <img src="images/dot.powerBlue@1x.png" class="img-fluid">
+                    </div>
+                    <div class="half-circle-right d-lg-none d-md-none d-none">
+                        <img src="images/half-circle-yellow-right.png" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container p-0">
+        <footer class="pro-signup-footer">
+            <div class="row ml-0 mr-0 mb-0 mt-0">
+                <div class="col-lg-12 col-md-12 col-12 p-0 text-center">
+                    <div id="pro-footer">
+                        <!-- Content will be inserted by jQuery from pre-footer.html -->
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/style.js"></script>
+<script type="text/javascript" src="js/amazingcarousel.js"></script>
+<script type="text/javascript" src="js/initcarousel-1.js"></script>
+<script type="text/javascript" src="js/dd-slick.js"></script>
+</body>
+</html>
