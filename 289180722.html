@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" type="image/ico" href="images/favicon.png"/>
+    <title>Confirm and submit campaign</title>
+
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="css/initcarousel-1.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="container p-0 fixed-top bg-white">
+        <div class="row ml-0 mr-0 mb-0 mt-0">
+            <div class="col-lg-12 col-md-12 col-12 p-0">
+                <div id="bannerheader">
+                    <!-- Content will be inserted by jQuery from header.html -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container p-0 hero-container">
+        <div class="row m-0">
+            <div class="col-lg-12 col-md-12 col-12 pt-lg-0 p-md-0 p-0 pt-4 pt-md-5">
+                <img src="images/advertiserp@1x.png" class="img-fluid d-lg-block d-md-block d-none">
+                <img src="images/advertiser@2x.png" class="img-fluid d-lg-none d-md-none d-block">
+            </div>
+        </div>
+        <div class="row m-0 pt-lg-0 pt-md-0 pt-0">
+            <div class="col-lg-12 col-md-12 col-12 p-lg-3 pt-md-4 pb-md-4 pl-md-2 pr-md-2 pt-2 pb-2 pl-0 pr-0 bg-tech-grey form-steps">
+                <div class="max-width-965 mx-auto">
+                    <div class="row m-0 text-left">
+                        <div class="col-lg-4 col-md-1 col-2 pl-2 pr-2 pl-lg-0 pr-lg-0">
+                            <div class="bg-white-steps completed stes-width first-step">
+                                <p class="mb-0">
+                                    <span class="step-completion"></span>
+                                    <span class="heading5-bold-caps-12-17 d-lg-inline-flex d-md-none d-none">STEP 1 </span>
+                                    <span class="paragraph-regular-14-19 d-lg-inline-flex d-md-none d-none">- Your Info</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-3 col-2 pl-lg-3 pr-lg-0 pl-1 pr-1">
+                            <div class="bg-white-steps completed stes-width first-step">
+                                <p class="mb-0">
+                                    <span class="step-completion"></span>
+                                    <span class="heading5-bold-caps-12-17 d-lg-inline-flex d-md-none d-none">STEP 2 </span>
+                                    <span class="paragraph-regular-14-19 d-lg-inline-flex d-md-none d-none">- Company Info</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-5 col-7 pl-lg-4 pr-lg-0">
+                            <div class="bg-white-steps active last-steps">
+                                <p class="mb-0">
+                                    <span class="step-completion"></span>
+                                    <span class="heading5-bold-caps-12-17">STEP 3 </span>
+                                    <span class="paragraph-regular-14-19">- Make Payment</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="stepsDivs">
+            <div class="row m-0 DivStepDiv">
+                <div class="col-lg-12 col-md-12 col-12 P-lg-0 p-md-0 pl-3 pr-3">
+                    <div class="row m-0 pl-lg-0 p-0 pt-md-0">
+                        <div class="col-lg-8 col-md-12 col-12 pl-0 pr-0 pt-lg-5 pb-lg-3 pt-md-5 pb-md-3 pt-5 pb-3 border border-right-0 border-left-0 border-top-0">
+                            <div class="row m-0 justify-content-start">
+                                <div class="col-lg-12 col-md-12 col-12 p-0">
+                                    <div class="great-financial-guru">
+                                        <h2 class="heading-alt-bold text-primary-black">
+                                            Confirm and Submit Campaign Information</h2>
+                                        <div class="row m-0 justify-content-start">
+                                            <div class="col-lg-12 col-md-12 col-12 pl-0 pr-0 mt-1">
+                                                <h6 class="heading-alt-regular text-primary-black mb-3">Make sure
+                                                    everthing below looks correct before you post your campaign.</h6>
+                                            </div>
+                                            <div class="col-lg-12 col-md-12 col-12 pl-0 pr-0 mt-3 tellus-more-about-you">
+                                                <div class="row m-0">
+                                                    <div class="col-lg-12 col-md-12 col-12 p-0">
+                                                        <h5 class="heading-alt-heavy mb-3">Card Info
+                                                            <span class="edit-link-account"><a href="#"
+                                                                                               class="heading-alt-regular text-primary-brightsidepurple generalsizefont font-weight-bold"
+                                                                                               id="click"><u>Edit</u></a></span>
+                                                        </h5>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-12 pl-0 pr-0 pt-2 pb-2 border border-top-0 border-left-0 border-right-0">
+                                                        <h6 class="heading5-bold-caps-12-17 text-primary-black m-0">
+                                                            Champain name</h6>
+                                                        <span class="generalsizefont-p text-primary-black">
+                                                            The People</span>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-12  pl-0 pr-0 pt-2 pb-2 border border-top-0 border-left-0 border-right-0">
+                                                        <h6 class="heading5-bold-caps-12-17 text-primary-black m-0">
+                                                            Champain Expiration</h6>
+                                                        <span class="generalsizefont-p text-primary-black">
+                                                            Never</span>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-12 pl-0 pr-0 pt-2 pb-2 border border-top-0 border-left-0 border-right-0">
+                                                        <h6 class="heading5-bold-caps-12-17 text-primary-black m-0">
+                                                            Card name</h6>
+                                                        <span class="generalsizefont-p text-primary-black">
+                                                            The People Savings Card</span>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-12 pl-0 pr-0 pt-2 pb-2 border border-top-0 border-left-0 border-right-0">
+                                                        <div class="row m-0">
+                                                            <div class="col-lg-5 col-md-6 col-6 p-0">
+                                                                <h6 class="heading5-bold-caps-12-17 text-primary-black m-0">
+                                                                    Credit card Thumbnail</h6>
+                                                            </div>
+                                                            <div class="col-lg-7 col-md-6 col-6 p-0">
+                                                                <img src="images/creditcard-thumbnail.png"
+                                                                     class="img-fluid">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12 col-12 pl-0 pr-0 pt-2 pb-2 border border-top-0 border-left-0 border-right-0">
+                                                        <h6 class="heading5-bold-caps-12-17 text-primary-black m-0">
+                                                            Hyperlink url</h6>
+                                                        <span class="generalsizefont-p text-primary-black">https://www.the peoplebank.com/creditcard/the peoplesavingscard</span>
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12 col-12 pl-0 pr-0 pt-2 pb-2 border border-top-0 border-left-0 border-right-0">
+                                                        <h6 class="heading5-bold-caps-12-17 text-primary-black m-0">
+                                                            Details</h6>
+                                                        <p class="generalsizefont-p text-primary-black pt-2 max-width-755">
+                                                            Earn 50,000 bonus points after you spend $4,000 on purchases
+                                                            in the first 3 months from account opening. That's $625
+                                                            toward travel when you redeem through Chase Ultimate Reward
+                                                            &reg;</p>
+                                                        <p class="generalsizefont-p text-primary-black max-width-755">2X
+                                                            points on travel and dining at restaurants worlswide & 1
+                                                            point per dollar spent on all other purchases.</p>
+                                                        <p class="generalsizefont-p text-primary-black max-width-755">
+                                                            Earn 5,000 bonus points after you add the first authorized
+                                                            user and make a purchase in the first 3 months from account
+                                                            opening.</p>
+                                                        <p class="generalsizefont-p text-primary-black max-width-755">No
+                                                            foreign transaction fees.</p>
+                                                        <p class="generalsizefont-p text-primary-black max-width-755">
+                                                            1:1 point transfer to leading airline and hotel loyalty
+                                                            programs</p>
+                                                        <p class="generalsizefont-p text-primary-black max-width-755">
+                                                            Get 25% more value when redeem for airfare, hotels, car
+                                                            rentals and cruises through Chase Ultimate Rewards. For
+                                                            example, 50,000 points are worth $625 toward travel</p>
+                                                        <p class="generalsizefont-p text-primary-black max-width-755">No
+                                                            blackout dtaes or travel restrictions - as long as there's a
+                                                            seat on the flight, you can book it through Chase Ultimate
+                                                            Rewards</p>
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12 col-12 pl-0 pr-0 pt-2 pb-2 border border-top-0 border-left-0 border-right-0">
+                                                        <h6 class="heading5-bold-caps-12-17 text-primary-black m-0">
+                                                            Annual Fee</h6>
+                                                        <span class="generalsizefont-p text-primary-black">$0</span>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-12 pl-0 pr-0 pt-2 pb-2 border border-top-0 border-left-0 border-right-0">
+                                                        <h6 class="heading5-bold-caps-12-17 text-primary-black m-0">
+                                                            purchase intro term</h6>
+                                                        <span class="generalsizefont-p text-primary-black">
+                                                            0% (15 Months)</span>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-12  pl-0 pr-0 pt-2 pb-2 border border-top-0 border-left-0 border-right-0">
+                                                        <h6 class="heading5-bold-caps-12-17 text-primary-black m-0">
+                                                            purchase regular APR</h6>
+                                                        <span class="generalsizefont-p text-primary-black">
+                                                            14.24% - 25.24%</span>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-12 pl-0 pr-0 pt-2 pb-2 border border-top-0 border-left-0 border-right-0">
+                                                        <h6 class="heading5-bold-caps-12-17 text-primary-black m-0">
+                                                            balance transfer intro APR</h6>
+                                                        <span class="generalsizefont-p text-primary-black">
+                                                            0% (15 Months)</span>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-12  pl-0 pr-0 pt-2 pb-2 border border-top-0 border-left-0 border-right-0">
+                                                        <h6 class="heading5-bold-caps-12-17 text-primary-black m-0">
+                                                            balance transfer regular APR</h6>
+                                                        <span class="generalsizefont-p text-primary-black">
+                                                            14.24% - 25.24%</span>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-12 pl-0 pr-0 pt-2 pb-2 border border-top-0 border-left-0 border-right-0">
+                                                        <h6 class="heading5-bold-caps-12-17 text-primary-black m-0">
+                                                            cash advanced rate</h6>
+                                                        <span class="generalsizefont-p text-primary-black">
+                                                            26.49%</span>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-12  pl-0 pr-0 pt-2 pb-2 border border-top-0 border-left-0 border-right-0">
+                                                        <h6 class="heading5-bold-caps-12-17 text-primary-black m-0">
+                                                            cash advanced fee</h6>
+                                                        <span class="generalsizefont-p text-primary-black">
+                                                            3%</span>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-12 pl-0 pr-0 pt-2 pb-2 border border-top-0 border-left-0 border-right-0">
+                                                        <h6 class="heading5-bold-caps-12-17 text-primary-black m-0">
+                                                            Cash advanced minimum fee</h6>
+                                                        <span class="generalsizefont-p text-primary-black">
+                                                            $5</span>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-12  pl-0 pr-0 pt-2 pb-2 border border-top-0 border-left-0 border-right-0">
+                                                        <h6 class="heading5-bold-caps-12-17 text-primary-black m-0">
+                                                            Late Fee</h6>
+                                                        <span class="generalsizefont-p text-primary-black">
+                                                            $38</span>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-12 pl-0 pr-0 pt-2 pb-2 border border-top-0 border-left-0 border-right-0">
+                                                        <h6 class="heading5-bold-caps-12-17 text-primary-black m-0">
+                                                            penalty APR</h6>
+                                                        <span class="generalsizefont-p text-primary-black">
+                                                            29.99%</span>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-12  pl-0 pr-0 pt-2 pb-2 border border-top-0 border-left-0 border-right-0">
+                                                        <h6 class="heading5-bold-caps-12-17 text-primary-black m-0">
+                                                            Balance transfer fee</h6>
+                                                        <span class="generalsizefont-p text-primary-black">
+                                                            $0</span>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-12 pl-0 pr-0 pt-2 pb-2 border border-top-0 border-left-0 border-right-0">
+                                                        <h6 class="heading5-bold-caps-12-17 text-primary-black m-0">
+                                                            Foreign transaction fee</h6>
+                                                        <span class="generalsizefont-p text-primary-black">
+                                                            2.7%</span>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-12  pl-0 pr-0 pt-2 pb-2 border border-top-0 border-left-0 border-right-0">
+                                                        <h6 class="heading5-bold-caps-12-17 text-primary-black m-0">
+                                                            return payment fee</h6>
+                                                        <span class="generalsizefont-p text-primary-black">
+                                                            $38</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row m-0 mt-lg-5 mt-4">
+                                                    <div class="col-lg-12 col-md-12 col-12 p-0">
+                                                        <h5 class="heading-alt-heavy mb-3">Credit Acceptance Factors
+                                                            <span class="edit-link-account"><a href="#"
+                                                                                               class="heading-alt-regular text-primary-brightsidepurple generalsizefont font-weight-bold"><u>Edit</u></a></span>
+                                                        </h5>
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12 col-12 pl-0 pr-0 pt-2 pb-2 ">
+                                                        <h6 class="heading5-bold-caps-12-17 text-secondary-grey m-0">
+                                                            Balance</h6>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-12 pl-0 pr-0 pt-2 pb-2 border border-top-0 border-left-0 border-right-0">
+                                                        <h6 class="heading5-bold-caps-12-17 text-primary-black m-0">
+                                                            late payment: 30, 60, 90 and 120 days</h6>
+                                                        <span class="generalsizefont-p text-primary-black">
+                                                            3</span>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-12  pl-0 pr-0 pt-2 pb-2 border border-top-0 border-left-0 border-right-0">
+                                                        <h6 class="heading5-bold-caps-12-17 text-primary-black m-0">
+                                                            collections</h6>
+                                                        <span class="generalsizefont-p text-primary-black">
+                                                            Yes</span>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-12 pl-0 pr-0 pt-2 pb-2 border border-top-0 border-left-0 border-right-0">
+                                                        <h6 class="heading5-bold-caps-12-17 text-primary-black m-0">
+                                                            charge-offs</h6>
+                                                        <span class="generalsizefont-p text-primary-black">
+                                                            1</span>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-12 pl-0 pr-0 pt-2 pb-2 border border-top-0 border-left-0 border-right-0">
+                                                        <h6 class="heading5-bold-caps-12-17 text-primary-black m-0">
+                                                            Tax lines</h6>
+                                                        <span class="generalsizefont-p text-primary-black">
+                                                            1</span>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-12 pl-0 pr-0 pt-2 pb-2 border border-top-0 border-left-0 border-right-0">
+                                                        <h6 class="heading5-bold-caps-12-17 text-primary-black m-0">
+                                                            judgments</h6>
+                                                        <span class="generalsizefont-p text-primary-black">
+                                                            1</span>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-12 pl-0 pr-0 pt-2 pb-2 border border-top-0 border-left-0 border-right-0">
+                                                        <h6 class="heading5-bold-caps-12-17 text-primary-black m-0">
+                                                            debt consolidation marks</h6>
+                                                        <span class="generalsizefont-p text-primary-black">
+                                                            1</span>
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12 col-12 pl-0 pr-0 pt-2 pb-2">
+                                                        <h6 class="heading5-bold-caps-12-17 text-primary-black m-0">
+                                                            repossession indication when it should say "voluntarily
+                                                            surrendered"</h6>
+                                                        <span class="generalsizefont-p text-primary-black">1</span>
+                                                    </div>
+
+                                                    <div class="col-lg-12 col-md-12 col-12 pl-0 pr-0 pt-2 pb-2 mt-3">
+                                                        <h6 class="heading5-bold-caps-12-17 text-secondary-grey m-0">
+                                                            Discrepancies</h6>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-12 pl-0 pr-0 pt-2 pb-2 border border-top-0 border-left-0 border-right-0">
+                                                        <h6 class="heading5-bold-caps-12-17 text-primary-black m-0">
+                                                            incorrect balances</h6>
+                                                        <span class="generalsizefont-p text-primary-black">
+                                                            1</span>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-12  pl-0 pr-0 pt-2 pb-2 border border-top-0 border-left-0 border-right-0">
+                                                        <h6 class="heading5-bold-caps-12-17 text-primary-black m-0">
+                                                            credit limits listed incorrectly</h6>
+                                                        <span class="generalsizefont-p text-primary-black">
+                                                            Yes</span>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-12 pl-0 pr-0 pt-2 pb-2 border border-top-0 border-left-0 border-right-0">
+                                                        <h6 class="heading5-bold-caps-12-17 text-primary-black m-0">
+                                                            duplicate collections</h6>
+                                                        <span class="generalsizefont-p text-primary-black">
+                                                            1</span>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-12 pl-0 pr-0 pt-2 pb-2 border border-top-0 border-left-0 border-right-0">
+                                                        <h6 class="heading5-bold-caps-12-17 text-primary-black m-0">
+                                                            Accounts listed incorrectly</h6>
+                                                        <span class="generalsizefont-p text-primary-black">
+                                                            0</span>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-12 pl-0 pr-0 pt-2 pb-2 border border-top-0 border-left-0 border-right-0">
+                                                        <h6 class="heading5-bold-caps-12-17 text-primary-black m-0">
+                                                            Credit lines Not listed</h6>
+                                                        <span class="generalsizefont-p text-primary-black">
+                                                            0</span>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-12 pl-0 pr-0 pt-2 pb-2 border border-top-0 border-left-0 border-right-0">
+                                                        <h6 class="heading5-bold-caps-12-17 text-primary-black m-0">
+                                                            paid accounts still showing that you owe</h6>
+                                                        <span class="generalsizefont-p text-primary-black">
+                                                            Yes</span>
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12 col-12 pl-0 pr-0 pt-2 pb-2 border border-top-0 border-left-0 border-right-0">
+                                                        <h6 class="heading5-bold-caps-12-17 text-primary-black m-0">
+                                                            closed accounts shown as open</h6>
+                                                        <span class="generalsizefont-p text-primary-black">1</span>
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12 col-12 pl-0 pr-0 pt-2 pb-2">
+                                                        <h6 class="heading5-bold-caps-12-17 text-primary-black m-0">
+                                                            closed accounts should say "closed by consumer" and Not
+                                                            "closed by creditor"</h6>
+                                                        <span class="generalsizefont-p text-primary-black">1</span>
+                                                    </div>
+
+                                                    <div class="col-lg-12 col-md-12 col-12 pl-0 pr-0 pt-2 pb-2 mt-3">
+                                                        <h6 class="heading5-bold-caps-12-17 text-secondary-grey m-0">
+                                                            Inquiries</h6>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-12 pl-0 pr-0 pt-2 pb-2 border border-top-0 border-left-0 border-right-0">
+                                                        <h6 class="heading5-bold-caps-12-17 text-primary-black m-0">
+                                                            Unauthorized users</h6>
+                                                        <span class="generalsizefont-p text-primary-black">
+                                                            No</span>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-12  pl-0 pr-0 pt-2 pb-2 border border-top-0 border-left-0 border-right-0">
+                                                        <h6 class="heading5-bold-caps-12-17 text-primary-black m-0">
+                                                            customer listed as deceased</h6>
+                                                        <span class="generalsizefont-p text-primary-black">
+                                                            Yes</span>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-12 pl-0 pr-0 pt-2 pb-2 border border-top-0 border-left-0 border-right-0">
+                                                        <h6 class="heading5-bold-caps-12-17 text-primary-black m-0">
+                                                            former spouce name</h6>
+                                                        <span class="generalsizefont-p text-primary-black">
+                                                            Yes</span>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-12 pl-0 pr-0 pt-2 pb-2 border border-top-0 border-left-0 border-right-0">
+                                                        <h6 class="heading5-bold-caps-12-17 text-primary-black m-0">
+                                                            negative accounts from divorce</h6>
+                                                        <span class="generalsizefont-p text-primary-black">
+                                                            Yes</span>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-12 pl-0 pr-0 pt-2 pb-2 border border-top-0 border-left-0 border-right-0">
+                                                        <h6 class="heading5-bold-caps-12-17 text-primary-black m-0">
+                                                            negative consigned accounts</h6>
+                                                        <span class="generalsizefont-p text-primary-black">
+                                                            2</span>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-12 pl-0 pr-0 pt-2 pb-2 border border-top-0 border-left-0 border-right-0">
+                                                        <h6 class="heading5-bold-caps-12-17 text-primary-black m-0">
+                                                            unauthorized inquiries</h6>
+                                                        <span class="generalsizefont-p text-primary-black">
+                                                            2</span>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-12 pl-0 pr-0 pt-2 pb-2 border border-top-0 border-left-0 border-right-0">
+                                                        <h6 class="heading5-bold-caps-12-17 text-primary-black m-0">
+                                                            illegally re-aged collection accounts</h6>
+                                                        <span class="generalsizefont-p text-primary-black">
+                                                            No</span>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-12 pl-0 pr-0 pt-2 pb-2 border border-top-0 border-left-0 border-right-0">
+                                                        <h6 class="heading5-bold-caps-12-17 text-primary-black m-0">
+                                                            foreclosure attempts</h6>
+                                                        <span class="generalsizefont-p text-primary-black">
+                                                            2</span>
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12 col-12 pl-0 pr-0 pt-2 pb-2">
+                                                        <h6 class="heading5-bold-caps-12-17 text-primary-black m-0">
+                                                            consumer credit counseling loan indication</h6>
+                                                        <span class="generalsizefont-p text-primary-black">Yes</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12 col-md-12 col-12 pl-0 pr-0">
+                                                <div class="row m-0 mt-lg-5 mt-4">
+                                                    <div class="col-lg-12 col-md-12 col-12 p-0">
+                                                        <h5 class="heading-alt-heavy mb-3">Share on Social Media</h5>
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12 col-12 pl-0 pr-0 pt-2 pb-2 ">
+                                                        <div class="row m-0 justify-content-start">
+                                                            <div class="col-lg-1 col-md-2 col-3 p-0 text-center">
+                                                                <img src="images/facebook-share.png"
+                                                                     class="img-fluid m-1">
+                                                                <p><a href="#"
+                                                                   class="heading-alt-regular text-primary-brightsidepurple generalsizefont font-weight-bold"><u>Unselect</u></a></p>
+                                                            </div>
+                                                            <div class="col-lg-1 col-md-2 col-3 p-0 text-center">
+                                                                <img src="images/twitter-share.png"
+                                                                     class="img-fluid m-1">
+                                                                <p><a href="#"
+                                                                      class="heading-alt-regular text-primary-brightsidepurple generalsizefont font-weight-bold"><u>Select</u></a></p>
+                                                            </div>
+                                                            <div class="col-lg-1 col-md-2 col-3 p-0 text-center">
+                                                                <img src="images/prinest-share.png"
+                                                                     class="img-fluid m-1">
+                                                                <p><a href="#"
+                                                                      class="heading-alt-regular text-primary-brightsidepurple generalsizefont font-weight-bold"><u>Select</u></a></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-md-12 col-12 pl-0 pr-0 pt-4 pb-4">
+                            <div class="row m-0">
+                                <div class="col-lg-6 col-md-6 col-12 pl-0 pr-0 pt-3 pb-3 pb-lg-0 pb-md-0 text-lg-left text-md-left text-center">
+                                    <a href="289180715.html"
+                                       class="letsgo-btn-reverse link3-bold-14-19 text-primary-brightsidepurple">Go
+                                        Back</a>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-12 pl-0 pr-0 text-lg-right text-md-right text-right">
+                                    <div class="row m-0 justify-content-lg-end justify-content-md-end">
+                                        <div class="col-lg-7 col-md-8 col-12 p-0">
+                                            <a href="289180727.html"
+                                               class="btn btn-primary-large-text-icon font-weight-bold"><p
+                                                    class="text-left m-0">Post Campaign <img
+                                                    src="images/icon/arrow-left-btn.white@1x.png"
+                                                    class="img-fluid btn-arrow">
+                                            </p></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container p-0">
+        <footer class="pre-signup-footer">
+            <div class="row ml-0 mr-0 mb-0 mt-0">
+                <div class="col-lg-12 col-md-12 col-12 p-0 text-center">
+                    <div id="footer">
+                        <!-- Content will be inserted by jQuery from footer.html -->
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/style.js"></script>
+<script type="text/javascript" src="js/amazingcarousel.js"></script>
+<script type="text/javascript" src="js/initcarousel-1.js"></script>
+<script type="text/javascript" src="js/dd-slick.js"></script>
+</body>
+</html>

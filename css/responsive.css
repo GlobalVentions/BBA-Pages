@@ -14,9 +14,33 @@
     .container {
         max-width: 1440px !important;
     }
+    .custom-opportunity-modal .info-modal-header {
+        position: absolute;
+        top: 0;
+        right: 430px !important;
+    }
 }
 
 @media (max-width: 768px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+    .credit-factor-border{
+        border-top: 1px solid #f2f2f2;
+        border-left: 0;
+    }
+    .credit-factor-tab {
+        position: unset;
+        left: auto;
+        top: auto;
+        z-index: 2;
+    }
+    .custom-opportunity-modal .info-modal-header {
+        position: absolute;
+        top: 100px;
+        right: 275px!important;
+    }
     .banner-ads-text {
         display: none!important;
     }
@@ -248,6 +272,10 @@
 }
 
 @media (max-width: 480px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
     .text-monthly{
         font-size: 0.6rem!important;
     }
@@ -716,6 +744,15 @@
     .publisher-get-started .btn-white-large-text {
         padding: 0.5rem 0 !important;
         font-size: 0.8rem!important;
+    }
+    .campaign-compared {
+        position: inherit;
+    }
+    .custom-opportunity-modal .info-modal-header {
+        display: none;
+    }
+    .custom-opportunity-modal .info-modal-header .modal-title {
+        font-size: 8px;
     }
 }
 

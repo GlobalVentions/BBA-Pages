@@ -206,6 +206,9 @@ ul.facts {
 .bg-text-yellow {
   background-color: #fabb36 !important; }
 
+.bg-positive-pink {
+  background-color: #d10b4f !important; }
+
 .heading-alt-regular {
   font-family: "FibraOneAlt-Regular", Sans Serif !important; }
 
@@ -1913,8 +1916,14 @@ video {
 .max-width-1070 {
   max-width: 1070px !important; }
 
+.max-width-1210 {
+  max-width: 1210px !important; }
+
 .max-width-965 {
   max-width: 965px !important; }
+
+.max-width-755 {
+  max-width: 755px !important; }
 
 .most-read-articles .owl-most-articles.owl-carousel .owl-dots.disabled, .most-read-articles .owl-most-articles.owl-carousel .owl-nav.disabled {
   display: block !important; }
@@ -2060,6 +2069,9 @@ video {
 
 .border-radius-15 {
   border-radius: 15px !important; }
+
+.border-radius-3 {
+  border-radius: 3px !important; }
 
 .border-radius-25rem {
   padding: 0.25rem 0.5rem !important;
@@ -3204,6 +3216,8 @@ body.overview-and-grid .Pattern-img-div img {
   padding: 0.5rem 0.5rem;
   width: 145px;
   text-align: center; }
+.pre-banking-tabs .nav-link.nav-link-archived {
+  width: 85px; }
 .pre-banking-tabs .icons-symbol {
   cursor: inherit; }
   .pre-banking-tabs .icons-symbol .rate-opportunity {
@@ -3992,6 +4006,14 @@ iframe.detail-video {
   top: 50%;
   transform: translate(0, -50%); }
 
+.no-wrap {
+  white-space: nowrap; }
+
+.publisher-get-started-both {
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.09); }
+
 .publisher-get-started {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -4182,5 +4204,74 @@ iframe.detail-video {
   100% {
     -webkit-transform: rotate(126deg);
     transform: rotate(126deg); } }
+.campaign-compared {
+  position: absolute;
+  bottom: -15px;
+  left: 0; }
+
+/* CSS for infographics */
+.infographicsmodal .modal-dialog {
+  pointer-events: auto; }
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px; }
+
+.column img {
+  margin-top: 0px;
+  vertical-align: middle;
+  width: 100%; }
+
+.custom-opportunity-modal .modal-dialog {
+  min-height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: auto;
+  max-width: 960px; }
+  @media (max-width: 768px) {
+    .custom-opportunity-modal .modal-dialog {
+      min-height: calc(100vh - 20px); } }
+.custom-opportunity-modal .info-modal-content {
+  min-height: 320px !important; }
+.custom-opportunity-modal .info-modal-header {
+  position: absolute;
+  top: 100px;
+  right: 225px; }
+  .custom-opportunity-modal .info-modal-header .modal-title {
+    font-size: 18px;
+    color: #ffffff; }
+  .custom-opportunity-modal .info-modal-header .close {
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 2px !important; }
+    .custom-opportunity-modal .info-modal-header .close:focus {
+      outline: none !important; }
+.custom-opportunity-modal .info-modal-body {
+  width: 100%;
+  margin: 0 auto 40px auto; }
+  .custom-opportunity-modal .info-modal-body .info-modal-content {
+    min-height: 320px !important; }
+
+.calander-year {
+  padding-left: 0 !important; }
+
+.creditcard-calander {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  padding-top: 1px !important;
+  padding-bottom: 0 !important;
+  vertical-align: middle !important; }
+
+.credit-factor-tab {
+  position: absolute;
+  left: 160px;
+  top: 90px;
+  z-index: 2; }
+
+.credit-factor-border {
+  border-top: 0;
+  border-left: 1px solid #f2f2f2; }
 
 /*# sourceMappingURL=style.css.map */
