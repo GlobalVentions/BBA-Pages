@@ -743,6 +743,16 @@ $(function () {
         }
     });
 });
+/* JS code for hide show div based on checkbox in Global Sign Up Page*/
+$(function () {
+    $("#chooseanexisting").click(function () {
+        if ($(this).is(":checked")) {
+            $("#dvchooseanexisting").show();
+        } else {
+            $("#dvchooseanexisting").hide();
+        }
+    });
+});
 /* JS code for hide show div based on checkbox in Post article Page*/
 /*$(function () {
     $("#smartread").click(function () {
