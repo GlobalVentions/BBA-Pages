@@ -3609,6 +3609,36 @@ input[type="checkbox"]:focus {
     text-shadow: 0px 0px 10px #070707; }
 
 /* Post Badges page CSS start */
+.custom-tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer; }
+
+.custom-tooltip .custom-tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  right: -50px; }
+
+.custom-tooltip .custom-tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -11px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #000; }
+
+.custom-tooltip:hover .custom-tooltiptext {
+  visibility: visible; }
+
 .discovery_pt {
   -webkit-box-shadow: 0px 2px 8px 0px #e3e0e3;
   -moz-box-shadow: 0px 2px 8px 0px #e3e0e3;
@@ -4091,7 +4121,7 @@ iframe.detail-video {
   border: 2px solid #AAB2B5 !important;
   background-color: #ffffff !important; }
 
-.progress {
+.custom-progress {
   width: 150px;
   height: 150px !important;
   line-height: 150px;
@@ -4100,7 +4130,7 @@ iframe.detail-video {
   box-shadow: none;
   position: relative; }
 
-.progress:after {
+.custom-progress:after {
   content: "";
   width: 100%;
   height: 100%;
@@ -4110,7 +4140,7 @@ iframe.detail-video {
   top: 0;
   left: 0; }
 
-.progress > span {
+.custom-progress > span {
   width: 50%;
   height: 100%;
   overflow: hidden;
@@ -4118,10 +4148,10 @@ iframe.detail-video {
   top: 0;
   z-index: 1; }
 
-.progress .progress-left {
+.progress progress-left {
   left: 0; }
 
-.progress .progress-bar {
+.custom-progress .custom-progress-bar {
   width: 100%;
   height: 100%;
   background: none;
@@ -4130,7 +4160,7 @@ iframe.detail-video {
   position: absolute;
   top: 0; }
 
-.progress .progress-left .progress-bar {
+.custom-progress .custom-progress-left .custom-progress-bar {
   left: 100%;
   border-top-right-radius: 80px;
   border-bottom-right-radius: 80px;
@@ -4138,10 +4168,10 @@ iframe.detail-video {
   -webkit-transform-origin: center left;
   transform-origin: center left; }
 
-.progress .progress-right {
+.custom-progress .custom-progress-right {
   right: 0; }
 
-.progress .progress-right .progress-bar {
+.custom-progress .custom-progress-right .custom-progress-bar {
   left: -100%;
   border-top-left-radius: 80px;
   border-bottom-left-radius: 80px;
@@ -4150,7 +4180,7 @@ iframe.detail-video {
   transform-origin: center right;
   animation: loading-1 1.8s linear forwards; }
 
-.progress .progress-value {
+.custom-progress .custom-progress-value {
   width: 90%;
   height: 90%;
   border-radius: 50%;
@@ -4163,10 +4193,10 @@ iframe.detail-video {
   top: 5%;
   left: 5%; }
 
-.progress.blue .progress-bar {
+.custom-progress.blue .custom-progress-bar {
   border-color: #d10b4f; }
 
-.progress.blue .progress-left .progress-bar {
+.custom-progress.blue .custom-progress-left .custom-progress-bar {
   animation: loading-2 1.5s linear forwards 1.8s; }
 
 @keyframes loading-1 {
@@ -4273,5 +4303,410 @@ iframe.detail-video {
 .credit-factor-border {
   border-top: 0;
   border-left: 1px solid #f2f2f2; }
+
+/* CSS For Messager layout */
+.BBA-messages {
+  /*New Message*/
+  /*Conversation*/
+  /*Reply*/ }
+  .BBA-messages span {
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; }
+  .BBA-messages .fa-2x {
+    font-size: 1.5em; }
+  .BBA-messages .app {
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    padding: 0; }
+  .BBA-messages .app-one {
+    overflow: hidden;
+    margin: 0;
+    padding: 0; }
+  .BBA-messages .side {
+    padding: 0;
+    margin: 0; }
+  .BBA-messages .side-one {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    display: block;
+    top: 0; }
+  .BBA-messages .side-two {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    z-index: 2;
+    position: relative;
+    top: -100%;
+    left: -100%;
+    -webkit-transition: left 0.3s ease;
+    transition: left 0.3s ease; }
+  .BBA-messages .heading {
+    z-index: 1000; }
+  .BBA-messages .heading-avatar {
+    padding: 0;
+    cursor: pointer; }
+  .BBA-messages .heading-avatar-icon img {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px; }
+  .BBA-messages .heading-name {
+    padding: 0 !important;
+    cursor: pointer; }
+  .BBA-messages .heading-name-meta {
+    font-weight: 700;
+    font-size: 100%;
+    padding-bottom: 0;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #000;
+    display: block; }
+  .BBA-messages .heading-online {
+    display: none;
+    padding: 0 5px;
+    font-size: 12px;
+    color: #93918f; }
+  .BBA-messages .heading-compose {
+    padding: 0; }
+  .BBA-messages .heading-compose i {
+    text-align: center;
+    padding: 5px;
+    color: #93918f;
+    cursor: pointer; }
+  .BBA-messages .heading-dot {
+    padding: 0;
+    margin-left: 10px; }
+  .BBA-messages .heading-dot i {
+    text-align: right;
+    padding: 5px;
+    color: #93918f;
+    cursor: pointer; }
+  .BBA-messages .searchBox {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100%; }
+  .BBA-messages input.message-search {
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 16px;
+    background-image: url("../images/icon/search.grey@1x.png");
+    background-position: 10px 14px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out; }
+  .BBA-messages .searchBox-inner {
+    width: 100%;
+    background-color: #ffffff; }
+  .BBA-messages .searchBox-inner input:focus {
+    outline: none;
+    box-shadow: none; }
+  .BBA-messages .sideBar {
+    padding: 0 !important;
+    margin: 0 !important;
+    background-color: #fff;
+    overflow-y: auto; }
+  .BBA-messages .sideBar-body {
+    position: relative;
+    padding: 7px 3px !important;
+    border: 2px solid #AAB2B5;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 10px; }
+    .BBA-messages .sideBar-body:hover {
+      border: 2px solid #6b17b3;
+      background-color: #F4EDF9; }
+  .BBA-messages .sideBar-body.active {
+    border: 2px solid #6b17b3;
+    background-color: #6b17b3; }
+    .BBA-messages .sideBar-body.active .sideBar-name h6 {
+      color: #ffffff; }
+    .BBA-messages .sideBar-body.active .sideBar-name .message-listin-detail {
+      color: #ffffff; }
+    .BBA-messages .sideBar-body.active .sideBar-time .time-meta {
+      color: #ffffff !important; }
+  .BBA-messages .sideBar-avatar {
+    text-align: center;
+    padding: 0 !important; }
+  .BBA-messages .avatar-icon img {
+    border-radius: 50%;
+    height: 49px;
+    width: 49px; }
+  .BBA-messages .sideBar-main {
+    padding: 0 !important; }
+  .BBA-messages .sideBar-main .row {
+    padding: 0 !important;
+    margin: 0 !important; }
+  .BBA-messages .name-meta {
+    font-size: 100%;
+    padding: 1% !important;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #000; }
+  .BBA-messages .sideBar-time {
+    height: 55px; }
+  .BBA-messages .time-meta {
+    position: absolute;
+    bottom: 0;
+    right: 0; }
+  .BBA-messages .message-listin-detail {
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 0;
+    margin-top: 2px; }
+  .BBA-messages .newMessage {
+    padding: 0 !important;
+    margin: 0 !important;
+    position: relative;
+    left: -100%; }
+  .BBA-messages .newMessage-heading {
+    padding: 10px 16px 10px 15px !important;
+    margin: 0 !important;
+    height: 100px;
+    width: 100%;
+    background-color: #00bfa5;
+    z-index: 1001; }
+  .BBA-messages .newMessage-main {
+    padding: 10px 16px 0 15px !important;
+    margin: 0 !important;
+    height: 60px;
+    margin-top: 30px !important;
+    width: 100%;
+    z-index: 1001;
+    color: #fff; }
+  .BBA-messages .newMessage-title {
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px 5px !important; }
+  .BBA-messages .newMessage-back {
+    text-align: center;
+    vertical-align: baseline;
+    padding: 12px 5px !important;
+    display: block;
+    cursor: pointer; }
+  .BBA-messages .newMessage-back i {
+    margin: auto !important; }
+  .BBA-messages .composeBox {
+    padding: 0 !important;
+    margin: 0 !important;
+    height: 60px;
+    width: 100%; }
+  .BBA-messages .composeBox-inner {
+    height: 100%;
+    width: 100%;
+    padding: 10px !important;
+    background-color: #fbfbfb; }
+  .BBA-messages .composeBox-inner input:focus {
+    outline: none;
+    border: none;
+    box-shadow: none; }
+  .BBA-messages .compose-sideBar {
+    padding: 0 !important;
+    margin: 0 !important;
+    background-color: #fff;
+    overflow-y: auto;
+    border: 1px solid #f7f7f7;
+    height: calc(100% - 160px); }
+  .BBA-messages .conversation {
+    padding: 0 !important;
+    border: 2px solid #AAB2B5;
+    overflow-y: auto;
+    background-color: #f2f2f2;
+    border-radius: 5px; }
+  .BBA-messages .message {
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow-y: auto; }
+  .BBA-messages .message-previous {
+    margin: 0 !important;
+    padding: 0 !important;
+    height: auto;
+    width: 100%; }
+  .BBA-messages .previous {
+    font-size: 15px;
+    text-align: center;
+    padding: 10px !important;
+    cursor: pointer; }
+  .BBA-messages .previous a {
+    text-decoration: none;
+    font-weight: 700; }
+  .BBA-messages .message-body {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: auto;
+    height: auto; }
+  .BBA-messages .message-main-sender {
+    padding: 3px 20px !important;
+    margin-left: 40% !important;
+    max-width: 60%; }
+  .BBA-messages .message-text {
+    margin: 0 !important;
+    padding: 5px !important;
+    word-wrap: break-word;
+    font-weight: 200;
+    font-size: 14px;
+    padding-bottom: 0 !important; }
+  .BBA-messages .message-time {
+    margin: 0 !important;
+    margin-left: 50px !important;
+    font-size: 12px;
+    text-align: right;
+    color: #9a9a9a; }
+  .BBA-messages .receiver {
+    width: auto !important;
+    padding: 4px 10px 7px !important;
+    border-radius: 10px 10px 10px 0;
+    background: #ffffff;
+    font-size: 12px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    word-wrap: break-word;
+    display: inline-block; }
+  .BBA-messages .sender {
+    float: right;
+    width: auto !important;
+    background: #dcf8c6;
+    border-radius: 10px 10px 0 10px;
+    padding: 4px 10px 7px !important;
+    font-size: 12px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    word-wrap: break-word; }
+  .BBA-messages .reply {
+    height: 60px;
+    width: 100%;
+    background-color: #f5f1ee;
+    padding: 10px 5px 10px 5px !important;
+    margin: 0 !important;
+    z-index: 1000; }
+  .BBA-messages .reply-emojis {
+    padding: 5px !important; }
+  .BBA-messages .reply-emojis i {
+    text-align: center;
+    padding: 5px 5px 5px 5px !important;
+    color: #93918f;
+    cursor: pointer; }
+  .BBA-messages .reply-recording {
+    padding: 5px !important; }
+  .BBA-messages .reply-recording i {
+    text-align: center;
+    padding: 5px !important;
+    color: #93918f;
+    cursor: pointer; }
+  .BBA-messages .reply-send {
+    padding: 5px !important; }
+  .BBA-messages .reply-send i {
+    text-align: center;
+    padding: 5px !important;
+    color: #93918f;
+    cursor: pointer; }
+  .BBA-messages .reply-main {
+    padding: 2px 5px !important; }
+  .BBA-messages .reply-main textarea {
+    width: 100%;
+    resize: none;
+    overflow: hidden;
+    padding: 5px !important;
+    outline: none;
+    border: none;
+    text-indent: 5px;
+    box-shadow: none;
+    height: 100%;
+    font-size: 16px; }
+  .BBA-messages .reply-main textarea:focus {
+    outline: none;
+    border: none;
+    text-indent: 5px;
+    box-shadow: none; }
+  @media screen and (max-width: 700px) {
+    .BBA-messages {
+      /*Conversation*/ }
+      .BBA-messages .app {
+        top: 0;
+        height: 100%; }
+      .BBA-messages .heading {
+        height: 70px;
+        background-color: #009688; }
+      .BBA-messages .fa-2x {
+        font-size: 2.3em !important; }
+      .BBA-messages .heading-avatar {
+        padding: 0 !important; }
+      .BBA-messages .heading-avatar-icon img {
+        height: 50px;
+        width: 50px; }
+      .BBA-messages .heading-compose {
+        padding: 5px !important; }
+      .BBA-messages .heading-compose i {
+        color: #fff;
+        cursor: pointer; }
+      .BBA-messages .heading-dot {
+        padding: 5px !important;
+        margin-left: 10px !important; }
+      .BBA-messages .heading-dot i {
+        color: #fff;
+        cursor: pointer; }
+      .BBA-messages .sideBar {
+        height: calc(100% - 130px); }
+      .BBA-messages .sideBar-body {
+        height: 80px; }
+      .BBA-messages .sideBar-avatar {
+        text-align: left;
+        padding: 0 8px !important; }
+      .BBA-messages .avatar-icon img {
+        height: 55px;
+        width: 55px; }
+      .BBA-messages .sideBar-main {
+        padding: 0 !important; }
+      .BBA-messages .sideBar-main .row {
+        padding: 0 !important;
+        margin: 0 !important; }
+      .BBA-messages .sideBar-name {
+        padding: 0 !important; }
+      .BBA-messages .name-meta {
+        font-size: 16px;
+        padding: 5% !important; }
+      .BBA-messages .sideBar-time {
+        padding: 10px !important; }
+      .BBA-messages .time-meta {
+        text-align: right;
+        font-size: 14px;
+        padding: 4% !important;
+        color: rgba(0, 0, 0, 0.4);
+        vertical-align: baseline; }
+      .BBA-messages .conversation {
+        padding: 0 !important;
+        height: 100%;
+        border-left: 1px solid rgba(0, 0, 0, 0.08); }
+      .BBA-messages .message {
+        height: calc(100% - 140px); }
+      .BBA-messages .reply {
+        height: 70px; }
+      .BBA-messages .reply-emojis {
+        padding: 5px 0 !important; }
+      .BBA-messages .reply-emojis i {
+        padding: 5px 2px !important;
+        font-size: 1.8em !important; }
+      .BBA-messages .reply-main {
+        padding: 2px 8px !important; }
+      .BBA-messages .reply-main textarea {
+        padding: 8px !important;
+        font-size: 18px; }
+      .BBA-messages .reply-recording {
+        padding: 5px 0 !important; }
+      .BBA-messages .reply-recording i {
+        padding: 5px 0 !important;
+        font-size: 1.8em !important; }
+      .BBA-messages .reply-send {
+        padding: 5px 0 !important; }
+      .BBA-messages .reply-send i {
+        padding: 5px 2px 5px 0 !important;
+        font-size: 1.8em !important; } }
 
 /*# sourceMappingURL=style.css.map */
