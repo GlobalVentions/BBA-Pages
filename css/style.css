@@ -4304,6 +4304,23 @@ iframe.detail-video {
   border-top: 0;
   border-left: 1px solid #f2f2f2; }
 
+/*advertisor center 289180548*/
+.download-calculator-shadow {
+  -webkit-box-shadow: 0 0 11px 5px rgba(207, 201, 207, 0.2);
+  -moz-box-shadow: 0 0 11px 5px rgba(207, 201, 207, 0.2);
+  box-shadow: 0 0 11px 5px rgba(207, 201, 207, 0.2);
+  border-radius: 13px; }
+
+.calculator-health-dot-right {
+  position: absolute;
+  top: 250px;
+  right: 200px; }
+
+.calculator-globe-triangle-left {
+  position: absolute;
+  top: 300px;
+  left: -100px; }
+
 /* CSS For Messager layout */
 .BBA-messages {
   /*New Message*/
@@ -4524,7 +4541,11 @@ iframe.detail-video {
   .BBA-messages .message {
     padding: 0 !important;
     margin: 0 !important;
-    overflow-y: auto; }
+    overflow-y: auto;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0; }
   .BBA-messages .message-previous {
     margin: 0 !important;
     padding: 0 !important;
@@ -4549,36 +4570,34 @@ iframe.detail-video {
     max-width: 60%; }
   .BBA-messages .message-text {
     margin: 0 !important;
-    padding: 5px !important;
+    padding: 0;
     word-wrap: break-word;
-    font-weight: 200;
-    font-size: 14px;
-    padding-bottom: 0 !important; }
+    font-weight: normal;
+    font-size: 12px; }
   .BBA-messages .message-time {
-    margin: 0 !important;
-    margin-left: 50px !important;
-    font-size: 12px;
-    text-align: right;
+    font-size: 11px;
     color: #9a9a9a; }
   .BBA-messages .receiver {
     width: auto !important;
-    padding: 4px 10px 7px !important;
-    border-radius: 10px 10px 10px 0;
+    padding: 20px;
+    border-radius: 10px;
     background: #ffffff;
     font-size: 12px;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
     word-wrap: break-word;
-    display: inline-block; }
+    display: inline-block;
+    max-width: 200px; }
   .BBA-messages .sender {
     float: right;
     width: auto !important;
-    background: #dcf8c6;
-    border-radius: 10px 10px 0 10px;
-    padding: 4px 10px 7px !important;
+    background: #6b17b3;
+    border-radius: 10px;
+    padding: 15px !important;
     font-size: 12px;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
     display: inline-block;
-    word-wrap: break-word; }
+    word-wrap: break-word;
+    max-width: 200px; }
   .BBA-messages .reply {
     height: 60px;
     width: 100%;
