@@ -5330,8 +5330,60 @@ iframe.detail-video{
   left: -100px;
 }
 
+/*advertisor center 289180783*/
+
+.calculator-copy-code {
+  label.more-about-label {
+    font-size: 13px;
+  }
+  .more-about-input {
+    padding: 0.600rem .75rem;
+    border: 2px solid #AAB2B5;
+    resize: none;
+    &:focus {
+      color: #495057;
+      background-color: #fff;
+      border-color: $brightsidepurple;
+      outline: 0;
+      box-shadow: none;
+    }
+  }
+}
+
+/*advertiser center 289180754*/
+.ramboo-black-bg {
+  position: absolute;
+  top: 50px;
+  left: -238px;
+}
+.Sporteded-half-circle{
+  position: absolute;
+  right: 0;
+  top: 315px;
+}
+.custom-add-btn{
+  font-size: 45px!important;
+}
+
+/* advertisor center 289180759*/
+
+.upload-video-globe-triangle-left {
+  position: absolute;
+  top: 500px;
+  left: -110px;
+}
+.upload-video-health-dot-right{
+  position: absolute;
+  top: 150px;
+  right: 200px;
+}
+
 /* CSS For Messager layout */
 .BBA-messages{
+  .heading-avatar-icon-messages{
+    position: absolute;
+    bottom: 0;
+  }
   span {
     width: 100%;
     overflow: hidden;
@@ -5383,24 +5435,16 @@ iframe.detail-video{
     transition: left 0.3s ease;
 
   }
-
-
   .heading {
     z-index: 1000;
   }
-
   .heading-avatar {
     padding: 0;
     cursor: pointer;
-
   }
-
   .heading-avatar-icon img {
     border-radius: 50%;
-    height: 40px;
-    width: 40px;
   }
-
   .heading-name {
     padding: 0 !important;
     cursor: pointer;
@@ -5518,8 +5562,6 @@ iframe.detail-video{
 
   .avatar-icon img {
     border-radius: 50%;
-    height: 49px;
-    width: 49px;
   }
 
   .sideBar-main {
@@ -5637,11 +5679,12 @@ iframe.detail-video{
     border:2px solid #AAB2B5;
     overflow-y: auto;
     background-color: $techgrey;
-    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 0;
   }
 
   .message {
-    padding: 0 !important;
     margin: 0 !important;
     overflow-y: auto;
     position: absolute;
@@ -5673,14 +5716,10 @@ iframe.detail-video{
     width: auto;
     height: auto;
   }
-
   .message-main-receiver {
   }
 
   .message-main-sender {
-    padding: 3px 20px !important;
-    margin-left: 40% !important;
-    max-width: 60%;
   }
 
   .message-text {
@@ -5724,14 +5763,18 @@ iframe.detail-video{
 
 
   /*Reply*/
-
+  .btn-message-send{
+    padding: 0.8rem 0.1rem !important;
+  }
   .reply {
-    height: 60px;
     width: 100%;
-    background-color: #f5f1ee;
-    padding: 10px 5px 10px 5px !important;
+    padding: 5px !important;
     margin: 0 !important;
     z-index: 1000;
+    border:2px solid #AAB2B5;
+    background-color: $color_white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
   }
 
   .reply-emojis {
@@ -5740,8 +5783,9 @@ iframe.detail-video{
 
   .reply-emojis i {
     text-align: center;
-    padding: 5px 5px 5px 5px !important;
-    color: #93918f;
+    position: relative;
+    top: 10px;
+    color: $color_grey;
     cursor: pointer;
   }
 
@@ -5751,8 +5795,9 @@ iframe.detail-video{
 
   .reply-recording i {
     text-align: center;
-    padding: 5px !important;
-    color: #93918f;
+    position: relative;
+    top: 10px;
+    color: $color_grey;
     cursor: pointer;
   }
 
@@ -5775,13 +5820,14 @@ iframe.detail-video{
     width: 100%;
     resize: none;
     overflow: hidden;
-    padding: 5px !important;
+    padding: 15px 5px 0 5px!important;
     outline: none;
     border: none;
     text-indent: 5px;
     box-shadow: none;
     height: 100%;
-    font-size: 16px;
+    font-size: 13px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   }
 
   .reply-main textarea:focus {
@@ -5791,7 +5837,7 @@ iframe.detail-video{
     box-shadow: none;
   }
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 480px) {
     .app {
       top: 0;
       height: 100%;
@@ -5871,6 +5917,7 @@ iframe.detail-video{
     }
     .message {
       height: calc(100% - 140px);
+      position: inherit;
     }
     .reply {
       height: 70px;
@@ -5904,6 +5951,9 @@ iframe.detail-video{
       font-size: 1.8em !important;
     }
   }
+}
+.border-radius-0{
+  border-radius: 0!important;
 }
 
 

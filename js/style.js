@@ -964,5 +964,10 @@ $(document).ready(function()
             readURL(this);
         });
     });
-
 });
+/* This js for the calculator copy clipboard page 289180783*/
+function copyclipboard() {
+    var copyText = document.getElementById("copytext");
+    copyText.select();
+    document.execCommand("copy");
+}

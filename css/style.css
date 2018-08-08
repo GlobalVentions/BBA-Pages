@@ -4321,11 +4321,53 @@ iframe.detail-video {
   top: 300px;
   left: -100px; }
 
+/*advertisor center 289180783*/
+.calculator-copy-code label.more-about-label {
+  font-size: 13px; }
+.calculator-copy-code .more-about-input {
+  padding: 0.600rem .75rem;
+  border: 2px solid #AAB2B5;
+  resize: none; }
+  .calculator-copy-code .more-about-input:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #6b17b3;
+    outline: 0;
+    box-shadow: none; }
+
+/*advertiser center 289180754*/
+.ramboo-black-bg {
+  position: absolute;
+  top: 50px;
+  left: -238px; }
+
+.Sporteded-half-circle {
+  position: absolute;
+  right: 0;
+  top: 315px; }
+
+.custom-add-btn {
+  font-size: 45px !important; }
+
+/* advertisor center 289180759*/
+.upload-video-globe-triangle-left {
+  position: absolute;
+  top: 500px;
+  left: -110px; }
+
+.upload-video-health-dot-right {
+  position: absolute;
+  top: 150px;
+  right: 200px; }
+
 /* CSS For Messager layout */
 .BBA-messages {
   /*New Message*/
   /*Conversation*/
   /*Reply*/ }
+  .BBA-messages .heading-avatar-icon-messages {
+    position: absolute;
+    bottom: 0; }
   .BBA-messages span {
     width: 100%;
     overflow: hidden;
@@ -4370,9 +4412,7 @@ iframe.detail-video {
     padding: 0;
     cursor: pointer; }
   .BBA-messages .heading-avatar-icon img {
-    border-radius: 50%;
-    height: 40px;
-    width: 40px; }
+    border-radius: 50%; }
   .BBA-messages .heading-name {
     padding: 0 !important;
     cursor: pointer; }
@@ -4453,9 +4493,7 @@ iframe.detail-video {
     text-align: center;
     padding: 0 !important; }
   .BBA-messages .avatar-icon img {
-    border-radius: 50%;
-    height: 49px;
-    width: 49px; }
+    border-radius: 50%; }
   .BBA-messages .sideBar-main {
     padding: 0 !important; }
   .BBA-messages .sideBar-main .row {
@@ -4537,9 +4575,10 @@ iframe.detail-video {
     border: 2px solid #AAB2B5;
     overflow-y: auto;
     background-color: #f2f2f2;
-    border-radius: 5px; }
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 0; }
   .BBA-messages .message {
-    padding: 0 !important;
     margin: 0 !important;
     overflow-y: auto;
     position: absolute;
@@ -4564,10 +4603,6 @@ iframe.detail-video {
     padding: 0 !important;
     width: auto;
     height: auto; }
-  .BBA-messages .message-main-sender {
-    padding: 3px 20px !important;
-    margin-left: 40% !important;
-    max-width: 60%; }
   .BBA-messages .message-text {
     margin: 0 !important;
     padding: 0;
@@ -4598,26 +4633,32 @@ iframe.detail-video {
     display: inline-block;
     word-wrap: break-word;
     max-width: 200px; }
+  .BBA-messages .btn-message-send {
+    padding: 0.8rem 0.1rem !important; }
   .BBA-messages .reply {
-    height: 60px;
     width: 100%;
-    background-color: #f5f1ee;
-    padding: 10px 5px 10px 5px !important;
+    padding: 5px !important;
     margin: 0 !important;
-    z-index: 1000; }
+    z-index: 1000;
+    border: 2px solid #AAB2B5;
+    background-color: #ffffff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; }
   .BBA-messages .reply-emojis {
     padding: 5px !important; }
   .BBA-messages .reply-emojis i {
     text-align: center;
-    padding: 5px 5px 5px 5px !important;
-    color: #93918f;
+    position: relative;
+    top: 10px;
+    color: #dddddd;
     cursor: pointer; }
   .BBA-messages .reply-recording {
     padding: 5px !important; }
   .BBA-messages .reply-recording i {
     text-align: center;
-    padding: 5px !important;
-    color: #93918f;
+    position: relative;
+    top: 10px;
+    color: #dddddd;
     cursor: pointer; }
   .BBA-messages .reply-send {
     padding: 5px !important; }
@@ -4632,19 +4673,20 @@ iframe.detail-video {
     width: 100%;
     resize: none;
     overflow: hidden;
-    padding: 5px !important;
+    padding: 15px 5px 0 5px !important;
     outline: none;
     border: none;
     text-indent: 5px;
     box-shadow: none;
     height: 100%;
-    font-size: 16px; }
+    font-size: 13px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); }
   .BBA-messages .reply-main textarea:focus {
     outline: none;
     border: none;
     text-indent: 5px;
     box-shadow: none; }
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 480px) {
     .BBA-messages {
       /*Conversation*/ }
       .BBA-messages .app {
@@ -4704,7 +4746,8 @@ iframe.detail-video {
         height: 100%;
         border-left: 1px solid rgba(0, 0, 0, 0.08); }
       .BBA-messages .message {
-        height: calc(100% - 140px); }
+        height: calc(100% - 140px);
+        position: inherit; }
       .BBA-messages .reply {
         height: 70px; }
       .BBA-messages .reply-emojis {
@@ -4727,5 +4770,8 @@ iframe.detail-video {
       .BBA-messages .reply-send i {
         padding: 5px 2px 5px 0 !important;
         font-size: 1.8em !important; } }
+
+.border-radius-0 {
+  border-radius: 0 !important; }
 
 /*# sourceMappingURL=style.css.map */
