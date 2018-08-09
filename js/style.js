@@ -782,9 +782,6 @@ $(document).on("click", function () {
 function calculatorresiltdetailsToggle(){
     $(".calculator-result-description").toggle();
 }
-function calculatorresiltdetailsToggle(){
-    $(".calculator-result-description").toggle();
-}
 function calculatortipsToggle(){
     $(".calculator-tips-description").toggle();
 }
@@ -795,37 +792,46 @@ function AddBannerMenuButtonToggle(){
     $(".verticle-tabing-add-banner").toggle();
 }
 function promenuToggle(){
+    event.stopPropagation();
     $(".pro-burger-menu-main").toggle();
 }
 function knowledgeBaseToggle(){
+    event.stopPropagation();
     $(".knowledge-menu-main").toggle();
 }
 function menuToggle(){
+    event.stopPropagation();
     $(".burger-menu-main").toggle();
 }
 function opportunitiesToggle(){
+    event.stopPropagation();
     $(".opportunities-menu-main").toggle();
 }
 function allopportunitiesToggle(){
+    event.stopPropagation();
     $(".allopportunities-menu-main").toggle();
 }
 function allresourcesToggle(){
+    event.stopPropagation();
     $(".allresources-menu-main").toggle();
 }
 function financialcalculatorToggle(){
+    event.stopPropagation();
     $(".financial-calculator-menu-main").toggle();
 }
 function threeDotsToggle(){
+    event.stopPropagation();
     $(".ThreeDots-menu-main").toggle();
 }
 function searchToggle(){
+    event.stopPropagation();
     $(".SearchToggle-main").toggle();
 }
 
-/* JS Code for video play pause button */
-/*$("a[href='#']").click(function(e) {
-    e.preventDefault();
-});*/
+/* JS Code for outside click close menu */
+$(document).on("click", function () {
+    $(".burger-menu-main, .pro-burger-menu-main, .ThreeDots-menu-main, .SearchToggle-main, .knowledge-menu-main, .opportunities-menu-main, .allopportunities-menu-main, .allresources-menu-main, .financial-calculator-menu-main").hide();
+});
 
 /* JS code for Checkckbox filte in post calculator page */
 $(document).ready(function()
@@ -868,21 +874,36 @@ $(document).ready(function()
             $('#click').html('Done');
         }
     });
+    /*JS code for DONE TO SHOW HIDE DIV IN DASHBOARD 293921489*/
+    $('#start').click(function(){
+        $('#editForm').toggleClass('hide-bank');
+        $('#connect').toggleClass('hide-bank');
+    });
 
-    /* Js code for smooth scrolling */
-/*    $(document).ready(function(){
-        $("a").on('click', function(event) {
-            if (this.hash !== "") {
-                event.preventDefault();
-                var hash = this.hash;
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 800, function(){
-                    window.location.hash = hash;
-                });
-            }
-        });
-    });*/
+    $('#correct').click(function(){
+        $('#editForm').toggleClass('hide-bank');
+        $('#connect1').toggleClass('hide-bank');
+    });
+    $('#start1').click(function(){
+        $('#editForm').toggleClass('hide-bank');
+        $('#connect1').toggleClass('hide-bank');
+    });
+
+    $('#wrong').click(function(){
+        $('#editForm').toggleClass('hide-bank');
+        $('#connect2 ').toggleClass('hide-bank');
+    });
+    $('#discrepancies').click(function(){
+        $('#connect2').toggleClass('hide-bank');
+        $('#connect3').toggleClass('hide-bank');
+    });
+
+    /* JS code for DONE TO SHOW  filte in 289181557*/
+    $('#done').click(function(){
+        $('#editForm').toggleClass('hide-bank');
+        $('#go-dashboard').toggleClass('hide-bank');
+    });
+
     $(document).ready(function() {
 
         $('.btn-add').on("click", function(){

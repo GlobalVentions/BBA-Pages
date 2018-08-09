@@ -5366,7 +5366,6 @@ iframe.detail-video{
 }
 
 /* advertisor center 289180759*/
-
 .upload-video-globe-triangle-left {
   position: absolute;
   top: 500px;
@@ -5376,6 +5375,39 @@ iframe.detail-video{
   position: absolute;
   top: 150px;
   right: 200px;
+}
+
+/* advertisor center 2940323779*/
+.publisher-get-started-both {
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.09);
+}
+.btn-primary-large-text-icon {
+  background-color: $brightsidepurple;
+  color: $color_white;
+  border-radius: 30px !important;
+  padding: 0.774rem 1.8rem !important;
+  cursor: pointer;
+  width: 100%;
+  font-size: $general-font-size !important;
+  font-family: $FibraOneAlt-Regular !important;
+
+  .add-icon {
+    position: absolute;
+    bottom: 1px;
+    right: 22px;
+    width: 46px;
+  }
+}
+.campaign-lock{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.transparance-white-ac-campaign{
+  background: rgba(255, 255, 255, 0.9);
 }
 
 /* CSS For Messager layout */
@@ -5784,7 +5816,7 @@ iframe.detail-video{
   .reply-emojis i {
     text-align: center;
     position: relative;
-    top: 10px;
+    top: 15px;
     color: $color_grey;
     cursor: pointer;
   }
@@ -5796,7 +5828,7 @@ iframe.detail-video{
   .reply-recording i {
     text-align: center;
     position: relative;
-    top: 10px;
+    top: 15px;
     color: $color_grey;
     cursor: pointer;
   }
@@ -5837,14 +5869,13 @@ iframe.detail-video{
     box-shadow: none;
   }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     .app {
       top: 0;
       height: 100%;
     }
     .heading {
-      height: 70px;
-      background-color: #009688;
+      background-color: #D1D5DA!important;
     }
     .fa-2x {
       font-size: 2.3em !important;
@@ -5853,8 +5884,8 @@ iframe.detail-video{
       padding: 0 !important;
     }
     .heading-avatar-icon img {
-      height: 50px;
-      width: 50px;
+/*      height: 50px;
+      width: 50px;*/
     }
     .heading-compose {
       padding: 5px !important;
@@ -5880,6 +5911,7 @@ iframe.detail-video{
     .sideBar-avatar {
       text-align: left;
       padding: 0 8px !important;
+      max-width: fit-content;
     }
     .avatar-icon img {
       height: 55px;
@@ -5892,9 +5924,9 @@ iframe.detail-video{
       padding: 0 !important;
       margin: 0 !important;
     }
-    .sideBar-name {
+/*    .sideBar-name {
       padding: 0 !important;
-    }
+    }*/
     .name-meta {
       font-size: 16px;
       padding: 5% !important;
@@ -5913,14 +5945,24 @@ iframe.detail-video{
     .conversation {
       padding: 0 !important;
       height: 100%;
-      border-left: 1px solid rgba(0, 0, 0, .08);
+      border: none;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
     }
     .message {
       height: calc(100% - 140px);
       position: inherit;
     }
     .reply {
-      height: 70px;
+      border: none;
+      background-color: $techgrey;
+    }
+    .reply-main textarea {
+      border: 2px solid #AAB2B5;
+      resize: none;
+      &:focus{
+        border: 2px solid $brightsidepurple;
+      }
     }
     .reply-emojis {
       padding: 5px 0 !important;
@@ -5931,10 +5973,6 @@ iframe.detail-video{
     }
     .reply-main {
       padding: 2px 8px !important;
-    }
-    .reply-main textarea {
-      padding: 8px !important;
-      font-size: 18px;
     }
     .reply-recording {
       padding: 5px 0 !important;

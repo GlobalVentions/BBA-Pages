@@ -4360,6 +4360,36 @@ iframe.detail-video {
   top: 150px;
   right: 200px; }
 
+/* advertisor center 2940323779*/
+.publisher-get-started-both {
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.09); }
+
+.btn-primary-large-text-icon {
+  background-color: #6b17b3;
+  color: #ffffff;
+  border-radius: 30px !important;
+  padding: 0.774rem 1.8rem !important;
+  cursor: pointer;
+  width: 100%;
+  font-size: 0.9rem !important;
+  font-family: "FibraOneAlt-Regular", Sans Serif !important; }
+  .btn-primary-large-text-icon .add-icon {
+    position: absolute;
+    bottom: 1px;
+    right: 22px;
+    width: 46px; }
+
+.campaign-lock {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.transparance-white-ac-campaign {
+  background: rgba(255, 255, 255, 0.9); }
+
 /* CSS For Messager layout */
 .BBA-messages {
   /*New Message*/
@@ -4649,7 +4679,7 @@ iframe.detail-video {
   .BBA-messages .reply-emojis i {
     text-align: center;
     position: relative;
-    top: 10px;
+    top: 15px;
     color: #dddddd;
     cursor: pointer; }
   .BBA-messages .reply-recording {
@@ -4657,7 +4687,7 @@ iframe.detail-video {
   .BBA-messages .reply-recording i {
     text-align: center;
     position: relative;
-    top: 10px;
+    top: 15px;
     color: #dddddd;
     cursor: pointer; }
   .BBA-messages .reply-send {
@@ -4686,22 +4716,24 @@ iframe.detail-video {
     border: none;
     text-indent: 5px;
     box-shadow: none; }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     .BBA-messages {
+      /*    .sideBar-name {
+            padding: 0 !important;
+          }*/
       /*Conversation*/ }
       .BBA-messages .app {
         top: 0;
         height: 100%; }
       .BBA-messages .heading {
-        height: 70px;
-        background-color: #009688; }
+        background-color: #D1D5DA !important; }
       .BBA-messages .fa-2x {
         font-size: 2.3em !important; }
       .BBA-messages .heading-avatar {
         padding: 0 !important; }
       .BBA-messages .heading-avatar-icon img {
-        height: 50px;
-        width: 50px; }
+        /*      height: 50px;
+              width: 50px;*/ }
       .BBA-messages .heading-compose {
         padding: 5px !important; }
       .BBA-messages .heading-compose i {
@@ -4719,7 +4751,8 @@ iframe.detail-video {
         height: 80px; }
       .BBA-messages .sideBar-avatar {
         text-align: left;
-        padding: 0 8px !important; }
+        padding: 0 8px !important;
+        max-width: fit-content; }
       .BBA-messages .avatar-icon img {
         height: 55px;
         width: 55px; }
@@ -4728,8 +4761,6 @@ iframe.detail-video {
       .BBA-messages .sideBar-main .row {
         padding: 0 !important;
         margin: 0 !important; }
-      .BBA-messages .sideBar-name {
-        padding: 0 !important; }
       .BBA-messages .name-meta {
         font-size: 16px;
         padding: 5% !important; }
@@ -4744,12 +4775,20 @@ iframe.detail-video {
       .BBA-messages .conversation {
         padding: 0 !important;
         height: 100%;
-        border-left: 1px solid rgba(0, 0, 0, 0.08); }
+        border: none;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0; }
       .BBA-messages .message {
         height: calc(100% - 140px);
         position: inherit; }
       .BBA-messages .reply {
-        height: 70px; }
+        border: none;
+        background-color: #f2f2f2; }
+      .BBA-messages .reply-main textarea {
+        border: 2px solid #AAB2B5;
+        resize: none; }
+        .BBA-messages .reply-main textarea:focus {
+          border: 2px solid #6b17b3; }
       .BBA-messages .reply-emojis {
         padding: 5px 0 !important; }
       .BBA-messages .reply-emojis i {
@@ -4757,9 +4796,6 @@ iframe.detail-video {
         font-size: 1.8em !important; }
       .BBA-messages .reply-main {
         padding: 2px 8px !important; }
-      .BBA-messages .reply-main textarea {
-        padding: 8px !important;
-        font-size: 18px; }
       .BBA-messages .reply-recording {
         padding: 5px 0 !important; }
       .BBA-messages .reply-recording i {

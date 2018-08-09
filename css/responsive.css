@@ -22,6 +22,9 @@
 }
 
 @media (max-width: 768px) {
+    .burger-menu-main nav[role=full-horizontal] {
+        right: 90px;
+    }
     .column {
         flex: 50%;
         max-width: 50%;
