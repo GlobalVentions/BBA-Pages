@@ -114,6 +114,7 @@ $prog2-colorgrd-top: #E6E6E6;
 $prog2-colorgrd-bottom: #CBCBCB;
 $prog3-colorgrd-top: #FFEA06;
 $prog3-colorgrd-bottom: #F4BA25;
+$text-black-green: #33535A;
 
 // Mixins
 @mixin transition($property: all, $duration: 400ms, $animate: linear, $delay:0s) {
@@ -1340,6 +1341,80 @@ ul.found-jobs-ul li:before {
     position: relative;
     right: 4px;
     top: 0;
+    ul.account-ul{
+    border: 1px solid #D6D6D6;
+      padding: 10px 0;
+      >li{
+        line-height: 32px;
+      }
+    }
+    ul {
+      width: 100%;
+      list-style: none;
+      position: relative;
+      top: 14px;
+      background-color: $color_white;
+      padding: 15px 0 0 0;
+      -webkit-box-shadow: 0px 0px 10px 1px #f2f2f2;
+      -moz-box-shadow: 0px 0px 10px 1px #f2f2f2;
+      box-shadow: 0px 0px 10px 1px #f2f2f2;
+      max-height: 650px;
+      overflow: auto;
+
+      > li {
+        position: relative;
+        text-transform: capitalize;
+        cursor: pointer;
+        text-align: left;
+        transition-duration: .3s;
+        transition-timing-function: ease-in-out;
+        transition-property: background, color, padding, border-radius;
+        width: 100%;
+        white-space: nowrap;
+        padding: 0 20px;
+        line-height: 39px;
+        margin-bottom: 0;
+        .menu-fa-icon {
+          width: 9px;
+          position: relative;
+          top: 15px;
+        }
+        &:last-child:after {
+          box-shadow: none;
+        }
+        &:hover {
+          background-color: $techgrey;
+          > a {
+            color: $color_black;
+          }
+        }
+
+        > a {
+          color: $color_black;
+          text-decoration: none;
+          font-size: 0.9em;
+          transition: color .3s ease-in-out;
+        }
+      }
+    }
+  }
+}
+.pro-burger-menu-main2 {
+ /* position: fixed;*/
+  width: 210px;
+  z-index: 5;
+  nav[role="full-horizontal"] {
+    width: 100%;
+    position: relative;
+    right: 4px;
+    top: 0;
+    ul.account-ul{
+    border: 1px solid #D6D6D6;
+      padding: 10px 0;
+      >li{
+        line-height: 32px;
+      }
+    }
     ul {
       width: 100%;
       list-style: none;
@@ -2581,6 +2656,10 @@ video {
 /* Text Color */
 .text-primary-eccentricyellow {
   color: $eccentricyellow !important;
+}
+
+.text-black-green {
+  color: $text-black-green !important;
 }
 
 .text-primary-brightsidepurple {
@@ -4290,6 +4369,27 @@ input[type="checkbox"]:focus {
 .max-width-490{
   max-width: 490px;
 }
+.max-width-240{
+  max-width: 240px;
+}
+.max-width-355{
+  max-width: 355px;
+}
+.max-width-415{
+  max-width: 415px!important;
+}
+.width-200px{
+  width: 200px;
+}
+.collcection-border{
+  border-top: 1px solid #6D797C!important;
+}
+.no-min-height{
+  min-height: auto!important;
+}
+.bg-modal-black{
+  background-color: #1E1E20!important;
+}
 .smart-read-toggle {
   position: absolute;
   top: 100%;
@@ -4529,16 +4629,17 @@ input[type="checkbox"]:focus {
   position: absolute;
   z-index: 1;
   right: -50px;
+  bottom: 30px;
 }
 .custom-tooltip .custom-tooltiptext::after {
   content: "";
   position: absolute;
-  bottom: 100%;
+  top: 100%;
   left: 50%;
-  margin-left: -11px;
+  margin-left: -9px;
   border-width: 10px;
   border-style: solid;
-  border-color: transparent transparent #000;
+  border-color: #000 transparent transparent;
 }
 
 .custom-tooltip:hover .custom-tooltiptext {
@@ -5410,6 +5511,53 @@ iframe.detail-video{
   background: rgba(255, 255, 255, 0.9);
 }
 
+/*pre title*/
+.banner-title{
+  position: absolute;
+  left: 18% !important;
+  bottom: 38% !important;
+}
+.banner-title.banner-title-adv{
+  bottom: 15% !important;
+}
+
+/*Advertisor 289180749 page*/
+.add-media-card {
+  .card {
+    position: relative;
+    display: inline-block;
+    background-color: $color_white;
+    -webkit-box-shadow: 0 0 10px 1px rgba(242, 242, 242, 1);
+    -moz-box-shadow: 0 0 10px 1px rgba(242, 242, 242, 1);
+    box-shadow: 0 0 10px 1px rgba(242, 242, 242, 1);
+    min-height: 240px;
+    border: 0;
+    border-radius: 13px;
+  }
+}
+.share-our-calculator{
+  background-image: url(../images/share-our-calculator.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+}
+.upload-media-video{
+  height: 135px;
+
+}
+.upload-sub-media-video{
+  height: 135px;
+  width: 100%;
+}
+.video-title{
+  color: $color_black;
+  text-decoration: none;
+  &:hover{
+    color: $color_black;
+    text-decoration: none;
+  }
+}
+
 /* CSS For Messager layout */
 .BBA-messages{
   .heading-avatar-icon-messages{
@@ -5989,6 +6137,33 @@ iframe.detail-video{
       font-size: 1.8em !important;
     }
   }
+}
+
+/* CSS code for star ratings */
+.star-rating {
+  line-height:32px;
+  font-size:3.0rem;
+  color: $techgrey-dark;
+  .checked {
+    color: $eccentricyellow;
+  }
+}
+.custom-badge{
+  float: right;
+  display: inline-block;
+  min-width: 26px;
+  padding: 7px 7px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  background-color: #777;
+  border-radius: 100px;
+  position: relative;
+  top: 3px;
 }
 .border-radius-0{
   border-radius: 0!important;

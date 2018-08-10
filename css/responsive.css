@@ -22,6 +22,17 @@
 }
 
 @media (max-width: 768px) {
+    .banner-title {
+        position: absolute;
+        left: 18% !important;
+        bottom: 32% !important;
+    }
+    .banner-title h1{
+        font-size: 20px!important;
+    }
+    .banner-title.banner-title-adv{
+        bottom: 15% !important;
+    }
     .burger-menu-main nav[role=full-horizontal] {
         right: 90px;
     }
@@ -275,6 +286,20 @@
 }
 
 @media (max-width: 480px) {
+    .redirect-h4 {
+        font-size: 1.1rem;
+    }
+    .banner-title {
+        position: absolute;
+        left: 10% !important;
+        bottom: 25% !important;
+    }
+    .banner-title h1{
+        font-size: 20px!important;
+    }
+    .banner-title.banner-title-adv{
+        bottom: 15% !important;
+    }
     .column {
         flex: 100%;
         max-width: 100%;

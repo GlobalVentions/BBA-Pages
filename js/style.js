@@ -874,6 +874,20 @@ $(document).ready(function()
             $('#click').html('Done');
         }
     });
+
+    /* JS Code for advertise dashboard modal content hide show */
+    $('#showcompetitor').click(function(){
+        $('#hidecompetitordiv').toggleClass('d-none');
+        $('#showcompetitordiv').toggleClass('d-none');
+
+        var visible = $('#showcompetitordiv').is(":visible");
+        if (visible) {
+            $('#showcompetitor').html('Show Competitor');
+        } else {
+            $('#showcompetitor').html('Hide Competitor');
+        }
+    });
+
     /*JS code for DONE TO SHOW HIDE DIV IN DASHBOARD 293921489*/
     $('#start').click(function(){
         $('#editForm').toggleClass('hide-bank');
@@ -991,4 +1005,20 @@ function copyclipboard() {
     var copyText = document.getElementById("copytext");
     copyText.select();
     document.execCommand("copy");
+}
+
+/* This Js for the rating star */
+function add(ths,sno){
+    for (var i=1;i<=5;i++){
+        var cur=document.getElementById("star"+i)
+        cur.className="fas fa-star"
+    }
+    for (var i=1;i<=sno;i++){
+        var cur=document.getElementById("star"+i)
+        if(cur.className=="fas fa-star")
+        {
+            cur.className="fas fa-star checked"
+        }
+    }
+
 }
