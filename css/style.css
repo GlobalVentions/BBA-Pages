@@ -1234,7 +1234,8 @@ ul.found-jobs-ul li:before {
         white-space: nowrap;
         padding: 0 20px;
         line-height: 39px;
-        margin-bottom: 0; }
+        margin-bottom: 0;
+        background-color: #ffffff; }
         .knowledge-menu-main nav[role="full-horizontal"] ul > li .menu-fa-icon {
           width: 9px;
           position: relative;
@@ -1281,7 +1282,8 @@ ul.found-jobs-ul li:before {
         white-space: nowrap;
         padding: 0 20px;
         line-height: 39px;
-        margin-bottom: 0; }
+        margin-bottom: 0;
+        background-color: #ffffff; }
         .opportunities-menu-main nav[role="full-horizontal"] ul > li .menu-fa-icon {
           width: 9px;
           position: relative;
@@ -1345,6 +1347,57 @@ ul.found-jobs-ul li:before {
           .allopportunities-menu-main nav[role="full-horizontal"] ul > li > a div {
             padding: 0 10px; }
             .allopportunities-menu-main nav[role="full-horizontal"] ul > li > a div:hover {
+              background-color: #fad136;
+              border-radius: 6px; }
+
+.topopportunities-menu-main {
+  position: absolute;
+  width: auto;
+  border-radius: 10px;
+  z-index: 2; }
+  .topopportunities-menu-main nav[role="full-horizontal"] {
+    width: 100%;
+    position: relative;
+    left: 85px;
+    bottom: 8px; }
+    .topopportunities-menu-main nav[role="full-horizontal"] ul {
+      width: 100%;
+      list-style: none;
+      position: relative;
+      top: 18px;
+      background-color: #ffffff;
+      padding: 15px 0;
+      -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.26);
+      -moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.26);
+      box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.26);
+      border-radius: 5px; }
+      .topopportunities-menu-main nav[role="full-horizontal"] ul > li {
+        position: relative;
+        text-transform: capitalize;
+        cursor: pointer;
+        text-align: left;
+        transition-duration: .3s;
+        transition-timing-function: ease-in-out;
+        transition-property: background, color, padding, border-radius;
+        width: 100%;
+        white-space: nowrap;
+        padding: 0 12px;
+        line-height: 35px;
+        margin-bottom: 0; }
+        .topopportunities-menu-main nav[role="full-horizontal"] ul > li .menu-fa-icon {
+          width: 9px;
+          position: relative;
+          top: 15px; }
+        .topopportunities-menu-main nav[role="full-horizontal"] ul > li:last-child:after {
+          box-shadow: none; }
+        .topopportunities-menu-main nav[role="full-horizontal"] ul > li > a {
+          color: #1e1e20;
+          text-decoration: none;
+          font-size: 0.9em;
+          transition: color .3s ease-in-out; }
+          .topopportunities-menu-main nav[role="full-horizontal"] ul > li > a div {
+            padding: 0 10px; }
+            .topopportunities-menu-main nav[role="full-horizontal"] ul > li > a div:hover {
               background-color: #fad136;
               border-radius: 6px; }
 
@@ -1540,6 +1593,10 @@ ul.found-jobs-ul li:before {
       text-align: center;
       font-family: "FibraOneAlt-Bold", Sans Serif;
       letter-spacing: 0.5px; }
+
+.icons-symbol.graph-icon-symball {
+  position: relative;
+  bottom: 10px; }
 
 .icons-symbol {
   line-height: 40px;
@@ -2052,6 +2109,12 @@ video {
 .w-90 {
   width: 90% !important; }
 
+.w-45 {
+  width: 45% !important; }
+
+.w-55 {
+  width: 55% !important; }
+
 .apply-btn {
   background: url(../images/icon/arrow-left-btn.white@1x.png) no-repeat right 8px;
   padding-right: 39px;
@@ -2077,7 +2140,8 @@ video {
   background-size: auto;
   line-height: normal;
   position: relative;
-  top: 7px; }
+  top: 7px;
+  cursor: pointer; }
   .opportunities-btn:hover {
     text-decoration: underline; }
 
@@ -2574,6 +2638,17 @@ body.overview-and-grid .Pattern-img-div img {
     text-decoration: underline;
     text-decoration-color: #6b17b3;
     font-family: FibraOneAlt-Bold; }
+
+.custom-modal.badge-modal .modal-dialog .modal-content .modal-header .close {
+  margin: -15px 0px -15px auto;
+  position: absolute;
+  right: 0;
+  top: 15px; }
+  .custom-modal.badge-modal .modal-dialog .modal-content .modal-header .close:focus {
+    outline: none !important; }
+
+.custom-modal.badge-modal .modal-dialog {
+  max-width: 950px; }
 
 .custom-modal.calculator-modal .modal-content {
   min-height: 300px; }
@@ -3287,6 +3362,8 @@ body.overview-and-grid .Pattern-img-div img {
     position: relative;
     top: 3px;
     font-size: 0.9rem; }
+    .pre-banking-tabs .icons-symbol .rate-opportunity a {
+      cursor: pointer; }
 .pre-banking-tabs .btn-primary-large-text {
   padding: 0.574rem 1.8rem !important; }
 .pre-banking-tabs .btn-ghost-large-plus-icon {
@@ -4959,5 +5036,59 @@ iframe.detail-video {
 
 .border-radius-0 {
   border-radius: 0 !important; }
+
+.cursor-pointer-BBA {
+  cursor: pointer !important; }
+
+.bg-image {
+  background-image: none !important; }
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s; }
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px); }
+
+.change .bar2 {
+  opacity: 0; }
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px); }
+
+.border-jobs-menu {
+  border-bottom: 1px solid #e9ecef !important; }
+
+.searchBox {
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 100%; }
+
+input.message-search {
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-size: 16px;
+  background-image: url("../images/icon/search.grey@1x.png");
+  background-position: 10px 14px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px !important;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out; }
+
+.searchBox-inner {
+  width: 100%;
+  background-color: #ffffff; }
+
+.searchBox-inner input:focus {
+  outline: none;
+  box-shadow: none; }
+
+.no-line-height {
+  line-height: inherit !important; }
 
 /*# sourceMappingURL=style.css.map */

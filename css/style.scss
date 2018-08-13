@@ -1498,6 +1498,7 @@ ul.found-jobs-ul li:before {
         padding: 0 20px;
         line-height: 39px;
         margin-bottom: 0;
+        background-color: $color_white;
         .menu-fa-icon {
           width: 9px;
           position: relative;
@@ -1555,6 +1556,7 @@ ul.found-jobs-ul li:before {
         padding: 0 20px;
         line-height: 39px;
         margin-bottom: 0;
+        background-color: $color_white;
         .menu-fa-icon {
           width: 9px;
           position: relative;
@@ -1639,7 +1641,65 @@ ul.found-jobs-ul li:before {
     }
   }
 }
-
+.topopportunities-menu-main {
+  position: absolute;
+  width: auto;
+  border-radius: 10px;
+  z-index: 2;
+  nav[role="full-horizontal"] {
+    width: 100%;
+    position: relative;
+    left: 85px;
+    bottom: 8px;
+    ul {
+      width: 100%;
+      list-style: none;
+      position: relative;
+      top: 18px;
+      background-color: $color_white;
+      padding: 15px 0;
+      -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.26);
+      -moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.26);
+      box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.26);
+      border-radius: 5px;
+      > li {
+        position: relative;
+        text-transform: capitalize;
+        cursor: pointer;
+        text-align: left;
+        transition-duration: .3s;
+        transition-timing-function: ease-in-out;
+        transition-property: background, color, padding, border-radius;
+        width: 100%;
+        white-space: nowrap;
+        padding: 0 12px;
+        line-height: 35px;
+        margin-bottom: 0;
+        .menu-fa-icon {
+          width: 9px;
+          position: relative;
+          top: 15px;
+        }
+        &:last-child:after {
+          box-shadow: none;
+        }
+        > a {
+          color: $color_black;
+          text-decoration: none;
+          font-size: 0.9em;
+          transition: color .3s ease-in-out;
+          div {
+            padding: 0 10px;
+            &:hover {
+              background-color: $eccentricyellow;
+              border-radius: 6px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 .allresources-menu-main {
   position: fixed;
   width: auto;
@@ -1857,7 +1917,10 @@ ul.found-jobs-ul li:before {
     }
   }
 }
-
+.icons-symbol.graph-icon-symball{
+  position: relative;
+  bottom: 10px;
+}
 .icons-symbol {
   line-height: 40px;
   display: inline-block;
@@ -2530,9 +2593,14 @@ video {
 .w-auto {
   width: auto !important;
 }
-
 .w-90 {
   width: 90% !important;
+}
+.w-45{
+  width: 45% !important;
+}
+.w-55{
+  width: 55% !important;
 }
 
 .apply-btn {
@@ -2565,6 +2633,7 @@ video {
   line-height: normal;
   position: relative;
   top: 7px;
+  cursor: pointer;
   &:hover {
     text-decoration: underline;
   }
@@ -3206,6 +3275,23 @@ body.overview-and-grid {
       text-decoration-color: $brightsidepurple;
       font-family: FibraOneAlt-Bold;
     }
+  }
+}
+.custom-modal.badge-modal .modal-dialog .modal-content .modal-header {
+  .close {
+    margin: -15px 0px -15px auto;
+    position: absolute;
+    right: 0;
+    top: 15px;
+    &:focus {
+      outline: none !important;
+    }
+  }
+}
+
+.custom-modal.badge-modal {
+  .modal-dialog {
+    max-width: 950px;
   }
 }
 .custom-modal.calculator-modal {
@@ -4100,6 +4186,9 @@ body.overview-and-grid {
       position: relative;
       top: 3px;
       font-size: $general-font-size;
+      a{
+        cursor: pointer;
+      }
     }
   }
   .btn-primary-large-text {
@@ -6168,6 +6257,62 @@ iframe.detail-video{
 .border-radius-0{
   border-radius: 0!important;
 }
+.cursor-pointer-BBA{
+  cursor: pointer!important;
+}
+.bg-image{
+  background-image: none!important;
+}
 
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+.border-jobs-menu{
+  border-bottom: 1px solid #e9ecef!important;
+}
+.searchBox {
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 100%;
+}
+input.message-search{
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-size: 16px;
+  background-image: url('../images/icon/search.grey@1x.png');
+  background-position: 10px 14px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px!important;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+.searchBox-inner {
+  width: 100%;
+  background-color: $color_white;
+}
+
+.searchBox-inner input:focus {
+  outline: none;
+  box-shadow: none;
+}
+.no-line-height{
+  line-height: inherit!important;
+}
 
 

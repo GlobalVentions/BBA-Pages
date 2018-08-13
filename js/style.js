@@ -811,6 +811,10 @@ function allopportunitiesToggle(){
     event.stopPropagation();
     $(".allopportunities-menu-main").toggle();
 }
+function topopportunitiesToggle(){
+    event.stopPropagation();
+    $(".allopportunities-menu-main").toggle();
+}
 function allresourcesToggle(){
     event.stopPropagation();
     $(".allresources-menu-main").toggle();
@@ -827,10 +831,14 @@ function searchToggle(){
     event.stopPropagation();
     $(".SearchToggle-main").toggle();
 }
+function topopportunitiesToggle(){
+    event.stopPropagation();
+    $(".topopportunities-menu-main").toggle();
+}
 
 /* JS Code for outside click close menu */
 $(document).on("click", function () {
-    $(".burger-menu-main, .pro-burger-menu-main, .ThreeDots-menu-main, .SearchToggle-main, .knowledge-menu-main, .opportunities-menu-main, .allopportunities-menu-main, .allresources-menu-main, .financial-calculator-menu-main").hide();
+    $(".burger-menu-main, .pro-burger-menu-main, .ThreeDots-menu-main, .SearchToggle-main, .knowledge-menu-main, .opportunities-menu-main, .allopportunities-menu-main, .topopportunities-menu-main, .allresources-menu-main, .financial-calculator-menu-main").hide();
 });
 
 /* JS code for Checkckbox filte in post calculator page */
@@ -918,9 +926,9 @@ $(document).ready(function()
         $('#go-dashboard').toggleClass('hide-bank');
     });
 
-    $(document).ready(function() {
 
-        $('.btn-add').on("click", function(){
+    $(document).ready(function() {
+                $('.btn-add').on("click", function(){
             //we select the box clone it and insert it after the box
             $('.clonebox:first').clone().insertAfter(".clonebox:last");
         });
@@ -929,6 +937,23 @@ $(document).ready(function()
             $(this).closest(".clonebox").remove();
         });
     });
+
+  /*  var cloneId = 0;
+    $(document).ready(function()
+    {
+        $('.btn-add').on("click", function(){
+            var clone = $('.clonebox:first').clone(true);
+            clone.find("input").prop("name", "perdollar" + cloneId);
+            clone.find("input").prop("id", "percentage" + cloneId);
+            clone.find("input").prop("id", "dollar" + cloneId);
+            clone.find("label").prop("for", "percentage" + cloneId);
+            cloneId++;
+            clone.appendTo(".clonebox:last");
+        });
+        $(document).on("click", ".btn-remove", function() {
+            $(this).closest(".clonebox").remove();
+        });
+    });*/
 
     $(document).ready(function(){
         $('.results-rate').on("click", function(){
@@ -1020,5 +1045,4 @@ function add(ths,sno){
             cur.className="fas fa-star checked"
         }
     }
-
 }

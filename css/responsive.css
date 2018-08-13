@@ -22,6 +22,12 @@
 }
 
 @media (max-width: 768px) {
+    .border-answer-quetion .person-detail{
+        right: auto!important;
+    }
+    .pro-burger-menu-main nav[role="full-horizontal"] {
+        right: 140px;
+    }
     .banner-title {
         position: absolute;
         left: 18% !important;
@@ -158,12 +164,6 @@
         background-image: none !important;
     }
 
-    /*    .center-slide-like{
-            display: none;
-        }
-        .top-right-slide-like{
-            display: none;
-        }*/
     .most-featured-today-second .owl-next {
         right: 100px;
         top: 65px;
@@ -171,12 +171,10 @@
 
     .most-featured-today .owl-next {
         right: 100px;
-        top: 65px;
     }
 
     .most-featured-today .owl-prev {
         left: 100px;
-        top: 65px;
     }
 
     .most-featured-today-second .owl-prev {
@@ -286,6 +284,49 @@
 }
 
 @media (max-width: 480px) {
+    .custom-modal .modal-content.link-account-modal-bg{
+        background-color: transparent;
+        border: none;
+    }
+    .burger-menu-main nav[role="full-horizontal"] ul > li > a div{
+        border-bottom: 1px solid #e9ecef!important;
+        font-family: "FibraOneAlt-Regular", Sans Serif;
+        padding: 5px 0;
+    }
+    .pro-burger-menu-main nav[role="full-horizontal"] ul > li > a div{
+        border-bottom: 1px solid #e9ecef!important;
+        font-family: "FibraOneAlt-Regular", Sans Serif;
+        padding: 5px 0;
+    }
+    .knowledge-menu-main nav[role="full-horizontal"] ul > li > a div{
+        border-bottom: 1px solid #e9ecef!important;
+        font-family: "FibraOneAlt-Regular", Sans Serif;
+        padding: 5px 0;
+    }
+    .opportunities-menu-main nav[role="full-horizontal"] ul > li > a div{
+        border-bottom: 1px solid #e9ecef!important;
+        font-family: "FibraOneAlt-Regular", Sans Serif;
+        padding: 5px 0;
+    }
+    .burger-menu-main nav[role="full-horizontal"] ul > li > a div.border-bottom-0{
+        border-bottom: 0!important;
+    }
+    .border-jobs-menu{
+        border-bottom:none!important;
+    }
+    .menu-grey-text{
+        padding-left: 18px;
+    }
+    .banner-title-bages{
+        bottom: auto !important;
+        top: 30% !important;
+    }
+    .mob-banner-set{
+        padding-top: 40px;
+    }
+    .topopportunities-menu-main nav[role="full-horizontal"]{
+        left:10px;
+    }
     .redirect-h4 {
         font-size: 1.1rem;
     }
@@ -327,7 +368,10 @@
         left: 15px;
         width: 21px;
     }
-
+    .form-steps .bg-white-steps.second-steps-2:after {
+        left: 188px!important;
+        width: 50px;
+    }
     .form-steps .bg-white-steps:after {
         left: 188px;
         width: 50px;
@@ -571,6 +615,7 @@
         height: auto;
         top: 0;
         right: auto;
+        max-height: 100%;
     }
 
     .pro-burger-menu-main {
@@ -580,32 +625,43 @@
         height: auto;
         top: 114px;
     }
+    .pro-burger-menu-main.banner-pro-menu {
+        top: 100px;
+    }
 
     .burger-menu-main {
         top: 74px;
     }
 
-    .burger-menu-main nav[role="full-horizontal"] ul {
+/*    .burger-menu-main nav[role="full-horizontal"] ul {
         position: initial;
         max-height: 423px;
+    }*/
+    .burger-menu-main nav[role="full-horizontal"] ul {
+        position: initial;
+        max-height: calc(100vh - 70px);
     }
-
     .pro-burger-menu-main nav[role="full-horizontal"] ul {
         position: initial;
+        max-height: calc(100vh - 115px);
     }
-
     .knowledge-menu-main nav[role="full-horizontal"] ul {
         position: initial;
+        max-height: calc(100vh - 130px);
     }
 
     .opportunities-menu-main nav[role="full-horizontal"] ul {
         position: initial;
+        max-height: calc(100vh - 130px);
     }
 
     .burger-menu-main nav[role="full-horizontal"] {
         right: auto;
+        max-height: 100%;
     }
-
+    .burger-menu-main nav[role="full-horizontal"] ul > li.bg-tech-grey{
+        background: #ffffff!important;
+    }
     .opportunities-menu-main {
         width: 100%;
         left: 0;
@@ -616,6 +672,8 @@
 
     .opportunities-menu-main nav[role="full-horizontal"] {
         right: auto;
+        bottom:0;
+        max-height: 100%;
     }
 
     .knowledge-menu-main {
@@ -628,6 +686,8 @@
 
     .knowledge-menu-main nav[role="full-horizontal"] {
         right: auto;
+        max-height: 100%;
+        bottom:0;
     }
 
     .most-featured-today-second .owl-next {
@@ -782,12 +842,28 @@
     .custom-opportunity-modal .info-modal-header .modal-title {
         font-size: 8px;
     }
+    .dashboard-welcome-text h5{
+        font-size: 1rem;
+    }
+    .dashboard-welcome-text h3{
+        margin-bottom: 0;
+        font-size: 1.2rem;
+    }
+    .main-dashboard .border-daily-report .border-bottom {
+        border-bottom: 0;
+    }
+    .border-daily-report h5{
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 360px) {
-    .burger-menu-main nav[role="full-horizontal"] ul {
+/*    .burger-menu-main nav[role="full-horizontal"] ul {
         position: initial;
         max-height: 423px;
+    }*/
+    .burger-menu-main {
+        top: 68px;
     }
 }
 

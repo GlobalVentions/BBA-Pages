@@ -52,9 +52,43 @@
                                         for You</a></li>
                                 </ul>
                             </div>
-                            <div class="col-lg-2 col-md-4 col-12 p-0 text-center text-lg-right text-md-right pt-lg-0 pb-lg-0 pt-md-0 pb-md-0 pt-3 pb-3">
-                                <a href="#" class="opportunities-btn link3-bold-14-19 text-primary-brightsidepurple">Top
-                                    Opportunities</a>
+                            <div class="col-lg-2 col-md-4 col-6 p-0 text-center text-lg-right text-md-right pt-lg-0 pb-lg-0 pt-md-0 pb-md-0 pt-3 pb-3">
+                                <h6 class="opportunities-btn link3-bold-14-19 text-primary-brightsidepurple" onclick="topopportunitiesToggle();">Top
+                                    Opportunities</h6>
+                                <div class="topopportunities-menu-main"
+                                     style="display: none;">
+                                    <nav role="full-horizontal">
+                                        <ul>
+                                            <li><a href="#">
+                                                <div>Top</div>
+                                            </a></li>
+                                            <li><a href="#">
+                                                <div>Award</div>
+                                            </a></li>
+                                            <li><a href="#">
+                                                <div>Travel</div>
+                                            </a></li>
+                                            <li><a href="#">
+                                                <div>Balance Transfer</div>
+                                            </a></li>
+                                            <li><a href="#">
+                                                <div>Cash Back</div>
+                                            </a></li>
+                                            <li><a href="#">
+                                                <div>Zero Percent</div>
+                                            </a></li>
+                                            <li><a href="#">
+                                                <div>Bad Credit</div>
+                                            </a></li>
+                                            <li><a href="#">
+                                                <div>Low Intrest</div>
+                                            </a></li>
+                                            <li><a href="#">
+                                                <div>Business</div>
+                                            </a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -81,7 +115,7 @@
                                                                      class="img-fluid pl-1">
                                                                 <img src="images/icon/star-active@1x.png"
                                                                      class="img-fluid pl-1">
-                                                                <span class="paragraph-regular-14-19 text-secondary-grey rate-opportunity">(15) <u>Rate Opportunity</u></span>
+                                                                <span class="heading-alt-regular text-secondary-grey rate-opportunity">(15) <a data-toggle="modal" data-target="#oppurtunitymodal"><u>Rate Opportunity</u></a></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3 col-md-4 col-12 p-0 pt-lg-3 pb-lg-3 pr-lg-5 pt-md-3 pb-md-3 pr-md-3">
@@ -168,7 +202,7 @@
                                                                      class="img-fluid pl-1">
                                                                 <img src="images/icon/star-active@1x.png"
                                                                      class="img-fluid pl-1">
-                                                                <span class="paragraph-regular-14-19 text-secondary-grey rate-opportunity">(15) <u>Rate Opportunity</u></span>
+                                                                <span class="heading-alt-regular text-secondary-grey rate-opportunity">(15) <a data-toggle="modal" data-target="#oppurtunitymodal"><u>Rate Opportunity</u></a></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3 col-md-4 col-12 p-0 pt-lg-3 pb-lg-3 pr-lg-5 pt-md-3 pb-md-3 pr-md-3">
@@ -255,7 +289,7 @@
                                                                      class="img-fluid pl-1">
                                                                 <img src="images/icon/star-active@1x.png"
                                                                      class="img-fluid pl-1">
-                                                                <span class="paragraph-regular-14-19 text-secondary-grey rate-opportunity">(15) <u>Rate Opportunity</u></span>
+                                                                <span class="heading-alt-regular text-secondary-grey rate-opportunity">(15) <a data-toggle="modal" data-target="#oppurtunitymodal"><u>Rate Opportunity</u></a></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3 col-md-4 col-12 p-0 pt-lg-3 pb-lg-3 pr-lg-5 pt-md-3 pb-md-3 pr-md-3">
@@ -342,7 +376,7 @@
                                                                      class="img-fluid pl-1">
                                                                 <img src="images/icon/star-active@1x.png"
                                                                      class="img-fluid pl-1">
-                                                                <span class="paragraph-regular-14-19 text-secondary-grey rate-opportunity">(15) <u>Rate Opportunity</u></span>
+                                                                <span class="heading-alt-regular text-secondary-grey rate-opportunity">(15) <a data-toggle="modal" data-target="#oppurtunitymodal"><u>Rate Opportunity</u></a></span>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-3 col-md-4 col-12 p-0 pt-lg-3 pb-lg-3 pr-lg-5 pt-md-3 pb-md-3 pr-md-3">
@@ -2209,6 +2243,42 @@
             </div>
         </div>
     </div>
+    <div class="row ml-0 mr-0">
+        <div class="col-lg-12 col-md-12 col-12 mt-5 mb-5">
+            <!-- Modal -->
+            <div class="custom-modal">
+                <div class="modal fade" id="oppurtunitymodal" tabindex="-1" role="dialog"
+                     aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered max-width-415" role="document">
+                        <div class="modal-content no-min-height p-4">
+                            <div class="modal-header mx-auto p-0">
+                                <h3 class="heading-alt-bold mb-2 text-center">Rate this Oppurtunity</h3>
+                            </div>
+                            <div class="modal-body p-0">
+                                <div class="row">
+                                    <div class="col-lg-10 p-0 mt-4 mb-4">
+                                        <div class="star-rating">
+                                            <span class="fas fa-star" id="star1" onclick="add(this,1)"></span>
+                                            <span class="fas fa-star" id="star2" onclick="add(this,2)"></span>
+                                            <span class="fas fa-star" id="star3" onclick="add(this,3)"></span>
+                                            <span class="fas fa-star" id="star4" onclick="add(this,4)"></span>
+                                            <span class="fas fa-star" id="star5" onclick="add(this,5)"></span>
+                                        </div>
+                                        <p class="heading-alt-light text-center mb-0 mt-4">Thank you for your rating</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer pb-0">
+                                <a href="#"
+                                   class="float-left text-primary-brightsidepurple font-weight-bold modal-footer-link generalsizefont-link pt-3" data-dismiss="modal" aria-label="Close">Cancel</a>
+                                <button type="button" class="btn btn-brightsidepurple float-right">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <div class="container p-0">
     <footer class="pre-signup-footer">
@@ -2220,7 +2290,6 @@
             </div>
         </div>
     </footer>
-</div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
