@@ -13,7 +13,8 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css"><link rel="stylesheet" type="text/css" href="css/initcarousel-1.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="css/initcarousel-1.css">
     <link rel="stylesheet" type="text/css" href="css/jquery.tagsinput.css">
 </head>
 <body>
@@ -89,49 +90,54 @@
                                                         <label class="m-0 more-about-label col-lg-12 col-md-12 col-12 p-0">Employment
                                                             Status</label>
                                                         <div class="col-lg-3 col-md-3 col-6 pl-0 pr-0 pt-2">
-                                                            <input type="radio" id="radio1" name="Bank Name"
-                                                                   checked="">
+                                                            <input type="radio" id="radio1" name="BankName"
+                                                                   id="chkunemployed" onclick="show2();">
                                                             <label for="radio1"
                                                                    class="paragraph-regular-14-19 text-primary-black"><p
                                                                     class="z-indexradio mb-0">Unemployed</p></label>
                                                         </div>
                                                         <div class="col-lg-3 col-md-3 col-6 pl-0 pr-0 pt-2">
-                                                            <input type="radio" id="radio2" name="Bank Name">
+                                                            <input type="radio" id="radio2" name="BankName"
+                                                                   id="chkstudent" onclick="show1();">
                                                             <label for="radio2"
                                                                    class="paragraph-regular-14-19 text-primary-black"><p
                                                                     class="z-indexradio mb-0">Student</p></label>
                                                         </div>
                                                         <div class="col-lg-3 col-md-3 col-6 pl-0 pr-0 pt-2">
-                                                            <input type="radio" id="radio3" name="Bank Name">
+                                                            <input type="radio" id="radio3" name="BankName"
+                                                                   id="chkparttime" onclick="show1();">
                                                             <label for="radio3"
                                                                    class="paragraph-regular-14-19 text-primary-black"><p
                                                                     class="z-indexradio mb-0">Part-time</p></label>
                                                         </div>
                                                         <div class="col-lg-3 col-md-3 col-6 pl-0 pr-0 pt-2">
-                                                            <input type="radio" id="radio4" name="Bank Name">
+                                                            <input type="radio" id="radio4" name="BankName"
+                                                                   id="chkfulltime" onclick="show1();">
                                                             <label for="radio4"
                                                                    class="paragraph-regular-14-19 text-primary-black"><p
                                                                     class="z-indexradio mb-0">Full-time</p></label>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="row m-0 pt-lg-4 pt-md-3 pt-3">
-                                                    <div class="col-lg-1 col-md-1 col-1 p-0">
-                                                        <div class="custom-checkbox-bba">
-                                                            <input type="checkbox" id="chkPassport"
-                                                                   class="checkbox-custom" name="checkbox1">
+                                                <div id="dvPassport" style="display: none">
+                                                    <div class="row m-0 pt-lg-3 pt-md-3 pt-3">
+                                                        <div class="col-lg-1 col-md-1 col-1 p-0">
+                                                            <div class="custom-checkbox-bba">
+                                                                <input type="checkbox" class="checkbox-custom"
+                                                                       name="checkbox1">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-11 col-md-11 col-11 pr-0 pl-2">
+                                                            <span class="show-me-chkbox">Show me job opportunities based on my interests.</span>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-11 col-md-11 col-11 pr-0 pl-2">
-                                                        <span class="show-me-chkbox">Show me job opportunities based on my interests.</span>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group" id="dvPassport" style="display: none">
-                                                    <label class="m-0 more-about-label col-lg-12 col-md-12 col-12 p-0">Jobs
-                                                        that Interest Me</label>
-                                                    <div class="col-sm-12 p-0">
-                                                        <input name="tags" id="tags" class="form-control"
-                                                               value="Automotive,Sales,"/>
+                                                    <div class="form-group">
+                                                        <label class="m-0 more-about-label col-lg-12 col-md-12 col-12 p-0">Jobs
+                                                            that Interest Me</label>
+                                                        <div class="col-sm-12 p-0">
+                                                            <input name="tags" id="tags" class="form-control"
+                                                                   value="Automotive,Sales,"/>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="row m-0 justify-content-start mt-4">
@@ -200,7 +206,9 @@
         crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/owl.carousel.min.js"></script>
-<script type="text/javascript" src="js/style.js"></script><script type="text/javascript" src="js/amazingcarousel.js"></script><script type="text/javascript" src="js/initcarousel-1.js"></script>
+<script type="text/javascript" src="js/style.js"></script>
+<script type="text/javascript" src="js/amazingcarousel.js"></script>
+<script type="text/javascript" src="js/initcarousel-1.js"></script>
 <script type="text/javascript" src="js/dd-slick.js"></script>
 <script src="js/jquery.tagsinput.min.js"></script>
 <script>

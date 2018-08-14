@@ -86,7 +86,8 @@ $(function () {
             videoHeight: true,
             responsive: {
                 0: {
-                    items: 1
+                    items: 1,
+                    margin: 15
                 },
                 768: {
                     items: 2,
@@ -734,15 +735,12 @@ $(document).ready(function () {
 });
 
 /* JS code for hide show div based on checkbox in Global Sign Up Page*/
-$(function () {
-    $("#chkPassport").click(function () {
-        if ($(this).is(":checked")) {
-            $("#dvPassport").show();
-        } else {
-            $("#dvPassport").hide();
-        }
-    });
-});
+function show1(){
+    document.getElementById('dvPassport').style.display ='none';
+}
+function show2(){
+    document.getElementById('dvPassport').style.display = 'block';
+}
 /* JS code for hide show div based on checkbox in Global Sign Up Page*/
 $(function () {
     $("#chooseanexisting").click(function () {

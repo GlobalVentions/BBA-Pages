@@ -3063,6 +3063,9 @@ body.overview-and-grid .Pattern-img-div img {
   position: absolute;
   top: 40px;
   z-index: 5; }
+.tellus-more-about-you .social-security-dollar-ad.social-security-dollar-ad-yes {
+  top: 32px;
+}
 .tellus-more-about-you .social-security-dollar-2 {
   left: 10px;
   position: absolute;
@@ -3807,7 +3810,7 @@ input[type="checkbox"]:focus {
   box-shadow: 0px 2px 8px 0px #e3e0e3;
   max-width: 78%;
   background-color: #ffffff;
-  padding: 7px 25px 18px;
+  padding: 7px 25px 0;
   margin: 0 auto;
   border-radius: 10px;
   position: absolute;

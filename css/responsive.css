@@ -22,6 +22,12 @@
 }
 
 @media (max-width: 768px) {
+    .discovery_pt{
+        padding: 7px 25px 15px;
+    }
+    .pre-banking-tabs.accout-settings-tabs .nav-link {
+        width: 140px;
+    }
     .border-answer-quetion .person-detail{
         right: auto!important;
     }
@@ -284,6 +290,12 @@
 }
 
 @media (max-width: 480px) {
+    .badge-modal h1.heading-alt-bold{
+        font-size: 1.5rem;
+    }
+    .mortgage-detail{
+        font-size: 0.7rem !important;
+    }
     .custom-modal .modal-content.link-account-modal-bg{
         background-color: transparent;
         border: none;
@@ -376,7 +388,10 @@
         left: 188px;
         width: 50px;
     }
-
+    .form-steps .first-step.banner-step-first:after {
+        left: 188px;
+        width: 30px;
+    }
     .form-steps .second-steps:after {
         left: 14px;
         width: 50px;
@@ -742,9 +757,16 @@
         padding-top: 35px;
         margin-bottom: 35px;
     }
-
     .pre-banking-tabs .nav-link {
         width: auto;
+    }
+    .pre-banking-tabs.accout-settings-tabs .nav-link {
+        width: 150px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .pre-banking-tabs.accout-settings-tabs .nav-tabs {
+        justify-content: center;
     }
 
     .arrow-down::after {
@@ -855,6 +877,21 @@
     .border-daily-report h5{
         font-size: 1rem;
     }
+    .most-featured-today .owl-carousel .owl-video-wrapper {
+        height: 200px;
+    }
+/*    .owl-featured-today.owl-carousel.owl-loaded.owl-drag .item-video h4 {
+        position: absolute;
+        bottom: 10%;
+        font-size: 1.3rem;
+        color: #ffffff;
+        padding: 0 15px;
+        background: red; !* For browsers that do not support gradients *!
+        background: linear-gradient(to right, red , yellow); !* Standard syntax (must be last) *!
+    }
+    .owl-featured-today.owl-carousel.owl-loaded.owl-drag .item-video h4 a{
+        color: #ffffff!important;
+    }*/
 }
 
 @media (max-width: 360px) {
@@ -864,6 +901,9 @@
     }*/
     .burger-menu-main {
         top: 68px;
+    }
+    .icons-symbol.graph-icon-symball img.pr-3, .px-3 {
+        padding-right: 0.8rem!important;
     }
 }
 
