@@ -290,6 +290,16 @@
 }
 
 @media (max-width: 480px) {
+    .have-question-title{
+        font-size: 1.4rem;
+        padding-top: 20px;
+    }
+    .feature-video-title{
+        font-size: 1.4rem;
+    }
+    .feature-video-time{
+        font-size: 1.2rem;
+    }
     .badge-modal h1.heading-alt-bold{
         font-size: 1.5rem;
     }
